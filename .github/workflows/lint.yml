@@ -1,0 +1,22 @@
+name: Lint
+
+on: push
+
+jobs:
+  lint:
+    name: ESLint
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout Repository
+        uses: actions/checkout@v2
+
+      - name: Install Node
+        uses: actions/setup-node@v1
+        with:
+            node-version: 15
+
+      - name: Install Dependencies
+        run: yarn ci
+
+      - name: Run ESLint
+        uses: icrawl/action-eslint@v1

@@ -1,9 +1,8 @@
 # [1.3.0](https://github.com/1chiSensei/Tanaka/compare/1.2.0...1.3.0) (2021-04-13)
 
-
 ### Features
 
-* **commands:** Add info command ([90621ec](https://github.com/1chiSensei/Tanaka/commit/90621ec5de1c6f25de971c05c7712102507ad139))
+- **commands:** Add info command ([90621ec](https://github.com/1chiSensei/Tanaka/commit/90621ec5de1c6f25de971c05c7712102507ad139))
 
 # [1.2.0](https://github.com/1chiSensei/Tanaka/compare/1.1.0...1.2.0) (2021-04-13)
 
