@@ -10,7 +10,7 @@
 	"scripts": {
 		"prettier": "prettier . --write",
 		"lint": "eslint . --fix",
-		"start": "node .",
+		"start": "yarn build && node .",
 		"release": "dotenv release-it",
 		"build": "gulp"
 	},
