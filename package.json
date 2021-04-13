@@ -2,7 +2,7 @@
 	"name": "tanaka",
 	"version": "1.1.0",
 	"description": "An all fun and games discord bot.",
-	"main": "src/index.js",
+	"main": "dist/index.js",
 	"repository": "https://github.com/1chiSensei/Tanaka.git",
 	"author": "1chiSensei <mail@1chi.tk>",
 	"license": "Apache-2.0",
@@ -30,6 +30,9 @@
 		"dotenv-cli": "4.0.0",
 		"eslint": "7.24.0",
 		"eslint-config-aqua": "8.1.2",
+		"gulp": "^4.0.2",
+		"gulp-sourcemaps": "^3.0.0",
+		"gulp-terser": "^2.0.1",
 		"prettier": "2.2.1",
 		"release-it": "14.6.1"
 	}
