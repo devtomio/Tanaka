@@ -2,7 +2,7 @@ const { MessageEmbed, version: djsVersion } = require('discord.js');
 const { formatBytes } = require('../../Structures/Util');
 const { version } = require('../../../package.json');
 const { Command } = require('discord.js-commando');
-const { exec } = require('child_process');
+const { execSync } = require('child_process');
 const { utc } = require('moment');
 const os = require('os');
 const ms = require('ms');
@@ -22,6 +22,7 @@ module.exports = class InfoCommand extends Command {
 	async run(msg) {
 		const core = os.cpus()[0];
 		const embed = new MessageEmbed()
+			.setTitle('Bot Information')
 			.setThumbnail(this.client.user.displayAvatarURL({ size: 4096 }))
 			.setColor('RANDOM')
 			.addField(
@@ -66,15 +67,7 @@ module.exports = class InfoCommand extends Command {
 	}
 
 	getCommitHash() {
-		let commitHash;
-
-		exec('git rev-parse --short HEAD', (err, stdout) => {
-			if (err) {
-				commitHash = 'Unknown';
-			}
-
-			commitHash = stdout.trim();
-		});
+		const commitHash = execSync('git rev-parse --short HEAD', { timeout: 15000, encoding: 'utf-8' });
 
 		return commitHash;
 	}
