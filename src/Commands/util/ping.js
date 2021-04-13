@@ -15,7 +15,7 @@ module.exports = class PingCommand extends Command {
 	}
 
 	async run(msg) {
-		const message = await msg.say('Pinging....');
+		const message = await msg.embed({ description: 'Pinging....' });
 
 		const latency = message.createdTimestamp - msg.createdTimestamp;
 		const db = await this.client.db.fetchLatency();
