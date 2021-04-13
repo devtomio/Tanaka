@@ -23,17 +23,16 @@ module.exports = class PingCommand extends Command {
 		const embed = new MessageEmbed()
 			.addField(
 				'Bot',
-				[`**❯ WebSocket:** ${this.client.ws.ping}`, `**❯ Message:** ${latency}`, '\u200b'].join(
+				[`**❯ WebSocket:** \`${this.client.ws.ping}ms\``, `**❯ Message:** \`${latency}ms\``, '\u200b'].join(
 					'\n',
 				),
 			)
 			.addField(
 				'Database',
 				[
-					`**❯ Read:** ${db.read}`,
-					`**❯ Write:** ${db.write}`,
-					`**❯ Average:** ${db.average}`,
-					'\u200b',
+					`**❯ Read:** \`${db.read}ms\``,
+					`**❯ Write:** \`${db.write}ms\``,
+					`**❯ Average:** \`${db.average}ms\``,
 				].join('\n'),
 			)
 			.setColor('RANDOM')
@@ -41,6 +40,7 @@ module.exports = class PingCommand extends Command {
 				`Requested by ${msg.author.tag}`,
 				msg.author.displayAvatarURL({ dynamic: true, size: 4096 }),
 			)
+			.setThumbnail(msg.author.displayAvatarURL({ size: 4096 }))
 			.setTimestamp();
 
 		return msg.say(embed);
