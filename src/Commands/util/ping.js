@@ -43,6 +43,6 @@ module.exports = class PingCommand extends Command {
 			.setThumbnail(this.client.user.displayAvatarURL({ size: 4096 }))
 			.setTimestamp();
 
-		return msg.say(embed);
+		return message.edit(embed);
 	}
 };
