@@ -1,3 +1,9 @@
+# Config files
+config.json
+
+# Railway
+.railway
+
 # Logs
 logs
 *.log
