@@ -6,6 +6,7 @@ module.exports = class RestartCommand extends Command {
 			name: 'restart',
 			aliases: ['rs'],
 			group: 'util',
+			memberName: 'restart',
 			ownerOnly: true,
 			guarded: true,
 			description: 'Restarts the bot.',
