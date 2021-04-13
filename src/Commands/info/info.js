@@ -43,6 +43,8 @@ module.exports = class InfoCommand extends Command {
 					`**❯ Discord.js:** v${djsVersion}`,
 					`**❯ Commit Hash:** ${this.getCommitHash()}`,
 					'**❯ Repository:** <https://github.com/1chiSensei/Tanaka>',
+					'**❯ Invite:** <https://peico.xyz/BF60P>',
+					`**❯ Support Server:** <${process.env.SUPPORT_SERVER}>`,
 					'\u200b',
 				].join('\n'),
 			)
