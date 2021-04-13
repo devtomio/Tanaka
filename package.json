@@ -10,7 +10,8 @@
 	"scripts": {
 		"prettier": "prettier . --write",
 		"lint": "eslint . --fix",
-		"start": "node ."
+		"start": "node .",
+		"release": "dotenv-cli release-it"
 	},
 	"dependencies": {
 		"@discordjs/opus": "^0.5.0",
@@ -24,8 +25,11 @@
 		"quickmongo": "^3.0.2"
 	},
 	"devDependencies": {
+		"@release-it/conventional-changelog": "^2.0.1",
+		"dotenv-cli": "^4.0.0",
 		"eslint": "^7.24.0",
 		"eslint-config-aqua": "^8.1.2",
-		"prettier": "^2.2.1"
+		"prettier": "^2.2.1",
+		"release-it": "^14.6.1"
 	}
 }

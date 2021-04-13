@@ -23,9 +23,11 @@ module.exports = class PingCommand extends Command {
 		const embed = new MessageEmbed()
 			.addField(
 				'Bot',
-				[`**❯ WebSocket:** \`${this.client.ws.ping}ms\``, `**❯ Message:** \`${latency}ms\``, '\u200b'].join(
-					'\n',
-				),
+				[
+					`**❯ WebSocket:** \`${this.client.ws.ping}ms\``,
+					`**❯ Message:** \`${latency}ms\``,
+					'\u200b',
+				].join('\n'),
 			)
 			.addField(
 				'Database',
