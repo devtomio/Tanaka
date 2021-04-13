@@ -10,7 +10,7 @@ module.exports = class FMLCommand extends Command {
 			group: 'random',
 			memberName: 'fml',
 			description: 'Responds with a random FML quote.',
-			clientPermissions: ['EMBED_LINKS']
+			clientPermissions: ['EMBED_LINKS'],
 		});
 	}
 
@@ -23,7 +23,10 @@ module.exports = class FMLCommand extends Command {
 
 		const embed = new MessageEmbed()
 			.setDescription(`\`\`\`${body.quote}\`\`\``)
-			.setFooter(`Requested by ${msg.author.tag}`, msg.author.displayAvatarURL({ dynamic: true, size: 4096 }))
+			.setFooter(
+				`Requested by ${msg.author.tag}`,
+				msg.author.displayAvatarURL({ dynamic: true, size: 4096 }),
+			)
 			.setTimestamp();
 
 		return message.edit(embed);
