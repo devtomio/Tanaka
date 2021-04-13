@@ -17,6 +17,7 @@ client.registry
 	.registerGroups([
 		{ id: 'util', name: 'Utility' },
 		{ id: 'random', name: 'Random Response' },
+		{ id: 'info', name: 'Information' }
 	])
 	.registerDefaultGroups()
 	.registerDefaultCommands({

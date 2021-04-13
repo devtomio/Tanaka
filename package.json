@@ -12,7 +12,7 @@
 		"lint": "eslint . --fix",
 		"start": "node .",
 		"release": "dotenv release-it",
-		"minify": "gulp"
+		"build": "gulp"
 	},
 	"dependencies": {
 		"@discordjs/opus": "0.5.0",
