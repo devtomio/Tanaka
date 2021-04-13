@@ -1,4 +1,5 @@
 const { Command } = require('discord.js-commando');
+const { MessageEmbed } = require('discord.js');
 const request = require('node-superfetch');
 
 module.exports = class FMLCommand extends Command {
@@ -9,14 +10,22 @@ module.exports = class FMLCommand extends Command {
 			group: 'random',
 			memberName: 'fml',
 			description: 'Responds with a random FML quote.',
+			clientPermissions: ['EMBED_LINKS']
 		});
 	}
 
 	async run(msg) {
+		const message = await msg.say('Fetching....');
+
 		const { body } = await request
 			.get('https://api.1chi.tk/fml')
 			.set({ 'User-Agent': 'TanakaBot 1.0.0 (https://github.com/1chiSensei/Tanaka)' });
 
-		return msg.say(`\`\`\`${body.quote}\`\`\``);
+		const embed = new MessageEmbed()
+			.setDescription(`\`\`\`${body.quote}\`\`\``)
+			.setFooter(`Requested by ${msg.author.tag}`, msg.author.displayAvatarURL({ dynamic: true, size: 4096 }))
+			.setTimestamp();
+
+		return message.edit(embed);
 	}
 };
