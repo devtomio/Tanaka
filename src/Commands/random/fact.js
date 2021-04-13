@@ -8,7 +8,7 @@ module.exports = class FactCommand extends Command {
 			name: 'fact',
 			aliases: ['random-fact'],
 			group: 'random',
-			memberName: 'fml',
+			memberName: 'fact',
 			description: 'Responds with a random fact.',
 			clientPermissions: ['EMBED_LINKS'],
 		});
