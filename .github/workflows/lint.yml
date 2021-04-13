@@ -16,7 +16,7 @@ jobs:
             node-version: 15
 
       - name: Install Dependencies
-        run: yarn ci
+        run: yarn
 
       - name: Run ESLint
         uses: icrawl/action-eslint@v1
