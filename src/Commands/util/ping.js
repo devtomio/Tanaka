@@ -40,7 +40,7 @@ module.exports = class PingCommand extends Command {
 				`Requested by ${msg.author.tag}`,
 				msg.author.displayAvatarURL({ dynamic: true, size: 4096 }),
 			)
-			.setThumbnail(msg.author.displayAvatarURL({ size: 4096 }))
+			.setThumbnail(this.client.user.displayAvatarURL({ size: 4096 }))
 			.setTimestamp();
 
 		return msg.say(embed);
