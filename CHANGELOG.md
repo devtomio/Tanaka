@@ -1,3 +1,15 @@
+# [1.5.0](https://github.com/1chiSensei/Tanaka/compare/1.3.0...1.5.0) (2021-04-13)
+
+
+### Bug Fixes
+
+* **commands:** Fix undefined on info command ([bc70a17](https://github.com/1chiSensei/Tanaka/commit/bc70a174c566b61ba7a8a5c69447c8fd6de52a13))
+
+
+### Features
+
+* **ci:** Add eslint github ci ([f04d3d2](https://github.com/1chiSensei/Tanaka/commit/f04d3d2d288e4298999ef3338dc8cfc2173a7c22))
+
 # [1.4.0](https://github.com/1chiSensei/Tanaka/compare/1.3.0...1.4.0) (2021-04-13)
 
 
