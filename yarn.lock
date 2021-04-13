@@ -59,7 +59,7 @@
     semver "^7.3.4"
     tar "^6.1.0"
 
-"@discordjs/opus@^0.5.0":
+"@discordjs/opus@0.5.0":
   version "0.5.0"
   resolved "https://registry.yarnpkg.com/@discordjs/opus/-/opus-0.5.0.tgz#26ae9f30d52c03ce1671b1db8eec957206fdf92b"
   integrity sha512-s3XUJ7dYV+UvYUiqkgs7sq8JKWMhQrHcwDECP2SKdxtL9h9qGa4mr0IR6XnZw+G/Sogx8c+HRS7+wEspkqk3zA==
@@ -209,7 +209,7 @@
   dependencies:
     "@octokit/openapi-types" "^6.0.0"
 
-"@release-it/conventional-changelog@^2.0.1":
+"@release-it/conventional-changelog@2.0.1":
   version "2.0.1"
   resolved "https://registry.yarnpkg.com/@release-it/conventional-changelog/-/conventional-changelog-2.0.1.tgz#bdd52ad3ecc0d6e39d637592d6ea2bd6d28e5ecb"
   integrity sha512-q67D3Jod935kZt6wThsDeOmhY+RWYPMY7nYyl0YxiXK8vVZzD+9z957fXGz+8Uk3iugmgDaucht7VxTaZlu6nA==
@@ -751,12 +751,12 @@ combined-stream@^1.0.8:
   dependencies:
     delayed-stream "~1.0.0"
 
-commando-provider-mongo@^2.1.0:
+commando-provider-mongo@2.1.0:
   version "2.1.0"
   resolved "https://registry.yarnpkg.com/commando-provider-mongo/-/commando-provider-mongo-2.1.0.tgz#adcc244d1c8fa00e42f04c766904a36849483bc3"
   integrity sha512-ZU9bEpmpC+Oozpgoz1LJjFEyXz5kVk5/mQANwp6GeA33itY9zomzg/NAqRUpQg9vkVkqX9vcmK11vkk7T4J+Ig==
 
-common-tags@^1.8.0:
+common-tags@1.8.0, common-tags@^1.8.0:
   version "1.8.0"
   resolved "https://registry.yarnpkg.com/common-tags/-/common-tags-1.8.0.tgz#8e3153e542d4a39e9b10554434afaaf98956a937"
   integrity sha512-6P6g0uetGpW/sdyUy/iQQCbFF0kWVMSIVSyYz7Zgjcgh8mgw8PQzDNZeyZ5DQ2gM7LBoZPHmnjz8rUthkBG5tw==
@@ -796,7 +796,7 @@ configstore@^5.0.1:
     write-file-atomic "^3.0.0"
     xdg-basedir "^4.0.0"
 
-consola@^2.15.3:
+consola@2.15.3:
   version "2.15.3"
   resolved "https://registry.yarnpkg.com/consola/-/consola-2.15.3.tgz#2e11f98d6a4be71ff72e0bdf07bd23e12cb61550"
   integrity sha512-9vAdYbHj6x2fLKC4+oPH0kFzY/orMZyG2Aj+kNylHxKGJ/Ed4dpNyAQYwJOdqO4zdM7XpVHmyejQDcQHrnuXbw==
@@ -1162,7 +1162,7 @@ dot-prop@^5.1.0, dot-prop@^5.2.0:
   dependencies:
     is-obj "^2.0.0"
 
-dotenv-cli@^4.0.0:
+dotenv-cli@4.0.0:
   version "4.0.0"
   resolved "https://registry.yarnpkg.com/dotenv-cli/-/dotenv-cli-4.0.0.tgz#3cdd68b87ccd63c78dbfa72aab2f639bbeba5f4b"
   integrity sha512-ByKEec+ashePEXthZaA1fif9XDtcaRnkN7eGdBDx3HHRjwZ/rA1go83Cbs4yRrx3JshsCf96FjAyIA2M672+CQ==
@@ -1233,7 +1233,7 @@ escape-string-regexp@^1.0.5:
   resolved "https://registry.yarnpkg.com/escape-string-regexp/-/escape-string-regexp-1.0.5.tgz#1b61c0562190a8dff6ae3bb2cf0200ca130b86d4"
   integrity sha1-G2HAViGQqN/2rjuyzwIAyhMLhtQ=
 
-eslint-config-aqua@^8.1.2:
+eslint-config-aqua@8.1.2:
   version "8.1.2"
   resolved "https://registry.yarnpkg.com/eslint-config-aqua/-/eslint-config-aqua-8.1.2.tgz#a598ffdae280919ee50a76b3c6eb8383b678074b"
   integrity sha512-npPUb/C3pwYhDsLk94ALHO02JMV8hjbFjoVEGliXprGhNDE+8VuGRC8Fmiy3vYHX18/hheQfpWrOmG37UwTLZQ==
@@ -1263,7 +1263,7 @@ eslint-visitor-keys@^2.0.0:
   resolved "https://registry.yarnpkg.com/eslint-visitor-keys/-/eslint-visitor-keys-2.0.0.tgz#21fdc8fbcd9c795cc0321f0563702095751511a8"
   integrity sha512-QudtT6av5WXels9WjIM7qz1XD1cWGvX4gGXvp/zBn9nXG02D0utdU3Em2m/QjTnrsk6bBjmCygl3rmj118msQQ==
 
-eslint@^7.24.0:
+eslint@7.24.0:
   version "7.24.0"
   resolved "https://registry.yarnpkg.com/eslint/-/eslint-7.24.0.tgz#2e44fa62d93892bfdb100521f17345ba54b8513a"
   integrity sha512-k9gaHeHiFmGCDQ2rEfvULlSLruz6tgfA8DEn+rY9/oYPFFTlz55mM/Q/Rij1b2Y42jwZiK3lXvNTw6w6TXzcKQ==
@@ -2483,7 +2483,7 @@ mongodb@3.6.3:
   optionalDependencies:
     saslprep "^1.0.0"
 
-mongodb@^3.6.6:
+mongodb@3.6.6:
   version "3.6.6"
   resolved "https://registry.yarnpkg.com/mongodb/-/mongodb-3.6.6.tgz#92e3658f45424c34add3003e3046c1535c534449"
   integrity sha512-WlirMiuV1UPbej5JeCMqE93JRfZ/ZzqE7nJTwP85XzjAF4rRSeq2bGCb1cjfoHLOF06+HxADaPGqT0g3SbVT1w==
@@ -2570,7 +2570,7 @@ node-fetch@^2.6.1:
   resolved "https://registry.yarnpkg.com/node-fetch/-/node-fetch-2.6.1.tgz#045bd323631f76ed2e2b55573394416b639a0052"
   integrity sha512-V4aYg89jEoVRxRb2fJdAg8FHvI7cEyYdVAh94HH0UIK8oJxUfkjlDQN9RbMx+bEjP7+ggMiFRprSti032Oipxw==
 
-node-superfetch@^0.2.2:
+node-superfetch@0.2.2:
   version "0.2.2"
   resolved "https://registry.yarnpkg.com/node-superfetch/-/node-superfetch-0.2.2.tgz#e0d4ff43b2290dab09ae9c4b6fd1633521d4f930"
   integrity sha512-u/nnm1B5itxgGbMIGOGxLqFRrMFkB9bRbT0YwdM61/KhOXd25PZugX++bzpS+arQimcsIekntapdSSFI2CoCEw==
@@ -2933,7 +2933,7 @@ prepend-http@^2.0.0:
   resolved "https://registry.yarnpkg.com/prepend-http/-/prepend-http-2.0.0.tgz#e92434bfa5ea8c19f41cdfd401d741a3c819d897"
   integrity sha1-6SQ0v6XqjBn0HN/UAddBo8gZ2Jc=
 
-prettier@^2.2.1:
+prettier@2.2.1:
   version "2.2.1"
   resolved "https://registry.yarnpkg.com/prettier/-/prettier-2.2.1.tgz#795a1a78dd52f073da0cd42b21f9c91381923ff5"
   integrity sha512-PqyhM2yCjg/oKkFPtTGUojv7gnZAoG80ttl45O6x2Ug/rMJw4wcc9k6aaf2hibP7BGVCCM33gZoGjyvt9mm16Q==
@@ -3015,7 +3015,7 @@ quick-lru@^5.1.1:
   resolved "https://registry.yarnpkg.com/quick-lru/-/quick-lru-5.1.1.tgz#366493e6b3e42a3a6885e2e99d18f80fb7a8c932"
   integrity sha512-WuyALRjWPDGtt/wzJiadO5AXY+8hZ80hVpe6MyivgraREW751X3SbhRvG3eLKOYN+8VEvqLcf3wdnt44Z4S4SA==
 
-quickmongo@^3.0.2:
+quickmongo@3.0.2:
   version "3.0.2"
   resolved "https://registry.yarnpkg.com/quickmongo/-/quickmongo-3.0.2.tgz#4ba071488de4598b622923607bad4d16a95f1f2a"
   integrity sha512-85k/2RKmwH0jk96RObuHYk+KQErTonhM1Mod6HpF0uadPobth8Cv+Pue3RK+YiBFgpKppsEodPTZgQVC/+qzvQ==
@@ -3155,7 +3155,7 @@ registry-url@^5.0.0:
   dependencies:
     rc "^1.2.8"
 
-release-it@^14.6.1:
+release-it@14.6.1:
   version "14.6.1"
   resolved "https://registry.yarnpkg.com/release-it/-/release-it-14.6.1.tgz#a04623312d67886b37b8a6d298844ee3e0c7150a"
   integrity sha512-noBho2997G3yrm6YvdLJj4Ua2SCFOU7ajCqtvteI3DZtpM1IhiyXSgcn2Q5irq8lTNK0it4eiNq9TSrAWNYDkA==

@@ -14,22 +14,22 @@
 		"release": "dotenv release-it"
 	},
 	"dependencies": {
-		"@discordjs/opus": "^0.5.0",
-		"commando-provider-mongo": "^2.1.0",
-		"common-tags": "^1.8.0",
-		"consola": "^2.15.3",
+		"@discordjs/opus": "0.5.0",
+		"commando-provider-mongo": "2.1.0",
+		"common-tags": "1.8.0",
+		"consola": "2.15.3",
 		"discord.js": "discordjs/discord.js",
 		"discord.js-commando": "discordjs/Commando",
-		"mongodb": "^3.6.6",
-		"node-superfetch": "^0.2.2",
-		"quickmongo": "^3.0.2"
+		"mongodb": "3.6.6",
+		"node-superfetch": "0.2.2",
+		"quickmongo": "3.0.2"
 	},
 	"devDependencies": {
-		"@release-it/conventional-changelog": "^2.0.1",
-		"dotenv-cli": "^4.0.0",
-		"eslint": "^7.24.0",
-		"eslint-config-aqua": "^8.1.2",
-		"prettier": "^2.2.1",
-		"release-it": "^14.6.1"
+		"@release-it/conventional-changelog": "2.0.1",
+		"dotenv-cli": "4.0.0",
+		"eslint": "7.24.0",
+		"eslint-config-aqua": "8.1.2",
+		"prettier": "2.2.1",
+		"release-it": "14.6.1"
 	}
 }
