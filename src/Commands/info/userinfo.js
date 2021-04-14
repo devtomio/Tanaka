@@ -18,7 +18,7 @@ module.exports = class UserInfoCommand extends Command {
 					key: 'member',
 					prompt: 'Who is the user that you want to get info of?',
 					type: 'member',
-					default: (m) => m,
+					default: (m) => m.member,
 				},
 			],
 		});

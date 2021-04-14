@@ -1,23 +1,20 @@
 # [1.8.0](https://github.com/1chiSensei/Tanaka/compare/1.7.5...1.8.0) (2021-04-14)
 
-
 ### Bug Fixes
 
-* **commands:** remove roles field in serverinfo ([69ed1d8](https://github.com/1chiSensei/Tanaka/commit/69ed1d83e721d1d249824ec022633a55d7eafe29))
-
+- **commands:** remove roles field in serverinfo ([69ed1d8](https://github.com/1chiSensei/Tanaka/commit/69ed1d83e721d1d249824ec022633a55d7eafe29))
 
 ### Features
 
-* **deps:** Use dependabot instead of renovate ([6ce85ca](https://github.com/1chiSensei/Tanaka/commit/6ce85cae88f888f100d56dbf241930897322d717))
+- **deps:** Use dependabot instead of renovate ([6ce85ca](https://github.com/1chiSensei/Tanaka/commit/6ce85cae88f888f100d56dbf241930897322d717))
 
 ## [1.7.5](https://github.com/1chiSensei/Tanaka/compare/1.7.4...1.7.5) (2021-04-14)
 
-
 ### Bug Fixes
 
-* **commands:** fix ([cf5c119](https://github.com/1chiSensei/Tanaka/commit/cf5c119020eace192c3c1ac9e02d586cdea6997e))
-* **commands:** fix a typo ([ae00b5c](https://github.com/1chiSensei/Tanaka/commit/ae00b5ceb70a5a23907102fcb5950cbd5343a46a))
-* **commands:** fix all errors ([a862b4f](https://github.com/1chiSensei/Tanaka/commit/a862b4f062c2499615ed030b9322667a5786bc69))
+- **commands:** fix ([cf5c119](https://github.com/1chiSensei/Tanaka/commit/cf5c119020eace192c3c1ac9e02d586cdea6997e))
+- **commands:** fix a typo ([ae00b5c](https://github.com/1chiSensei/Tanaka/commit/ae00b5ceb70a5a23907102fcb5950cbd5343a46a))
+- **commands:** fix all errors ([a862b4f](https://github.com/1chiSensei/Tanaka/commit/a862b4f062c2499615ed030b9322667a5786bc69))
 
 ## [1.7.4](https://github.com/1chiSensei/Tanaka/compare/1.7.3...1.7.4) (2021-04-14)
 
