@@ -1,3 +1,10 @@
+## [1.6.4](https://github.com/1chiSensei/Tanaka/compare/1.6.3...1.6.4) (2021-04-14)
+
+
+### Bug Fixes
+
+* **commands:** i made an oopsie ([c70cab3](https://github.com/1chiSensei/Tanaka/commit/c70cab3fbd86e43e8f30cf441e2ad4d45079d4ba))
+
 ## [1.6.3](https://github.com/1chiSensei/Tanaka/compare/1.6.2...1.6.3) (2021-04-14)
 
 
