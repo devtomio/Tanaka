@@ -1,4 +1,4 @@
-const { filterLevels, verificationLevels, regions, trimArray } = require('../../Structures/Util');
+const { filterLevels, verificationLevels, regions } = require('../../Structures/Util');
 const { Command } = require('discord.js-commando');
 const { MessageEmbed } = require('discord.js');
 const moment = require('moment');
@@ -68,10 +68,6 @@ module.exports = class ServerInfoCommand extends Command {
 				}`,
 				'\u200b',
 			])
-			.addField(
-				`Roles [${roles.length - 1}]`,
-				roles.length > 10 ? roles.join(', ') : roles.length > 10 ? trimArray(roles) : 'None',
-			)
 			.setTimestamp();
 
 		return msg.say(embed);
