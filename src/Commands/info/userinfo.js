@@ -31,7 +31,7 @@ module.exports = class UserInfoCommand extends Command {
 		const flags = member.user.flags.toArray();
 
 		const embed = new MessageEmbed()
-			.setTitle(`**User Information for __${msg.author.tag}__**`)
+			.setTitle(`**User Information for __${member.author.tag}__**`)
 			.setThumbnail(member.user.displayAvatarURL({ dynamic: true, size: 4096 }))
 			.setColor('RANDOM')
 			.addField('User', [
