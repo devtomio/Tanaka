@@ -1,3 +1,10 @@
+## [1.6.2](https://github.com/1chiSensei/Tanaka/compare/1.6.0...1.6.2) (2021-04-14)
+
+
+### Bug Fixes
+
+* **commands:** fix text not showing in bold in info, serverinfo and userinfo ([874d2ef](https://github.com/1chiSensei/Tanaka/commit/874d2ef9ddf6754b8166ff03337a59f041d96628))
+
 ## [1.6.1](https://github.com/1chiSensei/Tanaka/compare/1.6.0...1.6.1) (2021-04-14)
 
 
