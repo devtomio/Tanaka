@@ -1,3 +1,10 @@
+## [1.6.3](https://github.com/1chiSensei/Tanaka/compare/1.6.2...1.6.3) (2021-04-14)
+
+
+### Bug Fixes
+
+* **invite:** fix broken invite link ([d7e5fe9](https://github.com/1chiSensei/Tanaka/commit/d7e5fe9f30749d9153b056f3feda87128dfebe7c))
+
 ## [1.6.2](https://github.com/1chiSensei/Tanaka/compare/1.6.0...1.6.2) (2021-04-14)
 
 ### Bug Fixes
