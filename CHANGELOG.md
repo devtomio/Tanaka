@@ -1,3 +1,10 @@
+# [1.9.0](https://github.com/1chiSensei/Tanaka/compare/1.8.2...1.9.0) (2021-04-14)
+
+
+### Features
+
+* **commands:** add cat command ([07558b5](https://github.com/1chiSensei/Tanaka/commit/07558b540e65c9da9da0061238de6d2e9696d92c))
+
 ## [1.8.2](https://github.com/1chiSensei/Tanaka/compare/1.8.1...1.8.2) (2021-04-14)
 
 ## [1.8.1](https://github.com/1chiSensei/Tanaka/compare/1.8.0...1.8.1) (2021-04-14)
