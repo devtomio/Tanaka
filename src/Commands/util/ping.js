@@ -21,22 +21,16 @@ module.exports = class PingCommand extends Command {
 		const db = await this.client.db.fetchLatency();
 
 		const embed = new MessageEmbed()
-			.addField(
-				'Bot',
-				[
-					`**❯ WebSocket:** \`${this.client.ws.ping}ms\``,
-					`**❯ Message:** \`${latency}ms\``,
-					'\u200b',
-				].join('\n'),
-			)
-			.addField(
-				'Database',
-				[
-					`**❯ Read:** \`${db.read}ms\``,
-					`**❯ Write:** \`${db.write}ms\``,
-					`**❯ Average:** \`${db.average}ms\``,
-				].join('\n'),
-			)
+			.addField('Bot', [
+				`**❯ WebSocket:** \`${this.client.ws.ping}ms\``,
+				`**❯ Message:** \`${latency}ms\``,
+				'\u200b',
+			])
+			.addField('Database', [
+				`**❯ Read:** \`${db.read}ms\``,
+				`**❯ Write:** \`${db.write}ms\``,
+				`**❯ Average:** \`${db.average}ms\``,
+			])
 			.setColor('RANDOM')
 			.setFooter(
 				`Requested by ${msg.author.tag}`,

@@ -1,9 +1,8 @@
 ## [1.7.4](https://github.com/1chiSensei/Tanaka/compare/1.7.3...1.7.4) (2021-04-14)
 
-
 ### Bug Fixes
 
-* **commands:** fix `msg.guild.member()` is not a function ([d4ff674](https://github.com/1chiSensei/Tanaka/commit/d4ff6743bf6186a100f5d54b4dfbcf04dc153a2b))
+- **commands:** fix `msg.guild.member()` is not a function ([d4ff674](https://github.com/1chiSensei/Tanaka/commit/d4ff6743bf6186a100f5d54b4dfbcf04dc153a2b))
 
 ## [1.7.3](https://github.com/1chiSensei/Tanaka/compare/1.7.2...1.7.3) (2021-04-14)
 

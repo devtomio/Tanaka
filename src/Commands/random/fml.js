@@ -26,7 +26,7 @@ module.exports = class FMLCommand extends Command {
 			.set({ 'User-Agent': 'TanakaBot 1.0.0 (https://github.com/1chiSensei/Tanaka)' });
 
 		const embed = new MessageEmbed()
-			.setDescription(`\`\`\`${body.quote}\`\`\``)
+			.setDescription(`\`\`\`\n${body.quote}\n\`\`\``)
 			.setFooter(
 				`Requested by ${msg.author.tag}`,
 				msg.author.displayAvatarURL({ dynamic: true, size: 4096 }),

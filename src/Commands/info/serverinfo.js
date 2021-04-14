@@ -44,8 +44,6 @@ module.exports = class ServerInfoCommand extends Command {
 			.addField('Statistics', [
 				`**❯ Role Count:** ${roles.length}`,
 				`**❯ Emoji Count:** ${emojis.size}`,
-				`**❯ Regular Emoji Count:** ${emojis.filter((emoji) => !emoji.animated).size}`,
-				`**❯ Animated Emoji Count:** ${emojis.filter((emoji) => emoji.animated).size}`,
 				`**❯ Member Count:** ${msg.guild.memberCount}`,
 				`**❯ Humans:** ${members.filter((member) => !member.user.bot).size}`,
 				`**❯ Bots:** ${members.filter((member) => member.user.bot).size}`,
@@ -55,6 +53,7 @@ module.exports = class ServerInfoCommand extends Command {
 					channels.filter((channel) => channel.type === 'category').size
 				}`,
 				`**❯ News Channels:** ${channels.filter((channel) => channel.type === 'news').size}`,
+				`**❯ Stage Channels:** ${channels.filter((channel) => channel.type === 'stage').size}`,
 				`**❯ Boost Count:** ${msg.guild.premiumSubscriptionCount ?? '0'}`,
 				'\u200b',
 			])
