@@ -1,3 +1,15 @@
+# [1.8.0](https://github.com/1chiSensei/Tanaka/compare/1.7.5...1.8.0) (2021-04-14)
+
+
+### Bug Fixes
+
+* **commands:** remove roles field in serverinfo ([69ed1d8](https://github.com/1chiSensei/Tanaka/commit/69ed1d83e721d1d249824ec022633a55d7eafe29))
+
+
+### Features
+
+* **deps:** Use dependabot instead of renovate ([6ce85ca](https://github.com/1chiSensei/Tanaka/commit/6ce85cae88f888f100d56dbf241930897322d717))
+
 ## [1.7.5](https://github.com/1chiSensei/Tanaka/compare/1.7.4...1.7.5) (2021-04-14)
 
 
