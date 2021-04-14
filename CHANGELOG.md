@@ -1,3 +1,10 @@
+## [1.8.1](https://github.com/1chiSensei/Tanaka/compare/1.8.0...1.8.1) (2021-04-14)
+
+
+### Bug Fixes
+
+* **commands:** Fix (cannot read property cache of undefined) in serverinfo ([2da3bd7](https://github.com/1chiSensei/Tanaka/commit/2da3bd7958c6ce9194ac5699fd50e812bcf67184))
+
 # [1.8.0](https://github.com/1chiSensei/Tanaka/compare/1.7.5...1.8.0) (2021-04-14)
 
 ### Bug Fixes
