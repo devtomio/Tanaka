@@ -1,17 +1,15 @@
 # [1.6.0](https://github.com/1chiSensei/Tanaka/compare/1.5.0...1.6.0) (2021-04-14)
 
-
 ### Bug Fixes
 
-* **ci:** Fix unknown command ([31de0a4](https://github.com/1chiSensei/Tanaka/commit/31de0a4ae8f49603eb311a36a84f8d9f1a4c71cb))
-* **commands:** fix trailing whitespace in info ([46928ac](https://github.com/1chiSensei/Tanaka/commit/46928ac6b7cbcb16b76327ba0b9b04d0da4991b1))
-* **deploy:** Remove node env ([39e93cd](https://github.com/1chiSensei/Tanaka/commit/39e93cdfd246428a95c115b2784bd4607359cc1a))
-* **deps:** pin dependencies ([c012b7a](https://github.com/1chiSensei/Tanaka/commit/c012b7a26b84c1301f242ade567a8bc1bf68fbc0))
-
+- **ci:** Fix unknown command ([31de0a4](https://github.com/1chiSensei/Tanaka/commit/31de0a4ae8f49603eb311a36a84f8d9f1a4c71cb))
+- **commands:** fix trailing whitespace in info ([46928ac](https://github.com/1chiSensei/Tanaka/commit/46928ac6b7cbcb16b76327ba0b9b04d0da4991b1))
+- **deploy:** Remove node env ([39e93cd](https://github.com/1chiSensei/Tanaka/commit/39e93cdfd246428a95c115b2784bd4607359cc1a))
+- **deps:** pin dependencies ([c012b7a](https://github.com/1chiSensei/Tanaka/commit/c012b7a26b84c1301f242ade567a8bc1bf68fbc0))
 
 ### Features
 
-* **commands:** add userinfo and serverinfo command ([0bb1e4c](https://github.com/1chiSensei/Tanaka/commit/0bb1e4cf5824da3a14e533690d53fd653365093f))
+- **commands:** add userinfo and serverinfo command ([0bb1e4c](https://github.com/1chiSensei/Tanaka/commit/0bb1e4cf5824da3a14e533690d53fd653365093f))
 
 # [1.5.0](https://github.com/1chiSensei/Tanaka/compare/1.3.0...1.5.0) (2021-04-13)
 

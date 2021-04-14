@@ -26,44 +26,38 @@ module.exports = class InfoCommand extends Command {
 			.setTitle('Bot Information')
 			.setThumbnail(this.client.user.displayAvatarURL({ size: 4096 }))
 			.setColor('RANDOM')
-			.addField(
-				'General',
-				[
-					`**❯ Client:** ${this.client.user.tag} (${this.client.user.id})`,
-					`**❯ Commands:** ${this.client.registry.commands.size}`,
-					`**❯ Guilds:** ${this.client.guilds.cache.size.toLocaleString()}`,
-					`**❯ Users:** ${this.client.guilds.cache
-						.reduce((a, b) => a + b.memberCount, 0)
-						.toLocaleString()}`,
-					`**❯ Channels:** ${this.client.channels.cache.size.toLocaleString()}`,
-					`**❯ Creation Date:** \`${utc(this.client.user.createdTimestamp).format(
-						'Do MMMM YYYY HH:mm:ss',
-					)}\``,
-					`**❯ Node.js:** \`${process.version}\``,
-					`**❯ Version:** \`v${version}\``,
-					`**❯ Discord.js:** \`v${djsVersion}\``,
-					`**❯ Commit Hash:** \`${this.getCommitHash()}\``,
-					'**❯ Repository:** <https://github.com/1chiSensei/Tanaka>',
-					'**❯ Invite:** <https://peico.xyz/BF60P>',
-					`**❯ Support Server:** <${process.env.SUPPORT_SERVER}>`,
-					'\u200b',
-				].join('\n'),
-			)
-			.addField(
-				'System',
-				[
-					`**❯ Uptime:** ${ms(os.uptime() * 1000, { long: true })}`,
-					`**❯ Platform:** ${process.platform}`,
-					`**❯ Arch:** ${process.arch}`,
-					`**❯ CPU:**`,
-					`\u3000 Cores: ${os.cpus().length}`,
-					`\u3000 Model: ${core.model}`,
-					`\u3000 Speed: ${core.speed}MHz`,
-					`**❯ Memory:**`,
-					`\u3000 Total: ${formatBytes(process.memoryUsage().heapTotal)}`,
-					`\u3000 Used: ${formatBytes(process.memoryUsage().heapUsed)}`,
-				].join('\n'),
-			)
+			.addField('General', [
+				`**❯ Client:** ${this.client.user.tag} (${this.client.user.id})`,
+				`**❯ Commands:** ${this.client.registry.commands.size}`,
+				`**❯ Guilds:** ${this.client.guilds.cache.size.toLocaleString()}`,
+				`**❯ Users:** ${this.client.guilds.cache
+					.reduce((a, b) => a + b.memberCount, 0)
+					.toLocaleString()}`,
+				`**❯ Channels:** ${this.client.channels.cache.size.toLocaleString()}`,
+				`**❯ Creation Date:** \`${utc(this.client.user.createdTimestamp).format(
+					'Do MMMM YYYY HH:mm:ss',
+				)}\``,
+				`**❯ Node.js:** \`${process.version}\``,
+				`**❯ Version:** \`v${version}\``,
+				`**❯ Discord.js:** \`v${djsVersion}\``,
+				`**❯ Commit Hash:** \`${this.getCommitHash()}\``,
+				'**❯ Repository:** <https://github.com/1chiSensei/Tanaka>',
+				'**❯ Invite:** <https://peico.xyz/BF60P>',
+				`**❯ Support Server:** <${process.env.SUPPORT_SERVER}>`,
+				'\u200b',
+			])
+			.addField('System', [
+				`**❯ Uptime:** ${ms(os.uptime() * 1000, { long: true })}`,
+				`**❯ Platform:** ${process.platform}`,
+				`**❯ Arch:** ${process.arch}`,
+				`**❯ CPU:**`,
+				`\u3000 Cores: ${os.cpus().length}`,
+				`\u3000 Model: ${core.model}`,
+				`\u3000 Speed: ${core.speed}MHz`,
+				`**❯ Memory:**`,
+				`\u3000 Total: ${formatBytes(process.memoryUsage().heapTotal)}`,
+				`\u3000 Used: ${formatBytes(process.memoryUsage().heapUsed)}`,
+			])
 			.setTimestamp();
 
 		return msg.say(embed);

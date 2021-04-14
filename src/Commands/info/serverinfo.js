@@ -28,52 +28,36 @@ module.exports = class ServerInfoCommand extends Command {
 			.setTitle(`**Guild Information for __${msg.guild.name}__**`)
 			.setColor('RANDOM')
 			.setThumbnail(msg.guild.iconURL({ dynamic: true, size: 4096 }))
-			.addField(
-				'General',
-				[
-					`**❯ Name:** ${msg.guild.name}`,
-					`**❯ ID:** ${msg.guild.id}`,
-					`**❯ Owner:** ${msg.guild.owner.user.tag} \`(${msg.guild.ownerID})\``,
-					`**❯ Region:** ${regions[msg.guild.region]}`,
-					`**❯ Boost Tier:** ${
-						msg.guild.premiumTier ? `Tier ${msg.guild.premiumTier}` : 'None'
-					}`,
-					`**❯ Explicit Filter:** ${filterLevels[msg.guild.explicitContentFilter]}`,
-					`**❯ Verification Level:** ${verificationLevels[msg.guild.verificationLevel]}`,
-					`**❯ Time Created:** \`${moment(msg.guild.createdTimestamp).format(
-						'LT',
-					)} ${moment(msg.guild.createdTimestamp).format('LL')} ${moment(
-						msg.guild.createdTimestamp,
-					).fromNow()}\``,
-					'\u200b',
-				].join('\n'),
-			)
-			.addField(
-				'Statistics',
-				[
-					`**❯ Role Count:** ${roles.length}`,
-					`**❯ Emoji Count:** ${emojis.size}`,
-					`**❯ Regular Emoji Count:** ${emojis.filter((emoji) => !emoji.animated).size}`,
-					`**❯ Animated Emoji Count: ${emojis.filter((emoji) => emoji.animated).size}`,
-					`**❯ Member Count:** ${msg.guild.memberCount}`,
-					`**❯ Humans:** ${members.filter((member) => !member.user.bot).size}`,
-					`**❯ Bots:** ${members.filter((member) => member.user.bot).size}`,
-					`**❯ Text Channels:** ${
-						channels.filter((channel) => channel.type === 'text').size
-					}`,
-					`**❯ Voice Channels:** ${
-						channels.filter((channel) => channel.type === 'voice').size
-					}`,
-					`**❯ Category Channels:** ${
-						channels.filter((channel) => channel.type === 'category').size
-					}`,
-					`**❯ News Channels:** ${
-						channels.filter((channel) => channel.type === 'news').size
-					}`,
-					`**❯ Boost Count:** ${msg.guild.premiumSubscriptionCount ?? '0'}`,
-					'\u200b',
-				].join('\n'),
-			)
+			.addField('General', [
+				`**❯ Name:** ${msg.guild.name}`,
+				`**❯ ID:** ${msg.guild.id}`,
+				`**❯ Owner:** ${msg.guild.owner.user.tag} \`(${msg.guild.ownerID})\``,
+				`**❯ Region:** ${regions[msg.guild.region]}`,
+				`**❯ Boost Tier:** ${msg.guild.premiumTier ? `Tier ${msg.guild.premiumTier}` : 'None'}`,
+				`**❯ Explicit Filter:** ${filterLevels[msg.guild.explicitContentFilter]}`,
+				`**❯ Verification Level:** ${verificationLevels[msg.guild.verificationLevel]}`,
+				`**❯ Time Created:** \`${moment(msg.guild.createdTimestamp).format('LT')} ${moment(
+					msg.guild.createdTimestamp,
+				).format('LL')} ${moment(msg.guild.createdTimestamp).fromNow()}\``,
+				'\u200b',
+			])
+			.addField('Statistics', [
+				`**❯ Role Count:** ${roles.length}`,
+				`**❯ Emoji Count:** ${emojis.size}`,
+				`**❯ Regular Emoji Count:** ${emojis.filter((emoji) => !emoji.animated).size}`,
+				`**❯ Animated Emoji Count: ${emojis.filter((emoji) => emoji.animated).size}`,
+				`**❯ Member Count:** ${msg.guild.memberCount}`,
+				`**❯ Humans:** ${members.filter((member) => !member.user.bot).size}`,
+				`**❯ Bots:** ${members.filter((member) => member.user.bot).size}`,
+				`**❯ Text Channels:** ${channels.filter((channel) => channel.type === 'text').size}`,
+				`**❯ Voice Channels:** ${channels.filter((channel) => channel.type === 'voice').size}`,
+				`**❯ Category Channels:** ${
+					channels.filter((channel) => channel.type === 'category').size
+				}`,
+				`**❯ News Channels:** ${channels.filter((channel) => channel.type === 'news').size}`,
+				`**❯ Boost Count:** ${msg.guild.premiumSubscriptionCount ?? '0'}`,
+				'\u200b',
+			])
 			.addField('Presence', [
 				`**❯ Online:** ${members.filter((member) => member.presence.status === 'online').size}`,
 				`**❯ Idle:** ${members.filter((member) => member.presence.status === 'idle').size}`,
