@@ -1,7 +1,5 @@
 FROM node:buster
 
-ENV NODE_ENV=production
-
 WORKDIR /bot
 
 COPY ["package.json", "yarn.lock", "./"]
