@@ -45,7 +45,7 @@ module.exports = class ServerInfoCommand extends Command {
 				`**❯ Role Count:** ${roles.length}`,
 				`**❯ Emoji Count:** ${emojis.size}`,
 				`**❯ Regular Emoji Count:** ${emojis.filter((emoji) => !emoji.animated).size}`,
-				`**❯ Animated Emoji Count: ${emojis.filter((emoji) => emoji.animated).size}`,
+				`**❯ Animated Emoji Count:** ${emojis.filter((emoji) => emoji.animated).size}`,
 				`**❯ Member Count:** ${msg.guild.memberCount}`,
 				`**❯ Humans:** ${members.filter((member) => !member.user.bot).size}`,
 				`**❯ Bots:** ${members.filter((member) => member.user.bot).size}`,
