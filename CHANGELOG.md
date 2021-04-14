@@ -1,3 +1,10 @@
+## [1.7.2](https://github.com/1chiSensei/Tanaka/compare/1.7.1...1.7.2) (2021-04-14)
+
+
+### Bug Fixes
+
+* **pm2:** fix unknown option ([04bd71c](https://github.com/1chiSensei/Tanaka/commit/04bd71c5c587b72375e3eab0ef9f496995face54))
+
 ## [1.7.1](https://github.com/1chiSensei/Tanaka/compare/1.7.0...1.7.1) (2021-04-14)
 
 
