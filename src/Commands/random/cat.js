@@ -1,5 +1,5 @@
 const { Command } = require('discord.js-commando');
-const { MessageEmbed, MessageAttachment } = require('discord.js');
+const { MessageEmbed } = require('discord.js');
 const request = require('node-superfetch');
 
 module.exports = class CatCommand extends Command {
@@ -26,7 +26,7 @@ module.exports = class CatCommand extends Command {
 			.set({ 'User-Agent': 'TanakaBot 1.0.0 (https://github.com/1chiSensei/Tanaka)' });
 
 		const embed = new MessageEmbed()
-			.setImage(new MessageAttachment(body.attachment))
+			.setImage(body.attachment)
 			.setFooter(
 				`Requested by ${msg.author.tag}`,
 				msg.author.displayAvatarURL({ dynamic: true, size: 4096 }),
