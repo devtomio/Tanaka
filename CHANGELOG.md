@@ -1,3 +1,10 @@
+## [1.7.1](https://github.com/1chiSensei/Tanaka/compare/1.7.0...1.7.1) (2021-04-14)
+
+
+### Bug Fixes
+
+* **package:** replace `pm2` with `pm2-runtime` ([3844865](https://github.com/1chiSensei/Tanaka/commit/3844865c55bf982b84c765fe09bf2f3a8933db56))
+
 # [1.7.0](https://github.com/1chiSensei/Tanaka/compare/1.6.5...1.7.0) (2021-04-14)
 
 
