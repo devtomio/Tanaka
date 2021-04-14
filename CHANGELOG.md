@@ -1,3 +1,10 @@
+# [1.7.0](https://github.com/1chiSensei/Tanaka/compare/1.6.5...1.7.0) (2021-04-14)
+
+
+### Features
+
+* **bot:** use pm2 ([c66fcc6](https://github.com/1chiSensei/Tanaka/commit/c66fcc6e839c5b74d9f24886cbaa338dde821c1e))
+
 ## [1.6.5](https://github.com/1chiSensei/Tanaka/compare/1.6.4...1.6.5) (2021-04-14)
 
 
