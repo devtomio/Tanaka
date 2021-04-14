@@ -37,7 +37,7 @@ client.once('ready', () => {
 
 	const status = `t!help | ${statuses[Math.floor(Math.random() * statuses.length)]}`;
 
-	setInterval(() => client.user.setActivity(status, { type: 'WATCHING' }), 30000);
+	client.setInterval(() => client.user.setActivity(status, { type: 'WATCHING' }), 30000);
 
 	client.logger.info(`Logged in as ${client.user.tag}.`);
 });

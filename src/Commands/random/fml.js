@@ -11,6 +11,10 @@ module.exports = class FMLCommand extends Command {
 			memberName: 'fml',
 			description: 'Responds with a random FML quote.',
 			clientPermissions: ['EMBED_LINKS'],
+			throttling: {
+				usages: 5,
+				duration: 15,
+			},
 		});
 	}
 

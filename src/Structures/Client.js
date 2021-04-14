@@ -9,7 +9,7 @@ module.exports = class Client extends CommandoClient {
 			commandPrefix: process.env.COMMAND_PREFIX,
 			owner: process.env.OWNER_ID,
 			invite: process.env.SUPPORT_SERVER,
-			intents: [Intents.NON_PRIVILEGED, Intents.FLAGS.GUILDS],
+			intents: [Intents.NON_PRIVILEGED, Intents.FLAGS.GUILDS, Intents.FLAGS.GUILD_PRESENCES],
 			partials: ['CHANNEL'],
 		});
 

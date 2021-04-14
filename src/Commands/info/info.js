@@ -16,10 +16,11 @@ module.exports = class InfoCommand extends Command {
 			memberName: 'info',
 			description: 'Responds with the general information of the bot.',
 			clientPermissions: ['EMBED_LINKS'],
+			guarded: true,
 		});
 	}
 
-	async run(msg) {
+	run(msg) {
 		const core = os.cpus()[0];
 		const embed = new MessageEmbed()
 			.setTitle('Bot Information')
@@ -35,13 +36,13 @@ module.exports = class InfoCommand extends Command {
 						.reduce((a, b) => a + b.memberCount, 0)
 						.toLocaleString()}`,
 					`**❯ Channels:** ${this.client.channels.cache.size.toLocaleString()}`,
-					`**❯ Creation Date:** ${utc(this.client.user.createdTimestamp).format(
+					`**❯ Creation Date:** \`${utc(this.client.user.createdTimestamp).format(
 						'Do MMMM YYYY HH:mm:ss',
-					)}`,
-					`**❯ Node.js:** ${process.version}`,
-					`**❯ Version:** v${version}`,
-					`**❯ Discord.js:** v${djsVersion}`,
-					`**❯ Commit Hash:** ${this.getCommitHash()}`,
+					)}\``,
+					`**❯ Node.js:** \`${process.version}\``,
+					`**❯ Version:** \`v${version}\``,
+					`**❯ Discord.js:** \`v${djsVersion}\``,
+					`**❯ Commit Hash:** \`${this.getCommitHash()}\``,
 					'**❯ Repository:** <https://github.com/1chiSensei/Tanaka>',
 					'**❯ Invite:** <https://peico.xyz/BF60P>',
 					`**❯ Support Server:** <${process.env.SUPPORT_SERVER}>`,

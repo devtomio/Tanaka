@@ -11,6 +11,10 @@ module.exports = class FactCommand extends Command {
 			memberName: 'fact',
 			description: 'Responds with a random fact.',
 			clientPermissions: ['EMBED_LINKS'],
+			throttling: {
+				usages: 5,
+				duration: 15,
+			},
 		});
 	}
 

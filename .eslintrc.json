@@ -4,6 +4,7 @@
 		"comma-dangle": "off",
 		"arrow-parens": "off",
 		"quote-props": "off",
-		"no-mixed-operators": "off"
+		"no-mixed-operators": "off",
+		"indent": "off"
 	}
 }
