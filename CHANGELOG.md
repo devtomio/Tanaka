@@ -1,3 +1,5 @@
+## [1.8.2](https://github.com/1chiSensei/Tanaka/compare/1.8.1...1.8.2) (2021-04-14)
+
 ## [1.8.1](https://github.com/1chiSensei/Tanaka/compare/1.8.0...1.8.1) (2021-04-14)
 
 ### Bug Fixes
