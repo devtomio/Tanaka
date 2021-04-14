@@ -1,44 +1,38 @@
 ## [1.7.2](https://github.com/1chiSensei/Tanaka/compare/1.7.1...1.7.2) (2021-04-14)
 
-
 ### Bug Fixes
 
-* **pm2:** fix unknown option ([04bd71c](https://github.com/1chiSensei/Tanaka/commit/04bd71c5c587b72375e3eab0ef9f496995face54))
+- **pm2:** fix unknown option ([04bd71c](https://github.com/1chiSensei/Tanaka/commit/04bd71c5c587b72375e3eab0ef9f496995face54))
 
 ## [1.7.1](https://github.com/1chiSensei/Tanaka/compare/1.7.0...1.7.1) (2021-04-14)
 
-
 ### Bug Fixes
 
-* **package:** replace `pm2` with `pm2-runtime` ([3844865](https://github.com/1chiSensei/Tanaka/commit/3844865c55bf982b84c765fe09bf2f3a8933db56))
+- **package:** replace `pm2` with `pm2-runtime` ([3844865](https://github.com/1chiSensei/Tanaka/commit/3844865c55bf982b84c765fe09bf2f3a8933db56))
 
 # [1.7.0](https://github.com/1chiSensei/Tanaka/compare/1.6.5...1.7.0) (2021-04-14)
 
-
 ### Features
 
-* **bot:** use pm2 ([c66fcc6](https://github.com/1chiSensei/Tanaka/commit/c66fcc6e839c5b74d9f24886cbaa338dde821c1e))
+- **bot:** use pm2 ([c66fcc6](https://github.com/1chiSensei/Tanaka/commit/c66fcc6e839c5b74d9f24886cbaa338dde821c1e))
 
 ## [1.6.5](https://github.com/1chiSensei/Tanaka/compare/1.6.4...1.6.5) (2021-04-14)
 
-
 ### Bug Fixes
 
-* **commands:** fix restart command ([c414c40](https://github.com/1chiSensei/Tanaka/commit/c414c405d5da7924077f08749509f947e12b2345))
+- **commands:** fix restart command ([c414c40](https://github.com/1chiSensei/Tanaka/commit/c414c405d5da7924077f08749509f947e12b2345))
 
 ## [1.6.4](https://github.com/1chiSensei/Tanaka/compare/1.6.3...1.6.4) (2021-04-14)
 
-
 ### Bug Fixes
 
-* **commands:** i made an oopsie ([c70cab3](https://github.com/1chiSensei/Tanaka/commit/c70cab3fbd86e43e8f30cf441e2ad4d45079d4ba))
+- **commands:** i made an oopsie ([c70cab3](https://github.com/1chiSensei/Tanaka/commit/c70cab3fbd86e43e8f30cf441e2ad4d45079d4ba))
 
 ## [1.6.3](https://github.com/1chiSensei/Tanaka/compare/1.6.2...1.6.3) (2021-04-14)
 
-
 ### Bug Fixes
 
-* **invite:** fix broken invite link ([d7e5fe9](https://github.com/1chiSensei/Tanaka/commit/d7e5fe9f30749d9153b056f3feda87128dfebe7c))
+- **invite:** fix broken invite link ([d7e5fe9](https://github.com/1chiSensei/Tanaka/commit/d7e5fe9f30749d9153b056f3feda87128dfebe7c))
 
 ## [1.6.2](https://github.com/1chiSensei/Tanaka/compare/1.6.0...1.6.2) (2021-04-14)
 

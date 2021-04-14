@@ -56,11 +56,13 @@ module.exports = class UserInfoCommand extends Command {
 			])
 			.addField('Member', [
 				`**❯ Highest Role:** ${
-					member.roles.highest.id === msg.guild.id ? 'None' : member.roles.highest.name
+					member.roles.highest.id === msg.guild.id
+						? 'None'
+						: `<@&${member.roles.highest.id}>`
 				}`,
 				`**❯ Server Join Rate:** \`${moment(member.joinedAt).format('LL LTS')}\``,
 				`**❯ Nickname:** ${member.nickname ?? 'None'}`,
-				`**❯ Hoist Role:** ${member.roles.hoist ? member.roles.hoist.name : 'None'}`,
+				`**❯ Hoist Role:** ${member.roles.hoist ? `<@&${member.roles.hoist.id}>` : 'None'}`,
 				`**❯ Roles [${roles.length}]:** ${
 					roles.length < 10
 						? roles.join(', ')
