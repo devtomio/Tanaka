@@ -10,7 +10,7 @@
 	"scripts": {
 		"prettier": "prettier . --write",
 		"lint": "eslint . --fix",
-		"start": "yarn build && pm2 start dist/index.js --name \"tanaka\" --update-env",
+		"start": "yarn build && pm2-runtime start dist/index.js --name \"tanaka\" --update-env",
 		"release": "dotenv release-it",
 		"build": "gulp"
 	},
