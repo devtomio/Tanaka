@@ -22,15 +22,17 @@ module.exports = class FactCommand extends Command {
 		const message = await msg.say('Fetching....');
 
 		const { body } = await request
-			.get('https://api.1chi.tk/fact')
+			.get('https://uselessfacts.jsph.pl/random.json')
+			.query({ language: 'en' })
 			.set({ 'User-Agent': 'TanakaBot 1.0.0 (https://github.com/1chiSensei/Tanaka)' });
 
 		const embed = new MessageEmbed()
-			.setDescription(`\`\`\`${body.fact}\`\`\``)
+			.setDescription(`\`\`\`${body.text}\`\`\``)
 			.setFooter(
 				`Requested by ${msg.author.tag}`,
 				msg.author.displayAvatarURL({ dynamic: true, size: 4096 }),
 			)
+			.setColor('RANDOM')
 			.setTimestamp();
 
 		return message.edit(embed);

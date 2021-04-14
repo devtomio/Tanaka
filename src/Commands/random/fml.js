@@ -31,6 +31,7 @@ module.exports = class FMLCommand extends Command {
 				`Requested by ${msg.author.tag}`,
 				msg.author.displayAvatarURL({ dynamic: true, size: 4096 }),
 			)
+			.setColor('RANDOM')
 			.setTimestamp();
 
 		return message.edit(embed);
