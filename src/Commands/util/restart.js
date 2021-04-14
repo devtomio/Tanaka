@@ -15,7 +15,7 @@ module.exports = class RestartCommand extends Command {
 	}
 
 	async run(msg) {
-		await msg.react(':white_check_mark:');
+		await msg.say('Byee!');
 		process.exit();
 	}
 };
