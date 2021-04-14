@@ -27,7 +27,7 @@ module.exports = class InfoCommand extends Command {
 			.setThumbnail(this.client.user.displayAvatarURL({ size: 4096 }))
 			.setColor('RANDOM')
 			.addField('General', [
-				`**❯ Client:** ${this.client.user.tag} (${this.client.user.id})`,
+				`**❯ Client:** ${this.client.user.tag} \`(${this.client.user.id})\``,
 				`**❯ Commands:** ${this.client.registry.commands.size}`,
 				`**❯ Guilds:** ${this.client.guilds.cache.size.toLocaleString()}`,
 				`**❯ Users:** ${this.client.guilds.cache
