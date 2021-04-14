@@ -71,6 +71,6 @@ module.exports = class InfoCommand extends Command {
 	getCommitHash() {
 		const commitHash = execSync('git rev-parse --short HEAD', { timeout: 15000, encoding: 'utf-8' });
 
-		return commitHash;
+		return commitHash.trim();
 	}
 };
