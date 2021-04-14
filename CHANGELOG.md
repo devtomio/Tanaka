@@ -1,3 +1,10 @@
+## [1.6.5](https://github.com/1chiSensei/Tanaka/compare/1.6.4...1.6.5) (2021-04-14)
+
+
+### Bug Fixes
+
+* **commands:** fix restart command ([c414c40](https://github.com/1chiSensei/Tanaka/commit/c414c405d5da7924077f08749509f947e12b2345))
+
 ## [1.6.4](https://github.com/1chiSensei/Tanaka/compare/1.6.3...1.6.4) (2021-04-14)
 
 
