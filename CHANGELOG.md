@@ -1,3 +1,5 @@
+## [1.7.3](https://github.com/1chiSensei/Tanaka/compare/1.7.2...1.7.3) (2021-04-14)
+
 ## [1.7.2](https://github.com/1chiSensei/Tanaka/compare/1.7.1...1.7.2) (2021-04-14)
 
 ### Bug Fixes
