@@ -1,13 +1,9 @@
-const { REDISHOST, REDISPASSWORD, REDISPORT, REDISUSER } = process.env;
+const { REDIS_URL } = process.env;
 const Redis = require('ioredis');
 
 module.exports = class RedisClient {
 	constructor(client) {
-		this.db = new Redis({
-			port: REDISPORT,
-			host: REDISHOST,
-			password: REDISPASSWORD,
-			username: REDISUSER,
+		this.db = new Redis(REDIS_URL, {
 			enableReadyCheck: true,
 			db: 0,
 		});
