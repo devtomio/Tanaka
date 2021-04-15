@@ -1,5 +1,5 @@
 const { Command } = require('discord.js-commando');
-const { MessageEmbed, MessageAttachment } = require('discord.js');
+const { MessageEmbed } = require('discord.js');
 const request = require('node-superfetch');
 
 module.exports = class CatCommand extends Command {
