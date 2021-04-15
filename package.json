@@ -27,7 +27,8 @@
 		"mongodb": "3.6.6",
 		"ms": "2.1.3",
 		"node-superfetch": "0.2.2",
-		"quickmongo": "3.0.2"
+		"quickmongo": "3.0.2",
+		"rss-feed-emitter": "^3.2.2"
 	},
 	"devDependencies": {
 		"@release-it/conventional-changelog": "2.0.1",
