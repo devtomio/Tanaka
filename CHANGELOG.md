@@ -1,3 +1,10 @@
+## [1.14.2](https://github.com/1chiSensei/Tanaka/compare/1.14.1...1.14.2) (2021-04-15)
+
+
+### Bug Fixes
+
+* **commands:** fix npm ([d299f7b](https://github.com/1chiSensei/Tanaka/commit/d299f7b7b9020498719075a125acf333fff4e39d))
+
 ## [1.14.1](https://github.com/1chiSensei/Tanaka/compare/1.14.0...1.14.1) (2021-04-15)
 
 ### Bug Fixes
