@@ -68,16 +68,20 @@ module.exports = class NPMCommand extends Command {
 			.addField('❯ Version', data.version ?? 'Unknown', true)
 			.addField('❯ Author', data.author ? data.author.name : 'Unknown', true)
 			.addField('❯ License', data.license ?? 'None', true)
-			.addField('❯ Modification Date', moment(data.date).format('MMMM Do YYYY, h:mm:ss a'), true)
+			.addField(
+				'❯ Modification Date',
+				moment(data.date).format('MMMM Do YYYY, h:mm:ss a') ?? 'Unknown',
+				true,
+			)
 			.addField('❯ Dependents', npm.dependentsCount ?? '0', true)
 			.addField('❯ README Size', formatBytes(source.files.readmeSize) ?? 'No README', true)
-			.addField('❯ Quality', toPercent(dat.score.detail.quality), true)
-			.addField('❯ Popularity', toPercent(dat.score.detail.popularity), true)
-			.addField('❯ Maintenance', toPercent(dat.score.detail.maintenance), true)
+			.addField('❯ Quality', toPercent(dat.score.detail.quality) ?? 'Unknown', true)
+			.addField('❯ Popularity', toPercent(dat.score.detail.popularity) ?? 'Unknown', true)
+			.addField('❯ Maintenance', toPercent(dat.score.detail.maintenance) ?? 'Unknown', true)
 			.addField('❯ Maintainers', maintainers.join(', ') ?? 'None')
 			.addField('❯ Dependencies', dependencies.join(', ') ?? 'None')
 			.addField('❯ Dev Dependencies', devDependencies.join(', ') ?? 'None')
-			.setFooter(data.keywords.join('\n') ?? '')
+			.setFooter(data.keywords.join('\n') ?? 'No Keywords')
 			.setColor('#cb3837')
 			.setTimestamp();
 

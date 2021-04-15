@@ -47,7 +47,7 @@ module.exports = class AnimeCommand extends Command {
 				.addField('❯ Rating', result.rating ?? 'Unknown', true)
 				.addField('❯ Rank', result.ranked ?? 'Unknown', true)
 				.addField('❯ Popularity', result.popularity ?? 'Unknown', true)
-				.setFooter(result.genres.join(', ') ?? '')
+				.setFooter(result.genres.join(', ') ?? 'No Genres')
 				.setColor('#2e51a2')
 				.setURL(result.url)
 				.setTimestamp();

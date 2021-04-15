@@ -1,9 +1,8 @@
 ## [1.16.1](https://github.com/1chiSensei/Tanaka/compare/1.16.0...1.16.1) (2021-04-15)
 
-
 ### Bug Fixes
 
-* **rss:** change lib ([e767b93](https://github.com/1chiSensei/Tanaka/commit/e767b93488e4460222e1abc74361529431c9311d))
+- **rss:** change lib ([e767b93](https://github.com/1chiSensei/Tanaka/commit/e767b93488e4460222e1abc74361529431c9311d))
 
 # [1.16.0](https://github.com/1chiSensei/Tanaka/compare/1.14.2...1.16.0) (2021-04-15)
 

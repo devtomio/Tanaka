@@ -1,7 +1,7 @@
 const { CommandoClient } = require('discord.js-commando');
+const { Intents, WebhookClient } = require('discord.js');
 const { FeedEmitter } = require('rss-emitter-ts');
 const { Database } = require('quickmongo');
-const { Intents } = require('discord.js');
 const consola = require('consola');
 
 module.exports = class Client extends CommandoClient {
@@ -23,6 +23,8 @@ module.exports = class Client extends CommandoClient {
 		});
 
 		this.rss = new FeedEmitter();
+
+		this.testWebhook = new WebhookClient(process.env.TEST_WEBHOOK_ID, process.env.TEST_WEBHOOK_TOKEN);
 	}
 
 	async login(token = process.env.DISCORD_TOKEN) {
@@ -33,7 +35,7 @@ module.exports = class Client extends CommandoClient {
 
 	addRSSListeners() {
 		const feeds = [
-			{ url: 'https://crunchyroll.com/rss', refresh: 20000, eventName: 'anime:crunchyroll' },
+			{ url: 'https://www.crunchyroll.com/rss', refresh: 20000, eventName: 'anime:crunchyroll' },
 			{ url: 'https://myanimelist.net/rss/news.xml', refresh: 20000, eventName: 'anime:mal' },
 		];
 
