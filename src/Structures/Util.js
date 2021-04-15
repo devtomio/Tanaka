@@ -2,6 +2,8 @@ const escapeRegex = (str) => str.replace(/[|\\{}()[}^$+*?.]/g, '\\$&');
 
 const toPercent = (int) => `${Math.round(parseInt(int) * 100)}%`;
 
+const shorten = (text, maxLen = 2000) => (text.length > maxLen ? `${text.substr(0, maxLen - 3)}...` : text);
+
 const formatBytes = (bytes) => {
 	if (bytes === 0) return '0 Bytes';
 
@@ -114,4 +116,5 @@ module.exports = {
 	regions,
 	permissions,
 	toPercent,
+	shorten,
 };

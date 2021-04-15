@@ -1,8 +1,10 @@
 const { CommandoClient } = require('discord.js-commando');
 const { Intents, WebhookClient } = require('discord.js');
 const { FeedEmitter } = require('rss-emitter-ts');
+const TimerManager = require('./TimerManager');
 const { Database } = require('quickmongo');
 const consola = require('consola');
+const Redis = require('./Redis');
 
 module.exports = class Client extends CommandoClient {
 	constructor() {
@@ -25,6 +27,10 @@ module.exports = class Client extends CommandoClient {
 		this.rss = new FeedEmitter();
 
 		this.testWebhook = new WebhookClient(process.env.TEST_WEBHOOK_ID, process.env.TEST_WEBHOOK_TOKEN);
+
+		this.redis = new Redis(this).db;
+
+		this.timers = new TimerManager(this);
 	}
 
 	async login(token = process.env.DISCORD_TOKEN) {

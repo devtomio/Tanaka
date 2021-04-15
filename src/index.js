@@ -19,6 +19,7 @@ client.registry
 		{ id: 'random', name: 'Random Response' },
 		{ id: 'info', name: 'Information' },
 		{ id: 'search', name: 'Search' },
+		{ id: 'remind', name: 'Reminder' },
 	])
 	.registerDefaultGroups()
 	.registerDefaultCommands({
@@ -27,9 +28,12 @@ client.registry
 		eval: false,
 		ping: false,
 	})
+	.registerTypesIn(path.join(__dirname, 'Types'))
 	.registerCommandsIn(path.join(__dirname, 'Commands'));
 
-client.once('ready', () => {
+client.once('ready', async () => {
+	await client.timers.fetchAll();
+
 	const userCount = client.guilds.cache.reduce((a, b) => a + b.memberCount, 0);
 	const commandCount = client.registry.commands.size;
 	const guildCount = client.guilds.cache.size;

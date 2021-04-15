@@ -32,6 +32,11 @@ module.exports = class AnimeCommand extends Command {
 			const result = await mal.getInfoFromName(anime);
 
 			const embed = new MessageEmbed()
+				.setAuthor(
+					'MyAnimeList',
+					'https://upload.wikimedia.org/wikipedia/commons/7/7a/MyAnimeList_Logo.png',
+					'https://myanimelist.net',
+				)
 				.setTitle(result.title)
 				.setDescription(result.synopsis ?? 'No Synopsis')
 				.setThumbnail(result.picture ?? '')

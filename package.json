@@ -22,13 +22,15 @@
 		"consola": "2.15.3",
 		"discord.js": "github:discordjs/discord.js",
 		"discord.js-commando": "github:1chiSensei/Commando#patch-1",
+		"ioredis": "^4.26.0",
 		"mal-scraper": "^2.11.3",
 		"moment": "2.29.1",
 		"mongodb": "3.6.6",
 		"ms": "2.1.3",
 		"node-superfetch": "0.2.2",
 		"quickmongo": "3.0.2",
-		"rss-emitter-ts": "^0.4.6"
+		"rss-emitter-ts": "^0.4.6",
+		"sherlockjs": "^1.4.0"
 	},
 	"devDependencies": {
 		"@release-it/conventional-changelog": "2.0.1",
