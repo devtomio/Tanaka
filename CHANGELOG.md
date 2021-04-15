@@ -1,3 +1,10 @@
+# [1.16.0](https://github.com/1chiSensei/Tanaka/compare/1.14.2...1.16.0) (2021-04-15)
+
+
+### Features
+
+* **rss:** add rss anime feed ([09d4d49](https://github.com/1chiSensei/Tanaka/commit/09d4d49594dd428ab6ae60d87132e06d0c49f5cc))
+
 # [1.15.0](https://github.com/1chiSensei/Tanaka/compare/1.14.2...1.15.0) (2021-04-15)
 
 
