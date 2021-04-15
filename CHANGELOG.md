@@ -1,9 +1,8 @@
 ## [1.16.2](https://github.com/1chiSensei/Tanaka/compare/1.16.1...1.16.2) (2021-04-15)
 
-
 ### Bug Fixes
 
-* **commands:** fix npm command ([893610f](https://github.com/1chiSensei/Tanaka/commit/893610ffbe2c7bfc8099c228933c7db804e90e17))
+- **commands:** fix npm command ([893610f](https://github.com/1chiSensei/Tanaka/commit/893610ffbe2c7bfc8099c228933c7db804e90e17))
 
 ## [1.16.1](https://github.com/1chiSensei/Tanaka/compare/1.16.0...1.16.1) (2021-04-15)
 
