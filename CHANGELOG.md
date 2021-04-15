@@ -1,9 +1,8 @@
 ## [1.11.2](https://github.com/1chiSensei/Tanaka/compare/1.11.1...1.11.2) (2021-04-15)
 
-
 ### Bug Fixes
 
-* **commands:** fix fml command ([344726e](https://github.com/1chiSensei/Tanaka/commit/344726ed4dae6682b4dcc874fcff07410633a473))
+- **commands:** fix fml command ([344726e](https://github.com/1chiSensei/Tanaka/commit/344726ed4dae6682b4dcc874fcff07410633a473))
 
 ## [1.11.1](https://github.com/1chiSensei/Tanaka/compare/1.11.0...1.11.1) (2021-04-15)
 

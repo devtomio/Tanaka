@@ -1,16 +1,15 @@
 const { Command } = require('discord.js-commando');
 const { MessageEmbed } = require('discord.js');
 const request = require('node-superfetch');
-const cheerio = require('cheerio');
 
-module.exports = class FMLCommand extends Command {
+module.exports = class FoxCommand extends Command {
 	constructor(client) {
 		super(client, {
-			name: 'fml',
-			aliases: ['fuck-my-life'],
+			name: 'fox',
+			aliases: ['random-fox'],
 			group: 'random',
-			memberName: 'fml',
-			description: 'Responds with a random FML quote.',
+			memberName: 'fox',
+			description: 'Responds with a random cat image.',
 			clientPermissions: ['EMBED_LINKS'],
 			throttling: {
 				usages: 5,
@@ -22,15 +21,12 @@ module.exports = class FMLCommand extends Command {
 	async run(msg) {
 		const message = await msg.embed({ description: 'Fetching....' });
 
-		const { text } = await request
-			.get('https://fmylife.com/random')
+		const { body } = await request
+			.get('https://some-random-api.ml/img/fox')
 			.set({ 'User-Agent': 'TanakaBot 1.0.0 (https://github.com/1chiSensei/Tanaka)' });
 
-		const $ = cheerio.load(text, { normalizeWhitespace: true });
-		const fml = $('a.article-link').first().text().trim();
-
 		const embed = new MessageEmbed()
-			.setDescription(`\`\`\`\n${fml}\n\`\`\``)
+			.setImage(body.link)
 			.setFooter(
 				`Requested by ${msg.author.tag}`,
 				msg.author.displayAvatarURL({ dynamic: true, size: 4096 }),
