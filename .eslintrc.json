@@ -6,6 +6,7 @@
 		"quote-props": "off",
 		"no-mixed-operators": "off",
 		"indent": "off",
-		"newline-per-chained-call": "off"
+		"newline-per-chained-call": "off",
+		"radix": "off"
 	}
 }

@@ -1,5 +1,7 @@
 const escapeRegex = (str) => str.replace(/[|\\{}()[}^$+*?.]/g, '\\$&');
 
+const toPercent = (int) => `${Math.round(parseInt(int) * 100)}%`;
+
 const formatBytes = (bytes) => {
 	if (bytes === 0) return '0 Bytes';
 
@@ -111,4 +113,5 @@ module.exports = {
 	verificationLevels,
 	regions,
 	permissions,
+	toPercent,
 };

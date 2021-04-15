@@ -18,6 +18,10 @@ module.exports = class AnimeCommand extends Command {
 					type: 'string',
 				},
 			],
+			throttling: {
+				usages: 5,
+				duration: 15,
+			},
 		});
 	}
 
@@ -31,20 +35,20 @@ module.exports = class AnimeCommand extends Command {
 				.setTitle(result.title)
 				.setDescription(result.synopsis ?? 'No Synopsis')
 				.setThumbnail(result.picture ?? '')
-				.addField('Trailer', result.trailer ?? 'No Trailer', true)
-				.addField('English Title', result.englishTitle ?? 'None', true)
-				.addField('Type', result.type, true)
-				.addField('Episodes', result.episodes ?? '0', true)
-				.addField('Status', result.status ?? 'Unknown', true)
-				.addField('Aired', result.aired ?? 'Unknown', true)
-				.addField('Premiered', result.premiered ?? 'Unknown', true)
-				.addField('Source', result.source ?? 'Unknown', true)
-				.addField('Duration', result.duration ?? 'Unknown', true)
-				.addField('Rating', result.rating ?? 'Unknown', true)
-				.addField('Rank', result.ranked ?? 'Unknown', true)
-				.addField('Popularity', result.popularity ?? 'Unknown', true)
+				.addField('❯ Trailer', result.trailer ?? 'No Trailer', true)
+				.addField('❯ English Title', result.englishTitle ?? 'None', true)
+				.addField('❯ Type', result.type, true)
+				.addField('❯ Episodes', result.episodes ?? '0', true)
+				.addField('❯ Status', result.status ?? 'Unknown', true)
+				.addField('❯ Aired', result.aired ?? 'Unknown', true)
+				.addField('❯ Premiered', result.premiered ?? 'Unknown', true)
+				.addField('❯ Source', result.source ?? 'Unknown', true)
+				.addField('❯ Duration', result.duration ?? 'Unknown', true)
+				.addField('❯ Rating', result.rating ?? 'Unknown', true)
+				.addField('❯ Rank', result.ranked ?? 'Unknown', true)
+				.addField('❯ Popularity', result.popularity ?? 'Unknown', true)
 				.setFooter(result.genres.join(', ') ?? '')
-				.setColor('RANDOM')
+				.setColor('#2e51a2')
 				.setURL(result.url)
 				.setTimestamp();
 
