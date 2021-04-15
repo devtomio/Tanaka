@@ -26,7 +26,7 @@ module.exports = class CatCommand extends Command {
 			.set({ 'User-Agent': 'TanakaBot 1.0.0 (https://github.com/1chiSensei/Tanaka)' });
 
 		const embed = new MessageEmbed()
-			.setImage(`https://catass.com${body.url}`)
+			.setImage(`https://cataas.com${body.url}`)
 			.setFooter(
 				`Requested by ${msg.author.tag}`,
 				msg.author.displayAvatarURL({ dynamic: true, size: 4096 }),

@@ -1,9 +1,8 @@
 ## [1.9.2](https://github.com/1chiSensei/Tanaka/compare/1.9.1...1.9.2) (2021-04-15)
 
-
 ### Bug Fixes
 
-* **commands:** i hope this will fix it ([163a283](https://github.com/1chiSensei/Tanaka/commit/163a283a3ee3c26e0c9753cb041f4d5d64b87a5b))
+- **commands:** i hope this will fix it ([163a283](https://github.com/1chiSensei/Tanaka/commit/163a283a3ee3c26e0c9753cb041f4d5d64b87a5b))
 
 ## [1.9.1](https://github.com/1chiSensei/Tanaka/compare/1.9.0...1.9.1) (2021-04-15)
 
