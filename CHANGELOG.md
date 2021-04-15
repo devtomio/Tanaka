@@ -1,3 +1,5 @@
+## [1.11.1](https://github.com/1chiSensei/Tanaka/compare/1.11.0...1.11.1) (2021-04-15)
+
 # [1.11.0](https://github.com/1chiSensei/Tanaka/compare/1.10.0...1.11.0) (2021-04-15)
 
 
