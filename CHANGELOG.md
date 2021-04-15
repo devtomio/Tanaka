@@ -1,3 +1,10 @@
+## [1.14.1](https://github.com/1chiSensei/Tanaka/compare/1.14.0...1.14.1) (2021-04-15)
+
+
+### Bug Fixes
+
+* **commands:** fix undefined error on npm ([df82773](https://github.com/1chiSensei/Tanaka/commit/df8277387f9dd55a6425dfe579210bbe7faef647))
+
 # [1.14.0](https://github.com/1chiSensei/Tanaka/compare/1.13.1...1.14.0) (2021-04-15)
 
 ### Features
