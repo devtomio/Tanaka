@@ -21,13 +21,12 @@ module.exports = class CatCommand extends Command {
 	async run(msg) {
 		const message = await msg.embed({ description: 'Fetching....' });
 
-		const { raw } = await request
-			.get('https://cataas.com/cat/gif')
+		const { body } = await request
+			.get('https://cataas.com/cat?json=true')
 			.set({ 'User-Agent': 'TanakaBot 1.0.0 (https://github.com/1chiSensei/Tanaka)' });
 
 		const embed = new MessageEmbed()
-			.attachFiles(new MessageAttachment(raw, 'cat.gif'))
-			.setImage('attachment://cat.gif')
+			.setImage(`https://catass.com${body.url}`)
 			.setFooter(
 				`Requested by ${msg.author.tag}`,
 				msg.author.displayAvatarURL({ dynamic: true, size: 4096 }),
