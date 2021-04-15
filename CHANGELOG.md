@@ -1,11 +1,10 @@
 # [1.12.0](https://github.com/1chiSensei/Tanaka/compare/1.11.2...1.12.0) (2021-04-15)
 
-
 ### Features
 
-* **commands:** add fox command ([aa2dc8a](https://github.com/1chiSensei/Tanaka/commit/aa2dc8ab22c6b75309fec003981d39133e50a0a6))
-* **commands:** add koala command ([d459b3a](https://github.com/1chiSensei/Tanaka/commit/d459b3a26f4704a7c07ecbfc2a55e9f8e719e655))
-* **commands:** add panda command ([a32cf73](https://github.com/1chiSensei/Tanaka/commit/a32cf7398654bb9f39018cc2949884aeab5535bf))
+- **commands:** add fox command ([aa2dc8a](https://github.com/1chiSensei/Tanaka/commit/aa2dc8ab22c6b75309fec003981d39133e50a0a6))
+- **commands:** add koala command ([d459b3a](https://github.com/1chiSensei/Tanaka/commit/d459b3a26f4704a7c07ecbfc2a55e9f8e719e655))
+- **commands:** add panda command ([a32cf73](https://github.com/1chiSensei/Tanaka/commit/a32cf7398654bb9f39018cc2949884aeab5535bf))
 
 ## [1.11.2](https://github.com/1chiSensei/Tanaka/compare/1.11.1...1.11.2) (2021-04-15)
 

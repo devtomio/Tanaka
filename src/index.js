@@ -15,9 +15,10 @@ client.setProvider(
 client.registry
 	.registerDefaultTypes()
 	.registerGroups([
-		{ id: 'util', name: 'Utility' },
+		{ id: 'util', name: 'Utility', guarded: true },
 		{ id: 'random', name: 'Random Response' },
 		{ id: 'info', name: 'Information' },
+		{ id: 'search', name: 'Search' },
 	])
 	.registerDefaultGroups()
 	.registerDefaultCommands({
