@@ -1,3 +1,12 @@
+## [1.9.1](https://github.com/1chiSensei/Tanaka/compare/1.9.0...1.9.1) (2021-04-15)
+
+
+### Bug Fixes
+
+* **commands:** fix cat ([89cecd2](https://github.com/1chiSensei/Tanaka/commit/89cecd27e8edc564618506c7d6d539ff44f010f9))
+* **commands:** fix cat cmd ([faba75c](https://github.com/1chiSensei/Tanaka/commit/faba75cb8a906781e0d16c97496d5acf7d276cd7))
+* **commands:** meow ([ea27076](https://github.com/1chiSensei/Tanaka/commit/ea27076fcf2190d460ed20ac18587b583178045f))
+
 # [1.9.0](https://github.com/1chiSensei/Tanaka/compare/1.8.2...1.9.0) (2021-04-14)
 
 
