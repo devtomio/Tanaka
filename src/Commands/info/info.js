@@ -43,7 +43,6 @@ module.exports = class InfoCommand extends Command {
 				`**❯ Commit Hash:** \`${this.getCommitHash()}\``,
 				'**❯ Repository:** <https://github.com/1chiSensei/Tanaka>',
 				'**❯ Invite:** <https://bit.ly/3tjCdxr>',
-				`**❯ Support Server:** <${process.env.SUPPORT_SERVER}>`,
 				'\u200b',
 			])
 			.addField('System', [

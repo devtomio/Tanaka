@@ -1,9 +1,8 @@
 # [1.13.0](https://github.com/1chiSensei/Tanaka/compare/1.12.0...1.13.0) (2021-04-15)
 
-
 ### Features
 
-* **commands:** add anime cmd ([7c58c5a](https://github.com/1chiSensei/Tanaka/commit/7c58c5a33159695ab828e34ca513960df94c17ad))
+- **commands:** add anime cmd ([7c58c5a](https://github.com/1chiSensei/Tanaka/commit/7c58c5a33159695ab828e34ca513960df94c17ad))
 
 # [1.12.0](https://github.com/1chiSensei/Tanaka/compare/1.11.2...1.12.0) (2021-04-15)
 
