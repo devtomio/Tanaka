@@ -54,11 +54,11 @@ client.db.on('debug', client.logger.debug);
 client.db.on('error', (e) => client.logger.error(e.stack));
 
 client.rss.on('item:new:anime:crunchyroll', (item) => {
-	client.testWebhook.send(`${item}`);
+	client.testWebhook.send(JSON.stringify(item));
 });
 
 client.rss.on('item:new:anime:mal', (item) => {
-	client.testWebhook.send(`${item}`);
+	client.testWebhook.send(JSON.stringify(item));
 });
 
 client.login();

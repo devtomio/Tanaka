@@ -1,9 +1,8 @@
 ## [1.16.3](https://github.com/1chiSensei/Tanaka/compare/1.16.2...1.16.3) (2021-04-15)
 
-
 ### Bug Fixes
 
-* **rss:** fix `[Object object]` ([9116a4f](https://github.com/1chiSensei/Tanaka/commit/9116a4f89ebd68c49814e0ecabe068f822d4a660))
+- **rss:** fix `[Object object]` ([9116a4f](https://github.com/1chiSensei/Tanaka/commit/9116a4f89ebd68c49814e0ecabe068f822d4a660))
 
 ## [1.16.2](https://github.com/1chiSensei/Tanaka/compare/1.16.1...1.16.2) (2021-04-15)
 

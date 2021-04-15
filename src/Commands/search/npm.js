@@ -48,8 +48,8 @@ module.exports = class NPMCommand extends Command {
 		const data = dat.collected.metadata;
 		const { source, npm } = dat.collected;
 
-		const depsMap = data.dependencies ?? null;
-		const devDepsMap = data.devDependencies ?? null;
+		const depsMap = data.dependencies || null;
+		const devDepsMap = data.devDependencies || null;
 
 		if (depsMap !== null) for (const deps of Object.keys(depsMap)) dependencies.push(deps);
 		if (devDepsMap !== null) for (const devDeps of Object.keys(devDepsMap)) devDependencies.push(devDeps);
@@ -65,23 +65,23 @@ module.exports = class NPMCommand extends Command {
 			.setTitle(data.name)
 			.setURL(data.links.npm)
 			.setDescription(data.description)
-			.addField('❯ Version', data.version ?? 'Unknown', true)
+			.addField('❯ Version', data.version || 'Unknown', true)
 			.addField('❯ Author', data.author ? data.author.name : 'Unknown', true)
-			.addField('❯ License', data.license ?? 'None', true)
+			.addField('❯ License', data.license || 'None', true)
 			.addField(
 				'❯ Modification Date',
-				moment(data.date).format('MMMM Do YYYY, h:mm:ss a') ?? 'Unknown',
+				moment(data.date).format('MMMM Do YYYY, h:mm:ss a') || 'Unknown',
 				true,
 			)
-			.addField('❯ Dependents', npm.dependentsCount ?? '0', true)
-			.addField('❯ README Size', formatBytes(source.files.readmeSize) ?? 'No README', true)
-			.addField('❯ Quality', toPercent(dat.score.detail.quality) ?? 'Unknown', true)
-			.addField('❯ Popularity', toPercent(dat.score.detail.popularity) ?? 'Unknown', true)
-			.addField('❯ Maintenance', toPercent(dat.score.detail.maintenance) ?? 'Unknown', true)
-			.addField('❯ Maintainers', maintainers.join(', ') ?? 'None')
-			.addField('❯ Dependencies', dependencies.join(', ') ?? 'None')
-			.addField('❯ Dev Dependencies', devDependencies.join(', ') ?? 'None')
-			.setFooter(data.keywords.join('\n') ?? 'No Keywords')
+			.addField('❯ Dependents', npm.dependentsCount || '0', true)
+			.addField('❯ README Size', formatBytes(source.files.readmeSize) || 'No README', true)
+			.addField('❯ Quality', toPercent(dat.score.detail.quality) || 'Unknown', true)
+			.addField('❯ Popularity', toPercent(dat.score.detail.popularity) || 'Unknown', true)
+			.addField('❯ Maintenance', toPercent(dat.score.detail.maintenance) || 'Unknown', true)
+			.addField('❯ Maintainers', maintainers.join(', ') || 'None')
+			.addField('❯ Dependencies', dependencies.join(', ') || 'None')
+			.addField('❯ Dev Dependencies', devDependencies.join(', ') || 'None')
+			.setFooter(data.keywords.join('\n') || 'No Keywords')
 			.setColor('#cb3837')
 			.setTimestamp();
 
