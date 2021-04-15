@@ -35,8 +35,11 @@ module.exports = class Client extends CommandoClient {
 
 	addRSSListeners() {
 		const feeds = [
-			{ url: 'https://www.crunchyroll.com/rss', refresh: 20000, eventName: 'anime:crunchyroll' },
-			{ url: 'https://myanimelist.net/rss/news.xml', refresh: 20000, eventName: 'anime:mal' },
+			{
+				url: 'https://www.animenewsnetwork.com/all/rss.xml?ann-edition=us',
+				refresh: 20000,
+				eventName: 'anime',
+			},
 		];
 
 		feeds.forEach((feed) => this.rss.add(feed));
