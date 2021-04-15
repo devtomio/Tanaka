@@ -1,7 +1,7 @@
 const { CommandoClient } = require('discord.js-commando');
+const { FeedEmitter } = require('rss-emitter-ts');
 const { Database } = require('quickmongo');
 const { Intents } = require('discord.js');
-const RSSFeedEmitter = require('rss-feed-emitter');
 const consola = require('consola');
 
 module.exports = class Client extends CommandoClient {
@@ -22,12 +22,21 @@ module.exports = class Client extends CommandoClient {
 			level: 5,
 		});
 
-		this.rss = new RSSFeedEmitter({
-			userAgent: 'TanakaBot 1.0.0 (https://github.com/1chiSensei/Tanaka)',
-		}).add({ url: 'https://www.crunchyroll.com/rss', refresh: 2000, eventName: 'anime-crunchyroll' });
+		this.rss = new FeedEmitter();
 	}
 
 	async login(token = process.env.DISCORD_TOKEN) {
+		this.addRSSListeners();
+
 		return super.login(token);
+	}
+
+	addRSSListeners() {
+		const feeds = [
+			{ url: 'https://crunchyroll.com/rss', refresh: 20000, eventName: 'anime:crunchyroll' },
+			{ url: 'https://myanimelist.net/rss/news.xml', refresh: 20000, eventName: 'anime:mal' },
+		];
+
+		feeds.forEach((feed) => this.rss.add(feed));
 	}
 };
