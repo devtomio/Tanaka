@@ -2,14 +2,14 @@ const { Command } = require('discord.js-commando');
 const { MessageEmbed } = require('discord.js');
 const request = require('node-superfetch');
 
-module.exports = class FoxCommand extends Command {
+module.exports = class PandaCommand extends Command {
 	constructor(client) {
 		super(client, {
-			name: 'fox',
-			aliases: ['random-fox'],
+			name: 'panda',
+			aliases: ['random-panda'],
 			group: 'random',
-			memberName: 'fox',
-			description: 'Responds with a random fox image.',
+			memberName: 'panda',
+			description: 'Responds with a random panda image.',
 			clientPermissions: ['EMBED_LINKS'],
 			throttling: {
 				usages: 5,
@@ -22,7 +22,7 @@ module.exports = class FoxCommand extends Command {
 		const message = await msg.embed({ description: 'Fetching....' });
 
 		const { body } = await request
-			.get('https://some-random-api.ml/img/fox')
+			.get('https://some-random-api.ml/img/panda')
 			.set({ 'User-Agent': 'TanakaBot 1.0.0 (https://github.com/1chiSensei/Tanaka)' });
 
 		const embed = new MessageEmbed()
