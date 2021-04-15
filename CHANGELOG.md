@@ -1,3 +1,10 @@
+# [1.10.0](https://github.com/1chiSensei/Tanaka/compare/1.9.3...1.10.0) (2021-04-15)
+
+
+### Features
+
+* **commands:** add dog command ([00c08ab](https://github.com/1chiSensei/Tanaka/commit/00c08aba4879e9fec113f0a0c62afb6e368a86b7))
+
 ## [1.9.3](https://github.com/1chiSensei/Tanaka/compare/1.9.2...1.9.3) (2021-04-15)
 
 ### Bug Fixes
