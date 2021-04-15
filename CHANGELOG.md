@@ -1,9 +1,8 @@
 ## [1.9.3](https://github.com/1chiSensei/Tanaka/compare/1.9.2...1.9.3) (2021-04-15)
 
-
 ### Bug Fixes
 
-* **commands:** change `ass` to `aas` in cat cmd ([5f4eef0](https://github.com/1chiSensei/Tanaka/commit/5f4eef0da4137212131dd3b96d9710ef4c250a12))
+- **commands:** change `ass` to `aas` in cat cmd ([5f4eef0](https://github.com/1chiSensei/Tanaka/commit/5f4eef0da4137212131dd3b96d9710ef4c250a12))
 
 ## [1.9.2](https://github.com/1chiSensei/Tanaka/compare/1.9.1...1.9.2) (2021-04-15)
 
