@@ -1,6 +1,7 @@
 const { Command } = require('discord.js-commando');
 const { MessageEmbed } = require('discord.js');
 const request = require('node-superfetch');
+const cheerio = require('cheerio');
 
 module.exports = class FMLCommand extends Command {
 	constructor(client) {
@@ -21,12 +22,15 @@ module.exports = class FMLCommand extends Command {
 	async run(msg) {
 		const message = await msg.say('Fetching....');
 
-		const { body } = await request
-			.get('https://api.1chi.tk/fml')
+		const { text } = await request
+			.get('https://fmylife.com/random')
 			.set({ 'User-Agent': 'TanakaBot 1.0.0 (https://github.com/1chiSensei/Tanaka)' });
 
+		const $ = cheerio.load(text, { normalizeWhitespace: true });
+		const fml = $('a.article-link').first().text().trim();
+
 		const embed = new MessageEmbed()
-			.setDescription(`\`\`\`\n${body.quote}\n\`\`\``)
+			.setDescription(`\`\`\`\n${fml}\n\`\`\``)
 			.setFooter(
 				`Requested by ${msg.author.tag}`,
 				msg.author.displayAvatarURL({ dynamic: true, size: 4096 }),

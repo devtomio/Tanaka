@@ -5,6 +5,7 @@
 		"arrow-parens": "off",
 		"quote-props": "off",
 		"no-mixed-operators": "off",
-		"indent": "off"
+		"indent": "off",
+		"newline-per-chained-call": "off"
 	}
 }

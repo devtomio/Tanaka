@@ -2,11 +2,10 @@
 
 # [1.11.0](https://github.com/1chiSensei/Tanaka/compare/1.10.0...1.11.0) (2021-04-15)
 
-
 ### Features
 
-* **commands:** add bird command ([94b8558](https://github.com/1chiSensei/Tanaka/commit/94b8558031c7181bfece754fcc05d5ff9596226a))
-* **commands:** add shiba command ([e7a05c8](https://github.com/1chiSensei/Tanaka/commit/e7a05c85390a64a3b45c704da28302dc067dac10))
+- **commands:** add bird command ([94b8558](https://github.com/1chiSensei/Tanaka/commit/94b8558031c7181bfece754fcc05d5ff9596226a))
+- **commands:** add shiba command ([e7a05c8](https://github.com/1chiSensei/Tanaka/commit/e7a05c85390a64a3b45c704da28302dc067dac10))
 
 # [1.10.0](https://github.com/1chiSensei/Tanaka/compare/1.9.3...1.10.0) (2021-04-15)
 
