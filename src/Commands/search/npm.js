@@ -46,7 +46,7 @@ module.exports = class NPMCommand extends Command {
 		const dependencies = [];
 		const devDependencies = [];
 		const data = dat.collected.metadata;
-		const { score, npm, source } = dat;
+		const { score, npm, source } = dat.collected;
 
 		const depsMap = data.dependencies ?? null;
 		const devDepsMap = data.devDependencies ?? null;

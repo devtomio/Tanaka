@@ -1,9 +1,8 @@
 # [1.14.0](https://github.com/1chiSensei/Tanaka/compare/1.13.1...1.14.0) (2021-04-15)
 
-
 ### Features
 
-* **commands:** add npm command ([c0f9da6](https://github.com/1chiSensei/Tanaka/commit/c0f9da6884b0a1e223f080d271f66ecf16527f80))
+- **commands:** add npm command ([c0f9da6](https://github.com/1chiSensei/Tanaka/commit/c0f9da6884b0a1e223f080d271f66ecf16527f80))
 
 ## [1.13.1](https://github.com/1chiSensei/Tanaka/compare/1.13.0...1.13.1) (2021-04-15)
 
