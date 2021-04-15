@@ -46,7 +46,7 @@ module.exports = class NPMCommand extends Command {
 		const dependencies = [];
 		const devDependencies = [];
 		const data = dat.collected.metadata;
-		const { score, npm, source } = dat.collected;
+		const { source, npm } = dat.collected;
 
 		const depsMap = data.dependencies ?? null;
 		const devDepsMap = data.devDependencies ?? null;
@@ -71,9 +71,9 @@ module.exports = class NPMCommand extends Command {
 			.addField('❯ Modification Date', moment(data.date).format('MMMM Do YYYY, h:mm:ss a'), true)
 			.addField('❯ Dependents', npm.dependentsCount, true)
 			.addField('❯ README Size', formatBytes(source.files.readmeSize), true)
-			.addField('❯ Quality', toPercent(score.detail.quality), true)
-			.addField('❯ Popularity', toPercent(score.detail.popularity), true)
-			.addField('❯ Maintenance', toPercent(score.detail.maintenance), true)
+			.addField('❯ Quality', toPercent(dat.score.detail.quality), true)
+			.addField('❯ Popularity', toPercent(dat.score.detail.popularity), true)
+			.addField('❯ Maintenance', toPercent(dat.score.detail.maintenance), true)
 			.addField('❯ Maintainers', maintainers.join(', '))
 			.addField('❯ Dependencies', dependencies.join(', ') ?? 'None')
 			.addField('❯ Dev Dependencies', devDependencies.join(', ') ?? 'None')
