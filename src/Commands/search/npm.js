@@ -39,7 +39,7 @@ module.exports = class NPMCommand extends Command {
 		if (body.total === 0) return message.edit({ embed: { description: 'Could not find any results.' } });
 
 		const { body: dat } = await request
-			.get(`https://api.npms.io/v2/package/${body.results[0].name}`)
+			.get(`https://api.npms.io/v2/package/${body.results[0].package.name}`)
 			.set({ 'User-Agent': 'TanakaBot 1.0.0 (https://github.com/1chiSensei/Tanaka)' });
 
 		const maintainers = [];
@@ -81,7 +81,7 @@ module.exports = class NPMCommand extends Command {
 			.addField('❯ Maintainers', maintainers.join(', ') || 'None')
 			.addField('❯ Dependencies', dependencies.join(', ') || 'None')
 			.addField('❯ Dev Dependencies', devDependencies.join(', ') || 'None')
-			.setFooter(data.keywords.join('\n') || 'No Keywords')
+			.setFooter(data.keywords.join(', ') || 'No Keywords')
 			.setColor('#cb3837')
 			.setTimestamp();
 
