@@ -22,9 +22,6 @@ module.exports = class AnimeUpdatesCommand extends Command {
 	}
 
 	async run(msg, { channel }) {
-		if ((await this.client.db.get(`animeUpdates-${msg.guild.id}`)) !== undefined)
-			return msg.say('This guild has already an anime updates channel!');
-
 		const hook = await channel.createWebhook('Tanaka | Anime Updates', {
 			avatar: this.client.user.displayAvatarURL({ size: 4096 }),
 			reason: 'Anime Updates',
