@@ -1,9 +1,8 @@
 # [1.17.0](https://github.com/1chiSensei/Tanaka/compare/1.16.6...1.17.0) (2021-04-15)
 
-
 ### Features
 
-* **commands:** add reminder ([a00f781](https://github.com/1chiSensei/Tanaka/commit/a00f781edf8c7ad091e1130dcb3447f167253495))
+- **commands:** add reminder ([a00f781](https://github.com/1chiSensei/Tanaka/commit/a00f781edf8c7ad091e1130dcb3447f167253495))
 
 ## [1.16.6](https://github.com/1chiSensei/Tanaka/compare/1.16.5...1.16.6) (2021-04-15)
 

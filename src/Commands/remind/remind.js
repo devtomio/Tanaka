@@ -32,6 +32,6 @@ module.exports = class RemindCommand extends Command {
 
 		await this.client.timers.setTimer(msg.channel.id, timeMs, msg.author.id, title);
 
-		return msg.say(`Okay, I will remind you **"${title}"** ${display}`);
+		return msg.say(`Okay, I will remind you of **"${title}"** ${display}.`);
 	}
 };

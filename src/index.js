@@ -1,6 +1,7 @@
 const { MongoDBProvider } = require('commando-provider-mongo');
-const { MongoClient } = require('mongodb');
+const { stripIndents } = require('common-tags');
 const Client = require('./Structures/Client');
+const { MongoClient } = require('mongodb');
 const path = require('path');
 
 const client = new Client();
@@ -58,11 +59,13 @@ client.db.on('debug', client.logger.debug);
 client.db.on('error', (e) => client.logger.error(e.stack));
 
 client.rss.on('item:new:anime', (item) => {
-	client.testWebhook.send(
-		JSON.stringify(item, null, 2).length > 2000
-			? `${JSON.stringify(item, null, 2).substring(0, 1997)}...`
-			: JSON.stringify(item, null, 2),
-	);
+	client.testWebhook.send(stripIndents`
+		**${item.title}**
+		
+		${item.description}
+
+		[${item.link}]
+	`);
 });
 
 client.login();
