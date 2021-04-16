@@ -1748,7 +1748,6 @@ dir-glob@^3.0.1:
 
 "discord.js@github:discordjs/discord.js":
   version "12.5.0"
-  uid "3c175cb5116fe50ba3084163565dd244a25b657f"
   resolved "https://codeload.github.com/discordjs/discord.js/tar.gz/3c175cb5116fe50ba3084163565dd244a25b657f"
   dependencies:
     "@discordjs/collection" "^0.1.6"
@@ -2928,6 +2927,11 @@ hosted-git-info@^4.0.1:
   integrity sha512-c9OGXbZ3guC/xOlCg1Ci/VgWlwsqDv1yMQL1CWqXDL0hDjXuNcq0zuR4xqPSuasI3kqFDhqSyTjREz5gzq0fXg==
   dependencies:
     lru-cache "^6.0.0"
+
+html-to-md@^0.3.9:
+  version "0.3.9"
+  resolved "https://registry.yarnpkg.com/html-to-md/-/html-to-md-0.3.9.tgz#8886c1801e86651630349c2e73e26b4efc053bbf"
+  integrity sha512-PhD8lSPDYYnl3Bv80afl8tOhk7YZjjX59cwZEzgjK6He8q/WNuj/9HUt2dNX91jqhdYhHyE+NOg5B0DKrpBu5g==
 
 htmlparser2@^6.1.0:
   version "6.1.0"
