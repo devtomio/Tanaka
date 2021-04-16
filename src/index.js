@@ -65,7 +65,7 @@ client.rss.on('item:new:anime', (item) => {
 		${item.description}
 
 		[${item.link}]
-	`);
+	`.replace());
 });
 
 client.login();
