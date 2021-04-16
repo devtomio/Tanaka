@@ -5,7 +5,7 @@ module.exports = class AnimeUpdatesCommand extends Command {
 		super(client, {
 			name: 'anime-updates',
 			aliases: ['anime-up', 'set-anime-updates'],
-			group: 'updates',
+			group: 'anime-updates',
 			memberName: 'anime-updates',
 			description: 'Sets the anime updates channel.',
 			clientPermissions: ['MANAGE_WEBHOOKS'],

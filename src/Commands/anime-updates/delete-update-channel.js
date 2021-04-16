@@ -5,7 +5,7 @@ module.exports = class DeleteUpdateChannelCommand extends Command {
 		super(client, {
 			name: 'delete-update-channel',
 			aliases: ['delete-up-channel', 'del-up-channel'],
-			group: 'updates',
+			group: 'anime-updates',
 			memberName: 'delete-update-channel',
 			description: 'Deletes the anime updates channel.',
 			clientPermissions: ['MANAGE_WEBHOOKS'],
