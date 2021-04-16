@@ -1,5 +1,5 @@
 const { MongoDBProvider } = require('commando-provider-mongo');
-const { stripIndents } = require('common-tags');
+const { MessageEmbed, WebhookClient } = require('discord.js');
 const { htmlToText } = require('html-to-text');
 const Client = require('./Structures/Client');
 const { MongoClient } = require('mongodb');
@@ -22,6 +22,7 @@ client.registry
 		{ id: 'info', name: 'Information' },
 		{ id: 'search', name: 'Search' },
 		{ id: 'remind', name: 'Reminder' },
+		{ id: 'anime-updates', name: 'Anime Updates' },
 	])
 	.registerDefaultGroups()
 	.registerDefaultCommands({
@@ -60,13 +61,22 @@ client.db.on('debug', client.logger.debug);
 client.db.on('error', (e) => client.logger.error(e.stack));
 
 client.rss.on('item:new:anime', (item) => {
-	client.testWebhook.send(stripIndents`
-		**${item.title}**
-		
-		${htmlToText(item.description)}
+	client.guilds.cache.forEach(async (guild) => {
+		const data = await client.db.get(`animeUpdates-${guild.id}`);
 
-		[${item.link}]
-	`);
+		if (data === undefined) return false;
+
+		const hook = new WebhookClient(data.id, data.token);
+		const embed = new MessageEmbed()
+			.setTitle(`**${item.title}**`)
+			.setDescription(htmlToText(item.description))
+			.setURL(item.link)
+			.setColor('RANDOM')
+			.setImage('https://kevinpennyfeather.files.wordpress.com/2018/03/logo.jpg')
+			.setTimestamp();
+
+		hook.send(embed);
+	});
 });
 
 client.login();

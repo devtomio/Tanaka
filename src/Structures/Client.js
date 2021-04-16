@@ -45,6 +45,7 @@ module.exports = class Client extends CommandoClient {
 				url: 'https://www.animenewsnetwork.com/all/rss.xml?ann-edition=us',
 				refresh: 20000,
 				eventName: 'anime',
+				ignoreFirst: true,
 			},
 		];
 
