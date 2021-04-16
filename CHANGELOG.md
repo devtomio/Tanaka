@@ -1,15 +1,13 @@
 # [1.18.0](https://github.com/1chiSensei/Tanaka/compare/1.17.0...1.18.0) (2021-04-16)
 
-
 ### Bug Fixes
 
-* **redis:** fix err ([8fad14f](https://github.com/1chiSensei/Tanaka/commit/8fad14fc475bd8f7c1c20c85745ae7cb34807569))
-
+- **redis:** fix err ([8fad14f](https://github.com/1chiSensei/Tanaka/commit/8fad14fc475bd8f7c1c20c85745ae7cb34807569))
 
 ### Features
 
-* **rss:** use html to markdown converter ([9a8cdb8](https://github.com/1chiSensei/Tanaka/commit/9a8cdb8d04786e72b00dfde66ede3db4fd0860d7))
-* **rss:** use html-to-md ([7220d2a](https://github.com/1chiSensei/Tanaka/commit/7220d2acac72a26e40b02cc3f154cdfb229b66a9))
+- **rss:** use html to markdown converter ([9a8cdb8](https://github.com/1chiSensei/Tanaka/commit/9a8cdb8d04786e72b00dfde66ede3db4fd0860d7))
+- **rss:** use html-to-md ([7220d2a](https://github.com/1chiSensei/Tanaka/commit/7220d2acac72a26e40b02cc3f154cdfb229b66a9))
 
 ## [1.17.1](https://github.com/1chiSensei/Tanaka/compare/1.17.0...1.17.1) (2021-04-16)
 

@@ -1,8 +1,8 @@
 const { MongoDBProvider } = require('commando-provider-mongo');
 const { stripIndents } = require('common-tags');
+const { htmlToText } = require('html-to-text');
 const Client = require('./Structures/Client');
 const { MongoClient } = require('mongodb');
-const convert = require('html-to-md');
 const path = require('path');
 
 const client = new Client();
@@ -63,7 +63,7 @@ client.rss.on('item:new:anime', (item) => {
 	client.testWebhook.send(stripIndents`
 		**${item.title}**
 		
-		${convert(item.description)}
+		${htmlToText(item.description)}
 
 		[${item.link}]
 	`);

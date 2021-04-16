@@ -22,7 +22,7 @@
 		"consola": "2.15.3",
 		"discord.js": "github:discordjs/discord.js",
 		"discord.js-commando": "github:1chiSensei/Commando#patch-1",
-		"html-to-md": "^0.3.9",
+		"html-to-text": "^7.0.0",
 		"ioredis": "^4.26.0",
 		"mal-scraper": "^2.11.3",
 		"moment": "2.29.1",
