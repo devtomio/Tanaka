@@ -1,3 +1,10 @@
+## [1.19.1](https://github.com/1chiSensei/Tanaka/compare/1.19.0...1.19.1) (2021-04-16)
+
+
+### Bug Fixes
+
+* **commands:** fix group not registered ([aa4ba00](https://github.com/1chiSensei/Tanaka/commit/aa4ba00bac2c86fc1cd980647193111d72f58064))
+
 # [1.19.0](https://github.com/1chiSensei/Tanaka/compare/1.18.1...1.19.0) (2021-04-16)
 
 ### Features
