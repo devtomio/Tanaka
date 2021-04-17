@@ -1,9 +1,8 @@
 # [2.1.0](https://github.com/1chiSensei/Tanaka/compare/2.0.3...2.1.0) (2021-04-17)
 
-
 ### Features
 
-* **commands:** remove pastebin command bc buggy ([191504e](https://github.com/1chiSensei/Tanaka/commit/191504effda2139525f10d527416878299e1c243))
+- **commands:** remove pastebin command bc buggy ([191504e](https://github.com/1chiSensei/Tanaka/commit/191504effda2139525f10d527416878299e1c243))
 
 ## [2.0.3](https://github.com/1chiSensei/Tanaka/compare/2.0.2...2.0.3) (2021-04-17)
 
