@@ -1,3 +1,10 @@
+## [2.0.3](https://github.com/1chiSensei/Tanaka/compare/2.0.2...2.0.3) (2021-04-17)
+
+
+### Bug Fixes
+
+* **commands:** fix 404 error in pastebin ([a040107](https://github.com/1chiSensei/Tanaka/commit/a040107f8fc37f3288ecd4a508a2857fd8f6eb01))
+
 ## [2.0.2](https://github.com/1chiSensei/Tanaka/compare/2.0.1...2.0.2) (2021-04-17)
 
 ### Bug Fixes
