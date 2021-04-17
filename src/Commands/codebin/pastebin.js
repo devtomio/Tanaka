@@ -20,7 +20,7 @@ module.exports = class PastebinCommand extends Command {
 
 	async run(msg, { code }) {
 		const { text } = await request
-			.get('https://pastebin.com/api/api_post.php')
+			.post('https://pastebin.com/api/api_post.php')
 			.attach({
 				api_dev_key: process.env.PASTEBIN_KEY,
 				api_option: 'paste',
