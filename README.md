@@ -63,7 +63,6 @@ Tanaka is a Discord Bot coded in [JavaScript](https://www.javascript.com/) with 
 - `MONGO_URL` the connection string to MongoDB.
 - `DISCORD_TOKEN` your discord bot token. This can be obtained in the [Discord Developer Portal](https://discord.com/developers/applications).
 - `OWNER_ID` your own discord user id.
-- `PASTEBIN_KEY` this can be obtained [here](https://pastebin.com/doc_api).
 - `TEST_WEBHOOK_ID` the id for the test webhook.
 - `TEST_WEBHOOK_TOKEN` the token for the test webhook.
 - `GITHUB_TOKEN` your own github personal access token.

@@ -255,6 +255,11 @@
   resolved "https://registry.yarnpkg.com/@sindresorhus/is/-/is-4.0.0.tgz#2ff674e9611b45b528896d820d3d7a812de2f0e4"
   integrity sha512-FyD2meJpDPjyNQejSjvnhpgI/azsQkA4lGbuu5BQZfjvJ9cbRZXzeWL2HceCekW4lixO9JPesIIQkSoLjeJHNQ==
 
+"@sourcebin/linguist@latest":
+  version "0.0.3"
+  resolved "https://registry.yarnpkg.com/@sourcebin/linguist/-/linguist-0.0.3.tgz#f87ebb06eb4450c6f2825c5cb5347cd4fc057175"
+  integrity sha512-VVkb/34pISdK+1tyqmwBac6crn8UhviKCRV5w/wc8iZyTCOoTrOu0Cgbqfh0bfMGxNlQuhaRy6cMmEmHxa5R3g==
+
 "@szmarczak/http-timer@^1.1.2":
   version "1.1.2"
   resolved "https://registry.yarnpkg.com/@szmarczak/http-timer/-/http-timer-1.1.2.tgz#b1665e2c461a2cd92f4c1bbf50d5454de0d4b421"
@@ -2714,7 +2719,7 @@ glogg@^1.0.0:
   dependencies:
     sparkles "^1.0.0"
 
-got@11.8.2:
+got@11.8.2, got@^11.8.1:
   version "11.8.2"
   resolved "https://registry.yarnpkg.com/got/-/got-11.8.2.tgz#7abb3959ea28c31f3576f1576c1effce23f33599"
   integrity sha512-D0QywKgIe30ODs+fm8wMZiAcZjypcCodPNuMz5H9Mny7RJ+IjJ10BdmGW7OM7fHXP+O7r6ZwapQ/YQmMSvB0UQ==
@@ -5532,6 +5537,14 @@ source-map@~0.7.2:
   version "0.7.3"
   resolved "https://registry.yarnpkg.com/source-map/-/source-map-0.7.3.tgz#5302f8169031735226544092e64981f751750383"
   integrity sha512-CkCj6giN3S+n9qrYiBTX5gystlENnRW5jZeNLHpe6aue+SrHcG5VYwujhW9s4dY31mEGsxBDrHR6oI69fTXsaQ==
+
+sourcebin@^4.1.3:
+  version "4.1.3"
+  resolved "https://registry.yarnpkg.com/sourcebin/-/sourcebin-4.1.3.tgz#221f2eb2e4d3320237af7204c8cef48d6b7b715c"
+  integrity sha512-dgfLD/Q5i0OWxocxkVvqJOiTZKVS9FCpo538TaoS2NCGL3zh7VitVt5S6hdFuq/RqX0GqtXLzDiwJDQnpd2Ocg==
+  dependencies:
+    "@sourcebin/linguist" latest
+    got "^11.8.1"
 
 sparkles@^1.0.0:
   version "1.0.1"
