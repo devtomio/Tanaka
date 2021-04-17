@@ -7,13 +7,7 @@ gulp.task('default', () => {
 	return gulp
 		.src('./src/**/*.js')
 		.pipe(sourcemaps.init())
-		.pipe(
-			terser({
-				keep_classnames: true,
-				keep_fnames: true,
-				sourceMap: true,
-			}),
-		)
+		.pipe(terser())
 		.pipe(sourcemaps.write('./'))
 		.pipe(gulp.dest('./dist'));
 });

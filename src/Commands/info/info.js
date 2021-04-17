@@ -42,7 +42,7 @@ module.exports = class InfoCommand extends Command {
 				`**❯ Discord.js:** \`v${djsVersion}\``,
 				`**❯ Commit Hash:** \`${this.getCommitHash()}\``,
 				'**❯ Repository:** <https://github.com/1chiSensei/Tanaka>',
-				'**❯ Invite:** <https://bit.ly/3tjCdxr>',
+				'**❯ Invite:** <https://peico.xyz/T4DQP>',
 				'\u200b',
 			])
 			.addField('System', [

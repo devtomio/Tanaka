@@ -77,7 +77,8 @@ module.exports = class EvalCommand extends Command {
 			.inspect(result, { depth: 0 })
 			.replace(nlPattern, '\n')
 			.replace(this.sensitivePattern, '--REDACTED--')
-			.replace(this.client.db.url, '--REDACTED--');
+			.replace(this.client.db.url, '--REDACTED--')
+			.replace(process.env, '--REDACTED--');
 
 		const split = inspected.split('\n');
 		const last = inspected.length - 1;
