@@ -1,9 +1,8 @@
 # [2.4.0](https://github.com/1chiSensei/Tanaka/compare/2.3.2...2.4.0) (2021-04-17)
 
-
 ### Features
 
-* **commands:** add starbin command ([0b66eac](https://github.com/1chiSensei/Tanaka/commit/0b66eac1bcc1554e52a2d2bfa27a6d1124d24987))
+- **commands:** add starbin command ([0b66eac](https://github.com/1chiSensei/Tanaka/commit/0b66eac1bcc1554e52a2d2bfa27a6d1124d24987))
 
 ## [2.3.2](https://github.com/1chiSensei/Tanaka/compare/2.3.1...2.3.2) (2021-04-17)
 
