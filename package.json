@@ -10,8 +10,8 @@
 	"scripts": {
 		"prettier": "prettier . --write",
 		"lint": "eslint . --fix",
-		"start": "yarn build && dotenv pm2-runtime start dist/index.js --name \"tanaka\"",
-		"release": "dotenv release-it --ci",
+		"start": "yarn build && dotenv -- pm2-runtime start dist/index.js --name \"tanaka\"",
+		"release": "dotenv -- release-it --ci",
 		"build": "rimraf dist && gulp"
 	},
 	"dependencies": {
