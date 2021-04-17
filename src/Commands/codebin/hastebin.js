@@ -25,7 +25,9 @@ module.exports = class HastebinCommand extends Command {
 				'Content-Type': 'text/plain',
 			});
 
-			return msg.embed({ description: `The link to the code is [\`here\`](https://hastebin.com/${body.key}.txt)!` });
+			return msg.embed({
+				description: `The link to the code is [\`here\`](https://hastebin.com/${body.key}.txt)!`,
+			});
 		} catch {
 			return msg.say('The Hastebin API returned an error. Please try again later.');
 		}
