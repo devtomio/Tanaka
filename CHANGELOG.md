@@ -1,9 +1,8 @@
 # [2.3.0](https://github.com/1chiSensei/Tanaka/compare/2.2.1...2.3.0) (2021-04-17)
 
-
 ### Features
 
-* **commands:** add nopaste command ([3d9b4df](https://github.com/1chiSensei/Tanaka/commit/3d9b4df8c236a053e936a32d3afd0aa4dd4b72f3))
+- **commands:** add nopaste command ([3d9b4df](https://github.com/1chiSensei/Tanaka/commit/3d9b4df8c236a053e936a32d3afd0aa4dd4b72f3))
 
 ## [2.2.1](https://github.com/1chiSensei/Tanaka/compare/2.2.0...2.2.1) (2021-04-17)
 
