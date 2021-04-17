@@ -1,9 +1,8 @@
 ## [2.1.1](https://github.com/1chiSensei/Tanaka/compare/2.1.0...2.1.1) (2021-04-17)
 
-
 ### Bug Fixes
 
-* **commands:** fix `[object Promise]` in sourcebin ([7e5bd4f](https://github.com/1chiSensei/Tanaka/commit/7e5bd4fd040227ab956f8c327d3a69e3d61e1ff1))
+- **commands:** fix `[object Promise]` in sourcebin ([7e5bd4f](https://github.com/1chiSensei/Tanaka/commit/7e5bd4fd040227ab956f8c327d3a69e3d61e1ff1))
 
 # [2.1.0](https://github.com/1chiSensei/Tanaka/compare/2.0.3...2.1.0) (2021-04-17)
 

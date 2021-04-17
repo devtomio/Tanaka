@@ -1,5 +1,5 @@
 const { Command } = require('discord.js-commando');
-const { create, url } = require('sourcebin');
+const { create } = require('sourcebin');
 
 module.exports = class SourcebinCommand extends Command {
 	constructor(client) {
@@ -19,12 +19,11 @@ module.exports = class SourcebinCommand extends Command {
 	}
 
 	async run(msg, { code }) {
-		const key = await create([{ content: code.code, language: 'text' }], {
+		const link = await create([{ content: code.code, language: 'text' }], {
 			title: 'CodeBin',
 			description: 'Uploaded by TanakaBot <https://github.com/1chiSensei/Tanaka>',
 		});
-		const link = url(key);
 
-		return msg.say(`The link to the code is: ${link}!`);
+		return msg.say(`The link to the code is: ${link.url}!`);
 	}
 };
