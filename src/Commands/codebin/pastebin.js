@@ -25,6 +25,7 @@ module.exports = class PastebinCommand extends Command {
 				api_dev_key: process.env.PASTEBIN_KEY,
 				api_option: 'paste',
 				api_paste_code: code.code,
+				api_paste_private: '0',
 			})
 			.set({ 'User-Agent': 'TanakaBot (https://github.com/1chiSensei/Tanaka)' });
 
