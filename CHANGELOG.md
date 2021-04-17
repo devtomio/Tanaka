@@ -1,3 +1,10 @@
+# [2.5.0](https://github.com/1chiSensei/Tanaka/compare/2.4.0...2.5.0) (2021-04-17)
+
+
+### Features
+
+* **commands:** add advice cmd ([f09b53a](https://github.com/1chiSensei/Tanaka/commit/f09b53a13a7253b6e1540ce0d3661e326bdfa6b3))
+
 # [2.4.0](https://github.com/1chiSensei/Tanaka/compare/2.3.2...2.4.0) (2021-04-17)
 
 ### Features
