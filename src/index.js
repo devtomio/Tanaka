@@ -65,7 +65,7 @@ client.rss.on('item:new:anime', (item) => {
 	client.guilds.cache.forEach(async (guild) => {
 		const data = await client.db.get(`animeUpdates-${guild.id}`);
 
-		if (data === undefined) return false;
+		if (data === null) return false;
 
 		const hook = new WebhookClient(data.id, data.token);
 		const embed = new MessageEmbed()
