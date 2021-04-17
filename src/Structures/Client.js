@@ -5,6 +5,7 @@ const TimerManager = require('./TimerManager');
 const { Database } = require('quickmongo');
 const consola = require('consola');
 const Redis = require('./Redis');
+const web = require('../Web');
 
 module.exports = class Client extends CommandoClient {
 	constructor() {
@@ -35,6 +36,7 @@ module.exports = class Client extends CommandoClient {
 
 	async login(token = process.env.DISCORD_TOKEN) {
 		this.addRSSListeners();
+		web(process.env.PORT);
 
 		return super.login(token);
 	}

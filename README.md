@@ -66,3 +66,5 @@ Tanaka is a Discord Bot coded in [JavaScript](https://www.javascript.com/) with 
 - `TEST_WEBHOOK_ID` the id for the test webhook.
 - `TEST_WEBHOOK_TOKEN` the token for the test webhook.
 - `GITHUB_TOKEN` your own github personal access token.
+- `CLIENT_ID` the bot's client id.
+- `CLIENT_SECRET` the bot's client secret.

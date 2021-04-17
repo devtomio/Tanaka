@@ -11,3 +11,7 @@ gulp.task('default', () => {
 		.pipe(sourcemaps.write('./'))
 		.pipe(gulp.dest('./dist'));
 });
+
+gulp.task('web', () =>
+	gulp.src('./src/**/*.ejs').pipe(sourcemaps.init()).pipe(sourcemaps.write('./')).pipe(gulp.dest('./dist')),
+);

@@ -8,6 +8,8 @@ module.exports = class RedisClient {
 			db: 0,
 		});
 
+		this.start();
+
 		Object.defineProperty(this, 'client', { value: client });
 	}
 

@@ -9,6 +9,7 @@
 		"newline-per-chained-call": "off",
 		"radix": "off",
 		"curly": "off",
-		"no-extra-parens": "off"
+		"no-extra-parens": "off",
+		"function-paren-newline": "off"
 	}
 }

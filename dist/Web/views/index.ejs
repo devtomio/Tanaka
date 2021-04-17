@@ -1,0 +1,57 @@
+<%- include('./partials/_head') %>
+
+<body class="github-font-standard">
+	<% if (data === null) { %>
+		<section class="fullscreen">
+			<div class="background"></div>
+			<div class="center-object center-text">
+				<h1 class="bold no-margin">
+					<span class="alizarin-text">401</span>
+					<br />
+					Unauthorized
+				</h1>
+			</div>
+			<div class="buttons">
+				<a href="/auth/login" class="btn alizarin-border">Login</a>
+                                <a
+                                        href="#"
+                                        class="btn emerald-border"
+                                        onclick="window.history.go(-1); return false;"
+                                        >Go one step back</a
+                                >
+			</div>
+		</section>
+	<% } else { %>
+		<div class="fullscreen">
+			<section class="me unset">
+				<div class="avatar-container">
+					<img draggable="false" src="https://cdn.discordapp.com/avatars/804605929944645672/573a4c5b59caaf0b48c422b40f11d3ed.png?size=4096" class="image-title" />
+				</div>
+				<div class="unset">
+					<h1 class="title monospace">Tanaka</h1>
+					<p class="undertitle monospace">An all fun and games bot.</p>
+				</div>
+			</section>
+			<div class="buttons">
+				<a
+                                        href="https://discord.gg/zGvtAnGhdP"
+                                        class="btn discord-dropshadow animation hover"
+                                        target="_blank"
+                                        >Discord</a
+                                >
+				<a
+                                        href="https://github.com/1chiSensei/Tanaka"
+                                        class="btn github-dropshadow animation hover"
+                                        target="_blank"
+                                        >Github</a
+                                >
+				<a
+                                        href="https://peico.xyz/T4DQP"
+                                        class="btn lavender-dropshadow animation hover"
+                                        target="_blank"
+                                        >Invite</a
+                                >
+			</div>
+		</div>
+	<% } %> 
+</body>
