@@ -7,7 +7,7 @@ module.exports = class HastebinCommand extends Command {
 			name: 'hastebin',
 			group: 'codebin',
 			memberName: 'hastebin',
-			description: 'Uploades your code to hastebin.',
+			description: 'Uploades your code to https://hastebin.com.',
 			args: [
 				{
 					key: 'code',
@@ -19,11 +19,15 @@ module.exports = class HastebinCommand extends Command {
 	}
 
 	async run(msg, { code }) {
-		const { body } = await request.post('https://hastebin.com/documents').send(code.code).set({
-			'User-Agent': 'TanakaBot (https://github.com/1chiSensei/Tanaka)',
-			'Content-Type': 'text/plain',
-		});
+		try {
+			const { body } = await request.post('https://hastebin.com/documents').send(code.code).set({
+				'User-Agent': 'TanakaBot (https://github.com/1chiSensei/Tanaka)',
+				'Content-Type': 'text/plain',
+			});
 
-		return msg.say(`The link to the code is: \`https://hastebin.com/${body.key}.txt\``);
+			return msg.say(`The link to the code is: \`https://hastebin.com/${body.key}.txt\``);
+		} catch {
+			return msg.say('The Hastebin API returned an error. Please try again later.');
+		}
 	}
 };

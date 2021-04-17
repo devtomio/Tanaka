@@ -7,7 +7,7 @@ module.exports = class SourcebinCommand extends Command {
 			name: 'sourcebin',
 			group: 'codebin',
 			memberName: 'sourcebin',
-			description: 'Uploades your code to pastebin.',
+			description: 'Uploades your code to https://sourceb.in.',
 			args: [
 				{
 					key: 'code',
