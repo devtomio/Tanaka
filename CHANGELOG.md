@@ -1,3 +1,10 @@
+## [2.3.2](https://github.com/1chiSensei/Tanaka/compare/2.3.1...2.3.2) (2021-04-17)
+
+
+### Bug Fixes
+
+* **commands:** fix link embed ([ab3b240](https://github.com/1chiSensei/Tanaka/commit/ab3b24043c08478497eb958a0deee6de1c3186b9))
+
 ## [2.3.1](https://github.com/1chiSensei/Tanaka/compare/2.3.0...2.3.1) (2021-04-17)
 
 ### Bug Fixes
