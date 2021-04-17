@@ -1,3 +1,10 @@
+## [2.5.1](https://github.com/1chiSensei/Tanaka/compare/2.5.0...2.5.1) (2021-04-17)
+
+
+### Bug Fixes
+
+* **commands:** fix undefined error in advice ([8aec5b4](https://github.com/1chiSensei/Tanaka/commit/8aec5b4fe1cdc14b611eaf792a782672301f2eeb))
+
 # [2.5.0](https://github.com/1chiSensei/Tanaka/compare/2.4.0...2.5.0) (2021-04-17)
 
 ### Features
