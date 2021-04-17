@@ -1,3 +1,10 @@
+## [2.3.1](https://github.com/1chiSensei/Tanaka/compare/2.3.0...2.3.1) (2021-04-17)
+
+
+### Bug Fixes
+
+* **bot:** fix cannot read property of null ([d7a82e9](https://github.com/1chiSensei/Tanaka/commit/d7a82e963c147e0840fbcf41d51035392b05f8c8))
+
 # [2.3.0](https://github.com/1chiSensei/Tanaka/compare/2.2.1...2.3.0) (2021-04-17)
 
 ### Features
