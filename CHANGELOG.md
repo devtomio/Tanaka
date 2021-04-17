@@ -1,3 +1,10 @@
+## [2.2.1](https://github.com/1chiSensei/Tanaka/compare/2.2.0...2.2.1) (2021-04-17)
+
+
+### Bug Fixes
+
+* **commands:** fix hastebin ([1c2e7c2](https://github.com/1chiSensei/Tanaka/commit/1c2e7c2be68f04e57ed6448201c917668a3a2cd8))
+
 # [2.2.0](https://github.com/1chiSensei/Tanaka/compare/2.1.2...2.2.0) (2021-04-17)
 
 ### Features
