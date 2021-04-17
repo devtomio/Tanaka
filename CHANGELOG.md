@@ -1,3 +1,10 @@
+# [2.6.0](https://github.com/1chiSensei/Tanaka/compare/2.5.1...2.6.0) (2021-04-17)
+
+
+### Features
+
+* **commands:** add bunny, duck, lizard and owl command ([a5491d2](https://github.com/1chiSensei/Tanaka/commit/a5491d20e48ddaf046d0531278f2ae8df908619c))
+
 ## [2.5.1](https://github.com/1chiSensei/Tanaka/compare/2.5.0...2.5.1) (2021-04-17)
 
 ### Bug Fixes
