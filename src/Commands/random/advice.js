@@ -25,8 +25,10 @@ module.exports = class AdviceCommand extends Command {
 			.get('https://api.adviceslip.com/advice')
 			.set({ 'User-Agent': 'TanakaBot 1.0.0 (https://github.com/1chiSensei/Tanaka)' });
 
+		const data = JSON.parse(body);
+
 		const embed = new MessageEmbed()
-			.setDescription(`\`\`\`\n${body.slip.advice}\n\`\`\``)
+			.setDescription(`\`\`\`\n${data.slip.advice}\n\`\`\``)
 			.setFooter(
 				`Requested by ${msg.author.tag}`,
 				msg.author.displayAvatarURL({ dynamic: true, size: 4096 }),
