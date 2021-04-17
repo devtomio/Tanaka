@@ -24,6 +24,6 @@ module.exports = class SourcebinCommand extends Command {
 			description: 'Uploaded by TanakaBot <https://github.com/1chiSensei/Tanaka>',
 		});
 
-		return msg.say(`The link to the code is [here](${link.url})!`);
+		return msg.embed({ description: `The link to the code is [\`here\`](${link.url})!` });
 	}
 };

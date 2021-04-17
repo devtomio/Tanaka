@@ -24,6 +24,6 @@ module.exports = class NoPasteCommand extends Command {
 			{ timeout: 100000, encoding: 'utf-8' },
 		);
 
-		return msg.say(`The link to the code is [here](${link.trim()})!`);
+		return msg.embed({ description: `The link to the code is [\`here\`](${link.trim()})!` });
 	}
 };
