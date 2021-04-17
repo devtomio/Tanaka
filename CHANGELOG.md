@@ -1,3 +1,10 @@
+# [2.7.0](https://github.com/1chiSensei/Tanaka/compare/2.6.0...2.7.0) (2021-04-17)
+
+
+### Features
+
+* **web:** add website (on testing) ([885e7be](https://github.com/1chiSensei/Tanaka/commit/885e7be44f7b98c575997b664cc3e37651af5d22))
+
 # [2.6.0](https://github.com/1chiSensei/Tanaka/compare/2.5.1...2.6.0) (2021-04-17)
 
 ### Features
