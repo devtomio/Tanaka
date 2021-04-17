@@ -1,3 +1,10 @@
+## [2.1.2](https://github.com/1chiSensei/Tanaka/compare/2.1.1...2.1.2) (2021-04-17)
+
+
+### Bug Fixes
+
+* **commands:** fix `item.replace is not a function` in sourcebin ([a3f4f4d](https://github.com/1chiSensei/Tanaka/commit/a3f4f4d69a38ac49dedff71e93ddcaa7ffc1e017))
+
 ## [2.1.1](https://github.com/1chiSensei/Tanaka/compare/2.1.0...2.1.1) (2021-04-17)
 
 ### Bug Fixes
