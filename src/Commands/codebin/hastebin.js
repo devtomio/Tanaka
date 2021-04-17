@@ -1,5 +1,5 @@
 const { Command } = require('discord.js-commando');
-const { create } = require('sourcebin');
+const request = require('node-superfetch');
 
 module.exports = class SourcebinCommand extends Command {
 	constructor(client) {
@@ -19,11 +19,14 @@ module.exports = class SourcebinCommand extends Command {
 	}
 
 	async run(msg, { code }) {
-		const link = await create([{ content: code.code, language: 'text' }], {
-			title: 'CodeBin',
-			description: 'Uploaded by TanakaBot <https://github.com/1chiSensei/Tanaka>',
-		});
+		const { body } = await request
+			.post('https://hastebin.com/documents')
+			.send(code.code)
+			.set({
+				'User-Agent': 'TanakaBot (https://github.com/1chiSensei/Tanaka)',
+				'Content-Type': 'text/plain',
+			});
 
-		return msg.say(`The link to the code is: \`${link.url}\`!`);
+		return msg.say(`The link to the code is: \`https://hastebin.com/${body.key}.txt\``);
 	}
 };
