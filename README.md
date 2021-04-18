@@ -68,3 +68,70 @@ Tanaka is a Discord Bot coded in [JavaScript](https://www.javascript.com/) with 
 - `GITHUB_TOKEN` your own github personal access token.
 - `CLIENT_ID` the bot's client id.
 - `CLIENT_SECRET` the bot's client secret.
+
+## Commands
+
+Total: 39
+
+### Utility:
+
+- **prefix:** Shows or sets the command prefix.
+- **eval:** Executes arbitrary JavaScript code. (Owner-Only)
+- **exec:** Executes a command line application. (Owner-Only)
+- **help:** Displays a list of available commands, or detailed information for a specific command.
+- **ping:** Shows you the latency of the bot and the database.
+- **restart:** Restarts the bot. (Owner-Only)
+
+### Random Response:
+
+- **advice:** Responds with a random advice.
+- **bird:** Responds with a random bird image.
+- **bunny:** Responds with a random bunny image.
+- **cat:** Responds with a random cat image.
+- **dog:** Responds with a random dog image.
+- **duck:** Responds with a random duck image.
+- **fact:** Responds with a random fact.
+- **fml:** Responds with a random FML quote.
+- **fox:** Responds with a random fox image.
+- **koala:** Responds with a random panda image.
+- **lizard:** Responds with a random lizard image.
+- **owl:** Responds with a random owl image.
+- **panda:** Responds with a random panda image.
+- **shiba:** Responds with a random shiba inu image.
+
+### Information:
+
+- **info:** Responds with the general information of the bot.
+- **serverinfo:** Responds with the server's general information.
+- **support:** Sends the support server of the bot.
+- **userinfo:** Responds with the user's general information.
+
+### Search:
+
+- **anime:** Searches MyAnimeList for the anime that you give.
+
+### Reminder:
+
+- **delete-reminder:** Deletes your reminder.
+- **remind:** Sets a reminder.
+
+### Anime Updates:
+
+- **anime-updates:** Sets the anime updates channel.
+- **delete-update-channel:** Deletes the anime updates channel.
+
+### Code Bins:
+
+- **hastebin:** Uploades your code to https://hastebin.com.
+- **nopaste:** Uploades your code to https://nopaste.ml.
+- **sourcebin:** Uploades your code to https://sourceb.in.
+- **starbin:** Uploades your code to https://starb.in.
+
+### Commands:
+
+- **groups:** Lists all command groups.
+- **enable:** Enables a command or command group.
+- **disable:** Disables a command or command group.
+- **reload:** Reloads a command or command group. (Owner-Only)
+- **load:** Loads a new command. (Owner-Only)
+- **unload:** Unloads a command. (Owner-Only)

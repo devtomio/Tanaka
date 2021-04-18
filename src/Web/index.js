@@ -26,7 +26,7 @@ app.set('views', path.join(__dirname, 'views'));
 app.get('/', async (req, res) => {
 	let dat = null;
 
-	if (req.cookies.discordToken) dat = await client.getUser(req.cookies.discordToken);
+	if (req.cookies.discordToken !== undefined) dat = await client.getUser(req.cookies.discordToken);
 
 	return res.status(200).render('index', { data: dat });
 });
