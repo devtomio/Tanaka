@@ -1,17 +1,159 @@
-<%- include('./partials/_head') %><body class="github-font-standard"><% if (data === null) { %><section class="fullscreen"><div class="background"></div><div class="center-object center-text"><h1 class="bold no-margin"><span class="alizarin-text">401</span><br />Unauthorized</h1><div class="buttons"><a href="/auth/login" class="btn alizarin-border">Login</a><a href="#" class="btn emerald-border" onclick="window.history.go(-1); return false;">Goone step back</a></div></div></section><% } else { %><div class="fullscreen"><div class="background" style="background-image: url('https://wallpapercave.com/wp/wc1709083.jpg');"></div><div class="center-object"><div class="container"><section class="me unset"><div class="avatar-container"><img draggable="false"
+<%- include('./partials/_head') %>
+
+<body class="github-font-standard">
+	<% if (data === null) { %>
+		<section class="fullscreen">
+			<div class="background"></div>
+			<div class="center-object center-text">
+				<h1 class="bold no-margin">
+					<span class="alizarin-text">401</span>
+					<br />
+					Unauthorized
+				</h1>
+				<div class="buttons">
+					<a href="/auth/login" class="btn alizarin-border">Login</a>
+					<a href="#" class="btn emerald-border" onclick="window.history.go(-1); return false;">Go
+						one step back</a>
+				</div>
+			</div>
+		</section>
+	<% } else { %>
+		<div class="fullscreen">
+			<div class="background" style="background-image: url('https://wallpapercave.com/wp/wc1709083.jpg');">
+			</div>
+			<div class="center-object">
+				<div class="container">
+					<section class="me unset">
+						<div class="avatar-container">
+							<img draggable="false"
 								src="https://cdn.discordapp.com/avatars/804605929944645672/573a4c5b59caaf0b48c422b40f11d3ed.png?size=4096"
-								class="image-title" /></div><div class="unset"><h1 class="title monospace">Tanaka</h1><p class="undertitle monospace"><i class="emoji sharingan"></i>An allfun and games bot.</p></div></section><div class="buttons"><a href="https://discord.gg/zGvtAnGhdP"
+								class="image-title" />
+						</div>
+						<div class="unset">
+							<h1 class="title monospace">Tanaka</h1>
+							<p class="undertitle monospace"><i class="emoji sharingan"></i> An all
+							fun and games bot.</p>
+						</div>
+					</section>
+					<div class="buttons">
+						<a href="https://discord.gg/zGvtAnGhdP"
 							class="btn discord-dropshadow animation hover"
-							target="_blank">Discord</a><a href="https://github.com/1chiSensei/Tanaka"
-							class="btn github-dropshadow animation hover" target="_blank">Github</a><a href="https://peico.xyz/T4DQP"
+							target="_blank">Discord</a>
+						<a href="https://github.com/1chiSensei/Tanaka"
+							class="btn github-dropshadow animation hover" target="_blank">Github</a>
+						<a href="https://peico.xyz/T4DQP"
 							class="btn lavender-dropshadow animation hover"
-							target="_blank">Invite</a></div></div></div><span class="info-button" onclick="scroll_To('information')"><div id="fade" class="arrow bounce"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 481.32 291.98" class="white-fill"><path
-							d="M466.5,15.5L466,15c-19.8-19.8-52-19.8-71.9,0L240.8,168.3L87.2,14.8C67.4-5,35.2-5,15.4,14.8l-0.5,0.5 C-5,35.2-5,67.4,14.8,87.2l186.6,186.6c0.9,1,1.8,2,2.7,3v0c3.8,3.8,8.1,6.9,12.7,9.3c17,9,38.1,7.7,53.9-3.9 c2.2-1.6,4.4-3.4,6.4-5.4L466.5,87.4C486.4,67.6,486.4,35.4,466.5,15.5z" /></svg></div></span></div><section class="container" id="information"><div class="box-container"><h3 class="title turquoise-text"><i class="emoji naruto-run"></i>Information:</h3><div class="info-container"><p>Tanaka is a Discord Bot coded in<a href="https://javascript.info"
-							target="_blank">JavaScript</a>with<a href="https://discord.js.org"
-							target="_blank">discord.js</a>using the<a
+							target="_blank">Invite</a>
+					</div>
+				</div>
+			</div>
+
+			<span class="info-button" onclick="scroll_To('information')">
+				<div id="fade" class="arrow bounce">
+					<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 481.32 291.98" class="white-fill">
+						<path
+							d="M466.5,15.5L466,15c-19.8-19.8-52-19.8-71.9,0L240.8,168.3L87.2,14.8C67.4-5,35.2-5,15.4,14.8l-0.5,0.5 C-5,35.2-5,67.4,14.8,87.2l186.6,186.6c0.9,1,1.8,2,2.7,3v0c3.8,3.8,8.1,6.9,12.7,9.3c17,9,38.1,7.7,53.9-3.9 c2.2-1.6,4.4-3.4,6.4-5.4L466.5,87.4C486.4,67.6,486.4,35.4,466.5,15.5z" />
+					</svg>
+				</div>
+			</span>
+		</div>
+
+		<section class="container" id="information">
+			<div class="box-container">
+				<h3 class="title turquoise-text"><i class="emoji naruto-run"></i> Information:</h3>
+				<div class="info-container">
+					<p>
+						Tanaka is a Discord Bot coded in <a href="https://javascript.info"
+							target="_blank">JavaScript</a> with <a href="https://discord.js.org"
+							target="_blank">discord.js</a> using the <a
 							href="https://github.com/discordjs/Commando"
-							target="_blank">Commando</a>framework.</p></div></div><div class="box-container"><h3 class="title turquoise-text"><i class="emoji konoha"></i>Commands:</h3><div class="info-container"><h3 id="utility-">Utility:</h3><ul><li><strong>prefix:</strong>Shows or sets the command prefix.</li><li><strong>eval:</strong>Executes arbitrary JavaScript code. (Owner-Only)</li><li><strong>exec:</strong>Executes a command line application. (Owner-Only)</li><li><strong>help:</strong>Displays a list of available commands, or detailedinformation for a specific command.</li><li><strong>ping:</strong>Shows you the latency of the bot and the database.</li><li><strong>restart:</strong>Restarts the bot. (Owner-Only)</li></ul><h3 id="random-response-">Random Response:</h3><ul><li><strong>advice:</strong>Responds with a random advice.</li><li><strong>bird:</strong>Responds with a random bird image.</li><li><strong>bunny:</strong>Responds with a random bunny image.</li><li><strong>cat:</strong>Responds with a random cat image.</li><li><strong>dog:</strong>Responds with a random dog image.</li><li><strong>duck:</strong>Responds with a random duck image.</li><li><strong>fact:</strong>Responds with a random fact.</li><li><strong>fml:</strong>Responds with a random FML quote.</li><li><strong>fox:</strong>Responds with a random fox image.</li><li><strong>koala:</strong>Responds with a random panda image.</li><li><strong>lizard:</strong>Responds with a random lizard image.</li><li><strong>owl:</strong>Responds with a random owl image.</li><li><strong>panda:</strong>Responds with a random panda image.</li><li><strong>shiba:</strong>Responds with a random shiba inu image.</li></ul><h3 id="information-">Information:</h3><ul><li><strong>info:</strong>Responds with the general information of the bot.</li><li><strong>serverinfo:</strong>Responds with the server&#39;s generalinformation.</li><li><strong>support:</strong>Sends the support server of the bot.</li><li><strong>userinfo:</strong>Responds with the user&#39;s general information.</li></ul><h3 id="search-">Search:</h3><ul><li><strong>anime:</strong>Searches MyAnimeList for the anime that you give.</li></ul><h3 id="reminder-">Reminder:</h3><ul><li><strong>delete-reminder:</strong>Deletes your reminder.</li><li><strong>remind:</strong>Sets a reminder.</li></ul><h3 id="anime-updates-">Anime Updates:</h3><ul><li><strong>anime-updates:</strong>Sets the anime updates channel.</li><li><strong>delete-update-channel:</strong>Deletes the anime updates channel.</li></ul><h3 id="code-bins-">Code Bins:</h3><ul><li><strong>hastebin:</strong>Uploades your code to<a
-								href="https://hastebin.com">https://hastebin.com</a>.</li><li><strong>nopaste:</strong>Uploades your code to<a
-								href="https://nopaste.ml">https://nopaste.ml</a>.</li><li><strong>sourcebin:</strong>Uploades your code to<a
-								href="https://sourceb.in">https://sourceb.in</a>.</li><li><strong>starbin:</strong>Uploades your code to<a
-								href="https://starb.in">https://starb.in</a>.</li></ul><h3 id="commands-">Commands:</h3><ul><li><strong>groups:</strong>Lists all command groups.</li><li><strong>enable:</strong>Enables a command or command group.</li><li><strong>disable:</strong>Disables a command or command group.</li><li><strong>reload:</strong>Reloads a command or command group. (Owner-Only)</li><li><strong>load:</strong>Loads a new command. (Owner-Only)</li><li><strong>unload:</strong>Unloads a command. (Owner-Only)</li></ul></div></div></section><%- include('./partials/_footer') %><% } %></body>
+							target="_blank">Commando</a> framework.
+					</p>
+				</div>
+			</div>
+			<div class="box-container">
+				<h3 class="title turquoise-text"><i class="emoji konoha"></i> Commands:</h3>
+				<div class="info-container">
+					<h5 id="utility-">Utility:</h5>
+					<ul>
+						<li><strong>prefix:</strong> Shows or sets the command prefix.</li>
+						<li><strong>eval:</strong> Executes arbitrary JavaScript code. (Owner-Only)</li>
+						<li><strong>exec:</strong> Executes a command line application. (Owner-Only)
+						</li>
+						<li><strong>help:</strong> Displays a list of available commands, or detailed
+							information for a specific command.</li>
+						<li><strong>ping:</strong> Shows you the latency of the bot and the database.
+						</li>
+						<li><strong>restart:</strong> Restarts the bot. (Owner-Only)</li>
+					</ul>
+					<h5 id="random-response-">Random Response:</h5>
+					<ul>
+						<li><strong>advice:</strong> Responds with a random advice.</li>
+						<li><strong>bird:</strong> Responds with a random bird image.</li>
+						<li><strong>bunny:</strong> Responds with a random bunny image.</li>
+						<li><strong>cat:</strong> Responds with a random cat image.</li>
+						<li><strong>dog:</strong> Responds with a random dog image.</li>
+						<li><strong>duck:</strong> Responds with a random duck image.</li>
+						<li><strong>fact:</strong> Responds with a random fact.</li>
+						<li><strong>fml:</strong> Responds with a random FML quote.</li>
+						<li><strong>fox:</strong> Responds with a random fox image.</li>
+						<li><strong>koala:</strong> Responds with a random panda image.</li>
+						<li><strong>lizard:</strong> Responds with a random lizard image.</li>
+						<li><strong>owl:</strong> Responds with a random owl image.</li>
+						<li><strong>panda:</strong> Responds with a random panda image.</li>
+						<li><strong>shiba:</strong> Responds with a random shiba inu image.</li>
+					</ul>
+					<h5 id="information-">Information:</h5>
+					<ul>
+						<li><strong>info:</strong> Responds with the general information of the bot.
+						</li>
+						<li><strong>serverinfo:</strong> Responds with the server&#39;s general
+							information.</li>
+						<li><strong>support:</strong> Sends the support server of the bot.</li>
+						<li><strong>userinfo:</strong> Responds with the user&#39;s general information.
+						</li>
+					</ul>
+					<h5 id="search-">Search:</h5>
+					<ul>
+						<li><strong>anime:</strong> Searches MyAnimeList for the anime that you give.
+						</li>
+					</ul>
+					<h5 id="reminder-">Reminder:</h5>
+					<ul>
+						<li><strong>delete-reminder:</strong> Deletes your reminder.</li>
+						<li><strong>remind:</strong> Sets a reminder.</li>
+					</ul>
+					<h5 id="anime-updates-">Anime Updates:</h5>
+					<ul>
+						<li><strong>anime-updates:</strong> Sets the anime updates channel.</li>
+						<li><strong>delete-update-channel:</strong> Deletes the anime updates channel.
+						</li>
+					</ul>
+					<h5 id="code-bins-">Code Bins:</h5>
+					<ul>
+						<li><strong>hastebin:</strong> Uploades your code to <a
+								href="https://hastebin.com">https://hastebin.com</a>.</li>
+						<li><strong>nopaste:</strong> Uploades your code to <a
+								href="https://nopaste.ml">https://nopaste.ml</a>.</li>
+						<li><strong>sourcebin:</strong> Uploades your code to <a
+								href="https://sourceb.in">https://sourceb.in</a>.</li>
+						<li><strong>starbin:</strong> Uploades your code to <a
+								href="https://starb.in">https://starb.in</a>.</li>
+					</ul>
+					<h5 id="commands-">Commands:</h5>
+					<ul>
+						<li><strong>groups:</strong> Lists all command groups.</li>
+						<li><strong>enable:</strong> Enables a command or command group.</li>
+						<li><strong>disable:</strong> Disables a command or command group.</li>
+						<li><strong>reload:</strong> Reloads a command or command group. (Owner-Only)
+						</li>
+						<li><strong>load:</strong> Loads a new command. (Owner-Only)</li>
+						<li><strong>unload:</strong> Unloads a command. (Owner-Only)</li>
+					</ul>
+				</div>
+			</div>
+		</section>
+
+		<%- include('./partials/_footer') %> 
+	<% } %>
+</body>

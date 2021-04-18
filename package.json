@@ -27,7 +27,6 @@
 		"discord.js-commando": "github:1chiSensei/Commando#patch-1",
 		"ejs": "^3.1.6",
 		"express": "^4.17.1",
-		"gulp-minify-ejs": "^1.0.3",
 		"html-to-text": "^7.0.0",
 		"ioredis": "^4.26.0",
 		"mal-scraper": "^2.11.3",
