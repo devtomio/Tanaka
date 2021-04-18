@@ -10,6 +10,7 @@
 		"radix": "off",
 		"curly": "off",
 		"no-extra-parens": "off",
-		"function-paren-newline": "off"
+		"function-paren-newline": "off",
+		"arrow-body-style": "off"
 	}
 }

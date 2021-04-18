@@ -52,4 +52,4 @@ app.get('/auth/logout', (_, res) => {
 	return res.redirect(302, '/');
 });
 
-module.exports = app.listen;
+module.exports = () => app.listen(process.env.PORT, () => console.log('Website is ready!'));
