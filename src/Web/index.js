@@ -24,20 +24,20 @@ app.set('json spaces', 8);
 app.set('views', path.join(__dirname, 'views'));
 
 app.get('/', async (req, res) => {
-	if ('discordToken' in req.cookies)
+	if (req.cookies?.discordToken)
 		return res.status(200).render('index', { data: await client.getUser(req.cookies.discordToken) });
 
 	return res.status(200).render('index', { data: null });
 });
 
 app.get('/auth/login', (req, res) => {
-	if ('discordToken' in req.cookies) return res.redirect(302, '/');
+	if (req.cookies?.discordToken) return res.redirect(302, '/');
 
 	return res.redirect(302, uri);
 });
 
 app.get('/auth/callback', async (req, res) => {
-	if ('discordToken' in req.cookies) return res.redirect(302, '/');
+	if (req.cookies?.discordToken) return res.redirect(302, '/');
 
 	const accessCode = req.query.code;
 	const accessToken = await client.getAccess(accessCode);
