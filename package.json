@@ -15,13 +15,14 @@
 		"build": "rimraf dist && gulp"
 	},
 	"dependencies": {
+		"@2pg/oauth": "^1.0.8",
 		"@discordjs/opus": "0.5.0",
 		"cheerio": "^1.0.0-rc.6",
 		"commando-provider-mongo": "2.1.0",
 		"common-tags": "1.8.0",
 		"consola": "2.15.3",
+		"cookies": "^0.8.0",
 		"cors": "^2.8.5",
-		"disco-oauth": "^5.0.1",
 		"discord.js": "github:discordjs/discord.js",
 		"discord.js-commando": "github:1chiSensei/Commando#patch-1",
 		"ejs": "^3.1.6",
