@@ -19,6 +19,7 @@ app.use(express.urlencoded({ extended: true }));
 app.use(express.text());
 app.use(cookies.express(['I', 'store', 'login', 'sessions.']));
 app.use(morgan('combined'));
+app.use('/static', express.static(path.join(__dirname, 'static')));
 
 app.set('view engine', 'ejs');
 app.set('trust proxy', true);
