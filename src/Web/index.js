@@ -24,7 +24,7 @@ app.set('json spaces', 8);
 app.set('views', path.join(__dirname, 'views'));
 
 app.get('/', async (req, res) => {
-	const cookie = req.cookies.discordToken;
+	const cookie = req.cookies?.discordToken;
 
 	return res.status(200).render('index', { data: (await client.getUser(cookie)) || null });
 });

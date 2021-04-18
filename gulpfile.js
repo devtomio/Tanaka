@@ -12,7 +12,11 @@ const defaultTask = () => {
 };
 
 const webTask = () => {
-	return gulp.src('./src/**/*.ejs').pipe(sourcemaps.init()).pipe(sourcemaps.write('./')).pipe(gulp.dest('./dist'));
+	return gulp
+		.src('./src/**/*.ejs')
+		.pipe(sourcemaps.init())
+		.pipe(sourcemaps.write('./'))
+		.pipe(gulp.dest('./dist'));
 };
 
 exports.default = gulp.series(defaultTask, webTask);
