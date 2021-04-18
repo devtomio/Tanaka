@@ -24,9 +24,11 @@ app.set('json spaces', 8);
 app.set('views', path.join(__dirname, 'views'));
 
 app.get('/', async (req, res) => {
-	const user = (await client.getUser(req.cookies?.discordToken)) || null;
+	let dat = null;
 
-	return res.status(200).render('index', { data: user });
+	if (req.cookies.discordToken) dat = await client.getUser(req.cookies.discordToken);
+
+	return res.status(200).render('index', { data: dat });
 });
 
 app.get('/auth/login', (req, res) => {
