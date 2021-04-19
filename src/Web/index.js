@@ -9,7 +9,7 @@ const app = express();
 const client = new Client({
 	id: process.env.CLIENT_ID,
 	secret: process.env.CLIENT_SECRET,
-	redirectURI: 'https://tanaka-production.up.railway.app/auth/callback',
+	redirectURI: 'https://tanaka.1chi.tk/auth/callback',
 	scopes: ['identify'],
 });
 

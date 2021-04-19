@@ -1,9 +1,8 @@
 ## [2.13.7](https://github.com/1chiSensei/Tanaka/compare/2.13.6...2.13.7) (2021-04-19)
 
-
 ### Bug Fixes
 
-* **web:** dont autogenerate commands ([c51b346](https://github.com/1chiSensei/Tanaka/commit/c51b3463c7ab2a9728a7f4d8fbb770c3bd5dd6b4))
+- **web:** dont autogenerate commands ([c51b346](https://github.com/1chiSensei/Tanaka/commit/c51b3463c7ab2a9728a7f4d8fbb770c3bd5dd6b4))
 
 ## [2.13.6](https://github.com/1chiSensei/Tanaka/compare/2.13.5...2.13.6) (2021-04-19)
 
