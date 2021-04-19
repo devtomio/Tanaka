@@ -5,10 +5,11 @@
 		<div class="nav-scroller">
 			<a href="/">Home</a>
 			<a href="/commands">Commands</a>
+
+			<hr />
+			<img class="center image-circle" src="<%= data.avatarURL(); %>" alt="avatar" />
+			<h4 class="center"><%= `${data.username}#${data.discriminator}` %></h4>
 		</div>
 	</section>
-	<div>
-		<h1 class="align-left">Tanaka</h1>
-		<h1 class="align-right"><%= data.username %>#<%= data.discriminator %></h1>
-	</div>
+	<h1>Tanaka</h1>
 </header>

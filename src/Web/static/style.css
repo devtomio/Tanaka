@@ -39,12 +39,8 @@ body::-webkit-scrollbar-thumb {
 	border-radius: 0;
 }
 
-.align-left {
-	float: left;
-}
-
-.align-right {
-	float: right;
+.image-circle {
+	border-radius: 50%;
 }
 
 .naruto-run {
