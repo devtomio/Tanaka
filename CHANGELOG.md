@@ -1,3 +1,10 @@
+## [2.13.6](https://github.com/1chiSensei/Tanaka/compare/2.13.5...2.13.6) (2021-04-19)
+
+
+### Bug Fixes
+
+* **web:** fixxxxxxxxxxx ([fabcfe5](https://github.com/1chiSensei/Tanaka/commit/fabcfe528833b18ac97da0f2e0d3d16286cb0ba7))
+
 ## [2.13.5](https://github.com/1chiSensei/Tanaka/compare/2.13.4...2.13.5) (2021-04-19)
 
 ### Bug Fixes
