@@ -3,6 +3,7 @@ const { Intents, WebhookClient } = require('discord.js');
 const { FeedEmitter } = require('rss-emitter-ts');
 const TimerManager = require('./TimerManager');
 const { Database } = require('quickmongo');
+const { Converter } = require('showdown');
 const consola = require('consola');
 const Redis = require('./Redis');
 const web = require('../Web');
@@ -32,6 +33,8 @@ module.exports = class Client extends CommandoClient {
 		this.redis = new Redis(this).db;
 
 		this.timers = new TimerManager(this);
+
+		this.converter = new Converter();
 	}
 
 	async login(token = process.env.DISCORD_TOKEN) {
@@ -52,5 +55,25 @@ module.exports = class Client extends CommandoClient {
 		];
 
 		feeds.forEach((feed) => this.rss.add(feed));
+	}
+
+	generateCommands(html = false) {
+		const list = this.registry.groups.map((g) => {
+			const commands = g.commands.filter((c) => !c.hidden);
+
+			return `\n### ${g.name}:\n\n${commands
+				.map((c) => {
+					const extra = `${c.ownerOnly ? ' (Owner-Only)' : ''}${c.nsfw ? ' (NSFW)' : ''}`;
+
+					return `* **${c.name}:** ${c.description}${extra}`;
+				})
+				.join('\n')}`;
+		});
+
+		const text = list.join('\n');
+
+		if (html) this.converter.makeHtml(text);
+
+		return text;
 	}
 };
