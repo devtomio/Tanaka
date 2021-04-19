@@ -9,7 +9,7 @@ RUN apt-get update
 RUN apt-get install -y build-essential ffmpeg wget curl default-jre default-jdk
 
 # Install lavalink
-RUN wget https://ci.fredboat.com/repository/download/Lavalink_Build/8837:id/Lavalink.jar
+RUN wget https://github.com/freyacodes/Lavalink/releases/download/3.3.2.5/Lavalink.jar
 
 # Install node packages
 RUN yarn global add pm2
