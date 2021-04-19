@@ -72,7 +72,7 @@ module.exports = class Client extends CommandoClient {
 
 		const text = list.join('\n');
 
-		if (html) this.converter.makeHtml(text);
+		if (html === true) this.converter.makeHtml(text);
 
 		return text;
 	}
