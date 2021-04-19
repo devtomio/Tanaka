@@ -1,9 +1,8 @@
 ## [2.16.3](https://github.com/1chiSensei/Tanaka/compare/2.16.2...2.16.3) (2021-04-19)
 
-
 ### Bug Fixes
 
-* **docker:** fix 401 err ([15f267b](https://github.com/1chiSensei/Tanaka/commit/15f267bcac4028edd99650639e033a2cde1f5878))
+- **docker:** fix 401 err ([15f267b](https://github.com/1chiSensei/Tanaka/commit/15f267bcac4028edd99650639e033a2cde1f5878))
 
 ## [2.16.2](https://github.com/1chiSensei/Tanaka/compare/2.16.1...2.16.2) (2021-04-19)
 
