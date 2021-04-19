@@ -1,3 +1,10 @@
+## [2.16.1](https://github.com/1chiSensei/Tanaka/compare/2.16.0...2.16.1) (2021-04-19)
+
+
+### Bug Fixes
+
+* **botlist:** fix bot list posting ([1e23e06](https://github.com/1chiSensei/Tanaka/commit/1e23e06df0e3073ce89cd4254091bcab69661e43))
+
 # [2.16.0](https://github.com/1chiSensei/Tanaka/compare/2.15.1...2.16.0) (2021-04-19)
 
 ### Features
