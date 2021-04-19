@@ -61,7 +61,7 @@ module.exports = (c) => {
 
 	app.get('/commands', async (req, res) => {
 		const key = req.cookies.get('discordToken');
-		const commands = c.generateCommands(true);
+		const commands = c.generateCommands();
 
 		res.render('commands', { data: key ? await client.getUser(key) : null, commands });
 	});
