@@ -1,9 +1,8 @@
 ## [2.17.1](https://github.com/1chiSensei/Tanaka/compare/2.17.0...2.17.1) (2021-04-19)
 
-
 ### Bug Fixes
 
-* **lavalink:** add application.yml ([27bc399](https://github.com/1chiSensei/Tanaka/commit/27bc399e5d5e3269143914af8fb70da703500b56))
+- **lavalink:** add application.yml ([27bc399](https://github.com/1chiSensei/Tanaka/commit/27bc399e5d5e3269143914af8fb70da703500b56))
 
 # [2.17.0](https://github.com/1chiSensei/Tanaka/compare/2.16.3...2.17.0) (2021-04-19)
 
