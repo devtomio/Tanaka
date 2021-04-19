@@ -1,3 +1,10 @@
+# [2.15.0](https://github.com/1chiSensei/Tanaka/compare/2.14.2...2.15.0) (2021-04-19)
+
+
+### Features
+
+* **commands:** move help command to info group ([bb886f6](https://github.com/1chiSensei/Tanaka/commit/bb886f66af9e4f4a35bab43d624d0456e56d8501))
+
 ## [2.14.2](https://github.com/1chiSensei/Tanaka/compare/2.14.1...2.14.2) (2021-04-19)
 
 ## [2.14.1](https://github.com/1chiSensei/Tanaka/compare/2.14.0...2.14.1) (2021-04-19)
