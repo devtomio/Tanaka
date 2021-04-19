@@ -4,6 +4,7 @@ const { FeedEmitter } = require('rss-emitter-ts');
 const TimerManager = require('./TimerManager');
 const { Database } = require('quickmongo');
 const Turndown = require('turndown');
+const BotList = require('./BotList');
 const consola = require('consola');
 const Redis = require('./Redis');
 const web = require('../Web');
@@ -35,6 +36,8 @@ module.exports = class Client extends CommandoClient {
 		this.timers = new TimerManager(this);
 
 		this.converter = new Turndown();
+
+		this.bl = new BotList(this);
 	}
 
 	async login(token = process.env.DISCORD_TOKEN) {
