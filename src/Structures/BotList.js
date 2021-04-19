@@ -14,15 +14,17 @@ module.exports = class BotList {
 	}
 
 	async ibl() {
+		const body = {
+			servers: this.client.guilds.cache.size,
+			shards: this.client.shard ? this.client.shard.count : 1,
+		};
+
 		await request
 			.post(`https://api.infinitybotlist.com/bot/${this.client.user.id}`)
 			.set({
 				authorization: process.env.IBL_KEY,
 				'Content-Type': 'application/json',
 			})
-			.send({
-				servers: this.client.guilds.cache.size,
-				shards: this.client.shard ? this.client.shard.count : 1,
-			});
+			.send(JSON.stringify(body));
 	}
 };
