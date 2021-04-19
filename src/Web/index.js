@@ -52,6 +52,13 @@ module.exports = (c) => {
 		});
 	});
 
+	app.get('/invite', (_, res) =>
+		res.redirect(
+			302,
+			'https://discord.com/oauth2/authorize?client_id=804605929944645672&scope=bot&permissions=641064257',
+		),
+	);
+
 	app.get('/commands', async (req, res) => {
 		const key = req.cookies.get('discordToken');
 
