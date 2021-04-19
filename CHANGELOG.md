@@ -1,3 +1,10 @@
+# [2.17.0](https://github.com/1chiSensei/Tanaka/compare/2.16.3...2.17.0) (2021-04-19)
+
+
+### Features
+
+* **voice:** use lavalink ([056777e](https://github.com/1chiSensei/Tanaka/commit/056777e184dd7468d60f962d2a88fe9debd021fe))
+
 ## [2.16.3](https://github.com/1chiSensei/Tanaka/compare/2.16.2...2.16.3) (2021-04-19)
 
 ### Bug Fixes
