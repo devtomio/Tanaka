@@ -22,11 +22,13 @@
 
 		<div class="paper-container">
 			<div class="ribbon twitch"></div>
-			<div class="paper markdown-container">
-				<%= commands %> 
-			</div>
+			<div class="paper markdown-container" id="command-list"></div>
 		</div>
 
 		<%- include('./partials/_footer') %> 
 	<% } %>
+
+	<script>
+		document.querySelector('div#command-list').innerHTML = '<%= commands %>';
+	</script>
 </body>
