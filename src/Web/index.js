@@ -38,7 +38,7 @@ module.exports = (c) => {
 		const guildCount = c.guilds.cache.size.toLocaleString();
 		const channelCount = c.channels.cache.size.toLocaleString();
 		const commandCount = c.registry.commands.size.toLocaleString();
-		const shardCount = c.shard.count.toLocaleString();
+		const shardCount = c.shard.count.toLocaleString() || '1';
 		const ping = Math.round(c.ws.ping);
 
 		res.render('index', {
