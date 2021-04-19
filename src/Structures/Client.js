@@ -61,18 +61,17 @@ module.exports = class Client extends CommandoClient {
 		const list = this.registry.groups.map((g) => {
 			const commands = g.commands.filter((c) => !c.hidden);
 
-			return `\n### ${g.name}:\n\n${commands
+			return `\n<h3>${g.name}:</h3>\n\n<ul>${commands
 				.map((c) => {
 					const extra = `${c.ownerOnly ? ' (Owner-Only)' : ''}${c.nsfw ? ' (NSFW)' : ''}`;
 
-					return `* **${c.name}:** ${c.description}${extra}`;
+					return `<li><strong>${c.name}:</strong> ${c.description}${extra}</li>`;
 				})
-				.join('\n')}`;
+				.join('\n')}</ul>`;
 		});
 
 		const text = list.join('\n');
-		const html = this.converter.turndown(text);
 
-		return html;
+		return text;
 	}
 };
