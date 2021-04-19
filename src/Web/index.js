@@ -61,9 +61,8 @@ module.exports = (c) => {
 
 	app.get('/commands', async (req, res) => {
 		const key = req.cookies.get('discordToken');
-		const commands = c.generateCommands();
 
-		res.render('commands', { data: key ? await client.getUser(key) : null, commands });
+		res.render('commands', { data: key ? await client.getUser(key) : null });
 	});
 
 	app.get('/auth/login', (_, res) => res.redirect(302, client.authCodeLink.url));

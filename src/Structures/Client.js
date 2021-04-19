@@ -3,7 +3,6 @@ const { Intents, WebhookClient } = require('discord.js');
 const { FeedEmitter } = require('rss-emitter-ts');
 const TimerManager = require('./TimerManager');
 const { Database } = require('quickmongo');
-const { html } = require('common-tags');
 const Turndown = require('turndown');
 const consola = require('consola');
 const Redis = require('./Redis');
@@ -56,24 +55,5 @@ module.exports = class Client extends CommandoClient {
 		];
 
 		feeds.forEach((feed) => this.rss.add(feed));
-	}
-
-	generateCommands() {
-		const list = this.registry.groups.map((g) => {
-			const commands = g.commands.filter((c) => !c.hidden);
-
-			return `\n<h3>${g.name}:</h3>\n\n<ul>${commands
-				.map((c) => {
-					const extra = `${c.ownerOnly ? ' (Owner-Only)' : ''}${c.nsfw ? ' (NSFW)' : ''}`;
-
-					return `<li><strong>${c.name}:</strong> ${c.description}${extra}</li>`;
-				})
-				.join('\n')}</ul>`;
-		});
-
-		const text = list.join('\n');
-		const htm = html` ${text} `;
-
-		return htm;
 	}
 };
