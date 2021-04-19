@@ -13,43 +13,64 @@ const client = new Client({
 	scopes: ['identify'],
 });
 
-app.use(cors());
-app.use(express.json());
-app.use(express.urlencoded({ extended: true }));
-app.use(express.text());
-app.use(cookies.express(['I', 'store', 'login', 'sessions.']));
-app.use(morgan('combined'));
-app.use('/static', express.static(path.join(__dirname, 'static')));
+// eslint-disable-next-line valid-jsdoc
+/**
+ *  @param {import('../Structures/Client')} c The client
+ */
+module.exports = (c) => {
+	app.use(cors());
+	app.use(express.json());
+	app.use(express.urlencoded({ extended: true }));
+	app.use(express.text());
+	app.use(cookies.express(['I', 'store', 'login', 'sessions.']));
+	app.use(morgan('combined'));
+	app.use('/static', express.static(path.join(__dirname, 'static')));
 
-app.set('view engine', 'ejs');
-app.set('trust proxy', true);
-app.set('json spaces', 8);
-app.set('views', path.join(__dirname, 'views'));
+	app.set('view engine', 'ejs');
+	app.set('trust proxy', true);
+	app.set('json spaces', 8);
+	app.set('views', path.join(__dirname, 'views'));
 
-app.get('/', async (req, res) => {
-	const key = req.cookies.get('discordToken');
+	app.get('/', async (req, res) => {
+		const key = req.cookies.get('discordToken');
 
-	res.render('index', { data: key ? await client.getUser(key) : null });
-});
+		const userCount = c.guilds.cache.reduce((a, b) => a + b.memberCount, 0).toLocaleString();
+		const guildCount = c.guilds.cache.size.toLocaleString();
+		const channelCount = c.channels.cache.size.toLocaleString();
+		const commandCount = c.registry.commands.size.toLocaleString();
+		const shardCount = c.shard.count.toLocaleString();
+		const ping = Math.round(c.ws.ping);
 
-app.get('/commands', async (req, res) => {
-	const key = req.cookies.get('discordToken');
+		res.render('index', {
+			data: key ? await client.getUser(key) : null,
+			userCount,
+			guildCount,
+			channelCount,
+			commandCount,
+			shardCount,
+			ping,
+		});
+	});
 
-	res.render('commands', { data: key ? await client.getUser(key) : null });
-});
+	app.get('/commands', async (req, res) => {
+		const key = req.cookies.get('discordToken');
 
-app.get('/auth/login', (_, res) => res.redirect(302, client.authCodeLink.url));
+		res.render('commands', { data: key ? await client.getUser(key) : null });
+	});
 
-app.get('/auth/callback', async (req, res) => {
-	const key = await client.getAccess(req.query.code.toString());
+	app.get('/auth/login', (_, res) => res.redirect(302, client.authCodeLink.url));
 
-	res.cookie('discordToken', key).redirect('/');
-});
+	app.get('/auth/callback', async (req, res) => {
+		if (req.cookies.get('discordToken')) return res.redirect(302, '/');
 
-app.get('/auth/logout', (_, res) => {
-	res.clearCookie('discordToken', undefined);
+		const key = await client.getAccess(req.query.code.toString());
 
-	res.redirect(302, '/');
-});
+		res.cookie('discordToken', key).redirect('/');
+	});
 
-module.exports = () => app.listen(process.env.PORT, () => console.log('Website is ready!'));
+	app.get('/auth/logout', (_, res) => {
+		res.clearCookie('discordToken', undefined);
+
+		res.redirect(302, '/');
+	});
+};

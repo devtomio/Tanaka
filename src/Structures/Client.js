@@ -36,7 +36,7 @@ module.exports = class Client extends CommandoClient {
 
 	async login(token = process.env.DISCORD_TOKEN) {
 		this.addRSSListeners();
-		web();
+		web(this);
 
 		return super.login(token);
 	}
