@@ -32,6 +32,12 @@ app.get('/', async (req, res) => {
 	res.render('index', { data: key ? await client.getUser(key) : null });
 });
 
+app.get('/commands', async (req, res) => {
+	const key = req.cookies.get('discordToken');
+
+	res.render('commands', { data: key ? await client.getUser(key) : null });
+});
+
 app.get('/auth/login', (_, res) => res.redirect(302, client.authCodeLink.url));
 
 app.get('/auth/callback', async (req, res) => {
