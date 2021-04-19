@@ -1,3 +1,10 @@
+# [2.14.0](https://github.com/1chiSensei/Tanaka/compare/2.13.7...2.14.0) (2021-04-19)
+
+
+### Features
+
+* **web:** make website public ([20fc200](https://github.com/1chiSensei/Tanaka/commit/20fc20015c069887f51789039ecb0c22173ffc55))
+
 ## [2.13.7](https://github.com/1chiSensei/Tanaka/compare/2.13.6...2.13.7) (2021-04-19)
 
 ### Bug Fixes
