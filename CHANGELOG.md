@@ -1,3 +1,10 @@
+## [2.13.5](https://github.com/1chiSensei/Tanaka/compare/2.13.4...2.13.5) (2021-04-19)
+
+
+### Bug Fixes
+
+* **commands:** fix empty command page ([755cfd3](https://github.com/1chiSensei/Tanaka/commit/755cfd3f67b88e84088d16789e4cfbf8653e44d7))
+
 ## [2.13.4](https://github.com/1chiSensei/Tanaka/compare/2.13.3...2.13.4) (2021-04-19)
 
 ### Bug Fixes
