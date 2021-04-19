@@ -12,7 +12,8 @@
 		"lint": "eslint . --fix",
 		"start": "yarn build && dotenv -- pm2-runtime start dist/index.js --name \"tanaka\"",
 		"release": "dotenv -- release-it --ci",
-		"build": "rimraf dist && gulp"
+		"build": "rimraf dist && gulp",
+		"test": "dotenv node ."
 	},
 	"dependencies": {
 		"@2pg/oauth": "^1.0.8",
@@ -50,6 +51,7 @@
 		"gulp-clean-css": "^4.3.0",
 		"gulp-sourcemaps": "3.0.0",
 		"gulp-terser": "2.0.1",
+		"pm2": "^4.5.6",
 		"prettier": "2.2.1",
 		"release-it": "14.6.1",
 		"rimraf": "^3.0.2"

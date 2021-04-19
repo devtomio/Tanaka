@@ -3,6 +3,7 @@ const { Intents, WebhookClient } = require('discord.js');
 const { FeedEmitter } = require('rss-emitter-ts');
 const TimerManager = require('./TimerManager');
 const { Database } = require('quickmongo');
+const { html } = require('common-tags');
 const Turndown = require('turndown');
 const consola = require('consola');
 const Redis = require('./Redis');
@@ -71,7 +72,8 @@ module.exports = class Client extends CommandoClient {
 		});
 
 		const text = list.join('\n');
+		const htm = html` ${text} `;
 
-		return text;
+		return htm;
 	}
 };

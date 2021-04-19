@@ -82,5 +82,5 @@ module.exports = (c) => {
 		res.redirect(302, '/');
 	});
 
-	app.listen(process.env.PORT, () => c.logger.info('Website is online!'));
+	app.listen(process.env.PORT || 3000, () => c.logger.info('Website is online!'));
 };
