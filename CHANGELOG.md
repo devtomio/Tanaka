@@ -1,3 +1,10 @@
+## [2.16.2](https://github.com/1chiSensei/Tanaka/compare/2.16.1...2.16.2) (2021-04-19)
+
+
+### Bug Fixes
+
+* **docker:** fix docker build ([e8f1ad0](https://github.com/1chiSensei/Tanaka/commit/e8f1ad0943483eb25c6ee9e4eafb0a24266dad3b))
+
 ## [2.16.1](https://github.com/1chiSensei/Tanaka/compare/2.16.0...2.16.1) (2021-04-19)
 
 ### Bug Fixes
