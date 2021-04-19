@@ -1,3 +1,10 @@
+## [2.17.2](https://github.com/1chiSensei/Tanaka/compare/2.17.1...2.17.2) (2021-04-19)
+
+
+### Bug Fixes
+
+* **script:** fix start script ([084c024](https://github.com/1chiSensei/Tanaka/commit/084c024e54d600094ca7129b3a99d2630eaa8215))
+
 ## [2.17.1](https://github.com/1chiSensei/Tanaka/compare/2.17.0...2.17.1) (2021-04-19)
 
 ### Bug Fixes
