@@ -29,6 +29,6 @@
 	<% } %>
 
 	<script>
-		document.querySelector('div#command-list').innerHTML = '<%= commands %>';
+		(() => document.querySelector('div#command-list').innerHTML = `<%= commands %>`)();
 	</script>
 </body>

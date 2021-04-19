@@ -1,9 +1,8 @@
 ## [2.13.4](https://github.com/1chiSensei/Tanaka/compare/2.13.3...2.13.4) (2021-04-19)
 
-
 ### Bug Fixes
 
-* **commands:** fix commands not parsing ([56b59bf](https://github.com/1chiSensei/Tanaka/commit/56b59bf22b83b5349f3131ff60046f852d5faf9c))
+- **commands:** fix commands not parsing ([56b59bf](https://github.com/1chiSensei/Tanaka/commit/56b59bf22b83b5349f3131ff60046f852d5faf9c))
 
 ## [2.13.3](https://github.com/1chiSensei/Tanaka/compare/2.13.2...2.13.3) (2021-04-19)
 
