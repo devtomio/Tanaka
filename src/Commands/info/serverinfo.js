@@ -16,13 +16,14 @@ module.exports = class ServerInfoCommand extends Command {
 		});
 	}
 
-	run(msg) {
+	async run(msg) {
 		const roles = msg.guild.roles.cache
 			.sort((a, b) => b.position - a.position)
 			.map((role) => role.toString());
 		const members = msg.guild.members.cache;
 		const channels = msg.guild.channels.cache;
 		const emojis = msg.guild.emojis.cache;
+		const owner = await msg.guild.fetchOwner();
 
 		const embed = new MessageEmbed()
 			.setTitle(`**Guild Information for __${msg.guild.name}__**`)
@@ -31,7 +32,7 @@ module.exports = class ServerInfoCommand extends Command {
 			.addField('General', [
 				`**❯ Name:** ${msg.guild.name}`,
 				`**❯ ID:** ${msg.guild.id}`,
-				`**❯ Owner:** ${msg.guild.owner.user.tag} \`(${msg.guild.ownerID})\``,
+				`**❯ Owner:** ${owner.user.tag} \`(${msg.guild.ownerID})\``,
 				`**❯ Region:** ${regions[msg.guild.region]}`,
 				`**❯ Boost Tier:** ${msg.guild.premiumTier ? `Tier ${msg.guild.premiumTier}` : 'None'}`,
 				`**❯ Explicit Filter:** ${filterLevels[msg.guild.explicitContentFilter]}`,

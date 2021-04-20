@@ -1,0 +1,2 @@
+const distort=(t,a,d,o,e,r,s=4)=>{const n=t.getImageData(d,o,e,r),h=t.getImageData(d,o,e,r),M=e*s;for(let t=0;t<e;t++)for(let d=0;d<r;d++){const o=Math.round(a*Math.sin(2*Math.PI*3*(d/r))),g=d*M+t*s,i=(d+Math.round(a*Math.sin(2*Math.PI*3*(d/e))))*M+(t+o)*s;n.data[g]=h.data[i],n.data[g+1]=h.data[i+1],n.data[g+2]=h.data[i+2]}return t.putImageData(n,d,o),t};module.exports={distort:distort};
+//# sourceMappingURL=Canvas.js.map

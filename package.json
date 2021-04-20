@@ -18,6 +18,7 @@
 	"dependencies": {
 		"@2pg/oauth": "^1.0.8",
 		"@discordjs/opus": "0.5.0",
+		"canvas": "^2.7.0",
 		"cheerio": "^1.0.0-rc.6",
 		"commando-provider-mongo": "2.1.0",
 		"common-tags": "1.8.0",

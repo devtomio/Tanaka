@@ -24,6 +24,7 @@ client.registry
 		{ id: 'remind', name: 'Reminder' },
 		{ id: 'anime-updates', name: 'Anime Updates' },
 		{ id: 'codebin', name: 'Code Bins' },
+		{ id: 'img', name: 'Image Manipulation' },
 	])
 	.registerDefaultGroups()
 	.registerDefaultCommands({

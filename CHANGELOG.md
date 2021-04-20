@@ -1,9 +1,8 @@
 # [2.18.0](https://github.com/1chiSensei/Tanaka/compare/2.17.2...2.18.0) (2021-04-20)
 
-
 ### Features
 
-* **web:** add guilds.join scope ([00adca4](https://github.com/1chiSensei/Tanaka/commit/00adca443d6b3e2f494f9352f8305f2c405da35b))
+- **web:** add guilds.join scope ([00adca4](https://github.com/1chiSensei/Tanaka/commit/00adca443d6b3e2f494f9352f8305f2c405da35b))
 
 ## [2.17.2](https://github.com/1chiSensei/Tanaka/compare/2.17.1...2.17.2) (2021-04-19)
 
