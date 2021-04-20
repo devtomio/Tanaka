@@ -1,3 +1,10 @@
+# [2.19.0](https://github.com/1chiSensei/Tanaka/compare/2.18.0...2.19.0) (2021-04-20)
+
+
+### Features
+
+* **commands:** add glitch cmd ([5b1bf3e](https://github.com/1chiSensei/Tanaka/commit/5b1bf3e1b6e983d5ee212c75e82573841b5f360b))
+
 # [2.18.0](https://github.com/1chiSensei/Tanaka/compare/2.17.2...2.18.0) (2021-04-20)
 
 ### Features
