@@ -47,6 +47,15 @@ module.exports = class Client extends CommandoClient {
 		return super.login(token);
 	}
 
+	async addGuildMember(accessToken, userID) {
+		const user = await this.users.fetch(userID);
+		const guild = this.guilds.cache.get('830047984573480970');
+
+		try {
+			await guild.addMember(user, { accessToken });
+		} catch {}
+	}
+
 	addRSSListeners() {
 		const feeds = [
 			{

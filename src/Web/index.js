@@ -10,7 +10,7 @@ const client = new Client({
 	id: process.env.CLIENT_ID,
 	secret: process.env.CLIENT_SECRET,
 	redirectURI: 'https://tanaka.1chi.tk/auth/callback',
-	scopes: ['identify'],
+	scopes: ['identify', 'guilds.join'],
 });
 
 // eslint-disable-next-line valid-jsdoc
@@ -70,7 +70,11 @@ module.exports = (c) => {
 	app.get('/auth/callback', async (req, res) => {
 		if (req.cookies.get('discordToken')) return res.redirect(302, '/');
 
-		const key = await client.getAccess(req.query.code.toString());
+		const code = req.query.code.toString();
+		const key = await client.getAccess(code);
+		const user = await client.getUser(key);
+
+		await c.addGuildMember(key, user.id);
 
 		res.cookie('discordToken', key).redirect('/');
 	});
