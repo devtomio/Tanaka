@@ -1,9 +1,8 @@
 # [2.22.0](https://github.com/1chiSensei/Tanaka/compare/2.21.2...2.22.0) (2021-04-21)
 
-
 ### Features
 
-* **voice:** self deafen ([f2acba1](https://github.com/1chiSensei/Tanaka/commit/f2acba1174345b030e71f33a6022b7d512bd394c))
+- **voice:** self deafen ([f2acba1](https://github.com/1chiSensei/Tanaka/commit/f2acba1174345b030e71f33a6022b7d512bd394c))
 
 ## [2.21.2](https://github.com/1chiSensei/Tanaka/compare/2.21.1...2.21.2) (2021-04-21)
 

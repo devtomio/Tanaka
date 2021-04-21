@@ -38,7 +38,7 @@ client.registry
 	.registerCommandsIn(path.join(__dirname, 'Commands'));
 
 client.once('ready', async () => {
-	client.manager.init(client.user.id);
+	client.setTimeout(() => client.manager.init(client.user.id), 5000);
 
 	await client.timers.fetchAll();
 
