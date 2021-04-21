@@ -29,6 +29,7 @@ module.exports = class PlayCommand extends Command {
 			guild: msg.guild.id,
 			voiceChannel: channel.id,
 			textChannel: msg.channel.id,
+			selfDeafen: true,
 		});
 
 		if (player.state !== 'CONNECTED') player.connect();
