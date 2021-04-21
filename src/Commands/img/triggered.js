@@ -1,9 +1,13 @@
+const { drawImageWithTint } = require('../../Structures/Canvas');
 const { streamToArray } = require('../../Structures/Util');
 const { createCanvas, loadImage } = require('canvas');
 const { Command } = require('discord.js-commando');
 const request = require('node-superfetch');
 const GIFEncoder = require('gifencoder');
 const path = require('path');
+
+const coord1 = [-25, -33, -42, -14];
+const coord2 = [-25, -13, -34, -10];
 
 module.exports = class TriggeredCommand extends Command {
 	constructor(client) {
@@ -14,7 +18,7 @@ module.exports = class TriggeredCommand extends Command {
 			description: 'Applies the triggered effect to an image.',
 			throttling: {
 				usages: 1,
-				duration: 10,
+				duration: 30,
 			},
 			clientPermissions: ['ATTACH_FILES'],
 			args: [
@@ -30,49 +34,32 @@ module.exports = class TriggeredCommand extends Command {
 
 	async run(msg, { image }) {
 		try {
-			const { body } = await request.get(image);
 			const base = await loadImage(
 				path.join(__dirname, '..', '..', 'Assets', 'image', 'triggered.png'),
 			);
-			const img = await loadImage(body);
-			const GIF = new GIFEncoder(256, 310);
-			const stream = GIF.createReadStream();
-
-			GIF.start();
-			GIF.setRepeat(0);
-			GIF.setDelay(15);
-
-			const canvas = createCanvas(256, 310);
+			const { body } = await request.get(image);
+			const avatar = await loadImage(body);
+			const encoder = new GIFEncoder(base.width, base.width);
+			const canvas = createCanvas(base.width, base.width);
 			const ctx = canvas.getContext('2d');
-			const BR = 30;
-			const LR = 20;
 
-			let i = 0;
+			ctx.fillStyle = 'white';
+			ctx.fillRect(0, 0, base.width, base.width);
 
-			while (i < 9) {
-				ctx.clearRect(0, 0, 256, 310);
-				ctx.drawImage(
-					img,
-					Math.floor(Math.random() * BR) - BR,
-					Math.floor(Math.random() * BR) - BR,
-					256 + BR,
-					310 - 54 + BR,
-				);
-				ctx.fillStyle = '##FF000033';
-				ctx.fillRect(0, 0, 256, 310);
-				ctx.drawImage(
-					base,
-					Math.floor(Math.random() * LR) - LR,
-					310 - 54 + Math.floor(Math.random() * LR) - LR,
-					256 + LR,
-					54 + LR,
-				);
+			const stream = encoder.createReadStream();
 
-				GIF.addFrame(ctx);
+			encoder.start();
+			encoder.setRepeat(0);
+			encoder.setDelay(50);
+			encoder.setQuality(200);
 
-				i++;
+			for (let i = 0; i < 4; i++) {
+				drawImageWithTint(ctx, avatar, 'red', coord1[i], coord2[i], 300, 300);
+				ctx.drawImage(base, 0, 218, 256, 38);
+				encoder.addFrame(ctx);
 			}
-			GIF.finish();
+
+			encoder.finish();
 
 			const buffer = await streamToArray(stream);
 
