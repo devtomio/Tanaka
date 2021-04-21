@@ -1,3 +1,5 @@
+## [2.21.2](https://github.com/1chiSensei/Tanaka/compare/2.21.1...2.21.2) (2021-04-21)
+
 ## [2.21.1](https://github.com/1chiSensei/Tanaka/compare/2.21.0...2.21.1) (2021-04-21)
 
 ### Bug Fixes
