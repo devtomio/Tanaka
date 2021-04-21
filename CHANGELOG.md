@@ -1,3 +1,10 @@
+## [2.20.3](https://github.com/1chiSensei/Tanaka/compare/2.20.2...2.20.3) (2021-04-21)
+
+
+### Bug Fixes
+
+* **commands:** fix triggered command not sending a msg ([2f000fc](https://github.com/1chiSensei/Tanaka/commit/2f000fc8a3078a69333a2b7bd7f46952cb777eca))
+
 ## [2.20.2](https://github.com/1chiSensei/Tanaka/compare/2.20.1...2.20.2) (2021-04-21)
 
 ### Bug Fixes
