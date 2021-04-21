@@ -55,6 +55,18 @@
   dependencies:
     regenerator-runtime "^0.13.4"
 
+"@canvacord/assets@^1.0.2":
+  version "1.0.2"
+  resolved "https://registry.yarnpkg.com/@canvacord/assets/-/assets-1.0.2.tgz#1802be6a48ebaa2e0a8ec90ed76661d1a01766ae"
+  integrity sha512-76uLD27UDlfTxtgA7armbt6G9/X1NDqm/qjs9gxbWFVfcJxVdT3r3LlwaLp0NlRa5yMylCFf3WcOHufVjk60vw==
+
+"@canvacord/emoji-parser@^1.0.1":
+  version "1.0.1"
+  resolved "https://registry.yarnpkg.com/@canvacord/emoji-parser/-/emoji-parser-1.0.1.tgz#b33049320e01dc5290751df5b6279d99fe2f2437"
+  integrity sha512-Lb3xatdd91MR9tU4sicgrxxKg+/rVD1zKTOh55bmVF2Ri5X8vHTV+jNHTvRzkomGpyepGM+7qA4xMvG8ZqtO8g==
+  dependencies:
+    twemoji-parser "^13.0.0"
+
 "@discordjs/collection@^0.1.6":
   version "0.1.6"
   resolved "https://registry.yarnpkg.com/@discordjs/collection/-/collection-0.1.6.tgz#9e9a7637f4e4e0688fd8b2b5c63133c91607682c"
@@ -1357,7 +1369,19 @@ camelcase@^6.2.0:
   resolved "https://registry.yarnpkg.com/camelcase/-/camelcase-6.2.0.tgz#924af881c9d525ac9d87f40d964e5cea982a1809"
   integrity sha512-c7wVvbw3f37nuobQNtgsgG9POC9qMbNuMQmTCqZv23b6MIz0fcYpBiOlv9gEN/hdLdnZTDQhg6e9Dq5M1vKvfg==
 
-canvas@^2.2.0, canvas@^2.7.0:
+canvacord@^5.1.0:
+  version "5.1.0"
+  resolved "https://registry.yarnpkg.com/canvacord/-/canvacord-5.1.0.tgz#2bab202b27a44f0fafc37cf61bc44b2829714292"
+  integrity sha512-2UcJdqoCDkrNRQNoY+HwqyDCtNR0IGJ7FvnJXp12GQRW+aTKsk7ei7QMHhhhmdh42XWIA2fqzvQczqalDbZqgA==
+  dependencies:
+    "@canvacord/assets" "^1.0.2"
+    "@canvacord/emoji-parser" "^1.0.1"
+    canvas "^2.6.1"
+    gifencoder "^2.0.1"
+    moment "^2.29.1"
+    moment-duration-format "^2.3.2"
+
+canvas@^2.2.0, canvas@^2.6.1, canvas@^2.7.0:
   version "2.7.0"
   resolved "https://registry.yarnpkg.com/canvas/-/canvas-2.7.0.tgz#3ce3fe30c69595ccd2bd1232967e681c026be61e"
   integrity sha512-pzCxtkHb+5su5MQjTtepMDlIOtaXo277x0C0u3nMOxtkhTyQ+h2yNKhlROAaDllWgRyePAUitC08sXw26Eb6aw==
@@ -2461,7 +2485,6 @@ dir-glob@^3.0.1:
 
 "discord.js@github:discordjs/discord.js":
   version "12.5.0"
-  uid f1c0c043b516f4158ab9d473419e3b5e125a4c03
   resolved "https://codeload.github.com/discordjs/discord.js/tar.gz/f1c0c043b516f4158ab9d473419e3b5e125a4c03"
   dependencies:
     "@discordjs/collection" "^0.1.6"
@@ -5867,6 +5890,11 @@ module-details-from-path@^1.0.3:
   resolved "https://registry.yarnpkg.com/module-details-from-path/-/module-details-from-path-1.0.3.tgz#114c949673e2a8a35e9d35788527aa37b679da2b"
   integrity sha1-EUyUlnPiqKNenTV4hSeqN7Z52is=
 
+moment-duration-format@^2.3.2:
+  version "2.3.2"
+  resolved "https://registry.yarnpkg.com/moment-duration-format/-/moment-duration-format-2.3.2.tgz#5fa2b19b941b8d277122ff3f87a12895ec0d6212"
+  integrity sha512-cBMXjSW+fjOb4tyaVHuaVE/A5TqkukDWiOfxxAjY+PEqmmBQlLwn+8OzwPiG3brouXKY5Un4pBjAeB6UToXHaQ==
+
 moment-timezone@^0.5.x:
   version "0.5.33"
   resolved "https://registry.yarnpkg.com/moment-timezone/-/moment-timezone-0.5.33.tgz#b252fd6bb57f341c9b59a5ab61a8e51a73bbd22c"
@@ -5874,7 +5902,7 @@ moment-timezone@^0.5.x:
   dependencies:
     moment ">= 2.9.0"
 
-moment@2.29.1, "moment@>= 2.9.0":
+moment@2.29.1, "moment@>= 2.9.0", moment@^2.29.1:
   version "2.29.1"
   resolved "https://registry.yarnpkg.com/moment/-/moment-2.29.1.tgz#b2be769fa31940be9eeea6469c075e35006fa3d3"
   integrity sha512-kHmoybcPV8Sqy59DwNDY3Jefr64lK/by/da0ViFcuA4DH0vQg5Q6Ze5VimxkfQNSC+Mls/Kx53s7TjP1RhFEDQ==
@@ -8810,6 +8838,11 @@ tweetnacl@^1.0.3:
   version "1.0.3"
   resolved "https://registry.yarnpkg.com/tweetnacl/-/tweetnacl-1.0.3.tgz#ac0af71680458d8a6378d0d0d050ab1407d35596"
   integrity sha512-6rt+RN7aOi1nGMyC4Xa5DdYiukl2UWCbcJft7YhxReBGQD7OAM8Pbxw6YMo4r2diNEA8FEmu32YOn9rhaiE5yw==
+
+twemoji-parser@^13.0.0:
+  version "13.0.0"
+  resolved "https://registry.yarnpkg.com/twemoji-parser/-/twemoji-parser-13.0.0.tgz#bd9d1b98474f1651dc174696b45cabefdfa405af"
+  integrity sha512-zMaGdskpH8yKjT2RSE/HwE340R4Fm+fbie4AaqjDa4H/l07YUmAvxkSfNl6awVWNRRQ0zdzLQ8SAJZuY5MgstQ==
 
 type-check@^0.4.0, type-check@~0.4.0:
   version "0.4.0"
