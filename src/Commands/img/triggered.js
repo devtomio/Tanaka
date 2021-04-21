@@ -1,3 +1,4 @@
+const { streamToArray } = require('../../Structures/Util');
 const { createCanvas, loadImage } = require('canvas');
 const { Command } = require('discord.js-commando');
 const request = require('node-superfetch');
@@ -35,6 +36,7 @@ module.exports = class TriggeredCommand extends Command {
 			);
 			const img = await loadImage(body);
 			const GIF = new GIFEncoder(256, 310);
+			const stream = GIF.createReadStream();
 
 			GIF.start();
 			GIF.setRepeat(0);
@@ -72,11 +74,9 @@ module.exports = class TriggeredCommand extends Command {
 			}
 			GIF.finish();
 
-			const attachment = GIF.out.getData();
+			const buffer = await streamToArray(stream);
 
-			if (Buffer.byteLength(attachment) > 8e6) return msg.reply('Resulting image was above 8 MB.');
-
-			return msg.say({ files: [{ attachment, name: 'triggered.gif' }] });
+			return msg.say({ files: [{ attachment: Buffer.concat(buffer), name: 'triggered.gif' }] });
 		} catch (err) {
 			return msg.reply(`An error occured: \`${err.message}\`.`);
 		}

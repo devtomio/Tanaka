@@ -24,6 +24,37 @@ const trimArray = (arr, maxLen = 10) => {
 	return arr;
 };
 
+const streamToArray = (stream) => {
+	if (!stream.readable) return Promise.resolve([]);
+
+	return new Promise((resolve, reject) => {
+		const array = [];
+
+		function cleanup() {
+			/* eslint-disable no-use-before-define */
+			stream.removeListener('data', onData);
+			stream.removeListener('end', onEnd);
+			stream.removeListener('error', onEnd);
+			stream.removeListener('close', onClose);
+			/* eslint-enable */
+		}
+		function onData(data) {
+			array.push(data);
+		}
+		function onEnd(error) {
+			if (error) reject(error);
+			else resolve(array);
+
+			cleanup();
+		}
+		function onClose() {
+			resolve(array);
+
+			cleanup();
+		}
+	});
+};
+
 const permissions = {
 	ADMINISTRATOR: 'Administrator',
 	VIEW_AUDIT_LOG: 'View Audit Log',
@@ -117,4 +148,5 @@ module.exports = {
 	permissions,
 	toPercent,
 	shorten,
+	streamToArray,
 };
