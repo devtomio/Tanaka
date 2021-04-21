@@ -1,5 +1,6 @@
 const gulp = require('gulp');
 const terser = require('gulp-terser');
+const imagemin = require('gulp-imagemin');
 const cssMinify = require('gulp-clean-css');
 const sourcemaps = require('gulp-sourcemaps');
 
@@ -29,4 +30,8 @@ const css = () => {
 		.pipe(gulp.dest('./dist'));
 };
 
-exports.default = gulp.series(main, ejs, css);
+const img = () => {
+	return gulp.src('./src/**/*.png').pipe(imagemin()).pipe(gulp.dest('./dist'));
+};
+
+exports.default = gulp.series(main, ejs, css, img);
