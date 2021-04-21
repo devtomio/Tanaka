@@ -38,6 +38,8 @@ client.registry
 	.registerCommandsIn(path.join(__dirname, 'Commands'));
 
 client.once('ready', async () => {
+	client.manager.init(client.user.id);
+
 	await client.timers.fetchAll();
 
 	const userCount = client.guilds.cache.reduce((a, b) => a + b.memberCount, 0);
