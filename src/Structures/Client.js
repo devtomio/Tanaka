@@ -3,6 +3,7 @@ const { Intents, WebhookClient } = require('discord.js');
 const { FeedEmitter } = require('rss-emitter-ts');
 const TimerManager = require('./TimerManager');
 const { Database } = require('quickmongo');
+const { Manager } = require('erela.js');
 const Turndown = require('turndown');
 const BotList = require('./BotList');
 const consola = require('consola');
@@ -38,6 +39,16 @@ module.exports = class Client extends CommandoClient {
 		this.converter = new Turndown();
 
 		this.bl = new BotList(this);
+
+		this.client = this;
+
+		this.manager = new Manager({
+			send: (id, payload) => {
+				const guild = this.guilds.cache.get(id);
+
+				if (guild) guild.shard.send(payload);
+			},
+		});
 	}
 
 	async login(token = process.env.DISCORD_TOKEN) {

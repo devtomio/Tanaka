@@ -1,9 +1,8 @@
 ## [2.20.4](https://github.com/1chiSensei/Tanaka/compare/2.20.3...2.20.4) (2021-04-21)
 
-
 ### Bug Fixes
 
-* **commands:** use canvacord ([de830ad](https://github.com/1chiSensei/Tanaka/commit/de830ad9d0f682d38721768ac79f9da59c366c55))
+- **commands:** use canvacord ([de830ad](https://github.com/1chiSensei/Tanaka/commit/de830ad9d0f682d38721768ac79f9da59c366c55))
 
 ## [2.20.3](https://github.com/1chiSensei/Tanaka/compare/2.20.2...2.20.3) (2021-04-21)
 

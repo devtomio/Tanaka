@@ -25,6 +25,7 @@ client.registry
 		{ id: 'anime-updates', name: 'Anime Updates' },
 		{ id: 'codebin', name: 'Code Bins' },
 		{ id: 'img', name: 'Image Manipulation' },
+		{ id: 'music', name: 'Music' },
 	])
 	.registerDefaultGroups()
 	.registerDefaultCommands({
@@ -56,6 +57,8 @@ client.on('debug', client.logger.debug);
 
 client.on('error', (e) => client.logger.error(e.stack));
 
+client.on('raw', (d) => client.manager.updateVoiceState(d));
+
 client.db.once('ready', () => client.logger.info('MongoDB is ready!'));
 
 client.db.on('debug', client.logger.debug);
@@ -79,6 +82,36 @@ client.rss.on('item:new:anime', (item) => {
 
 		hook.send(embed);
 	});
+});
+
+client.manager.on('nodeConnect', (node) => client.logger.info(`Node "${node.options.identifier}" connected.`));
+
+client.manager.on('nodeError', (node, error) =>
+	client.logger.error(`Node "${node.options.identifier}" encountered an error: ${error.message}.`),
+);
+
+client.manager.on('trackStart', (player, track) => {
+	const channel = client.channels.cache.get(player.textChannel);
+
+	const embed = new MessageEmbed()
+		.setTitle(`**Now Playing: __${track.title}__**`)
+		.setURL(track.uri)
+		.setImage(track.thumbnail || '')
+		.setAuthor(track.author)
+		.setColor('RANDOM')
+		.setFooter(`Requested by: ${track.requester.tag}`)
+		.setTimestamp();
+
+	channel.send(embed);
+});
+
+client.manager.on('queueEnd', (player) => {
+	const channel = client.channels.cache.get(player.textChannel);
+
+	const embed = new MessageEmbed({ description: 'The queue has ended.', color: 'RANDOM' });
+
+	channel.send(embed);
+	player.destroy();
 });
 
 client.login();
