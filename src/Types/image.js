@@ -48,7 +48,7 @@ module.exports = class ImageType extends ArgumentType {
 
 		const user = await this.client.registry.types.get('user').parse(value, msg, arg);
 
-		return user.displayAvatarURL({ format: 'png', size: 4096 });
+		return user.displayAvatarURL({ format: 'png', size: 512 });
 	}
 
 	/**

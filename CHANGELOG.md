@@ -1,9 +1,8 @@
 # [2.20.0](https://github.com/1chiSensei/Tanaka/compare/2.19.0...2.20.0) (2021-04-21)
 
-
 ### Features
 
-* **commands:** add triggered module ([a251135](https://github.com/1chiSensei/Tanaka/commit/a251135a088122e56b4318b58a0cdb2ef2abc172))
+- **commands:** add triggered module ([a251135](https://github.com/1chiSensei/Tanaka/commit/a251135a088122e56b4318b58a0cdb2ef2abc172))
 
 # [2.19.0](https://github.com/1chiSensei/Tanaka/compare/2.18.0...2.19.0) (2021-04-20)
 
