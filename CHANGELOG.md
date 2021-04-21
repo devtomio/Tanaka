@@ -1,3 +1,10 @@
+## [2.20.2](https://github.com/1chiSensei/Tanaka/compare/2.20.1...2.20.2) (2021-04-21)
+
+
+### Bug Fixes
+
+* **commands:** fix triggered cmd ([b2f837c](https://github.com/1chiSensei/Tanaka/commit/b2f837ce7d7fb8f24fefd6285f941d2a81e9a010))
+
 ## [2.20.1](https://github.com/1chiSensei/Tanaka/compare/2.20.0...2.20.1) (2021-04-21)
 
 # [2.20.0](https://github.com/1chiSensei/Tanaka/compare/2.19.0...2.20.0) (2021-04-21)
