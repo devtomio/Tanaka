@@ -1,3 +1,10 @@
+## [2.21.1](https://github.com/1chiSensei/Tanaka/compare/2.21.0...2.21.1) (2021-04-21)
+
+
+### Bug Fixes
+
+* **voice:** init the manager ([ead2e0d](https://github.com/1chiSensei/Tanaka/commit/ead2e0dee7de3f17a3c8c00f2ab55f15630d7085))
+
 # [2.21.0](https://github.com/1chiSensei/Tanaka/compare/2.20.4...2.21.0) (2021-04-21)
 
 ### Features
