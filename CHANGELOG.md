@@ -1,3 +1,10 @@
+# [2.21.0](https://github.com/1chiSensei/Tanaka/compare/2.20.4...2.21.0) (2021-04-21)
+
+
+### Features
+
+* **commands:** add music cmds ([eecf4ac](https://github.com/1chiSensei/Tanaka/commit/eecf4ac67a43eea9ed7522ae133e1113651bcaa7))
+
 ## [2.20.4](https://github.com/1chiSensei/Tanaka/compare/2.20.3...2.20.4) (2021-04-21)
 
 ### Bug Fixes
