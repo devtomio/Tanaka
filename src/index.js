@@ -95,16 +95,7 @@ client.manager.on('nodeError', (node, error) =>
 client.manager.on('trackStart', (player, track) => {
 	const channel = client.channels.cache.get(player.textChannel);
 
-	const embed = new MessageEmbed()
-		.setTitle(`**Now Playing: __${track.title}__**`)
-		.setURL(track.uri)
-		.setImage(track.thumbnail || '')
-		.setAuthor(track.author)
-		.setColor('RANDOM')
-		.setFooter(`Requested by: ${track.requester.tag}`)
-		.setTimestamp();
-
-	channel.send(embed);
+	channel.send(`Now playing: \`${track.title}\`, requested by ${track.requester.tag}`);
 });
 
 client.manager.on('queueEnd', (player) => {
