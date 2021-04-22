@@ -1,3 +1,10 @@
+# [2.28.0](https://github.com/1chiSensei/Tanaka/compare/2.27.4...2.28.0) (2021-04-22)
+
+
+### Features
+
+* **puppeteer:** add own puppeteer handler ([7f3e63c](https://github.com/1chiSensei/Tanaka/commit/7f3e63cd04cf74730ddacba6c54fa18e6f8ddb8c))
+
 ## [2.27.4](https://github.com/1chiSensei/Tanaka/compare/2.27.3...2.27.4) (2021-04-22)
 
 ### Bug Fixes
