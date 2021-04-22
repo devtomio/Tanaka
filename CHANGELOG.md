@@ -1,9 +1,8 @@
 ## [2.24.4](https://github.com/1chiSensei/Tanaka/compare/2.24.3...2.24.4) (2021-04-22)
 
-
 ### Bug Fixes
 
-* **web:** fix endpoints ([98acf7d](https://github.com/1chiSensei/Tanaka/commit/98acf7d1b6b8b384f93ba3228f649eb2efa2fe62))
+- **web:** fix endpoints ([98acf7d](https://github.com/1chiSensei/Tanaka/commit/98acf7d1b6b8b384f93ba3228f649eb2efa2fe62))
 
 ## [2.24.3](https://github.com/1chiSensei/Tanaka/compare/2.24.2...2.24.3) (2021-04-22)
 

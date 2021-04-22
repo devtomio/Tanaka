@@ -6,7 +6,7 @@ COPY ["package.json", "yarn.lock", "./"]
 
 # Install system packages
 RUN apt-get update
-RUN apt-get install -y build-essential ffmpeg wget curl default-jre default-jdk
+RUN apt-get install -y build-essential ffmpeg wget curl default-jre default-jdk libcairo2-dev libpango1.0-dev libjpeg-dev libgif-dev librsvg2-dev
 
 # Install lavalink
 RUN wget https://github.com/freyacodes/Lavalink/releases/download/3.3.2.5/Lavalink.jar

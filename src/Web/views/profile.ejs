@@ -21,13 +21,13 @@
 		<div class="paper-container">
 			<div class="ribbon disco-ball"></div>
 			<div class="paper markdown-container">
-				<img class="center image-circle" src="<%= data.displayAvatarURL({ size: 512, dynamic: true }); %>" alt="avatar" />
+				<img class="center image-circle" src="<%= data.displayAvatarURL({ size: 512, dynamic: true });%>" alt="avatar" />
 				<h1 class="center youtube-text"><%= `${data.username}#${data.discriminator}` %></h1>
 
 				<h3><strong>Username:</strong> <%= data.username %></h3>
 				<h3><strong>Discriminator:</strong> <%= data.discriminator %></h3>
 				<h3><strong>ID:</strong> <%= data.id %></h3>
-				<h3><strong>Time Created:</strong> <%= moment(data.createdTimestamp).format('LT')} ${moment(data.createdTimestamp).format('LL') %> <%= moment(data.createdTimestamp).fromNow() %></h3>
+				<h3><strong>Time Created:</strong> <%= moment(data.createdTimestamp).format('LT')}%> <%=  moment(data.createdTimestamp).format('LL')  %> <%= moment(data.createdTimestamp).fromNow() %></h3>
 			</div>
 		</div>
 
