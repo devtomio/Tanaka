@@ -40,11 +40,7 @@ module.exports = class AnimeCommand extends Command {
 				});
 
 			const embed = new MessageEmbed()
-				.setAuthor(
-					'MyAnimeList',
-					'https://upload.wikimedia.org/wikipedia/commons/7/7a/MyAnimeList_Logo.png',
-					'https://myanimelist.net',
-				)
+				.setAuthor('MyAnimeList', 'https://i.imgur.com/pevEvk9.png', 'https://myanimelist.net')
 				.setTitle(result.title)
 				.setDescription(result.synopsis || 'No Synopsis')
 				.setThumbnail(result.picture || '')

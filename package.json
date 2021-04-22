@@ -15,7 +15,8 @@
 		"build": "rimraf dist && gulp",
 		"test": "dotenv node .",
 		"generate-commands": "dotenv node scripts/generate-commands",
-		"lint:ejs": "ejslint src/**/*"
+		"lint:ejs": "ejslint src/**/*",
+		"precommit": "yarn prettier && yarn lint && yarn lint:ejs && yarn build && yarn generate-commands"
 	},
 	"dependencies": {
 		"@2pg/oauth": "^1.0.8",
