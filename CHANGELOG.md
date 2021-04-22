@@ -1,9 +1,8 @@
 # [2.27.0](https://github.com/1chiSensei/Tanaka/compare/2.26.1...2.27.0) (2021-04-22)
 
-
 ### Features
 
-* **commands:** add ss cmd ([ae39e54](https://github.com/1chiSensei/Tanaka/commit/ae39e54cd902f2d883e7e970b53752a46bfedc14))
+- **commands:** add ss cmd ([ae39e54](https://github.com/1chiSensei/Tanaka/commit/ae39e54cd902f2d883e7e970b53752a46bfedc14))
 
 ## [2.26.1](https://github.com/1chiSensei/Tanaka/compare/2.26.0...2.26.1) (2021-04-22)
 

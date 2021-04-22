@@ -2,7 +2,10 @@ const { isUrlSafe, isUrl } = require('../../Structures/Util');
 const { MessageAttachment } = require('discord.js');
 const { Command } = require('discord.js-commando');
 const WebShot = require('websshot');
-const window = new WebShot();
+const window = new WebShot(
+	{ removeTags: [], removeAttributes: [], args: [], height: 800, width: 1280 },
+	{ args: ['--no-sandbox'] },
+);
 
 module.exports = class ScreenshotCommand extends Command {
 	constructor(client) {
