@@ -41,7 +41,7 @@ module.exports = (c) => {
 		const shardCount = c.shard ? c.shard.count.toLocaleString() : '1';
 		const ping = Math.round(c.ws.ping);
 
-		const data = key ? c.users.cache.get(await client.getUser(key).id) : null;
+		const data = key ? await client.getUser(key) : null;
 
 		res.render('index', {
 			data,
@@ -68,20 +68,20 @@ module.exports = (c) => {
 	app.get('/commands', async (req, res) => {
 		const key = req.cookies.get('discordToken');
 
-		res.render('commands', { data: key ? c.users.cache.get(await client.getUser(key).id) : null });
+		res.render('commands', { data: key ? await client.getUser(key) : null });
 	});
 
 	app.get('/legal', async (req, res) => {
 		const key = req.cookies.get('discordToken');
 
-		res.render('legal', { data: key ? c.users.cache.get(await client.getUser(key).id) : null });
+		res.render('legal', { data: key ? await client.getUser(key) : null });
 	});
 
 	app.get('/profile', async (req, res) => {
 		const key = req.cookies.get('discordToken');
 
 		res.render('legal', {
-			data: key ? c.users.cache.get(await client.getUser(key).id) : null,
+			data: key ? await client.getUser(key) : null,
 			moment: require('moment'),
 		});
 	});

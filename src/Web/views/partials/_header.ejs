@@ -10,8 +10,8 @@
 			<a href="/profile">Profile</a>
 
 			<br />
-			<img class="center image-circle" src="<%= data.displayAvatarURL({ size: 64, dynamic: true }); %>" alt="avatar" />
-			<a href="/profile"><%= data.tag %></a>
+			<img class="center image-circle" src="<%= data.avatarURL({ size: 64, dynamic: true }); %>" alt="avatar" />
+			<a href="/profile"><%= `${data.username}#${data.discriminator}` %></a>
 		</div>
 	</section>
 	<h1>Tanaka</h1>
