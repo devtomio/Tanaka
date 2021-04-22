@@ -134,7 +134,7 @@ module.exports = class PlayCommand extends Command {
 				const embed = new MessageEmbed()
 					.setTitle(`**Adding to queue: __${track.title}__**`)
 					.setURL(track.uri)
-					.setImage(track.thumbnail || '')
+					.setThumbnail(track.thumbnail || '')
 					.setAuthor(track.author)
 					.setColor('RANDOM')
 					.setFooter(`Requested by: ${track.requester.tag}`)

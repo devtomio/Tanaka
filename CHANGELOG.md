@@ -1,9 +1,8 @@
 # [2.23.0](https://github.com/1chiSensei/Tanaka/compare/2.22.1...2.23.0) (2021-04-22)
 
-
 ### Features
 
-* **scripts:** add generate commands script ([503e2fd](https://github.com/1chiSensei/Tanaka/commit/503e2fd251b62316464ba5f8819a66fe55851700))
+- **scripts:** add generate commands script ([503e2fd](https://github.com/1chiSensei/Tanaka/commit/503e2fd251b62316464ba5f8819a66fe55851700))
 
 ## [2.22.1](https://github.com/1chiSensei/Tanaka/compare/2.22.0...2.22.1) (2021-04-21)
 

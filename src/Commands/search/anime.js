@@ -31,6 +31,11 @@ module.exports = class AnimeCommand extends Command {
 		try {
 			const result = await mal.getInfoFromName(anime);
 
+			if (result.rating === 'Rx - Hentai' && !msg.channel.nsfw && msg.guild)
+				return msg.say(
+					"The anime you're searching for is marked NSFW. Please try again in a NSFW Channel.",
+				);
+
 			const embed = new MessageEmbed()
 				.setAuthor(
 					'MyAnimeList',
