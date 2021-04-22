@@ -1,9 +1,8 @@
 ## [2.23.1](https://github.com/1chiSensei/Tanaka/compare/2.23.0...2.23.1) (2021-04-22)
 
-
 ### Bug Fixes
 
-* **commands:** add nsfw filter ([580c836](https://github.com/1chiSensei/Tanaka/commit/580c83671e2fcc0022710060a5d09dd88d72b877))
+- **commands:** add nsfw filter ([580c836](https://github.com/1chiSensei/Tanaka/commit/580c83671e2fcc0022710060a5d09dd88d72b877))
 
 # [2.23.0](https://github.com/1chiSensei/Tanaka/compare/2.22.1...2.23.0) (2021-04-22)
 
