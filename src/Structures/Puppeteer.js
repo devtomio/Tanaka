@@ -18,6 +18,8 @@ const screenshot = async (url) => {
 
 	const buffer = await page.screenshot();
 
+	await browser.close();
+
 	return buffer instanceof Buffer ? buffer : Buffer.from(buffer);
 };
 

@@ -31,6 +31,8 @@ module.exports = class ScreenshotCommand extends Command {
 
 	async run(msg, { link }) {
 		try {
+			await msg.channel.startTyping();
+
 			if (!this.nsfwList) await this.fetchNSFWList();
 
 			const parsed = url.parse(link);
@@ -40,9 +42,13 @@ module.exports = class ScreenshotCommand extends Command {
 
 			const attachment = await screenshot(link);
 
-			return msg.say({ files: [{ attachment, name: 'screenshot.png' }] });
+			msg.say({ files: [{ attachment, name: 'screenshot.png' }] });
+
+			return msg.channel.stopTyping();
 		} catch {
-			return msg.reply("Couldn't find any results. Invalid URL?");
+			msg.reply("Couldn't find any results. Invalid URL?");
+
+			return msg.channel.stopTyping();
 		}
 	}
 
