@@ -1,9 +1,8 @@
 # [2.26.0](https://github.com/1chiSensei/Tanaka/compare/2.25.1...2.26.0) (2021-04-22)
 
-
 ### Features
 
-* **commands:** add mdn ([40b0509](https://github.com/1chiSensei/Tanaka/commit/40b050913c7cc419ec0dff071fd75340f54763ba))
+- **commands:** add mdn ([40b0509](https://github.com/1chiSensei/Tanaka/commit/40b050913c7cc419ec0dff071fd75340f54763ba))
 
 ## [2.25.1](https://github.com/1chiSensei/Tanaka/compare/2.25.0...2.25.1) (2021-04-22)
 

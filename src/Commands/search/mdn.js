@@ -23,7 +23,7 @@ module.exports = class MDNCommand extends Command {
 
 	async run(msg, { query }) {
 		try {
-			const { body } = await request.get('https://developer.mozilla.org/en-US/search.json').query({
+			const { body } = await request.get('https://developer.mozilla.org/api/v1/search').query({
 				q: query,
 				locale: 'en-US',
 				highlight: false,
@@ -35,9 +35,9 @@ module.exports = class MDNCommand extends Command {
 			const embed = new MessageEmbed()
 				.setColor('#0881ba')
 				.setAuthor('MDN', 'https://i.imgur.com/f0uC4b8.png', 'https://developer.mozilla.org')
-				.setURL(data.url)
+				.setURL(`https://developer.mozilla.org${data.mdn_url}`)
 				.setTitle(data.title)
-				.setDescription(data.excerpt);
+				.setDescription(data.summary);
 
 			return msg.embed(embed);
 		} catch (err) {
