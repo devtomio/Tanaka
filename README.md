@@ -71,14 +71,13 @@ Tanaka is a Discord Bot coded in [JavaScript](https://www.javascript.com/) with 
 
 ## Commands
 
-Total: 39
+Total: 44
 
 ### Utility:
 
 - **prefix:** Shows or sets the command prefix.
 - **eval:** Executes arbitrary JavaScript code. (Owner-Only)
 - **exec:** Executes a command line application. (Owner-Only)
-- **help:** Displays a list of available commands, or detailed information for a specific command.
 - **ping:** Shows you the latency of the bot and the database.
 - **restart:** Restarts the bot. (Owner-Only)
 
@@ -101,6 +100,7 @@ Total: 39
 
 ### Information:
 
+- **help:** Displays a list of available commands, or detailed information for a specific command.
 - **info:** Responds with the general information of the bot.
 - **serverinfo:** Responds with the server's general information.
 - **support:** Sends the support server of the bot.
@@ -126,6 +126,17 @@ Total: 39
 - **nopaste:** Uploades your code to https://nopaste.ml.
 - **sourcebin:** Uploades your code to https://sourceb.in.
 - **starbin:** Uploades your code to https://starb.in.
+
+### Image Manipulation:
+
+- **glitch:** Applies the glitch effect to an image.
+- **triggered:** Applies the triggered effect to an image.
+
+### Music:
+
+- **play:** Add's music to the music queue.
+- **queue:** Shows the music queue.
+- **stop:** Stops the music queue.
 
 ### Commands:
 

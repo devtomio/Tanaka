@@ -87,12 +87,19 @@ module.exports = class PlayCommand extends Command {
 
 				if (res.tracks.length < max) max = res.tracks.length;
 
-				const results = `Reply with a number.\n${res.tracks
-					.slice(0, max)
-					.map((track, index) => `${++index} - \`${track.title}\``)
-					.join('\n')}`;
+				const embed1 = new MessageEmbed()
+					.setTitle('Reply with a number.')
+					.setDescription(
+						res.tracks
+							.slice(0, max)
+							.map((track, index) => `${++index} - \`${track.title}\``)
+							.join('\n'),
+					)
+					.setColor('RANDOM')
+					.setFooter('Reply with "end" to cancel')
+					.setTimestamp();
 
-				msg.say(results);
+				msg.say(embed1);
 
 				try {
 					collected = await msg.channel.awaitMessages(filter, {

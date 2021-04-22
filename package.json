@@ -13,7 +13,8 @@
 		"start": "bash start.sh",
 		"release": "dotenv -- release-it --ci",
 		"build": "rimraf dist && gulp",
-		"test": "dotenv node ."
+		"test": "dotenv node .",
+		"generate-commands": "dotenv node scripts/generate-commands"
 	},
 	"dependencies": {
 		"@2pg/oauth": "^1.0.8",

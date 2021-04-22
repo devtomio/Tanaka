@@ -1,9 +1,8 @@
 ## [2.22.1](https://github.com/1chiSensei/Tanaka/compare/2.22.0...2.22.1) (2021-04-21)
 
-
 ### Bug Fixes
 
-* **lavalink:** fix not connecting error ([a5a82f9](https://github.com/1chiSensei/Tanaka/commit/a5a82f942a69a15fdf7489e1f3a721c57bda03d0))
+- **lavalink:** fix not connecting error ([a5a82f9](https://github.com/1chiSensei/Tanaka/commit/a5a82f942a69a15fdf7489e1f3a721c57bda03d0))
 
 # [2.22.0](https://github.com/1chiSensei/Tanaka/compare/2.21.2...2.22.0) (2021-04-21)
 

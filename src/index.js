@@ -46,7 +46,12 @@ client.once('ready', async () => {
 	const commandCount = client.registry.commands.size;
 	const guildCount = client.guilds.cache.size;
 
-	const statuses = [`${userCount} users`, `${commandCount} commands`, `${guildCount} guilds`];
+	const statuses = [
+		`${userCount} users`,
+		`${commandCount} commands`,
+		`${guildCount} guilds`,
+		'https://tanaka.1chi.tk',
+	];
 
 	const status = `t!help | ${statuses[Math.floor(Math.random() * statuses.length)]}`;
 
@@ -108,3 +113,5 @@ client.manager.on('queueEnd', (player) => {
 });
 
 client.login();
+
+module.exports = client;
