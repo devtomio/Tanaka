@@ -1,3 +1,10 @@
+# [2.25.0](https://github.com/1chiSensei/Tanaka/compare/2.24.5...2.25.0) (2021-04-22)
+
+
+### Features
+
+* **package:** add ejs linter ([94cdfa8](https://github.com/1chiSensei/Tanaka/commit/94cdfa8f8d61e3acc7533ae78409c9ec66ba6c20))
+
 ## [2.24.5](https://github.com/1chiSensei/Tanaka/compare/2.24.4...2.24.5) (2021-04-22)
 
 ### Bug Fixes
