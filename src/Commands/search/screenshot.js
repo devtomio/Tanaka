@@ -1,11 +1,7 @@
+const { screenshot } = require('../../Structures/Puppeteer');
 const { isUrl } = require('../../Structures/Util');
 const { Command } = require('discord.js-commando');
 const request = require('node-superfetch');
-const WebShot = require('websshot');
-const window = new WebShot(
-	{ removeTags: [], removeAttributes: [], args: [], height: 800, width: 1280 },
-	{ args: ['--no-sandbox'], headless: true },
-);
 const url = require('url');
 
 module.exports = class ScreenshotCommand extends Command {
@@ -42,7 +38,7 @@ module.exports = class ScreenshotCommand extends Command {
 			if (this.nsfwList.some((nsfwURL) => parsed.host === nsfwURL) && !msg.channel.nsfw)
 				return msg.reply('This site is NSFW. Please try again in a NSFW channel.');
 
-			const attachment = await window.screenshot(link);
+			const attachment = await screenshot(link);
 
 			return msg.say({ files: [{ attachment, name: 'screenshot.png' }] });
 		} catch {
