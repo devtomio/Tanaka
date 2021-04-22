@@ -4,7 +4,7 @@ const { Command } = require('discord.js-commando');
 const WebShot = require('websshot');
 const window = new WebShot(
 	{ removeTags: [], removeAttributes: [], args: [], height: 800, width: 1280 },
-	{ args: ['--no-sandbox'] },
+	{ args: ['--no-sandbox'], headless: true },
 );
 
 module.exports = class ScreenshotCommand extends Command {

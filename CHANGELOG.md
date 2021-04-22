@@ -1,9 +1,8 @@
 ## [2.27.1](https://github.com/1chiSensei/Tanaka/compare/2.27.0...2.27.1) (2021-04-22)
 
-
 ### Bug Fixes
 
-* **commands:** fix puppeteer ([586888c](https://github.com/1chiSensei/Tanaka/commit/586888c469fda85eb7ea773e2bf8f6424c87c97d))
+- **commands:** fix puppeteer ([586888c](https://github.com/1chiSensei/Tanaka/commit/586888c469fda85eb7ea773e2bf8f6424c87c97d))
 
 # [2.27.0](https://github.com/1chiSensei/Tanaka/compare/2.26.1...2.27.0) (2021-04-22)
 
