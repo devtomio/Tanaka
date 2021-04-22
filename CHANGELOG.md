@@ -1,3 +1,10 @@
+## [2.25.1](https://github.com/1chiSensei/Tanaka/compare/2.25.0...2.25.1) (2021-04-22)
+
+
+### Bug Fixes
+
+* **web:** fix not a function error ([77c8f87](https://github.com/1chiSensei/Tanaka/commit/77c8f87e81435e4b5f91c219ea8d5102f57a5902))
+
 # [2.25.0](https://github.com/1chiSensei/Tanaka/compare/2.24.5...2.25.0) (2021-04-22)
 
 ### Features
