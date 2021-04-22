@@ -41,8 +41,10 @@ module.exports = (c) => {
 		const shardCount = c.shard ? c.shard.count.toLocaleString() : '1';
 		const ping = Math.round(c.ws.ping);
 
+		const data = key ? await c.users.fetch(await client.getUser(key).id) : null;
+
 		res.render('index', {
-			data: key ? await c.users.fetch(await client.getUser(key).id) : null,
+			data,
 			userCount,
 			guildCount,
 			channelCount,

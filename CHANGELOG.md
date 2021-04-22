@@ -1,9 +1,8 @@
 # [2.24.0](https://github.com/1chiSensei/Tanaka/compare/2.23.2...2.24.0) (2021-04-22)
 
-
 ### Features
 
-* **web:** add more endpoints ([3d8ea0a](https://github.com/1chiSensei/Tanaka/commit/3d8ea0a4b4fe08c8cb3766c5942c248311bfd203))
+- **web:** add more endpoints ([3d8ea0a](https://github.com/1chiSensei/Tanaka/commit/3d8ea0a4b4fe08c8cb3766c5942c248311bfd203))
 
 ## [2.23.2](https://github.com/1chiSensei/Tanaka/compare/2.23.1...2.23.2) (2021-04-22)
 
