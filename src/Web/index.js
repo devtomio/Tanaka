@@ -80,7 +80,7 @@ module.exports = (c) => {
 	app.get('/profile', async (req, res) => {
 		const key = req.cookies.get('discordToken');
 
-		res.render('legal', {
+		res.render('profile', {
 			data: key ? await client.getUser(key) : null,
 			moment: require('moment'),
 		});
