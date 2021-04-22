@@ -1,3 +1,10 @@
+## [2.24.3](https://github.com/1chiSensei/Tanaka/compare/2.24.2...2.24.3) (2021-04-22)
+
+
+### Bug Fixes
+
+* **web:** dont use d.js to fetch the user ([9fe38c2](https://github.com/1chiSensei/Tanaka/commit/9fe38c28e181181e4a65b0cebcd872293687b4e6))
+
 ## [2.24.2](https://github.com/1chiSensei/Tanaka/compare/2.24.1...2.24.2) (2021-04-22)
 
 ### Bug Fixes
