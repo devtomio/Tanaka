@@ -1,9 +1,8 @@
 ## [2.24.1](https://github.com/1chiSensei/Tanaka/compare/2.24.0...2.24.1) (2021-04-22)
 
-
 ### Bug Fixes
 
-* **web:** fix 404 err ([5eedc5b](https://github.com/1chiSensei/Tanaka/commit/5eedc5bc082058b4a654ee8a54a1d5e5fd1818b6))
+- **web:** fix 404 err ([5eedc5b](https://github.com/1chiSensei/Tanaka/commit/5eedc5bc082058b4a654ee8a54a1d5e5fd1818b6))
 
 # [2.24.0](https://github.com/1chiSensei/Tanaka/compare/2.23.2...2.24.0) (2021-04-22)
 
