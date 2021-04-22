@@ -1,4 +1,10 @@
+const request = require('node-superfetch');
+const regex = require('url-regex');
+const { GOOGLE_KEY } = process.env;
+
 const escapeRegex = (str) => str.replace(/[|\\{}()[}^$+*?.]/g, '\\$&');
+
+const isUrl = (url) => regex({ exact: true, strict: true }).test(url);
 
 const toPercent = (int) => `${Math.round(parseInt(int) * 100)}%`;
 
@@ -53,6 +59,29 @@ const streamToArray = (stream) => {
 			cleanup();
 		}
 	});
+};
+
+const isUrlSafe = async (url) => {
+	if (!isUrl(url)) return null;
+
+	const { body } = await request
+		.post('https://safebrowsing.googleapis.com/v4/threatMatches:find')
+		.query({ key: GOOGLE_KEY })
+		.send({
+			client: {
+				clientId: 'formal-era-284123',
+			},
+			threatInfo: {
+				threatTypes: ['MALWARE', 'SOCIAL_ENGINEERING'],
+				platformTypes: ['ANY_PLATFORM'],
+				threatEntryTypes: ['URL'],
+				threatEntries: [{ url }],
+			},
+		});
+
+	if (!body.matches) return true;
+
+	return false;
 };
 
 const permissions = {
@@ -149,4 +178,6 @@ module.exports = {
 	toPercent,
 	shorten,
 	streamToArray,
+	isUrl,
+	isUrlSafe,
 };

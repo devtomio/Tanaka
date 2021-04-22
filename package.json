@@ -47,7 +47,9 @@
 		"rss-emitter-ts": "^0.4.6",
 		"sherlockjs": "^1.4.0",
 		"sourcebin": "^4.1.3",
-		"turndown": "^7.0.0"
+		"turndown": "^7.0.0",
+		"url-regex": "^5.0.0",
+		"websshot": "^1.0.0"
 	},
 	"devDependencies": {
 		"@release-it/conventional-changelog": "2.0.1",

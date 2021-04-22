@@ -1,9 +1,8 @@
 ## [2.26.1](https://github.com/1chiSensei/Tanaka/compare/2.26.0...2.26.1) (2021-04-22)
 
-
 ### Bug Fixes
 
-* **commands:** fix undefined ([c45ea91](https://github.com/1chiSensei/Tanaka/commit/c45ea915702f710879a3df266b3b8e86ba3b6970))
+- **commands:** fix undefined ([c45ea91](https://github.com/1chiSensei/Tanaka/commit/c45ea915702f710879a3df266b3b8e86ba3b6970))
 
 # [2.26.0](https://github.com/1chiSensei/Tanaka/compare/2.25.1...2.26.0) (2021-04-22)
 
