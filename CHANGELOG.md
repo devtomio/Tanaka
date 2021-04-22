@@ -1,3 +1,10 @@
+## [2.24.5](https://github.com/1chiSensei/Tanaka/compare/2.24.4...2.24.5) (2021-04-22)
+
+
+### Bug Fixes
+
+* **ejs:** fix ejs error ([de0cbb3](https://github.com/1chiSensei/Tanaka/commit/de0cbb30f1116eb95134d5e833649a6cd4342aa7))
+
 ## [2.24.4](https://github.com/1chiSensei/Tanaka/compare/2.24.3...2.24.4) (2021-04-22)
 
 ### Bug Fixes
