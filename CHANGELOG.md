@@ -1,3 +1,10 @@
+## [2.24.2](https://github.com/1chiSensei/Tanaka/compare/2.24.1...2.24.2) (2021-04-22)
+
+
+### Bug Fixes
+
+* **web:** fix discord api error ([a87f531](https://github.com/1chiSensei/Tanaka/commit/a87f53166b3a28ab4c9f9e025833f1b6a35d2310))
+
 ## [2.24.1](https://github.com/1chiSensei/Tanaka/compare/2.24.0...2.24.1) (2021-04-22)
 
 ### Bug Fixes
