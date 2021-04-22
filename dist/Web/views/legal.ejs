@@ -1,0 +1,69 @@
+<%- include('./partials/_head') %>
+
+<body class="github-font-standard">
+	<% if (data === null) { %>
+		<section class="fullscreen">
+			<div class="background" style="background-image: url('https://http.cat/401');"></div>
+			<div class="center-object center-text">
+				<h2 class="bold no-margin">
+					<span class="alizarin-text">401</span>
+					<br />
+					You must login with Discord to continue.
+				</h2>
+				<div class="buttons">
+					<a href="/auth/login" class="btn alizarin-border">Login</a>
+					<a href="#" class="btn emerald-border" onclick="window.history.go(-1); return false;">Go
+						one step back</a>
+				</div>
+			</div>
+		</section>
+	<% } else { %>
+		<div class="paper-container">
+			<div class="ribbon disco-ball"></div>
+			<div class="paper markdown-container">
+				<h1>Terms of Service</h1>
+
+				<p>By using our service or visiting our website, you agree that we:</p>
+				<ul>
+					<li>Require you to be at least 13 years of age</li>
+					<li>Require you to follow Discord's ToS</li>
+					<li>Use cookies to improve your site experience</li>
+					<li>Can collect your login information in order to keep you signed in</li>
+				</ul>
+
+				<hr />
+
+				<h1>Privacy Policy</h1>
+
+				<h3>Data Collection</h3>
+				<p>We collect permanent cookies in order to keep you signed in and to improve your experience on the website. We also store discord webhook token for our <code>anime-updates</code> command. All data is stored privately in our MongoDB database.</p>
+
+				<h3>Data Deletion</h3>
+				<p>You can easily have your data deleted at any time. Just contact us in our <a href="/discord">Support Server</a>.</p>
+
+				<h3>DISCLAIMER</h3>
+				<p>
+					THE SITE IS PROVIDED ON AN AS-IS AND AS-AVAILABLE BASIS. YOU AGREE THAT YOUR USE OF THE SITE AND OUR SERVICES WILL BE AT YOUR SOLE RISK. TO THE FULLEST EXTENT PERMITTED BY LAW, WE DISCLAIM ALL WARRANTIES, EXPRESS OR IMPLIED, IN CONNECTION WITH THE SITE AND YOUR USE THEREOF, INCLUDING, WITHOUT LIMITATION, THE IMPLIED WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE, AND NON-INFRINGEMENT. WE MAKE NO WARRANTIES OR REPRESENTATIONS ABOUT THE ACCURACY OR COMPLETENESS OF THE SITE’S CONTENT OR THE CONTENT OF ANY WEBSITES LINKED TO THE SITE AND WE WILL ASSUME NO LIABILITY OR RESPONSIBILITY FOR ANY<br />
+
+					(1) ERRORS, MISTAKES, OR INACCURACIES OF CONTENT AND MATERIALS.<br />
+					
+					(2) PERSONAL INJURY OR PROPERTY DAMAGE, OF ANY NATURE WHATSOEVER, RESULTING FROM YOUR ACCESS TO AND USE OF THE SITE.<br />
+					
+					(3) ANY UNAUTHORIZED ACCESS TO OR USE OF OUR SECURE SERVERS AND/OR ANY AND ALL PERSONAL INFORMATION AND/OR FINANCIAL INFORMATION STORED THEREIN.<br />
+					
+					(4) ANY INTERRUPTION OR CESSATION OF TRANSMISSION TO OR FROM THE SITE.<br />
+					
+					(5) ANY BUGS, VIRUSES, TROJAN HORSES, OR THE LIKE WHICH MAY BE TRANSMITTED TO OR THROUGH THE SITE BY ANY THIRD PARTY, AND/OR<br />
+					
+					(6) ANY ERRORS OR OMISSIONS IN ANY CONTENT AND MATERIALS OR FOR ANY LOSS OR DAMAGE OF ANY KIND INCURRED AS A RESULT OF THE USE OF ANY CONTENT POSTED, TRANSMITTED, OR OTHERWISE MADE AVAILABLE VIA THE SITE. WE DO NOT WARRANT, ENDORSE, GUARANTEE, OR ASSUME RESPONSIBILITY FOR ANY PRODUCT OR SERVICE ADVERTISED OR OFFERED BY A THIRD PARTY THROUGH THE SITE, ANY HYPERLINKED WEBSITE, OR ANY WEBSITE OR MOBILE APPLICATION FEATURED IN ANY BANNER OR OTHER ADVERTISING, AND WE WILL NOT BE A PARTY TO OR IN ANY WAY BE RESPONSIBLE FOR MONITORING ANY TRANSACTION BETWEEN YOU AND ANY THIRD-PARTY PROVIDERS OF PRODUCTS OR SERVICES. AS WITH THE PURCHASE OF A PRODUCT OR SERVICE THROUGH ANY MEDIUM OR IN ANY ENVIRONMENT, YOU SHOULD USE YOUR BEST JUDGMENT AND EXERCISE CAUTION WHERE APPROPRIATE.<br />
+					
+					For questions or enquiries: mail@1chi.tk.<br />
+					
+					We are not affiliated or associated with Discord or any of its partners or affiliates.
+				</p>
+			</div>
+		</div>
+
+		<%- include('./partials/_footer') %>
+	<% } %> 
+</body>

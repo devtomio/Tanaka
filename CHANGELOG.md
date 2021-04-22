@@ -1,9 +1,8 @@
 ## [2.23.2](https://github.com/1chiSensei/Tanaka/compare/2.23.1...2.23.2) (2021-04-22)
 
-
 ### Bug Fixes
 
-* **commands:** fix embed not editing ([681d63d](https://github.com/1chiSensei/Tanaka/commit/681d63d1aa136bcb387adea509e64a382ef913b9))
+- **commands:** fix embed not editing ([681d63d](https://github.com/1chiSensei/Tanaka/commit/681d63d1aa136bcb387adea509e64a382ef913b9))
 
 ## [2.23.1](https://github.com/1chiSensei/Tanaka/compare/2.23.0...2.23.1) (2021-04-22)
 

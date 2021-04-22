@@ -42,7 +42,7 @@ module.exports = (c) => {
 		const ping = Math.round(c.ws.ping);
 
 		res.render('index', {
-			data: key ? await client.getUser(key) : null,
+			data: key ? await c.users.fetch(await client.getUser(key).id) : null,
 			userCount,
 			guildCount,
 			channelCount,
@@ -55,14 +55,33 @@ module.exports = (c) => {
 	app.get('/invite', (_, res) =>
 		res.redirect(
 			302,
-			'https://discord.com/oauth2/authorize?client_id=804605929944645672&scope=bot&permissions=641064257',
+			'https://discord.com/api/oauth2/authorize?client_id=804605929944645672&permissions=641064257&redirect_uri=https%3A%2F%2Ftanaka.1chi.tk%2Fauth%2Fcallback&response_type=code&scope=identify%20bot',
 		),
 	);
+
+	app.get('/discord', (_, res) => res.redirect(302, 'https://discord.gg/zGvtAnGhdP'));
+
+	app.get('/github', (_, res) => res.redirect(302, 'https://github.com/1chiSensei/Tanaka'));
 
 	app.get('/commands', async (req, res) => {
 		const key = req.cookies.get('discordToken');
 
-		res.render('commands', { data: key ? await client.getUser(key) : null });
+		res.render('commands', { data: key ? await c.users.fetch(await client.getUser(key).id) : null });
+	});
+
+	app.get('/legal', async (req, res) => {
+		const key = req.cookies.get('discordToken');
+
+		res.render('legal', { data: key ? await c.users.fetch(await client.getUser(key).id) : null });
+	});
+
+	app.get('/profile', async (req, res) => {
+		const key = req.cookies.get('discordToken');
+
+		res.render('legal', {
+			data: key ? await c.users.fetch(await client.getUser(key).id) : null,
+			moment: require('moment'),
+		});
 	});
 
 	app.get('/auth/login', (_, res) => res.redirect(302, client.authCodeLink.url));

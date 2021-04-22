@@ -6,10 +6,12 @@
 			<a href="/">Home</a>
 			<a href="/commands">Commands</a>
 			<a href="/auth/logout">Log Out</a>
+			<a href="/legal">Legal</a>
+			<a href="/profile">Profile</a>
 
 			<br />
-			<img class="center image-circle" src="<%= data.avatarURL({ size: 64, dynamic: true }); %>" alt="avatar" />
-			<h5 class="center greyple-text"><%= `${data.username}#${data.discriminator}` %></h5>
+			<img class="center image-circle" src="<%= data.displayAvatarURL({ size: 64, dynamic: true }); %>" alt="avatar" />
+			<a href="/profile"><%= data.tag %></a>
 		</div>
 	</section>
 	<h1>Tanaka</h1>

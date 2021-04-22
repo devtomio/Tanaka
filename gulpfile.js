@@ -3,6 +3,7 @@ const terser = require('gulp-terser');
 const imagemin = require('gulp-imagemin');
 const cssMinify = require('gulp-clean-css');
 const sourcemaps = require('gulp-sourcemaps');
+const autoprefixer = require('gulp-autoprefixer');
 
 const main = () => {
 	return gulp
@@ -26,6 +27,7 @@ const css = () => {
 		.src('./src/**/*.css')
 		.pipe(sourcemaps.init())
 		.pipe(cssMinify())
+		.pipe(autoprefixer())
 		.pipe(sourcemaps.write('./'))
 		.pipe(gulp.dest('./dist'));
 };
