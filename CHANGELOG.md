@@ -1,9 +1,8 @@
 ## [2.27.3](https://github.com/1chiSensei/Tanaka/compare/2.27.2...2.27.3) (2021-04-22)
 
-
 ### Bug Fixes
 
-* **commands:** add nsfw url check ([386ec30](https://github.com/1chiSensei/Tanaka/commit/386ec30217e6d9c7b35653497d17fc75a8e61f7a))
+- **commands:** add nsfw url check ([386ec30](https://github.com/1chiSensei/Tanaka/commit/386ec30217e6d9c7b35653497d17fc75a8e61f7a))
 
 ## [2.27.2](https://github.com/1chiSensei/Tanaka/compare/2.27.1...2.27.2) (2021-04-22)
 

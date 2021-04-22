@@ -53,7 +53,7 @@ module.exports = class ScreenshotCommand extends Command {
 	async fetchNSFWList(force = false) {
 		if (!force && this.nsfwList) return this.nsfwList;
 
-		const { text } = await request.get('https://github.com/blocklistproject/Lists/raw/master/porn.txt');
+		const { text } = await request.get('https://blocklistproject.github.io/Lists/alt-version/porn-nl.txt');
 
 		this.nsfwList = text
 			.split('\n')
