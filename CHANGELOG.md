@@ -1,9 +1,8 @@
 ## [2.27.2](https://github.com/1chiSensei/Tanaka/compare/2.27.1...2.27.2) (2021-04-22)
 
-
 ### Bug Fixes
 
-* **commands:** fix puppeteer not starting ([275da7f](https://github.com/1chiSensei/Tanaka/commit/275da7f3a3d570ed12c218e8ee91f7b498515372))
+- **commands:** fix puppeteer not starting ([275da7f](https://github.com/1chiSensei/Tanaka/commit/275da7f3a3d570ed12c218e8ee91f7b498515372))
 
 ## [2.27.1](https://github.com/1chiSensei/Tanaka/compare/2.27.0...2.27.1) (2021-04-22)
 
