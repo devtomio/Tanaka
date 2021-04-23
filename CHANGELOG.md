@@ -1,3 +1,10 @@
+## [2.33.4](https://github.com/1chiSensei/Tanaka/compare/2.33.3...2.33.4) (2021-04-23)
+
+
+### Bug Fixes
+
+* **puppeteer:** oopsie ([bc7691b](https://github.com/1chiSensei/Tanaka/commit/bc7691bfe5886501274ee190ba574d93f42f7231))
+
 ## [2.33.3](https://github.com/1chiSensei/Tanaka/compare/2.33.2...2.33.3) (2021-04-23)
 
 ### Bug Fixes
