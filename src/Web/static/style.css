@@ -1,7 +1,5 @@
-* {
+body {
 	font-family: 'Cascadia Code', monospace;
-	font-weight: normal;
-	font-style: normal;
 }
 
 body::-webkit-scrollbar-track {
