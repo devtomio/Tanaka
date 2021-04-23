@@ -1,8 +1,14 @@
-FROM node:buster
+FROM node:alpine
 
 WORKDIR /bot
 
 COPY ["package.json", "yarn.lock", "./"]
+
+# Dont cache things
+RUN echo -e 'Dir::Cache::pkgcache "";nDir::Cache::srcpkgcache "";' | tee /etc/apt/apt.conf.d/00_disable-cache-files
+RUN rm /var/cache/apt/pkgcache.bin
+RUN rm /var/cache/apt/srcpkgcache.bin
+RUN apt-get clean
 
 # Install system packages
 RUN apt-get update

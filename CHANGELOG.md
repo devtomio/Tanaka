@@ -1,16 +1,14 @@
 ## [2.35.3](https://github.com/1chiSensei/Tanaka/compare/2.35.2...2.35.3) (2021-04-23)
 
-
 ### Bug Fixes
 
-* **build:** fix storage ([4c60e11](https://github.com/1chiSensei/Tanaka/commit/4c60e11ae0124784560a9ec91eff47d87c7ff0dc))
+- **build:** fix storage ([4c60e11](https://github.com/1chiSensei/Tanaka/commit/4c60e11ae0124784560a9ec91eff47d87c7ff0dc))
 
 ## [2.35.2](https://github.com/1chiSensei/Tanaka/compare/2.35.1...2.35.2) (2021-04-23)
 
-
 ### Bug Fixes
 
-* **web:** fix font not showing ([ad731eb](https://github.com/1chiSensei/Tanaka/commit/ad731eb2ae74dbf31ab73bbfa1014f741b999c4f))
+- **web:** fix font not showing ([ad731eb](https://github.com/1chiSensei/Tanaka/commit/ad731eb2ae74dbf31ab73bbfa1014f741b999c4f))
 
 ## [2.35.1](https://github.com/1chiSensei/Tanaka/compare/2.35.0...2.35.1) (2021-04-23)
 
