@@ -1,9 +1,8 @@
 ## [2.32.1](https://github.com/1chiSensei/Tanaka/compare/2.32.0...2.32.1) (2021-04-23)
 
-
 ### Bug Fixes
 
-* **commands:** dont use await ([faebf9c](https://github.com/1chiSensei/Tanaka/commit/faebf9c49ef8a5c5f1c6c03ca8f74028d10c9d8b))
+- **commands:** dont use await ([faebf9c](https://github.com/1chiSensei/Tanaka/commit/faebf9c49ef8a5c5f1c6c03ca8f74028d10c9d8b))
 
 # [2.32.0](https://github.com/1chiSensei/Tanaka/compare/2.31.0...2.32.0) (2021-04-23)
 

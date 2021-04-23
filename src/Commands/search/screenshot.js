@@ -1,6 +1,7 @@
 const { screenshot } = require('../../Structures/Puppeteer');
 const { isUrl } = require('../../Structures/Util');
 const { Command } = require('discord.js-commando');
+const { MessageEmbed } = require('discord.js');
 const request = require('node-superfetch');
 const url = require('url');
 
@@ -40,9 +41,20 @@ module.exports = class ScreenshotCommand extends Command {
 			if (this.nsfwList.some((nsfwURL) => parsed.host === nsfwURL) && !msg.channel.nsfw)
 				return msg.reply('This site is NSFW. Please try again in a NSFW channel.');
 
-			const attachment = await screenshot(link);
+			const { buffer, title } = await screenshot(link);
 
-			msg.say({ files: [{ attachment, name: 'screenshot.png' }] });
+			const embed = new MessageEmbed()
+				.attachFiles([{ attachment: buffer, name: 'screenshot.png' }])
+				.setTitle(title)
+				.setImage('attachment://screenshot.png')
+				.setColor('RANDOM')
+				.setFooter(
+					`Requested by ${msg.author.tag}`,
+					msg.author.displayAvatarURL({ dynamic: true }),
+				)
+				.setTimestamp();
+
+			msg.say(embed);
 
 			return msg.channel.stopTyping();
 		} catch {

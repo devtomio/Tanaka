@@ -13,13 +13,19 @@ const screenshot = async (url) => {
 		width: 1920,
 		height: 1080,
 	});
-	await page.goto(url, { waitUntil: 'domcontentloaded' });
+	await page.goto(url);
+	await page.waitForTimeout(5000);
 
 	const buffer = await page.screenshot();
 
 	await browser.close();
 
-	return buffer;
+	const data = {
+		title: await page.title(),
+		buffer,
+	};
+
+	return data;
 };
 
 module.exports = { screenshot };
