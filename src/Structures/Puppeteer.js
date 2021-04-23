@@ -18,13 +18,12 @@ const screenshot = async (url) => {
 		await page.waitForTimeout(5000);
 
 		const buffer = await page.screenshot();
-
-		await browser.close();
-
 		const data = {
 			title: await page.title(),
 			buffer,
 		};
+
+		await browser.close();
 
 		return data;
 	} catch (e) {
