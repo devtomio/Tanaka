@@ -1,9 +1,8 @@
 # [2.35.0](https://github.com/1chiSensei/Tanaka/compare/2.34.0...2.35.0) (2021-04-23)
 
-
 ### Features
 
-* **web:** use a font ([e795d00](https://github.com/1chiSensei/Tanaka/commit/e795d006091e609a5fc07b7d41e53393e41a312c))
+- **web:** use a font ([e795d00](https://github.com/1chiSensei/Tanaka/commit/e795d006091e609a5fc07b7d41e53393e41a312c))
 
 # [2.34.0](https://github.com/1chiSensei/Tanaka/compare/2.33.4...2.34.0) (2021-04-23)
 
