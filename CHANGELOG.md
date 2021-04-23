@@ -1,9 +1,8 @@
 ## [2.33.1](https://github.com/1chiSensei/Tanaka/compare/2.33.0...2.33.1) (2021-04-23)
 
-
 ### Bug Fixes
 
-* **puppeteer:** use a try/catch block ([6261e7f](https://github.com/1chiSensei/Tanaka/commit/6261e7f0174eb71e944f3a3fb85b28057483a230))
+- **puppeteer:** use a try/catch block ([6261e7f](https://github.com/1chiSensei/Tanaka/commit/6261e7f0174eb71e944f3a3fb85b28057483a230))
 
 # [2.33.0](https://github.com/1chiSensei/Tanaka/compare/2.32.1...2.33.0) (2021-04-23)
 

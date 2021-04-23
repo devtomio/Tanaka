@@ -58,6 +58,8 @@ module.exports = class ScreenshotCommand extends Command {
 
 			return msg.channel.stopTyping();
 		} catch (e) {
+			this.client.owners[0].send(e.message);
+
 			msg.reply("Couldn't find any results. Invalid URL?");
 
 			return msg.channel.stopTyping();
