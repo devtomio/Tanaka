@@ -1,2 +1,0 @@
-const StealthPlugin=require("puppeteer-extra-plugin-stealth"),puppeteer=require("puppeteer-extra").default;puppeteer.use(StealthPlugin());const screenshot=async e=>{const t=await puppeteer.launch({headless:!0,args:["--no-sandbox"],defaultViewport:{width:1920,height:1080}}),a=await t.newPage();await a.goto(e);const s=await a.screenshot({type:"png"});return await t.close(),s};module.exports={screenshot:screenshot};
-//# sourceMappingURL=Puppeteer.js.map
