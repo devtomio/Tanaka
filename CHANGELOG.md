@@ -1,3 +1,10 @@
+## [2.37.6](https://github.com/1chiSensei/Tanaka/compare/2.37.5...2.37.6) (2021-04-23)
+
+
+### Bug Fixes
+
+* release-it broke again ([5d9ac1f](https://github.com/1chiSensei/Tanaka/commit/5d9ac1fa16cfc1dbc5ecc30efee30ba12d112f9a))
+
 ## [2.37.5](https://github.com/1chiSensei/Tanaka/compare/2.37.4...2.37.5) (2021-04-23)
 
 
