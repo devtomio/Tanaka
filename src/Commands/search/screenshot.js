@@ -31,7 +31,7 @@ module.exports = class ScreenshotCommand extends Command {
 
 	async run(msg, { link }) {
 		try {
-			await msg.channel.startTyping();
+			msg.channel.startTyping();
 
 			if (!this.nsfwList) await this.fetchNSFWList();
 
