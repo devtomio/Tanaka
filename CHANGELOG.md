@@ -1,3 +1,10 @@
+## [2.29.1](https://github.com/1chiSensei/Tanaka/compare/2.29.0...2.29.1) (2021-04-23)
+
+
+### Bug Fixes
+
+* **build:** empty commit bc build ([8b5d01f](https://github.com/1chiSensei/Tanaka/commit/8b5d01f5605b82ca10ee9ee9b5dda7d5f71ce049))
+
 # [2.29.0](https://github.com/1chiSensei/Tanaka/compare/2.28.3...2.29.0) (2021-04-23)
 
 
