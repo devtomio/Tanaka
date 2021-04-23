@@ -1,3 +1,10 @@
+## [2.33.2](https://github.com/1chiSensei/Tanaka/compare/2.33.1...2.33.2) (2021-04-23)
+
+
+### Bug Fixes
+
+* **commands:** send the owner an err ([902c125](https://github.com/1chiSensei/Tanaka/commit/902c125b42e54c25783da12c8199781b0e32413c))
+
 ## [2.33.1](https://github.com/1chiSensei/Tanaka/compare/2.33.0...2.33.1) (2021-04-23)
 
 ### Bug Fixes
