@@ -1,3 +1,10 @@
+## [2.28.3](https://github.com/1chiSensei/Tanaka/compare/2.28.2...2.28.3) (2021-04-23)
+
+
+### Bug Fixes
+
+* **commands:** fix cmd not screenshotting ([2767bd6](https://github.com/1chiSensei/Tanaka/commit/2767bd6b25a5c66127f36731457c2ea2366d095c))
+
 ## [2.28.2](https://github.com/1chiSensei/Tanaka/compare/2.28.1...2.28.2) (2021-04-23)
 
 ### Bug Fixes
