@@ -1,3 +1,10 @@
+# [2.30.0](https://github.com/1chiSensei/Tanaka/compare/2.29.2...2.30.0) (2021-04-23)
+
+
+### Features
+
+* **commands:** dont use puppeteer ([703154f](https://github.com/1chiSensei/Tanaka/commit/703154fea97ae6d5a5e136a95110a9aa81da8774))
+
 ## [2.29.2](https://github.com/1chiSensei/Tanaka/compare/2.29.1...2.29.2) (2021-04-23)
 
 ### Bug Fixes
