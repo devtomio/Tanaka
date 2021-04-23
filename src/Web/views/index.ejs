@@ -1,6 +1,6 @@
 <%- include('./partials/_head') %>
 
-<body class="github-font-standard">
+<body class="dark-theme github">
 	<% if (data === null) { %>
 		<section class="fullscreen">
 			<div class="background" style="background-image: url('https://i.imgur.com/o7T3fAm.jpg');"></div>
@@ -66,7 +66,7 @@
 
 		<section class="container" id="information">
 			<div class="box-container">
-				<h3 class="title turquoise-text"><i class="emoji naruto-run"></i> Information:</h3>
+				<h1 class="title turquoise-text"><i class="emoji naruto-run"></i> Information:</h1>
 				<div class="info-container">
 					<p>
 						Tanaka is a Discord Bot coded in <a href="https://javascript.info"
@@ -79,7 +79,7 @@
 			</div>
 
 			<div class="box-container">
-				<h3 class="title turquoise-text"><i class="emoji konoha"></i> Statistics:</h3>
+				<h1 class="title turquoise-text"><i class="emoji konoha"></i> Statistics:</h1>
 				<div class="info-container">
 					<p><span class="gold-text">Users:</span> <%= userCount %></p>
 					<p><span class="android-text">Guilds:</span> <%= guildCount %></p>
