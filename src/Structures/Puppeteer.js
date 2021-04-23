@@ -13,7 +13,6 @@ const screenshot = async (url) => {
 		width: 1920,
 		height: 1080,
 	});
-	await page.waitForTimeout(5000);
 	await page.goto(url);
 
 	const buffer = await page.screenshot();

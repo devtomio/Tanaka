@@ -1,9 +1,8 @@
 ## [2.28.1](https://github.com/1chiSensei/Tanaka/compare/2.28.0...2.28.1) (2021-04-22)
 
-
 ### Bug Fixes
 
-* **puppeteer:** fix err ([cb8c0e5](https://github.com/1chiSensei/Tanaka/commit/cb8c0e58965bdfa20f6028c0be06a591c9043c0f))
+- **puppeteer:** fix err ([cb8c0e5](https://github.com/1chiSensei/Tanaka/commit/cb8c0e58965bdfa20f6028c0be06a591c9043c0f))
 
 # [2.28.0](https://github.com/1chiSensei/Tanaka/compare/2.27.4...2.28.0) (2021-04-22)
 
