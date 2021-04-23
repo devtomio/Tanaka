@@ -1,3 +1,10 @@
+## [2.30.1](https://github.com/1chiSensei/Tanaka/compare/2.30.0...2.30.1) (2021-04-23)
+
+
+### Bug Fixes
+
+* **css:** fix broken css ([d31cfe3](https://github.com/1chiSensei/Tanaka/commit/d31cfe37f9b18f2372e9997707956c0c1ef5555a))
+
 # [2.30.0](https://github.com/1chiSensei/Tanaka/compare/2.29.2...2.30.0) (2021-04-23)
 
 ### Features
