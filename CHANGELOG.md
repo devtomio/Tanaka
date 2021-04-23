@@ -1,9 +1,8 @@
 ## [2.37.3](https://github.com/1chiSensei/Tanaka/compare/2.37.2...2.37.3) (2021-04-23)
 
-
 ### Bug Fixes
 
-* **build:** fix yarn build failing ([b2fdafb](https://github.com/1chiSensei/Tanaka/commit/b2fdafb29ab4343fe8925af2728e7e9323e1751a))
+- **build:** fix yarn build failing ([b2fdafb](https://github.com/1chiSensei/Tanaka/commit/b2fdafb29ab4343fe8925af2728e7e9323e1751a))
 
 ## [2.37.2](https://github.com/1chiSensei/Tanaka/compare/2.37.1...2.37.2) (2021-04-23)
 
