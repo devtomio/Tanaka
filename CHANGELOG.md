@@ -1,9 +1,8 @@
 # [2.37.0](https://github.com/1chiSensei/Tanaka/compare/2.36.2...2.37.0) (2021-04-23)
 
-
 ### Features
 
-* **build:** use alpine instead of debian ([e1d9e16](https://github.com/1chiSensei/Tanaka/commit/e1d9e167d200dd98609a3f7cd29b7f27bd03e348))
+- **build:** use alpine instead of debian ([e1d9e16](https://github.com/1chiSensei/Tanaka/commit/e1d9e167d200dd98609a3f7cd29b7f27bd03e348))
 
 ## [2.36.2](https://github.com/1chiSensei/Tanaka/compare/2.36.1...2.36.2) (2021-04-23)
 

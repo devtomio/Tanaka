@@ -10,7 +10,7 @@ ENV PUPPETEER_SKIP_CHROMIUM_DOWNLOAD="true"
 # Install stuff
 RUN apk update \
 	&& apk upgrade \
-	&& apk add --no-cache dumb-init curl make gcc g++ python linux-headers binutils-gold gnupg libstdc++ nss chromium wget curl cairo pango libpng jpeg build-base giflib librsvg ffmpeg openjdk-11 \
+	&& apk add --no-cache dumb-init curl make gcc g++ python linux-headers binutils-gold gnupg libstdc++ nss chromium wget curl cairo pango libpng jpeg build-base giflib librsvg ffmpeg openjdk11 \
 	&& yarn global add pm2 dotenv-cli \
 	&& yarn \
 	&& yarn add puppeteer-core \
