@@ -15,6 +15,9 @@ RUN wget https://github.com/freyacodes/Lavalink/releases/download/3.3.2.5/Lavali
 RUN yarn global add pm2 dotenv-cli
 RUN yarn
 
+# Install puppeteer
+RUN yarn add puppeteer
+
 COPY . .
 
 CMD ["yarn", "start"]

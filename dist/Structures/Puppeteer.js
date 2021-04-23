@@ -1,0 +1,2 @@
+const AdblockPlugin=require("puppeteer-extra-plugin-adblocker"),StealthPlugin=require("puppeteer-extra-plugin-stealth"),puppeteer=require("puppeteer-extra");puppeteer.use(StealthPlugin()),puppeteer.use(AdblockPlugin({blockTrackers:!0}));const screenshot=async e=>{const t=await puppeteer.launch({headless:!0,args:["--no-sandbox"]}),a=await t.newPage();await a.setViewport({width:1920,height:1080}),await a.goto(e,{waitUntil:"domcontentloaded"});const r=await a.screenshot();return await t.close(),r};module.exports={screenshot:screenshot};
+//# sourceMappingURL=Puppeteer.js.map

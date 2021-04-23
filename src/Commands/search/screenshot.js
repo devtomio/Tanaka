@@ -1,3 +1,4 @@
+const { screenshot } = require('../../Structures/Puppeteer');
 const { isUrl } = require('../../Structures/Util');
 const { Command } = require('discord.js-commando');
 const request = require('node-superfetch');
@@ -39,11 +40,9 @@ module.exports = class ScreenshotCommand extends Command {
 			if (this.nsfwList.some((nsfwURL) => parsed.host === nsfwURL) && !msg.channel.nsfw)
 				return msg.reply('This site is NSFW. Please try again in a NSFW channel.');
 
-			const { body } = await request.get(
-				`https://image.thum.io/get/width/1920/crop/675/noanimate/${link}`,
-			);
+			const attachment = await screenshot(link);
 
-			msg.say({ files: [{ attachment: body, name: 'screenshot.png' }] });
+			msg.say({ files: [{ attachment, name: 'screenshot.png' }] });
 
 			return msg.channel.stopTyping();
 		} catch {
