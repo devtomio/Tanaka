@@ -1,3 +1,10 @@
+## [2.37.1](https://github.com/1chiSensei/Tanaka/compare/2.37.0...2.37.1) (2021-04-23)
+
+
+### Bug Fixes
+
+* **build:** fix wrong pkg name ([a72d0d5](https://github.com/1chiSensei/Tanaka/commit/a72d0d5608705abae384ab5d66242bb56988c642))
+
 # [2.37.0](https://github.com/1chiSensei/Tanaka/compare/2.36.2...2.37.0) (2021-04-23)
 
 ### Features
