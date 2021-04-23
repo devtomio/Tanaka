@@ -1,3 +1,10 @@
+## [2.37.7](https://github.com/1chiSensei/Tanaka/compare/2.37.6...2.37.7) (2021-04-23)
+
+
+### Bug Fixes
+
+* railway broken? ([d08cf46](https://github.com/1chiSensei/Tanaka/commit/d08cf46491459b82a3d0a801bcb6937ac8b4339a))
+
 ## [2.37.6](https://github.com/1chiSensei/Tanaka/compare/2.37.5...2.37.6) (2021-04-23)
 
 
