@@ -31,6 +31,93 @@ body::-webkit-scrollbar-thumb {
 	cursor: pointer;
 }
 
+.arrow svg {
+	fill: #fff;
+}
+
+a {
+	color: #537781;
+}
+
+a:hover {
+	color: #0fa0ce;
+}
+
+.parallax-container .parallax {
+	filter: blur(4px) brightness(50%);
+}
+
+.flex-grid {
+	margin-top: 0.5em;
+}
+
+.flex-grid .colour {
+	flex-basis: 14.1%;
+	max-width: 14.1%;
+	position: relative;
+	height: 200px;
+	transition: transform 200ms ease-in-out;
+	z-index: 10;
+}
+
+.flex-grid .colour:hover {
+	transform: translateY(-0.5em) scale(1.05);
+	transition: transform 200ms ease-in-out;
+	z-index: 10000;
+}
+
+.flex-grid .colour .name,
+.flex-grid .colour .hex {
+	position: absolute;
+	font-size: 20px;
+	font-weight: bold;
+}
+
+.flex-grid .colour .name {
+	left: 0.5em;
+	top: 0.25em;
+}
+
+.flex-grid .colour .hex {
+	bottom: 0.5em;
+	right: 0.5em;
+}
+
+.image-preview {
+	border-radius: 5px;
+	border: 3px solid #303030;
+	flex-basis: 48% !important;
+	margin-top: 0.5em !important;
+	max-width: 48% !important;
+	position: relative;
+
+	background-size: 20px 20px;
+	background-position: 0 0, 30px 30px;
+	background-image: linear-gradient(45deg, #2e3033 25%, transparent 0, transparent 75%, #2e3033 0, #2e3033),
+		linear-gradient(45deg, #2e3033 25%, transparent 0, transparent 75%, #2e3033 0, #2e3033);
+}
+
+.image-preview img {
+	max-height: 250px;
+}
+
+.image-preview .image-links {
+	bottom: 0.5em;
+	font-size: 16px;
+	font-weight: bold;
+	position: absolute;
+	right: 0.5em;
+}
+
+.image-preview .image-text {
+	font-size: 22px;
+	font-weight: bold;
+	left: 0.5em;
+	position: absolute;
+	top: 0.25em;
+	text-shadow: 0 0 5px #000;
+}
+
 .info-container {
 	padding-left: 2.5em;
 }
@@ -68,6 +155,24 @@ body::-webkit-scrollbar-thumb {
 @media (max-width: 550px) {
 	.info-container {
 		padding-left: 0;
+	}
+}
+
+@media (max-width: 800px) {
+	.flex-grid .colour .name,
+	.flex-grid .colour .hex {
+		font-size: 16px;
+	}
+}
+
+@media (max-width: 600px) {
+	.flex-grid .colour,
+	.flex-grid .image-preview {
+		flex-basis: 90% !important;
+		max-width: 90% !important;
+		padding: 0;
+		width: 90%;
+		margin: 0 auto;
 	}
 }
 
