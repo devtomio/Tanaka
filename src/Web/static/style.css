@@ -1,3 +1,72 @@
+@import url('https://cdn.jsdelivr.net/npm/@xz/fonts@1/serve/cascadia-code.min.css');
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+font,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td {
+	font-family: 'Cascadia Code', monospace;
+	font-weight: normal;
+	font-style: normal;
+}
+
 body::-webkit-scrollbar-track {
 	-webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
 	box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
@@ -25,6 +94,11 @@ body::-webkit-scrollbar-thumb {
 .box-container p {
 	font-size: 18px;
 	margin-bottom: 0.2em;
+}
+
+.center {
+	display: flex;
+	justify-content: center;
 }
 
 .info-button {
