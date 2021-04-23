@@ -1,3 +1,10 @@
+# [2.31.0](https://github.com/1chiSensei/Tanaka/compare/2.30.1...2.31.0) (2021-04-23)
+
+
+### Features
+
+* **css:** rewrite to modesta v3 ([6184b48](https://github.com/1chiSensei/Tanaka/commit/6184b487153015eebe599dc24d7a49a186265af9))
+
 ## [2.30.1](https://github.com/1chiSensei/Tanaka/compare/2.30.0...2.30.1) (2021-04-23)
 
 ### Bug Fixes
