@@ -1,3 +1,10 @@
+## [2.35.3](https://github.com/1chiSensei/Tanaka/compare/2.35.2...2.35.3) (2021-04-23)
+
+
+### Bug Fixes
+
+* **build:** fix storage ([4c60e11](https://github.com/1chiSensei/Tanaka/commit/4c60e11ae0124784560a9ec91eff47d87c7ff0dc))
+
 ## [2.35.2](https://github.com/1chiSensei/Tanaka/compare/2.35.1...2.35.2) (2021-04-23)
 
 
