@@ -1,3 +1,10 @@
+## [2.36.1](https://github.com/1chiSensei/Tanaka/compare/2.36.0...2.36.1) (2021-04-23)
+
+
+### Bug Fixes
+
+* **build:** fix unknown command ([5cf455c](https://github.com/1chiSensei/Tanaka/commit/5cf455c5ab1a5d3641694af0896821a593f9ef13))
+
 # [2.36.0](https://github.com/1chiSensei/Tanaka/compare/2.35.3...2.36.0) (2021-04-23)
 
 ### Features
