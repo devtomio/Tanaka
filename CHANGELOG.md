@@ -1,9 +1,8 @@
 ## [2.37.4](https://github.com/1chiSensei/Tanaka/compare/2.37.3...2.37.4) (2021-04-23)
 
-
 ### Bug Fixes
 
-* **build:** fix autoconf ([f563117](https://github.com/1chiSensei/Tanaka/commit/f563117d4d089e4f29cc98dc9cdd0038b9567068))
+- **build:** fix autoconf ([f563117](https://github.com/1chiSensei/Tanaka/commit/f563117d4d089e4f29cc98dc9cdd0038b9567068))
 
 ## [2.37.3](https://github.com/1chiSensei/Tanaka/compare/2.37.2...2.37.3) (2021-04-23)
 
