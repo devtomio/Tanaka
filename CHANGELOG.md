@@ -1,3 +1,10 @@
+# [2.34.0](https://github.com/1chiSensei/Tanaka/compare/2.33.4...2.34.0) (2021-04-23)
+
+
+### Features
+
+* **web:** remove header ([ba7d523](https://github.com/1chiSensei/Tanaka/commit/ba7d5237b0b0be739ef9acfe18f9511aed151b3f))
+
 ## [2.33.4](https://github.com/1chiSensei/Tanaka/compare/2.33.3...2.33.4) (2021-04-23)
 
 ### Bug Fixes
