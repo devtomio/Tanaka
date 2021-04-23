@@ -57,7 +57,7 @@ module.exports = class ScreenshotCommand extends Command {
 			msg.say(embed);
 
 			return msg.channel.stopTyping();
-		} catch {
+		} catch (e) {
 			msg.reply("Couldn't find any results. Invalid URL?");
 
 			return msg.channel.stopTyping();

@@ -1,9 +1,8 @@
 # [2.33.0](https://github.com/1chiSensei/Tanaka/compare/2.32.1...2.33.0) (2021-04-23)
 
-
 ### Features
 
-* **commands:** use embed in screenshot ([d9381ef](https://github.com/1chiSensei/Tanaka/commit/d9381ef0cc62a79034a2743b7d46540306eac6b8))
+- **commands:** use embed in screenshot ([d9381ef](https://github.com/1chiSensei/Tanaka/commit/d9381ef0cc62a79034a2743b7d46540306eac6b8))
 
 ## [2.32.1](https://github.com/1chiSensei/Tanaka/compare/2.32.0...2.32.1) (2021-04-23)
 

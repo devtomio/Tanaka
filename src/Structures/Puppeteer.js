@@ -6,26 +6,30 @@ puppeteer.use(StealthPlugin());
 puppeteer.use(AdblockPlugin({ blockTrackers: true }));
 
 const screenshot = async (url) => {
-	const browser = await puppeteer.launch({ headless: true, args: ['--no-sandbox'] });
-	const page = await browser.newPage();
+	try {
+		const browser = await puppeteer.launch({ headless: true, args: ['--no-sandbox'] });
+		const page = await browser.newPage();
 
-	await page.setViewport({
-		width: 1920,
-		height: 1080,
-	});
-	await page.goto(url);
-	await page.waitForTimeout(5000);
+		await page.setViewport({
+			width: 1920,
+			height: 1080,
+		});
+		await page.goto(url);
+		await page.waitForTimeout(5000);
 
-	const buffer = await page.screenshot();
+		const buffer = await page.screenshot();
 
-	await browser.close();
+		await browser.close();
 
-	const data = {
-		title: await page.title(),
-		buffer,
-	};
+		const data = {
+			title: await page.title(),
+			buffer,
+		};
 
-	return data;
+		return data;
+	} catch (e) {
+		throw new Error(e);
+	}
 };
 
 module.exports = { screenshot };
