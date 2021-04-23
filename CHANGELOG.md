@@ -1,3 +1,10 @@
+## [2.29.2](https://github.com/1chiSensei/Tanaka/compare/2.29.1...2.29.2) (2021-04-23)
+
+
+### Bug Fixes
+
+* **puppeteer:** pls work ([533017b](https://github.com/1chiSensei/Tanaka/commit/533017b3c013f37f3869649049886487f748db37))
+
 ## [2.29.1](https://github.com/1chiSensei/Tanaka/compare/2.29.0...2.29.1) (2021-04-23)
 
 ### Bug Fixes
