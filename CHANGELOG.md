@@ -1,3 +1,10 @@
+## [2.37.5](https://github.com/1chiSensei/Tanaka/compare/2.37.4...2.37.5) (2021-04-23)
+
+
+### Bug Fixes
+
+* **build:** add pixman ([d876dfa](https://github.com/1chiSensei/Tanaka/commit/d876dfa6bedf1fd0b666e567f1859e926152c5f2))
+
 ## [2.37.4](https://github.com/1chiSensei/Tanaka/compare/2.37.3...2.37.4) (2021-04-23)
 
 ### Bug Fixes
