@@ -1,26 +1,22 @@
-FROM node:buster
+FROM node:alpine
 
 WORKDIR /bot
 
 COPY ["package.json", "yarn.lock", "./"]
 
-# Dont cache things
-RUN echo -e 'Dir::Cache "";nDir::Cache::archives "";' | tee /etc/apt/apt.conf.d/00_disable-cache-directories
-RUN apt-get clean
+# Set env variables
+ENV PUPPETEER_SKIP_CHROMIUM_DOWNLOAD="true"
 
-# Install system packages
-RUN apt-get update
-RUN apt-get install -y build-essential ffmpeg curl default-jre default-jdk libcairo2-dev libpango1.0-dev libjpeg-dev libgif-dev librsvg2-dev gconf-service libasound2 libatk1.0-0 libatk-bridge2.0-0 libc6 libcairo2 libcups2 libdbus-1-3 libexpat1 libfontconfig1 libgcc1 libgconf-2-4 libgdk-pixbuf2.0-0 libglib2.0-0 libgtk-3-0 libnspr4 libpango-1.0-0 libpangocairo-1.0-0 libstdc++6 libx11-6 libx11-xcb1 libxcb1 libxcomposite1 libxcursor1 libxdamage1 libxext6 libxfixes3 libxi6 libxrandr2 libxrender1 libxss1 libxtst6 ca-certificates fonts-liberation libappindicator1 libnss3 lsb-release xdg-utils wget libgbm-dev
-
-# Install lavalink
-RUN wget https://github.com/freyacodes/Lavalink/releases/download/3.3.2.5/Lavalink.jar
-
-# Install node packages
-RUN yarn global add pm2 dotenv-cli
-RUN yarn
-
-# Install puppeteer
-RUN yarn add puppeteer
+# Install stuff
+RUN apk update \
+	&& apk upgrade \
+	&& apk add --no-cache dumb-init curl make gcc g++ python linux-headers binutils-gold gnupg libstdc++ nss chromium wget curl cairo pango libpng jpeg build-base giflib librsvg ffmpeg openjdk-11 \
+	&& yarn global add pm2 dotenv-cli \
+	&& yarn \
+	&& yarn add puppeteer-core \
+	&& wget https://github.com/freyacodes/Lavalink/releases/download/3.3.2.5/Lavalink.jar \
+	&& rm -rf /usr/include \
+	&& rm -rf /var/cache/apk/* /root/.node-gyp /usr/share/man /tmp/*
 
 COPY . .
 

@@ -1,13 +1,17 @@
 const AdblockPlugin = require('puppeteer-extra-plugin-adblocker');
 const StealthPlugin = require('puppeteer-extra-plugin-stealth');
-const puppeteer = require('puppeteer-extra');
+const puppeteer = require('puppeteer-extra').default;
 
 puppeteer.use(StealthPlugin());
 puppeteer.use(AdblockPlugin({ blockTrackers: true }));
 
 const screenshot = async (url) => {
 	try {
-		const browser = await puppeteer.launch({ headless: true, args: ['--no-sandbox'] });
+		const browser = await puppeteer.launch({
+			headless: true,
+			args: ['--no-sandbox'],
+			executablePath: '/usr/bin/chromium-browser',
+		});
 		const page = await browser.newPage();
 
 		await page.setViewport({
