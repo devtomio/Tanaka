@@ -1,9 +1,8 @@
 ## [2.28.2](https://github.com/1chiSensei/Tanaka/compare/2.28.1...2.28.2) (2021-04-23)
 
-
 ### Bug Fixes
 
-* **puppeteer:** dont timeout ([9372af2](https://github.com/1chiSensei/Tanaka/commit/9372af2ce311271e5517d66bd83537ca0406e292))
+- **puppeteer:** dont timeout ([9372af2](https://github.com/1chiSensei/Tanaka/commit/9372af2ce311271e5517d66bd83537ca0406e292))
 
 ## [2.28.1](https://github.com/1chiSensei/Tanaka/compare/2.28.0...2.28.1) (2021-04-22)
 

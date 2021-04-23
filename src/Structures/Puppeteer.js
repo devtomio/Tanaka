@@ -1,6 +1,6 @@
-const AdblockPlugin = require('puppeteer-extra-plugin-adblocker').default;
+const AdblockPlugin = require('puppeteer-extra-plugin-adblocker');
 const StealthPlugin = require('puppeteer-extra-plugin-stealth');
-const puppeteer = require('puppeteer-extra').default;
+const puppeteer = require('puppeteer-extra');
 
 puppeteer.use(StealthPlugin());
 puppeteer.use(AdblockPlugin());
@@ -19,7 +19,7 @@ const screenshot = async (url) => {
 
 	await browser.close();
 
-	return buffer instanceof Buffer ? buffer : Buffer.from(buffer);
+	return buffer;
 };
 
 module.exports = { screenshot };
