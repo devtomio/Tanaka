@@ -1,3 +1,10 @@
+## [2.35.1](https://github.com/1chiSensei/Tanaka/compare/2.35.0...2.35.1) (2021-04-23)
+
+
+### Bug Fixes
+
+* **web:** fix font ([6923fec](https://github.com/1chiSensei/Tanaka/commit/6923fec8475eb267361c9fce88a7224e1278ef39))
+
 # [2.35.0](https://github.com/1chiSensei/Tanaka/compare/2.34.0...2.35.0) (2021-04-23)
 
 ### Features
