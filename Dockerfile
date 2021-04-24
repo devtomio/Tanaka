@@ -12,7 +12,7 @@ RUN apk update \
         && export PKG_CONFIG_PATH="$HOME/lib/pkgconfig/" \
 	&& apk upgrade \
 	&& apk add --no-cache dumb-init curl make gcc g++ python linux-headers binutils-gold gnupg libstdc++ nss chromium wget curl autoconf pixman alpine-sdk cairo pango libpng jpeg build-base giflib librsvg ffmpeg openjdk11 \
-	&& yarn global add pm2 dotenv-cli \
+	&& yarn global add pm2 dotenv-cli node-gyp \
 	&& yarn \
 	&& yarn add puppeteer-core \
 	&& wget https://github.com/freyacodes/Lavalink/releases/download/3.3.2.5/Lavalink.jar \
