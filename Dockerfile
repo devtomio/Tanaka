@@ -9,6 +9,7 @@ ENV PUPPETEER_SKIP_CHROMIUM_DOWNLOAD="true"
 
 # Install stuff
 RUN apk update \
+        && export PKG_CONFIG_PATH="$HOME/lib/pkgconfig/" \
 	&& apk upgrade \
 	&& apk add --no-cache dumb-init curl make gcc g++ python linux-headers binutils-gold gnupg libstdc++ nss chromium wget curl autoconf pixman alpine-sdk cairo pango libpng jpeg build-base giflib librsvg ffmpeg openjdk11 \
 	&& yarn global add pm2 dotenv-cli \
