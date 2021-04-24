@@ -1,9 +1,8 @@
 ## [2.38.1](https://github.com/1chiSensei/Tanaka/compare/2.38.0...2.38.1) (2021-04-24)
 
-
 ### Bug Fixes
 
-* **build:** add default-jdk ([8d8a361](https://github.com/1chiSensei/Tanaka/commit/8d8a3614d3c321e661203377c1991772c5805b03))
+- **build:** add default-jdk ([8d8a361](https://github.com/1chiSensei/Tanaka/commit/8d8a3614d3c321e661203377c1991772c5805b03))
 
 # [2.38.0](https://github.com/1chiSensei/Tanaka/compare/2.37.8...2.38.0) (2021-04-24)
 
