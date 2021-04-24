@@ -1,3 +1,11 @@
+## [2.37.8](https://github.com/1chiSensei/Tanaka/compare/2.37.7...2.37.8) (2021-04-24)
+
+
+### Bug Fixes
+
+* **build:** fix docker script ([7815c3b](https://github.com/1chiSensei/Tanaka/commit/7815c3bc02505774b620d4d93bf1358f982eb9ca))
+* **build:** use node 14 ([3109bdb](https://github.com/1chiSensei/Tanaka/commit/3109bdb5ac4aa71c65552854de3fc275d92bae07))
+
 ## [2.37.7](https://github.com/1chiSensei/Tanaka/compare/2.37.6...2.37.7) (2021-04-23)
 
 ### Bug Fixes
