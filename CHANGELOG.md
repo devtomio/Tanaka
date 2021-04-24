@@ -1,3 +1,10 @@
+## [2.38.2](https://github.com/1chiSensei/Tanaka/compare/2.38.1...2.38.2) (2021-04-24)
+
+
+### Bug Fixes
+
+* **build:** fix java ([e179aa2](https://github.com/1chiSensei/Tanaka/commit/e179aa28c7f22993c85da874fec2f2b3b2da0056))
+
 ## [2.38.1](https://github.com/1chiSensei/Tanaka/compare/2.38.0...2.38.1) (2021-04-24)
 
 ### Bug Fixes
