@@ -1,9 +1,8 @@
 # [2.38.0](https://github.com/1chiSensei/Tanaka/compare/2.37.8...2.38.0) (2021-04-24)
 
-
 ### Features
 
-* **build:** use the debian slim image ([be8d450](https://github.com/1chiSensei/Tanaka/commit/be8d4506bb6b130c7959c154df74154b3fbe176c))
+- **build:** use the debian slim image ([be8d450](https://github.com/1chiSensei/Tanaka/commit/be8d4506bb6b130c7959c154df74154b3fbe176c))
 
 ## [2.37.8](https://github.com/1chiSensei/Tanaka/compare/2.37.7...2.37.8) (2021-04-24)
 
