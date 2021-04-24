@@ -1,25 +1,19 @@
-FROM node:lts-alpine
+FROM debian:buster-slim
 
 WORKDIR /bot
 
 COPY ["package.json", "yarn.lock", "./"]
 
-# Set env variables
-ENV PUPPETEER_SKIP_CHROMIUM_DOWNLOAD="true"
-
-# Install stuff
-RUN apk update \
-	&& apk upgrade \
-	&& apk add --no-cache dumb-init curl make gcc g++ python ca-certificates linux-headers binutils-gold gnupg libstdc++ nss chromium wget curl autoconf pixman alpine-sdk cairo pango libpng jpeg build-base giflib librsvg ffmpeg openjdk11 \
-	&& wget -q -O /etc/apk/keys/sgerrand.rsa.pub https://alpine-pkgs.sgerrand.com/sgerrand.rsa.pub \
-	&& wget https://github.com/sgerrand/alpine-pkg-glibc/releases/download/2.33-r0/glibc-2.33-r0.apk \
-	&& apk add glibc-2.33-r0.apk \
+# Install all stuff needed
+RUN apt-get update \
+	&& apt-get install -y build-essential software-properties-common curl \
+	&& curl -sL https://deb.nodesource.com/setup_16.x | bash - \
+	&& apt-get install -y nodejs default-jre libcairo2-dev libpango1.0-dev libjpeg-dev libgif-dev librsvg2-dev ffmpeg libgtk2.0-0 libgtk-3-0 libnotify-dev libgconf-2-4 libnss3 libxss1 libasound2 libxtst6 xauth xvfb libgbm-dev \
+	&& npm i -g yarn \
 	&& yarn global add pm2 dotenv-cli node-gyp \
 	&& yarn \
-	&& yarn add puppeteer-core \
-	&& wget https://github.com/freyacodes/Lavalink/releases/download/3.3.2.5/Lavalink.jar \
-	&& rm -rf /usr/include \
-	&& rm -rf /var/cache/apk/* /root/.node-gyp /usr/share/man /tmp/*
+	&& yarn add puppeteer \
+	&& wget https://github.com/freyacodes/Lavalink/releases/download/3.3.2.5/Lavalink.jar
 
 COPY . .
 
