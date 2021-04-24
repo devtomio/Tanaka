@@ -1,3 +1,10 @@
+## [2.38.4](https://github.com/1chiSensei/Tanaka/compare/2.38.3...2.38.4) (2021-04-24)
+
+
+### Bug Fixes
+
+* **build:** omg pls fix ([2104a86](https://github.com/1chiSensei/Tanaka/commit/2104a866ccddd2c6f6ee839656d853e2ba345fbb))
+
 ## [2.38.3](https://github.com/1chiSensei/Tanaka/compare/2.38.2...2.38.3) (2021-04-24)
 
 ### Bug Fixes
