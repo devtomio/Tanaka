@@ -1,3 +1,10 @@
+## [2.38.6](https://github.com/1chiSensei/Tanaka/compare/2.38.5...2.38.6) (2021-04-24)
+
+
+### Bug Fixes
+
+* **build:** add wget ([92647a0](https://github.com/1chiSensei/Tanaka/commit/92647a08b83522a73aeb91682feb3c19931bf101))
+
 ## [2.38.5](https://github.com/1chiSensei/Tanaka/compare/2.38.4...2.38.5) (2021-04-24)
 
 ### Bug Fixes
