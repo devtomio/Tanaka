@@ -1,3 +1,10 @@
+## [2.38.5](https://github.com/1chiSensei/Tanaka/compare/2.38.4...2.38.5) (2021-04-24)
+
+
+### Bug Fixes
+
+* **build:** dont use slim ([4313706](https://github.com/1chiSensei/Tanaka/commit/43137067bf153ee7176a5c8bd1c23169cffc4c35))
+
 ## [2.38.4](https://github.com/1chiSensei/Tanaka/compare/2.38.3...2.38.4) (2021-04-24)
 
 ### Bug Fixes
