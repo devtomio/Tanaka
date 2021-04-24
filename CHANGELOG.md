@@ -1,23 +1,20 @@
 ## [2.37.7](https://github.com/1chiSensei/Tanaka/compare/2.37.6...2.37.7) (2021-04-23)
 
-
 ### Bug Fixes
 
-* railway broken? ([d08cf46](https://github.com/1chiSensei/Tanaka/commit/d08cf46491459b82a3d0a801bcb6937ac8b4339a))
+- railway broken? ([d08cf46](https://github.com/1chiSensei/Tanaka/commit/d08cf46491459b82a3d0a801bcb6937ac8b4339a))
 
 ## [2.37.6](https://github.com/1chiSensei/Tanaka/compare/2.37.5...2.37.6) (2021-04-23)
 
-
 ### Bug Fixes
 
-* release-it broke again ([5d9ac1f](https://github.com/1chiSensei/Tanaka/commit/5d9ac1fa16cfc1dbc5ecc30efee30ba12d112f9a))
+- release-it broke again ([5d9ac1f](https://github.com/1chiSensei/Tanaka/commit/5d9ac1fa16cfc1dbc5ecc30efee30ba12d112f9a))
 
 ## [2.37.5](https://github.com/1chiSensei/Tanaka/compare/2.37.4...2.37.5) (2021-04-23)
 
-
 ### Bug Fixes
 
-* **build:** add pixman ([d876dfa](https://github.com/1chiSensei/Tanaka/commit/d876dfa6bedf1fd0b666e567f1859e926152c5f2))
+- **build:** add pixman ([d876dfa](https://github.com/1chiSensei/Tanaka/commit/d876dfa6bedf1fd0b666e567f1859e926152c5f2))
 
 ## [2.37.4](https://github.com/1chiSensei/Tanaka/compare/2.37.3...2.37.4) (2021-04-23)
 
