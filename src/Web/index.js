@@ -1,6 +1,7 @@
 const { Client } = require('@2pg/oauth');
 const express = require('express');
 const cookies = require('cookies');
+const helmet = require('helmet');
 const morgan = require('morgan');
 const path = require('path');
 const cors = require('cors');
@@ -19,6 +20,7 @@ const client = new Client({
  */
 module.exports = (c) => {
 	app.use(cors());
+	app.use(helmet());
 	app.use(express.json());
 	app.use(express.urlencoded({ extended: true }));
 	app.use(express.text());

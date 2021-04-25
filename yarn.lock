@@ -1531,19 +1531,19 @@ caniuse-lite@^1.0.30001109, caniuse-lite@^1.0.30001208:
   resolved "https://registry.yarnpkg.com/caniuse-lite/-/caniuse-lite-1.0.30001214.tgz#70f153c78223515c6d37a9fde6cd69250da9d872"
   integrity sha512-O2/SCpuaU3eASWVaesQirZv1MSjUNOvmugaD8zNSJqw6Vv5SGwoOpA9LJs3pNPfM745nxqPvfZY3MQKY4AKHYg==
 
-canvacord@^5.1.0:
-  version "5.1.0"
-  resolved "https://registry.yarnpkg.com/canvacord/-/canvacord-5.1.0.tgz#2bab202b27a44f0fafc37cf61bc44b2829714292"
-  integrity sha512-2UcJdqoCDkrNRQNoY+HwqyDCtNR0IGJ7FvnJXp12GQRW+aTKsk7ei7QMHhhhmdh42XWIA2fqzvQczqalDbZqgA==
+canvacord@^5.2.0:
+  version "5.2.0"
+  resolved "https://registry.yarnpkg.com/canvacord/-/canvacord-5.2.0.tgz#580ad6a22cc4e06ee9243acf4128ba77038104dd"
+  integrity sha512-Cr+ZM/N2Dhjbvkhm0Tu0Kg3oCx67J/koBFHoSKIrLzOvsiaiFFPAXIRpaJiTXeRVXk8adZa+g1812dwcjmPq6g==
   dependencies:
     "@canvacord/assets" "^1.0.2"
     "@canvacord/emoji-parser" "^1.0.1"
-    canvas "^2.6.1"
+    canvas "^2.7.0"
     gifencoder "^2.0.1"
     moment "^2.29.1"
     moment-duration-format "^2.3.2"
 
-canvas@^2.2.0, canvas@^2.6.1, canvas@^2.7.0:
+canvas@^2.2.0, canvas@^2.7.0:
   version "2.7.0"
   resolved "https://registry.yarnpkg.com/canvas/-/canvas-2.7.0.tgz#3ce3fe30c69595ccd2bd1232967e681c026be61e"
   integrity sha512-pzCxtkHb+5su5MQjTtepMDlIOtaXo277x0C0u3nMOxtkhTyQ+h2yNKhlROAaDllWgRyePAUitC08sXw26Eb6aw==
@@ -4514,6 +4514,11 @@ he@^1.2.0:
   version "1.2.0"
   resolved "https://registry.yarnpkg.com/he/-/he-1.2.0.tgz#84ae65fa7eafb165fddb61566ae14baf05664f0f"
   integrity sha512-F/1DnUGPopORZi0ni+CvrCgHQ5FyEAHRLSApuYWMmrbSwoN2Mn/7k+Gl38gJnR7yyDZk6WLXwiGod1JOWNDKGw==
+
+helmet@^4.5.0:
+  version "4.5.0"
+  resolved "https://registry.yarnpkg.com/helmet/-/helmet-4.5.0.tgz#da5a75d30cbd9f60628e9463a85dc7725806c2ea"
+  integrity sha512-GfxdTaKarneWOpxmiVb/1YsY+fIwDOxVUGrvNEM1MC8W6Z2PREfkXiWF4XHQdvkyXwUTHuY4DRwB0uH/Q6BVyQ==
 
 highlight.js@^10.2.0:
   version "10.7.2"
