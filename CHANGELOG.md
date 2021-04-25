@@ -1,3 +1,10 @@
+## [2.42.1](https://github.com/1chiSensei/Tanaka/compare/2.42.0...2.42.1) (2021-04-25)
+
+
+### Bug Fixes
+
+* **build:** add generated files ([70d8734](https://github.com/1chiSensei/Tanaka/commit/70d8734dd4e8efcaeb3446448ef5782ff8dd5b44))
+
 # [2.42.0](https://github.com/1chiSensei/Tanaka/compare/2.41.0...2.42.0) (2021-04-25)
 
 ### Features
