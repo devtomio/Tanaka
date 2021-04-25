@@ -1,9 +1,8 @@
 # [2.42.0](https://github.com/1chiSensei/Tanaka/compare/2.41.0...2.42.0) (2021-04-25)
 
-
 ### Features
 
-* **commands:** add more commands ([1a1aa65](https://github.com/1chiSensei/Tanaka/commit/1a1aa65b2d2f5542c29e6fd62744c9f8154f7942))
+- **commands:** add more commands ([1a1aa65](https://github.com/1chiSensei/Tanaka/commit/1a1aa65b2d2f5542c29e6fd62744c9f8154f7942))
 
 # [2.41.0](https://github.com/1chiSensei/Tanaka/compare/2.40.1...2.41.0) (2021-04-25)
 
