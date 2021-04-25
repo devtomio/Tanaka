@@ -8,7 +8,7 @@ module.exports = class PlayCommand extends Command {
 			aliases: ['play-music', 'p'],
 			group: 'music',
 			memberName: 'play',
-			description: "Add's music to the music queue.",
+			description: 'Adds music to the music queue.',
 			guildOnly: true,
 			args: [
 				{

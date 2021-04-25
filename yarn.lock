@@ -2661,6 +2661,11 @@ dir-glob@^3.0.1:
   dependencies:
     path-type "^4.0.0"
 
+discord-api-types@^0.18.0:
+  version "0.18.0"
+  resolved "https://registry.yarnpkg.com/discord-api-types/-/discord-api-types-0.18.0.tgz#96ff73bcd7cf7b65be3a3db0acee83256d243c40"
+  integrity sha512-KxS+opGqrNbzo+wb3SxOqfuv/xX2CyrwEjCQLTI68gzjbSMn55h6o7JtPkWAXItadkNrUWyDqMMsfOz8DnpiNA==
+
 "discord.js-commando@github:1chiSensei/Commando#patch-1":
   version "0.12.3"
   resolved "https://codeload.github.com/1chiSensei/Commando/tar.gz/844eb9d88a84037c9665379fe062fe7f75971bc8"

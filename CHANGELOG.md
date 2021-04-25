@@ -1,9 +1,8 @@
 # [2.41.0](https://github.com/1chiSensei/Tanaka/compare/2.40.1...2.41.0) (2021-04-25)
 
-
 ### Features
 
-* **commands:** add stack overflow command ([5390683](https://github.com/1chiSensei/Tanaka/commit/53906830b3947ce8e57d5bc6152b65d13e2ac550))
+- **commands:** add stack overflow command ([5390683](https://github.com/1chiSensei/Tanaka/commit/53906830b3947ce8e57d5bc6152b65d13e2ac550))
 
 ## [2.40.1](https://github.com/1chiSensei/Tanaka/compare/2.40.0...2.40.1) (2021-04-25)
 

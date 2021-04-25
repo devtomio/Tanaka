@@ -84,7 +84,7 @@ client.rss.on('item:new:anime', (item) => {
 			.setDescription(htmlToText(item.description))
 			.setURL(item.link)
 			.setColor('RANDOM')
-			.setImage('https://kevinpennyfeather.files.wordpress.com/2018/03/logo.jpg')
+			.setImage('https://i.imgur.com/R3JCtNK.jpg')
 			.setTimestamp();
 
 		hook.send(embed);
