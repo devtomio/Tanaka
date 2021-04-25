@@ -1,3 +1,10 @@
+## [2.42.2](https://github.com/1chiSensei/Tanaka/compare/2.42.1...2.42.2) (2021-04-25)
+
+
+### Bug Fixes
+
+* **puppeteer:** fix something ([1a325e0](https://github.com/1chiSensei/Tanaka/commit/1a325e039fdb3053d8ace018752aa83fad7abafb))
+
 ## [2.42.1](https://github.com/1chiSensei/Tanaka/compare/2.42.0...2.42.1) (2021-04-25)
 
 ### Bug Fixes
