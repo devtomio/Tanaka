@@ -1,3 +1,10 @@
+# [2.39.0](https://github.com/1chiSensei/Tanaka/compare/2.38.6...2.39.0) (2021-04-25)
+
+
+### Features
+
+* **web:** add navbar ([e023898](https://github.com/1chiSensei/Tanaka/commit/e023898e0cba363a50a29fde3a0da45209b31f98))
+
 ## [2.38.6](https://github.com/1chiSensei/Tanaka/compare/2.38.5...2.38.6) (2021-04-24)
 
 ### Bug Fixes
