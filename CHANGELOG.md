@@ -1,3 +1,10 @@
+# [2.40.0](https://github.com/1chiSensei/Tanaka/compare/2.39.1...2.40.0) (2021-04-25)
+
+
+### Features
+
+* **web:** add custom css for navbar ([c0f4bcb](https://github.com/1chiSensei/Tanaka/commit/c0f4bcb4940ae5302ce4ceb3ab4609a9efb446b7))
+
 ## [2.39.1](https://github.com/1chiSensei/Tanaka/compare/2.39.0...2.39.1) (2021-04-25)
 
 ### Bug Fixes
