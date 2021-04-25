@@ -1,3 +1,10 @@
+## [2.39.1](https://github.com/1chiSensei/Tanaka/compare/2.39.0...2.39.1) (2021-04-25)
+
+
+### Bug Fixes
+
+* **build:** stuck ([d0e0217](https://github.com/1chiSensei/Tanaka/commit/d0e021720eba1935763ca3b3266db3d246343c9d))
+
 # [2.39.0](https://github.com/1chiSensei/Tanaka/compare/2.38.6...2.39.0) (2021-04-25)
 
 
