@@ -71,7 +71,7 @@ Tanaka is a Discord Bot coded in [JavaScript](https://www.javascript.com/) with 
 
 ## Commands
 
-Total: 46
+Total: 47
 
 ### Utility:
 
@@ -111,6 +111,7 @@ Total: 46
 - **anime:** Searches MyAnimeList for the anime that you give.
 - **mdn:** Searches MDN for your query.
 - **screenshot:** Screenshots a website.
+- **stack-overflow:** Searches Stack Overflow for your query.
 
 ### Reminder:
 

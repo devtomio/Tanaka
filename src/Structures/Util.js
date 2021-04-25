@@ -10,6 +10,11 @@ const toPercent = (int) => `${Math.round(parseInt(int) * 100)}%`;
 
 const shorten = (text, maxLen = 2000) => (text.length > maxLen ? `${text.substr(0, maxLen - 3)}...` : text);
 
+const embedURL = (title, url, display) => `[${title}](${url.replaceAll(')', '%29')}${display ? ` "${display}"` : ''})`;
+
+const formatNumber = (number, minimumFractionDigits = 0) =>
+	Number.parseFloat(number).toLocaleString(undefined, { minimumFractionDigits, maximumFractionDigits: 2 });
+
 const formatBytes = (bytes) => {
 	if (bytes === 0) return '0 Bytes';
 
@@ -180,4 +185,6 @@ module.exports = {
 	streamToArray,
 	isUrl,
 	isUrlSafe,
+	embedURL,
+	formatNumber,
 };

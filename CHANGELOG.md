@@ -1,9 +1,8 @@
 ## [2.40.1](https://github.com/1chiSensei/Tanaka/compare/2.40.0...2.40.1) (2021-04-25)
 
-
 ### Bug Fixes
 
-* **web:** fix not loading images due to security policy ([df03151](https://github.com/1chiSensei/Tanaka/commit/df031510a78091430bb2146fa05521bd1af1a30b))
+- **web:** fix not loading images due to security policy ([df03151](https://github.com/1chiSensei/Tanaka/commit/df031510a78091430bb2146fa05521bd1af1a30b))
 
 # [2.40.0](https://github.com/1chiSensei/Tanaka/compare/2.39.1...2.40.0) (2021-04-25)
 

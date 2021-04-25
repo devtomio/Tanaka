@@ -17,7 +17,7 @@ const screenshot = async (url) => {
 			width: 1920,
 			height: 1080,
 		});
-		await page.goto(url, { waitUntil: 'networkidle2' });
+		await page.goto(url, { waitUntil: ['load', 'domcontentloaded'] });
 		await page.waitForTimeout(5000);
 
 		const buffer = await page.screenshot();
