@@ -1,4 +1,4 @@
-const AdblockPlugin = require('puppeteer-extra-plugin-adblocker');
+const AdblockPlugin = require('puppeteer-extra-plugin-adblocker').default;
 const StealthPlugin = require('puppeteer-extra-plugin-stealth');
 const puppeteer = require('puppeteer-extra').default;
 
@@ -9,7 +9,7 @@ const screenshot = async (url) => {
 	try {
 		const browser = await puppeteer.launch({
 			headless: true,
-			args: ['--no-sandbox'],
+			args: ['--no-sandbox', '--disable-gpu', '--single-process'],
 		});
 		const page = await browser.newPage();
 
@@ -17,7 +17,7 @@ const screenshot = async (url) => {
 			width: 1920,
 			height: 1080,
 		});
-		await page.goto(url);
+		await page.goto(url, { waitUntil: ['networkidle0'] });
 		await page.waitForTimeout(5000);
 
 		const buffer = await page.screenshot();

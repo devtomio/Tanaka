@@ -22,6 +22,22 @@
 			<div class="background" style="background-image: url('https://i.imgur.com/KAPJqD9.jpg');">
 			</div>
 			<div class="center-object">
+				<header id="navbar" class="nav-bar" style="background-color: rgba(255, 255, 255, 0); position: absolute; left:0px; top: 0px; vertical-align: middle;">
+					<span class="nav-bars" style="background-color: rgba(255, 255, 255, 0);"></span>
+					<section class="nav" style="background-color: rgba(255, 255, 255, 0.2); ">
+					  	<span class="nav-close" style="background-color: rgba(255, 255, 255, 0.3); "></span>
+					  	<div class="nav-scroller" >
+							<a href="/" class="asbestos-text">Home</a>
+					    		<a href="/commands" class="asbestos-text">Commands</a>
+					    		<a href="/github" class="asbestos-text">GitHub</a>
+					    		<a href="/discord" class="asbestos-text">Support</a>
+					    		<a href="/legal" class="asbestos-text">Legal</a>
+					    		<a href="/profile" class="asbestos-text">Profile</a>
+							<a href="/auth/logout" class="asbestos-text">Log Out</a>
+					  	</div>
+					</section>
+				</header>
+
 				<div class="container">
 					<section class="me unset">
 						<div class="avatar-container">
@@ -38,29 +54,29 @@
 					</section>
 					<div class="buttons">
 						<a href="/discord"
-							class="btn discord-dropshadow animation hover"
+							class="btn discord-dropshadow white-text animation hover"
 							target="_blank">Discord</a>
 						<a href="/github"
-							class="btn github-dropshadow animation hover" target="_blank">Github</a>
+							class="btn github-dropshadow white-text animation hover" target="_blank">Github</a>
 						<a href="/invite"
-							class="btn lavender-dropshadow animation hover"
+							class="btn lavender-dropshadow white-text animation hover"
 							target="_blank">Invite</a>
 						<a href="/commands"
-							class="btn honey-dropshadow animation hover"
+							class="btn honey-dropshadow white-text animation hover"
 							target="_blank">Commands</a>
 					</div>
 				</div>
 
 				<div class="box-container center" style="position: absolute; top: 0px; vertical-align: middle;">
-					<a href="/" target="_blank" class="asbestos-text btn" style="padding: 0 .4em;">Home</a>
-					<a href="/commands" target="_blank" class="asbestos-text btn" style="padding: 0 .4em;">Commands</a>
-					<a href="/github" target="_blank" class="asbestos-text btn" style="padding: 0 .4em;">Repository</a>
-					<a href="/profile" target="_blank">
-						<img src="<%= data.avatarURL({ size: 128, dynamic: true });%>" style="width: 105px; max-width: 105px; height: auto; vertical-align: middle; padding: 0 .4em;" alt="avatar" />
+					<a id="nav1" href="/" target="_blank" class="asbestos-text btn" style="padding: 0 .4em;">Home</a>
+					<a id="nav2" href="/commands" target="_blank" class="asbestos-text btn" style="padding: 0 .4em;">Commands</a>
+					<a id="nav3" href="/github" target="_blank" class="asbestos-text btn" style="padding: 0 .4em;">Repository</a>
+					<a id="nav4" href="/profile" target="_blank">
+						<img class="image-circle" src="<%= data.avatarURL({ size: 64, dynamic: true });%>" style="width: 64px; max-width: 64px; height: auto; vertical-align: middle; padding: 0 .4em;" alt="avatar" />
 					</a>
-					<a href="/legal" target="_blank" class="asbestos-text btn" style="padding: 0 .4em;">Legal</a>
-					<a href="/discord" target="_blank" class="asbestos-text btn" style="padding: 0 .4em;">Support</a>
-					<a href="/auth/logout" target="_blank" class="asbestos-text btn" style="padding: 0 .4em;">Log Out</a>
+					<a id="nav5" href="/legal" target="_blank" class="asbestos-text btn" style="padding: 0 .4em;">Legal</a>
+					<a id="nav6" href="/discord" target="_blank" class="asbestos-text btn" style="padding: 0 .4em;">Support</a>
+					<a id="nav7" href="/auth/logout" target="_blank" class="asbestos-text btn" style="padding: 0 .4em;">Log Out</a>
 				</div>
 			</div>
 
@@ -103,4 +119,28 @@
 
 		<%- include('./partials/_footer') %> 
 	<% } %>
+
+	<script>
+		setInterval(() => {
+  			if (document.body.offsetWidth > 505) {
+    				document.getElementById("navbar").style.display = "none";
+    				document.getElementById("nav1").style.display = "initial";
+    				document.getElementById("nav2").style.display = "initial";
+    				document.getElementById("nav3").style.display = "initial";
+    				document.getElementById("nav4").style.display = "initial";
+				document.getElementById("nav5").style.display = "initial";
+				document.getElementById("nav6").style.display = "initial";
+				document.getElementById("nav7").style.display = "initial";
+  			} else {
+    				document.getElementById("navbar").style.display = "initial";
+    				document.getElementById("nav1").style.display = "none";
+    				document.getElementById("nav2").style.display = "none";
+    				document.getElementById("nav3").style.display = "none";
+    				document.getElementById("nav4").style.display = "none";
+				document.getElementById("nav5").style.display = "none";
+				document.getElementById("nav6").style.display = "none";
+				document.getElementById("nav7").style.display = "none";
+  			}
+		}, 69);
+	</script>
 </body>
