@@ -8537,10 +8537,10 @@ source-map@~0.7.2:
   resolved "https://registry.yarnpkg.com/source-map/-/source-map-0.7.3.tgz#5302f8169031735226544092e64981f751750383"
   integrity sha512-CkCj6giN3S+n9qrYiBTX5gystlENnRW5jZeNLHpe6aue+SrHcG5VYwujhW9s4dY31mEGsxBDrHR6oI69fTXsaQ==
 
-sourcebin@^4.1.3:
-  version "4.1.3"
-  resolved "https://registry.yarnpkg.com/sourcebin/-/sourcebin-4.1.3.tgz#221f2eb2e4d3320237af7204c8cef48d6b7b715c"
-  integrity sha512-dgfLD/Q5i0OWxocxkVvqJOiTZKVS9FCpo538TaoS2NCGL3zh7VitVt5S6hdFuq/RqX0GqtXLzDiwJDQnpd2Ocg==
+sourcebin@^4.2.3:
+  version "4.2.3"
+  resolved "https://registry.yarnpkg.com/sourcebin/-/sourcebin-4.2.3.tgz#72780371e1b94f97dee55d17abda02c9f69a9a39"
+  integrity sha512-G5Dgscl4D6T98aJIidAH8gOGxP7sJ5O6I6x1a2JrkDwtQG7oQOCQ2NELQSoAoOVyf475ECsRXEvS4hBosdzB9A==
   dependencies:
     "@sourcebin/linguist" latest
     got "^11.8.1"
