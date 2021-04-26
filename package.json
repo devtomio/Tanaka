@@ -46,7 +46,7 @@
 		"node-superfetch": "0.2.2",
 		"puppeteer-extra": "^3.1.18",
 		"puppeteer-extra-plugin-adblocker": "^2.11.11",
-		"puppeteer-extra-plugin-stealth": "^2.7.6",
+		"puppeteer-extra-plugin-stealth": "^2.7.7",
 		"quickmongo": "3.0.2",
 		"rss-emitter-ts": "^0.4.6",
 		"sherlockjs": "^1.4.0",
