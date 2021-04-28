@@ -1,9 +1,8 @@
 ## [2.44.1](https://github.com/1chiSensei/Tanaka/compare/2.44.0...2.44.1) (2021-04-28)
 
-
 ### Bug Fixes
 
-* **commands:** fix unknown cmd ([72c22c9](https://github.com/1chiSensei/Tanaka/commit/72c22c94cb258d5cc9cfe8eceb2c7d632ed1c203))
+- **commands:** fix unknown cmd ([72c22c9](https://github.com/1chiSensei/Tanaka/commit/72c22c94cb258d5cc9cfe8eceb2c7d632ed1c203))
 
 # [2.44.0](https://github.com/1chiSensei/Tanaka/compare/2.42.3...2.44.0) (2021-04-28)
 

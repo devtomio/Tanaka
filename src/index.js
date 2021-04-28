@@ -1,6 +1,5 @@
 const { MongoDBProvider } = require('commando-provider-mongo');
 const { MessageEmbed, WebhookClient } = require('discord.js');
-const didYouMean = require('didyoumean2').default;
 const { htmlToText } = require('html-to-text');
 const Client = require('./Structures/Client');
 const { MongoClient } = require('mongodb');
