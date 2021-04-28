@@ -1,16 +1,14 @@
 # [2.44.0](https://github.com/1chiSensei/Tanaka/compare/2.42.3...2.44.0) (2021-04-28)
 
-
 ### Features
 
-* **commands:** add did you mean ([353bbe8](https://github.com/1chiSensei/Tanaka/commit/353bbe83e9d410de84a502f5bb76b43c6a3a83d7))
+- **commands:** add did you mean ([353bbe8](https://github.com/1chiSensei/Tanaka/commit/353bbe83e9d410de84a502f5bb76b43c6a3a83d7))
 
 # [2.43.0](https://github.com/1chiSensei/Tanaka/compare/2.42.3...2.43.0) (2021-04-28)
 
-
 ### Features
 
-* **commands:** add did you mean ([353bbe8](https://github.com/1chiSensei/Tanaka/commit/353bbe83e9d410de84a502f5bb76b43c6a3a83d7))
+- **commands:** add did you mean ([353bbe8](https://github.com/1chiSensei/Tanaka/commit/353bbe83e9d410de84a502f5bb76b43c6a3a83d7))
 
 ## [2.42.3](https://github.com/1chiSensei/Tanaka/compare/2.42.2...2.42.3) (2021-04-25)
 

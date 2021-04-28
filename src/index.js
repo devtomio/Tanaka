@@ -30,6 +30,7 @@ client.registry
 	])
 	.registerDefaultGroups()
 	.registerDefaultCommands({
+		unknownCommand: false,
 		help: false,
 		eval: false,
 		ping: false,
@@ -58,28 +59,6 @@ client.once('ready', async () => {
 	client.setInterval(() => client.user.setActivity(status, { type: 'WATCHING' }), 30000);
 
 	client.logger.info(`Logged in as ${client.user.tag}.`);
-});
-
-client.on('unknownCommand', (msg) => {
-	const cmdList = client.registry.commands.map((c) => c.name);
-	const mean = didYouMean(msg.content, cmdList);
-
-	if (mean === null)
-		return msg.reply(
-			`Unknown command. Use \`${msg.guild.commandPrefix}help\` or \`${client.user.tag} help\` to view the command list.`,
-		);
-	if (typeof mean === 'string')
-		return msg.reply(
-			`Unknown command. Use \`${msg.guild.commandPrefix}help\` or \`${client.user.tag} help\` to view the command list.\n\nDid you mean? \`${mean}\``,
-		);
-	if (Array.isArray(mean))
-		return msg.reply(
-			`Unknown command. Use \`${msg.guild.commandPrefix}help\` or \`${
-				client.user.tag
-			} help\` to view the command list.\n\nDid you mean? ${mean
-				.map((cm) => `\`${cm}\``)
-				.join(', ')}`,
-		);
 });
 
 client.on('debug', client.logger.debug);
