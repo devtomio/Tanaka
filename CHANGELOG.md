@@ -1,3 +1,10 @@
+## [2.44.4](https://github.com/1chiSensei/Tanaka/compare/2.44.3...2.44.4) (2021-04-28)
+
+
+### Bug Fixes
+
+* **commands:** fix undefined error ([da3fcf2](https://github.com/1chiSensei/Tanaka/commit/da3fcf2e686665b3c21087949d6c32b7064d0a05))
+
 ## [2.44.3](https://github.com/1chiSensei/Tanaka/compare/2.44.2...2.44.3) (2021-04-28)
 
 ### Bug Fixes
