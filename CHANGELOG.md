@@ -1,9 +1,8 @@
 ## [2.44.3](https://github.com/1chiSensei/Tanaka/compare/2.44.2...2.44.3) (2021-04-28)
 
-
 ### Bug Fixes
 
-* **build:** dont install yarn ([0ed7f5e](https://github.com/1chiSensei/Tanaka/commit/0ed7f5e9b8d381f4e4f052cc002dc968cd288189))
+- **build:** dont install yarn ([0ed7f5e](https://github.com/1chiSensei/Tanaka/commit/0ed7f5e9b8d381f4e4f052cc002dc968cd288189))
 
 ## [2.44.2](https://github.com/1chiSensei/Tanaka/compare/2.44.1...2.44.2) (2021-04-28)
 
