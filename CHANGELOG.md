@@ -1,9 +1,8 @@
 ## [2.44.2](https://github.com/1chiSensei/Tanaka/compare/2.44.1...2.44.2) (2021-04-28)
 
-
 ### Bug Fixes
 
-* **build:** use node buster ([ee9e637](https://github.com/1chiSensei/Tanaka/commit/ee9e637900cd3da6cc2a1658c300276bfc9fd67d))
+- **build:** use node buster ([ee9e637](https://github.com/1chiSensei/Tanaka/commit/ee9e637900cd3da6cc2a1658c300276bfc9fd67d))
 
 ## [2.44.1](https://github.com/1chiSensei/Tanaka/compare/2.44.0...2.44.1) (2021-04-28)
 
