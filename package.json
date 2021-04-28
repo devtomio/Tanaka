@@ -29,6 +29,7 @@
 		"consola": "2.15.3",
 		"cookies": "^0.8.0",
 		"cors": "^2.8.5",
+		"didyoumean2": "^4.2.0",
 		"discord.js": "github:discordjs/discord.js",
 		"discord.js-commando": "github:1chiSensei/Commando#patch-1",
 		"ejs": "^3.1.6",

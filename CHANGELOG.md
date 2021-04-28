@@ -1,9 +1,8 @@
 ## [2.42.3](https://github.com/1chiSensei/Tanaka/compare/2.42.2...2.42.3) (2021-04-25)
 
-
 ### Bug Fixes
 
-* **build:** use node 15 ([1b722d3](https://github.com/1chiSensei/Tanaka/commit/1b722d359cb91c50a68b3cc54f76098525c144a1))
+- **build:** use node 15 ([1b722d3](https://github.com/1chiSensei/Tanaka/commit/1b722d359cb91c50a68b3cc54f76098525c144a1))
 
 ## [2.42.2](https://github.com/1chiSensei/Tanaka/compare/2.42.1...2.42.2) (2021-04-25)
 
