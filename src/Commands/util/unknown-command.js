@@ -32,6 +32,10 @@ module.exports = class UnknownCommand extends Command {
 			return msg.reply(
 				`Unknown command. Use \`${prefix}help\` or \`${this.client.user.tag} help\` to view the command list.`,
 			);
+		if (typeof mean === 'string')
+			return msg.reply(
+				`Unknown command. Use \`${prefix}help\` or \`${this.client.user.tag} help\` to view the command list.\n\nDid you mean? \`${mean}\``,
+			);
 		if (Array.isArray(mean))
 			return msg.reply(
 				`Unknown command. Use \`${prefix}help\` or \`${
