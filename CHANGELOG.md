@@ -1,3 +1,10 @@
+## [2.44.5](https://github.com/1chiSensei/Tanaka/compare/2.44.4...2.44.5) (2021-04-28)
+
+
+### Bug Fixes
+
+* **commands:** fix not responding ([016cbcb](https://github.com/1chiSensei/Tanaka/commit/016cbcb008a6a14aede5bd753bb291e89a66416d))
+
 ## [2.44.4](https://github.com/1chiSensei/Tanaka/compare/2.44.3...2.44.4) (2021-04-28)
 
 ### Bug Fixes
