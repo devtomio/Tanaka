@@ -38,7 +38,7 @@
 		"gifencoder": "^2.0.1",
 		"helmet": "^4.5.0",
 		"html-to-text": "^7.1.1",
-		"ioredis": "^4.27.1",
+		"ioredis": "^4.27.2",
 		"mal-scraper": "^2.11.3",
 		"moment": "2.29.1",
 		"mongodb": "3.6.6",
