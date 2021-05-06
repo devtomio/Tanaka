@@ -1,66 +1,57 @@
 ## [2.45.8](https://github.com/1chiSensei/Tanaka/compare/2.45.7...2.45.8) (2021-05-06)
 
-
 ### Reverts
 
-* **lavalink:** use lavalink again ([0e2493a](https://github.com/1chiSensei/Tanaka/commit/0e2493a1746d417ac7ae893435888cd24ac1b9cc))
+- **lavalink:** use lavalink again ([0e2493a](https://github.com/1chiSensei/Tanaka/commit/0e2493a1746d417ac7ae893435888cd24ac1b9cc))
 
 ## [2.45.7](https://github.com/1chiSensei/Tanaka/compare/2.45.6...2.45.7) (2021-05-06)
 
-
 ### Bug Fixes
 
-* **andesite:** fix error ([fced31a](https://github.com/1chiSensei/Tanaka/commit/fced31ad6039cf360a381e3cc49d5b4163cb0ed2))
+- **andesite:** fix error ([fced31a](https://github.com/1chiSensei/Tanaka/commit/fced31ad6039cf360a381e3cc49d5b4163cb0ed2))
 
 ## [2.45.6](https://github.com/1chiSensei/Tanaka/compare/2.45.5...2.45.6) (2021-05-06)
 
-
 ### Bug Fixes
 
-* **build:** use the java image ([a100d7a](https://github.com/1chiSensei/Tanaka/commit/a100d7a7d93fad1024f40dc8163f95fb509b1c0a))
+- **build:** use the java image ([a100d7a](https://github.com/1chiSensei/Tanaka/commit/a100d7a7d93fad1024f40dc8163f95fb509b1c0a))
 
 ## [2.45.5](https://github.com/1chiSensei/Tanaka/compare/2.45.4...2.45.5) (2021-05-06)
 
-
 ### Bug Fixes
 
-* **build:** PLZ FIXXXXXXXX ([3c87e8d](https://github.com/1chiSensei/Tanaka/commit/3c87e8d555a0f9cc0f002e664813212588982c2c))
+- **build:** PLZ FIXXXXXXXX ([3c87e8d](https://github.com/1chiSensei/Tanaka/commit/3c87e8d555a0f9cc0f002e664813212588982c2c))
 
 ## [2.45.4](https://github.com/1chiSensei/Tanaka/compare/2.45.3...2.45.4) (2021-05-06)
 
-
 ### Bug Fixes
 
-* **build:** plz fix ([6ccc5b1](https://github.com/1chiSensei/Tanaka/commit/6ccc5b11087479d2fd2ee2f802c8cc984fd75512))
+- **build:** plz fix ([6ccc5b1](https://github.com/1chiSensei/Tanaka/commit/6ccc5b11087479d2fd2ee2f802c8cc984fd75512))
 
 ## [2.45.3](https://github.com/1chiSensei/Tanaka/compare/2.45.2...2.45.3) (2021-05-06)
 
-
 ### Bug Fixes
 
-* **build:** ... ([34140a5](https://github.com/1chiSensei/Tanaka/commit/34140a5b08b13d6be0d98f47f53445f226451ac1))
+- **build:** ... ([34140a5](https://github.com/1chiSensei/Tanaka/commit/34140a5b08b13d6be0d98f47f53445f226451ac1))
 
 ## [2.45.2](https://github.com/1chiSensei/Tanaka/compare/2.45.1...2.45.2) (2021-05-06)
 
-
 ### Bug Fixes
 
-* **build:** fix ([5650a18](https://github.com/1chiSensei/Tanaka/commit/5650a1883676cf5c17298f7329adf8ad37097f75))
+- **build:** fix ([5650a18](https://github.com/1chiSensei/Tanaka/commit/5650a1883676cf5c17298f7329adf8ad37097f75))
 
 ## [2.45.1](https://github.com/1chiSensei/Tanaka/compare/2.45.0...2.45.1) (2021-05-06)
 
-
 ### Bug Fixes
 
-* **build:** fix docker build ([e61f913](https://github.com/1chiSensei/Tanaka/commit/e61f91366be83d14842a28a47d63353b2c69b692))
-* **build:** fix err ([f779a04](https://github.com/1chiSensei/Tanaka/commit/f779a0491ad719e488d448a149eb7c0035fd44ee))
+- **build:** fix docker build ([e61f913](https://github.com/1chiSensei/Tanaka/commit/e61f91366be83d14842a28a47d63353b2c69b692))
+- **build:** fix err ([f779a04](https://github.com/1chiSensei/Tanaka/commit/f779a0491ad719e488d448a149eb7c0035fd44ee))
 
 # [2.45.0](https://github.com/1chiSensei/Tanaka/compare/2.44.5...2.45.0) (2021-05-06)
 
-
 ### Features
 
-* **audio:** use andesite ([79518bf](https://github.com/1chiSensei/Tanaka/commit/79518bfa4739d0387eb2a8be128e75820a775da5))
+- **audio:** use andesite ([79518bf](https://github.com/1chiSensei/Tanaka/commit/79518bfa4739d0387eb2a8be128e75820a775da5))
 
 ## [2.44.5](https://github.com/1chiSensei/Tanaka/compare/2.44.4...2.44.5) (2021-04-28)
 
