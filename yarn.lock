@@ -6470,10 +6470,10 @@ node-releases@^1.1.71:
   resolved "https://registry.yarnpkg.com/node-releases/-/node-releases-1.1.71.tgz#cb1334b179896b1c89ecfdd4b725fb7bbdfc7dbb"
   integrity sha512-zR6HoT6LrLCRBwukmrVbHv0EpEQjksO6GmFcZQQuCAy139BEsoVKPYnf3jongYW83fAa1torLGYwxxky/p28sg==
 
-node-superfetch@0.2.2:
-  version "0.2.2"
-  resolved "https://registry.yarnpkg.com/node-superfetch/-/node-superfetch-0.2.2.tgz#e0d4ff43b2290dab09ae9c4b6fd1633521d4f930"
-  integrity sha512-u/nnm1B5itxgGbMIGOGxLqFRrMFkB9bRbT0YwdM61/KhOXd25PZugX++bzpS+arQimcsIekntapdSSFI2CoCEw==
+node-superfetch@0.2.3:
+  version "0.2.3"
+  resolved "https://registry.yarnpkg.com/node-superfetch/-/node-superfetch-0.2.3.tgz#bcbf4b03942134946248e3a96341c9e927fe292d"
+  integrity sha512-xOqifvw/3N+tIeeC80/TNJXkoxDZm8JWc7/0VBkJ86ttQTlJvoicuVaeJlKKHYRlmC2O6ygNIhNPwLYX4bxqdA==
   dependencies:
     form-data "^4.0.0"
     node-fetch "^2.6.1"
