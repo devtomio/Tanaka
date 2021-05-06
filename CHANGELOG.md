@@ -1,3 +1,10 @@
+# [2.46.0](https://github.com/1chiSensei/Tanaka/compare/2.45.8...2.46.0) (2021-05-06)
+
+
+### Features
+
+* **commands:** add ocr command ([321842b](https://github.com/1chiSensei/Tanaka/commit/321842bff8369cd8e22950ac8783ea2cd594c68c))
+
 ## [2.45.8](https://github.com/1chiSensei/Tanaka/compare/2.45.7...2.45.8) (2021-05-06)
 
 ### Reverts
