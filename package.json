@@ -36,7 +36,7 @@
 		"erela.js": "^2.3.3",
 		"express": "^4.17.1",
 		"gifencoder": "^2.0.1",
-		"helmet": "^4.5.0",
+		"helmet": "^4.6.0",
 		"html-to-text": "^7.1.1",
 		"ioredis": "^4.27.1",
 		"mal-scraper": "^2.11.3",
