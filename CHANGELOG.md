@@ -1,3 +1,10 @@
+## [2.45.2](https://github.com/1chiSensei/Tanaka/compare/2.45.1...2.45.2) (2021-05-06)
+
+
+### Bug Fixes
+
+* **build:** fix ([5650a18](https://github.com/1chiSensei/Tanaka/commit/5650a1883676cf5c17298f7329adf8ad37097f75))
+
 ## [2.45.1](https://github.com/1chiSensei/Tanaka/compare/2.45.0...2.45.1) (2021-05-06)
 
 
