@@ -1,3 +1,10 @@
+## [2.46.2](https://github.com/1chiSensei/Tanaka/compare/2.46.1...2.46.2) (2021-05-06)
+
+
+### Bug Fixes
+
+* **commands:** fix '0' err ([ded9f40](https://github.com/1chiSensei/Tanaka/commit/ded9f40ac6c3372c7d74fe3bd3f0551c6e9339e7))
+
 ## [2.46.1](https://github.com/1chiSensei/Tanaka/compare/2.46.0...2.46.1) (2021-05-06)
 
 ### Bug Fixes
