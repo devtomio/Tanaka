@@ -1,3 +1,10 @@
+## [2.45.6](https://github.com/1chiSensei/Tanaka/compare/2.45.5...2.45.6) (2021-05-06)
+
+
+### Bug Fixes
+
+* **build:** use the java image ([a100d7a](https://github.com/1chiSensei/Tanaka/commit/a100d7a7d93fad1024f40dc8163f95fb509b1c0a))
+
 ## [2.45.5](https://github.com/1chiSensei/Tanaka/compare/2.45.4...2.45.5) (2021-05-06)
 
 
