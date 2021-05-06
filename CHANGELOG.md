@@ -1,3 +1,10 @@
+# [2.45.0](https://github.com/1chiSensei/Tanaka/compare/2.44.5...2.45.0) (2021-05-06)
+
+
+### Features
+
+* **audio:** use andesite ([79518bf](https://github.com/1chiSensei/Tanaka/commit/79518bfa4739d0387eb2a8be128e75820a775da5))
+
 ## [2.44.5](https://github.com/1chiSensei/Tanaka/compare/2.44.4...2.44.5) (2021-04-28)
 
 ### Bug Fixes
