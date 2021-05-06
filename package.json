@@ -16,7 +16,8 @@
 		"test": "dotenv node .",
 		"generate-commands": "dotenv node scripts/generate-commands",
 		"lint:ejs": "ejslint src/**/*",
-		"precommit": "yarn prettier && yarn lint && yarn lint:ejs && yarn build && yarn generate-commands"
+		"precommit": "yarn prettier && yarn lint && yarn lint:ejs && yarn build && yarn generate-commands",
+		"up": "railway up"
 	},
 	"dependencies": {
 		"@2pg/oauth": "^1.0.8",
@@ -35,7 +36,6 @@
 		"ejs": "^3.1.6",
 		"erela.js": "^2.3.3",
 		"express": "^4.17.1",
-		"form-data": "^4.0.0",
 		"gifencoder": "^2.0.1",
 		"helmet": "^4.6.0",
 		"html-to-text": "^7.1.1",
@@ -57,6 +57,7 @@
 		"url-regex": "^5.0.0"
 	},
 	"devDependencies": {
+		"@railway/cli": "^0.2.12",
 		"@release-it/conventional-changelog": "2.0.1",
 		"discord-api-types": "^0.18.1",
 		"dotenv-cli": "4.0.0",

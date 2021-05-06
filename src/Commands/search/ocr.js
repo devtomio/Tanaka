@@ -1,7 +1,6 @@
 const { Command } = require('discord.js-commando');
 const { MessageEmbed } = require('discord.js');
 const request = require('node-superfetch');
-const FormData = require('form-data');
 
 module.exports = class OCRCommand extends Command {
 	constructor(client) {
@@ -28,11 +27,10 @@ module.exports = class OCRCommand extends Command {
 
 	async run(msg, { image }) {
 		try {
-			const form = new FormData().append('url', image);
 			const { body } = await request
 				.post('https://api.ocr.space/parse/image')
 				.set({ apiKey: process.env.OCR_KEY })
-				.send(form);
+				.attach({ url: image });
 			const data = body.ParsedResults[0].ParsedText;
 
 			if (data.length === 0) return msg.say("Couldn't find any text.");
