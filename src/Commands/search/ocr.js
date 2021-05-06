@@ -33,14 +33,14 @@ module.exports = class OCRCommand extends Command {
 				.post('https://api.ocr.space/parse/image')
 				.set({ apiKey: process.env.OCR_KEY })
 				.send(form);
+			const data = body.ParsedResults[0].ParsedText;
 
-			if (body['ParsedResults'][0]['ParsedText'].length === 0)
-				return msg.say("Couldn't find any text.");
+			if (data.length === 0) return msg.say("Couldn't find any text.");
 
 			const embed = new MessageEmbed()
 				.setImage(image)
 				.setColor('RANDOM')
-				.setDescription(body['ParsedResults'][0]['ParsedText'])
+				.setDescription(data)
 				.setFooter(
 					`Requested by ${msg.author.tag}`,
 					msg.author.displayAvatarURL({ dynamic: true }),
