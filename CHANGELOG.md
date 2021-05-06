@@ -1,3 +1,10 @@
+## [2.45.8](https://github.com/1chiSensei/Tanaka/compare/2.45.7...2.45.8) (2021-05-06)
+
+
+### Reverts
+
+* **lavalink:** use lavalink again ([0e2493a](https://github.com/1chiSensei/Tanaka/commit/0e2493a1746d417ac7ae893435888cd24ac1b9cc))
+
 ## [2.45.7](https://github.com/1chiSensei/Tanaka/compare/2.45.6...2.45.7) (2021-05-06)
 
 
