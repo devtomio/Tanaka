@@ -1,3 +1,10 @@
+## [2.46.3](https://github.com/1chiSensei/Tanaka/compare/2.46.2...2.46.3) (2021-05-06)
+
+
+### Bug Fixes
+
+* **commands:** fix stuff ([64a1868](https://github.com/1chiSensei/Tanaka/commit/64a18682739c549541a60a5f3867927e5679132c))
+
 ## [2.46.2](https://github.com/1chiSensei/Tanaka/compare/2.46.1...2.46.2) (2021-05-06)
 
 ### Bug Fixes
