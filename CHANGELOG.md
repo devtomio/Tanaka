@@ -1,3 +1,10 @@
+## [2.45.7](https://github.com/1chiSensei/Tanaka/compare/2.45.6...2.45.7) (2021-05-06)
+
+
+### Bug Fixes
+
+* **andesite:** fix error ([fced31a](https://github.com/1chiSensei/Tanaka/commit/fced31ad6039cf360a381e3cc49d5b4163cb0ed2))
+
 ## [2.45.6](https://github.com/1chiSensei/Tanaka/compare/2.45.5...2.45.6) (2021-05-06)
 
 
