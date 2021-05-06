@@ -14,9 +14,7 @@ RUN apt-get update \
 	&& yarn global add pm2 dotenv-cli node-gyp \
 	&& yarn \
 	&& yarn add puppeteer \
-	&& wget https://github.com/natanbc/andesite/releases/download/0.20.2/andesite-0.20.2-all.jar \
-	&& export JAVA_HOME=/usr/lib/jvm/openjdk-15-jdk \
-	&& export PATH=$PATH:$JAVA_HOME/bin
+	&& wget https://github.com/freyacodes/Lavalink/releases/download/3.3.2.5/Lavalink.jar
 
 COPY . .
 
