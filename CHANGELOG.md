@@ -1,3 +1,11 @@
+## [2.45.1](https://github.com/1chiSensei/Tanaka/compare/2.45.0...2.45.1) (2021-05-06)
+
+
+### Bug Fixes
+
+* **build:** fix docker build ([e61f913](https://github.com/1chiSensei/Tanaka/commit/e61f91366be83d14842a28a47d63353b2c69b692))
+* **build:** fix err ([f779a04](https://github.com/1chiSensei/Tanaka/commit/f779a0491ad719e488d448a149eb7c0035fd44ee))
+
 # [2.45.0](https://github.com/1chiSensei/Tanaka/compare/2.44.5...2.45.0) (2021-05-06)
 
 
