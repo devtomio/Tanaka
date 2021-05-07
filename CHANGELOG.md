@@ -1,3 +1,10 @@
+## [2.47.1](https://github.com/1chiSensei/Tanaka/compare/2.47.0...2.47.1) (2021-05-07)
+
+
+### Bug Fixes
+
+* **web:** remove frame protection so we can use iframes ([7c7e889](https://github.com/1chiSensei/Tanaka/commit/7c7e889ed563e3fb71a9a3c30bf75ab11dd0ef64))
+
 # [2.47.0](https://github.com/1chiSensei/Tanaka/compare/2.46.3...2.47.0) (2021-05-07)
 
 ### Features
