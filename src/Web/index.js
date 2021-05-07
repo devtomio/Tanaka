@@ -10,7 +10,7 @@ const app = express();
 const client = new Client({
 	id: process.env.CLIENT_ID,
 	secret: process.env.CLIENT_SECRET,
-	redirectURI: 'https://tanaka.1chi.tk/auth/callback',
+	redirectURI: 'https://tanaka-bot.me/auth/callback',
 	scopes: ['identify'],
 });
 
