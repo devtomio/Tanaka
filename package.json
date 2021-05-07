@@ -8,7 +8,7 @@
 	"license": "Apache-2.0",
 	"private": true,
 	"scripts": {
-		"prettier": "prettier . --write",
+		"prettier": "prettier . --write --config .prettierrc.json",
 		"lint": "eslint . --fix",
 		"start": "bash start.sh",
 		"release": "dotenv -- release-it --ci",

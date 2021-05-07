@@ -5,5 +5,13 @@
 	"quoteProps": "as-needed",
 	"trailingComma": "all",
 	"endOfLine": "lf",
-	"tabWidth": 8
+	"tabWidth": 8,
+	"overrides": [
+		{
+			"files": ".ejs",
+			"options": {
+				"parser": "html"
+			}
+		}
+	]
 }

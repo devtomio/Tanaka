@@ -1,9 +1,8 @@
 # [2.47.0](https://github.com/1chiSensei/Tanaka/compare/2.46.3...2.47.0) (2021-05-07)
 
-
 ### Features
 
-* **domain:** implement new domain ([1377943](https://github.com/1chiSensei/Tanaka/commit/1377943ceda5c2e1d69577f5cb469166d9aa919b))
+- **domain:** implement new domain ([1377943](https://github.com/1chiSensei/Tanaka/commit/1377943ceda5c2e1d69577f5cb469166d9aa919b))
 
 ## [2.46.3](https://github.com/1chiSensei/Tanaka/compare/2.46.2...2.46.3) (2021-05-06)
 

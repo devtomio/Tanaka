@@ -1,146 +1,136 @@
 <%- include('./partials/_head') %>
 
 <body class="dark-theme">
-	<% if (data === null) { %>
-		<section class="fullscreen">
-			<div class="background" style="background-image: url('https://i.imgur.com/o7T3fAm.jpg');"></div>
-			<div class="center-object center-text">
-				<h2 class="bold no-margin">
-					<span class="alizarin-text">401</span>
-					<br />
-					You must login with Discord to continue.
-				</h2>
-				<div class="buttons">
-					<a href="/auth/login" class="btn alizarin-border">Login</a>
-					<a href="#" class="btn emerald-border" onclick="window.history.go(-1); return false;">Go
-						one step back</a>
-				</div>
-			</div>
-		</section>
-	<% } else { %>
-		<div class="fullscreen">
-			<div class="background" style="background-image: url('https://i.imgur.com/KAPJqD9.jpg');">
-			</div>
-			<div class="center-object">
-				<header id="navbar" class="nav-bar" style="background-color: rgba(255, 255, 255, 0); position: absolute; left:0px; top: 0px; vertical-align: middle;">
-					<span class="nav-bars" style="background-color: rgba(255, 255, 255, 0);"></span>
-					<section class="nav" style="background-color: rgba(255, 255, 255, 0.2); ">
-					  	<span class="nav-close" style="background-color: rgba(255, 255, 255, 0.3); "></span>
-					  	<div class="nav-scroller" >
-							<a href="/" class="asbestos-text">Home</a>
-					    		<a href="/commands" class="asbestos-text">Commands</a>
-					    		<a href="/github" class="asbestos-text">GitHub</a>
-					    		<a href="/discord" class="asbestos-text">Support</a>
-					    		<a href="/legal" class="asbestos-text">Legal</a>
-					    		<a href="/profile" class="asbestos-text">Profile</a>
-							<a href="/auth/logout" class="asbestos-text">Log Out</a>
-					  	</div>
-					</section>
-				</header>
-
-				<div class="container">
-					<section class="me unset">
-						<div class="avatar-container">
-							<img draggable="false"
-								src="https://i.imgur.com/Ih18zrt.png"
-								class="image-title"
-								alt="background" />
-						</div>
-						<div class="unset">
-							<h1 class="title monospace">Tanaka</h1>
-							<p class="undertitle monospace"><i class="emoji sharingan"></i> An all
-							fun and games bot.</p>
-						</div>
-					</section>
-					<div class="buttons">
-						<a href="/discord"
-							class="btn discord-dropshadow white-text animation hover"
-							target="_blank">Discord</a>
-						<a href="/github"
-							class="btn github-dropshadow white-text animation hover" target="_blank">Github</a>
-						<a href="/invite"
-							class="btn lavender-dropshadow white-text animation hover"
-							target="_blank">Invite</a>
-						<a href="/commands"
-							class="btn honey-dropshadow white-text animation hover"
-							target="_blank">Commands</a>
+	<div class="fullscreen">
+		<div class="background" style="background-image: url('https://i.imgur.com/KAPJqD9.jpg');">
+		</div>
+		<div class="center-object">
+			<header id="navbar" class="nav-bar"
+				style="background-color: rgba(255, 255, 255, 0); position: absolute; left:0px; top: 0px; vertical-align: middle;">
+				<span class="nav-bars" style="background-color: rgba(255, 255, 255, 0);"></span>
+				<section class="nav" style="background-color: rgba(255, 255, 255, 0.2); ">
+					<span class="nav-close"
+						style="background-color: rgba(255, 255, 255, 0.3); "></span>
+					<div class="nav-scroller">
+						<a href="/" class="asbestos-text">Home</a>
+						<a href="/commands" class="asbestos-text">Commands</a>
+						<a href="/github" class="asbestos-text">GitHub</a>
+						<a href="/discord" class="asbestos-text">Support</a>
+						<a href="/legal" class="asbestos-text">Legal</a>
+						<a href="/profile" class="asbestos-text">Profile</a>
+						<a href="/auth/logout" class="asbestos-text">Log Out</a>
 					</div>
-				</div>
+				</section>
+			</header>
 
-				<div class="box-container center" style="position: absolute; top: 0px; vertical-align: middle;">
-					<a id="nav1" href="/" target="_blank" class="asbestos-text btn" style="padding: 0 .4em;">Home</a>
-					<a id="nav2" href="/commands" target="_blank" class="asbestos-text btn" style="padding: 0 .4em;">Commands</a>
-					<a id="nav3" href="/github" target="_blank" class="asbestos-text btn" style="padding: 0 .4em;">Repository</a>
-					<a id="nav4" href="/profile" target="_blank">
-						<img class="image-circle" src="<%= data.avatarURL({ size: 64, dynamic: true });%>" style="width: 64px; max-width: 64px; height: auto; vertical-align: middle; padding: 0 .4em;" alt="avatar" />
-					</a>
-					<a id="nav5" href="/legal" target="_blank" class="asbestos-text btn" style="padding: 0 .4em;">Legal</a>
-					<a id="nav6" href="/discord" target="_blank" class="asbestos-text btn" style="padding: 0 .4em;">Support</a>
-					<a id="nav7" href="/auth/logout" target="_blank" class="asbestos-text btn" style="padding: 0 .4em;">Log Out</a>
+			<div class="container">
+				<section class="me unset">
+					<div class="avatar-container">
+						<img draggable="false" src="https://i.imgur.com/Ih18zrt.png"
+							class="image-title" alt="background" />
+					</div>
+					<div class="unset">
+						<h1 class="title monospace">Tanaka</h1>
+						<p class="undertitle monospace typing"><i class="emoji sharingan"></i>
+							An all
+							fun and games bot.</p>
+					</div>
+				</section>
+				<div class="buttons">
+					<a href="/discord" class="btn discord-dropshadow white-text animation hover"
+						target="_blank">Discord</a>
+					<a href="/github" class="btn github-dropshadow white-text animation hover"
+						target="_blank">Github</a>
+					<a href="/invite" class="btn lavender-dropshadow white-text animation hover"
+						target="_blank">Invite</a>
+					<a href="/commands" class="btn honey-dropshadow white-text animation hover"
+						target="_blank">Commands</a>
 				</div>
 			</div>
 
-			<span class="info-button" onclick="scroll_To('information')">
-				<div id="fade" class="arrow bounce">
-					<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 481.32 291.98" class="white-fill">
-						<path
-							d="M466.5,15.5L466,15c-19.8-19.8-52-19.8-71.9,0L240.8,168.3L87.2,14.8C67.4-5,35.2-5,15.4,14.8l-0.5,0.5 C-5,35.2-5,67.4,14.8,87.2l186.6,186.6c0.9,1,1.8,2,2.7,3v0c3.8,3.8,8.1,6.9,12.7,9.3c17,9,38.1,7.7,53.9-3.9 c2.2-1.6,4.4-3.4,6.4-5.4L466.5,87.4C486.4,67.6,486.4,35.4,466.5,15.5z" />
-					</svg>
-				</div>
-			</span>
+			<div class="box-container center" style="position: absolute; top: 0px; vertical-align: middle;">
+				<a id="nav1" href="/" target="_blank" class="asbestos-text btn"
+					style="padding: 0 .4em;">Home</a>
+				<a id="nav2" href="/commands" target="_blank" class="asbestos-text btn"
+					style="padding: 0 .4em;">Commands</a>
+				<a id="nav3" href="/github" target="_blank" class="asbestos-text btn"
+					style="padding: 0 .4em;">Repository</a>
+				<% if (data === null) { %>
+					<a id="nav4" href="/auth/login" target="_blank" class="asbestos-text btn" style="padding: 0 .4em;">Login</a>
+				<% } else { %>
+					<a id="nav4" href="/profile" target="_blank">
+						<img class="center image-circle" src="<%= data.avatarURL({ size: 64, dynamic: true });%>" alt="avatar" />
+					</a>
+				<% } %> 
+				<a id="nav5" href="/legal" target="_blank" class="asbestos-text btn"
+					style="padding: 0 .4em;">Legal</a>
+				<a id="nav6" href="/discord" target="_blank" class="asbestos-text btn"
+					style="padding: 0 .4em;">Support</a>
+				<a id="nav7" href="/auth/logout" target="_blank" class="asbestos-text btn"
+					style="padding: 0 .4em;">Log Out</a>
+			</div>
 		</div>
 
-		<section class="container" id="information">
-			<div class="box-container">
-				<h1 class="title turquoise-text"><i class="emoji naruto-run"></i> Information:</h1>
-				<div class="info-container">
-					<p>
-						Tanaka is a Discord Bot coded in <a href="https://javascript.info"
-							target="_blank">JavaScript</a> with <a href="https://discord.js.org"
-							target="_blank">discord.js</a> using the <a
-							href="https://github.com/discordjs/Commando"
-							target="_blank">Commando</a> framework.
-					</p>
-				</div>
+		<span class="info-button" onclick="scroll_To('information')">
+			<div id="fade" class="arrow bounce">
+				<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 481.32 291.98" class="white-fill">
+					<path
+						d="M466.5,15.5L466,15c-19.8-19.8-52-19.8-71.9,0L240.8,168.3L87.2,14.8C67.4-5,35.2-5,15.4,14.8l-0.5,0.5 C-5,35.2-5,67.4,14.8,87.2l186.6,186.6c0.9,1,1.8,2,2.7,3v0c3.8,3.8,8.1,6.9,12.7,9.3c17,9,38.1,7.7,53.9-3.9 c2.2-1.6,4.4-3.4,6.4-5.4L466.5,87.4C486.4,67.6,486.4,35.4,466.5,15.5z" />
+				</svg>
 			</div>
+		</span>
+	</div>
 
-			<div class="box-container">
-				<h1 class="title turquoise-text"><i class="emoji konoha"></i> Statistics:</h1>
-				<div class="info-container">
-					<p><span class="gold-text">Users:</span> <%= userCount %></p>
-					<p><span class="android-text">Guilds:</span> <%= guildCount %></p>
-					<p><span class="gitlab-text">Channels:</span> <%= channelCount %></p>
-					<p><span class="wisteria-text">Commands:</span> <%= commandCount %></p>
-					<p><span class="pinewood-text">Shards:</span> <%= shardCount %></p>
-					<p><span class="blurple-text">Ping:</span> <code><%= ping %>ms</code></p>
-				</div>
+	<section class="container" id="information">
+		<div class="box-container">
+			<h1 class="title turquoise-text"><i class="emoji naruto-run"></i> Information:</h1>
+			<div class="info-container">
+				<p>
+					Tanaka is a Discord Bot coded in <a href="https://javascript.info"
+						target="_blank">JavaScript</a> with <a href="https://discord.js.org"
+						target="_blank">discord.js</a> using the <a
+						href="https://github.com/discordjs/Commando"
+						target="_blank">Commando</a> framework.
+				</p>
 			</div>
-		</section>
+		</div>
 
-		<%- include('./partials/_footer') %> 
-	<% } %>
+		<div class="box-container">
+			<h1 class="title turquoise-text"><i class="emoji konoha"></i> Statistics:</h1>
+			<div class="info-container">
+				<p><span class="gold-text">Users:</span> <%= userCount %></p>
+				<p><span class="android-text">Guilds:</span> <%= guildCount %></p>
+				<p><span class="gitlab-text">Channels:</span> <%= channelCount %></p>
+				<p><span class="wisteria-text">Commands:</span> <%= commandCount %></p>
+				<p><span class="pinewood-text">Shards:</span> <%= shardCount %></p>
+				<p><span class="blurple-text">Ping:</span> <code><%= ping %>ms</code></p>
+			</div>
+		</div>
+	</section>
+
+	<%- include('./partials/_footer') %>
 
 	<script>
 		setInterval(() => {
-  			if (document.body.offsetWidth > 505) {
-    				document.getElementById("navbar").style.display = "none";
-    				document.getElementById("nav1").style.display = "initial";
-    				document.getElementById("nav2").style.display = "initial";
-    				document.getElementById("nav3").style.display = "initial";
-    				document.getElementById("nav4").style.display = "initial";
+			if (document.body.offsetWidth > 505) {
+				document.getElementById("navbar").style.display = "none";
+				document.getElementById("nav1").style.display = "initial";
+				document.getElementById("nav2").style.display = "initial";
+				document.getElementById("nav3").style.display = "initial";
+				document.getElementById("nav4").style.display = "initial";
 				document.getElementById("nav5").style.display = "initial";
 				document.getElementById("nav6").style.display = "initial";
 				document.getElementById("nav7").style.display = "initial";
-  			} else {
-    				document.getElementById("navbar").style.display = "initial";
-    				document.getElementById("nav1").style.display = "none";
-    				document.getElementById("nav2").style.display = "none";
-    				document.getElementById("nav3").style.display = "none";
-    				document.getElementById("nav4").style.display = "none";
+			} else {
+				document.getElementById("navbar").style.display = "initial";
+				document.getElementById("nav1").style.display = "none";
+				document.getElementById("nav2").style.display = "none";
+				document.getElementById("nav3").style.display = "none";
+				document.getElementById("nav4").style.display = "none";
 				document.getElementById("nav5").style.display = "none";
 				document.getElementById("nav6").style.display = "none";
 				document.getElementById("nav7").style.display = "none";
-  			}
+			}
 		}, 69);
 	</script>
 </body>

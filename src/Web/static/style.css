@@ -1,4 +1,4 @@
-body {
+* {
 	font-family: 'Cascadia Code', monospace;
 }
 
@@ -161,6 +161,15 @@ a:hover {
 	animation-direction: alternate;
 }
 
+.typing {
+	width: 22ch;
+	animation: typing 2s steps(22), blink 0.5s step-end infinite alternate;
+	white-space: nowrap;
+	overflow: hidden;
+	border-right: 3px solid;
+	font-size: 2em;
+}
+
 @media (max-width: 550px) {
 	.info-container {
 		padding-left: 0;
@@ -191,5 +200,17 @@ a:hover {
 	}
 	to {
 		filter: hue-rotate(360deg);
+	}
+}
+
+@keyframes typing {
+	from {
+		width: 0;
+	}
+}
+
+@keyframes blink {
+	50% {
+		border-color: transparent;
 	}
 }

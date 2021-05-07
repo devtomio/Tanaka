@@ -70,4 +70,22 @@ module.exports = class Client extends CommandoClient {
 
 		feeds.forEach((feed) => this.rss.add(feed));
 	}
+
+	generateCommandList() {
+		const list = this.registry.groups
+			.map((g) => {
+				const commands = g.commands.filter((c) => !c.hidden);
+				return `\n<h3>${g.name}:</h3>\n\n<ul>${commands
+					.map((c) => {
+						const extra = `${c.ownerOnly ? ' (Owner-Only)' : ''}${
+							c.nsfw ? ' (NSFW)' : ''
+						}`;
+						return `<li> <strong>${c.name}:</strong> ${c.description}${extra}</li>`;
+					})
+					.join('</ul>\n')}`;
+			})
+			.join('\n');
+
+		return list;
+	}
 };

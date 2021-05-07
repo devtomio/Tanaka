@@ -20,7 +20,7 @@ const client = new Client({
  */
 module.exports = (c) => {
 	app.use(cors());
-	app.use(helmet({ contentSecurityPolicy: false }));
+	app.use(helmet({ contentSecurityPolicy: false, frameguard: false }));
 	app.use(express.json());
 	app.use(express.urlencoded({ extended: true }));
 	app.use(express.text());
@@ -70,7 +70,10 @@ module.exports = (c) => {
 	app.get('/commands', async (req, res) => {
 		const key = req.cookies.get('discordToken');
 
-		res.render('commands', { data: key ? await client.getUser(key) : null });
+		res.render('commands', {
+			data: key ? await client.getUser(key) : null,
+			commands: c.generateCommandList(),
+		});
 	});
 
 	app.get('/legal', async (req, res) => {
