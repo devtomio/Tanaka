@@ -62,7 +62,7 @@
 		"discord-api-types": "^0.18.1",
 		"dotenv-cli": "4.0.0",
 		"ejs-lint": "^1.2.0",
-		"eslint": "7.25.0",
+		"eslint": "7.26.0",
 		"eslint-config-aqua": "8.1.2",
 		"gulp": "4.0.2",
 		"gulp-autoprefixer": "^7.0.1",
