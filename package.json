@@ -41,6 +41,7 @@
 		"helmet": "^4.6.0",
 		"html-to-text": "^7.1.1",
 		"ioredis": "^4.27.2",
+		"ip-regex": "^4.3.0",
 		"keyv": "^4.0.3",
 		"mal-scraper": "^2.11.3",
 		"moment": "2.29.1",

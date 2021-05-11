@@ -2,7 +2,7 @@
 const util = require('util');
 const discord = require('discord.js');
 const tags = require('common-tags');
-const { escapeRegex } = require('../../Structures/Util');
+const { escapeRegex, replaceIp } = require('../../Structures/Util');
 const { Command } = require('discord.js-commando');
 
 const nl = '!!NL!!';
@@ -67,20 +67,18 @@ module.exports = class EvalCommand extends Command {
 		const result = this.makeResultMessages(this.lastResult, hrDiff, script);
 
 		if (Array.isArray(result)) {
-			return result.map((item) => msg.reply(item));
+			return result.map((item) => msg.reply(replaceIp(item)));
 		}
-		return msg.reply(result);
+		return msg.reply(replaceIp(result));
 	}
 
-	async makeResultMessages(result, hrDiff, input = null) {
-		const ip = await this.client.ip();
+	makeResultMessages(result, hrDiff, input = null) {
 		const inspected = util
 			.inspect(result, { depth: 0 })
 			.replace(nlPattern, '\n')
 			.replace(this.sensitivePattern, '--REDACTED--')
 			.replace(process.env.DATABASE_URL, '--REDACTED--')
-			.replace(process.env, '--REDACTED--')
-			.replace(ip, '--REDACTED--');
+			.replace(process.env, '--REDACTED--');
 
 		const split = inspected.split('\n');
 		const last = inspected.length - 1;

@@ -1,4 +1,4 @@
-const { isUrl, shorten } = require('../../Structures/Util');
+const { isUrl, shorten, replaceIp } = require('../../Structures/Util');
 const { Command } = require('discord.js-commando');
 const { MessageEmbed } = require('discord.js');
 const request = require('node-superfetch');
@@ -43,15 +43,7 @@ module.exports = class HeadersCommand extends Command {
 
 				embed.addField(
 					header.key,
-					header.value.length === 0
-						? 'empty'
-						: shorten(
-								header.value.replace(
-									await this.client.ip(),
-									'--REDACTED--',
-								),
-								1000,
-						  ),
+					header.value.length === 0 ? 'empty' : shorten(replaceIp(header.value), 1000),
 				);
 			}
 

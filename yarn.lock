@@ -155,7 +155,7 @@
   resolved "https://codeload.github.com/1chiSensei/keyv-postgres/tar.gz/b3c875fc00859f3fc488865ddeab784559c46493"
   dependencies:
     "@keyv/sql" "1.1.2"
-    pg "8.6.0"
+    pg "7.4.1"
 
 "@keyv/sql@1.1.2":
   version "1.1.2"
@@ -2576,7 +2576,6 @@ discord-api-types@^0.18.1:
 
 "discord.js@github:discordjs/discord.js":
   version "12.5.0"
-  uid c56c4a8dc86b0f37dd7c9ee9a4d422a52070b50c
   resolved "https://codeload.github.com/discordjs/discord.js/tar.gz/c56c4a8dc86b0f37dd7c9ee9a4d422a52070b50c"
   dependencies:
     "@discordjs/collection" "^0.1.6"
@@ -4778,7 +4777,7 @@ ioredis@^4.27.2:
     redis-parser "^3.0.0"
     standard-as-callback "^2.1.0"
 
-ip-regex@^4.1.0:
+ip-regex@^4.1.0, ip-regex@^4.3.0:
   version "4.3.0"
   resolved "https://registry.yarnpkg.com/ip-regex/-/ip-regex-4.3.0.tgz#687275ab0f57fa76978ff8f4dddc8a23d5990db5"
   integrity sha512-B9ZWJxHHOHUhUjCPrMpLD4xEq35bUTClHM1S6CBU5ixQnkZmwipwgc96vAd7AAGM9TGHvJR+Uss+/Ak6UphK+Q==

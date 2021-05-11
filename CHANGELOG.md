@@ -1,9 +1,8 @@
 ## [2.49.2](https://github.com/1chiSensei/Tanaka/compare/2.49.1...2.49.2) (2021-05-11)
 
-
 ### Bug Fixes
 
-* **commands:** fix ([d7b86a8](https://github.com/1chiSensei/Tanaka/commit/d7b86a88acca5ceef708490836df1583b069262e))
+- **commands:** fix ([d7b86a8](https://github.com/1chiSensei/Tanaka/commit/d7b86a88acca5ceef708490836df1583b069262e))
 
 ## [2.49.1](https://github.com/1chiSensei/Tanaka/compare/2.49.0...2.49.1) (2021-05-11)
 

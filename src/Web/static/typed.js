@@ -277,11 +277,12 @@
 								// contain typing function in a timeout humanize'd delay
 								this.timeout = setTimeout(function () {
 									// skip over any HTML chars
-									curStrPos = _htmlParserJs.htmlParser.typeHtmlChars(
-										curString,
-										curStrPos,
-										_this2,
-									);
+									curStrPos =
+										_htmlParserJs.htmlParser.typeHtmlChars(
+											curString,
+											curStrPos,
+											_this2,
+										);
 
 									var pauseTime = 0;
 									var substr = curString.substr(curStrPos);
@@ -332,17 +333,21 @@
 												break;
 										}
 										// strip out the escape characters and append all the string in between
-										var stringBeforeSkip = curString.substring(
-											0,
-											curStrPos,
-										);
+										var stringBeforeSkip =
+											curString.substring(
+												0,
+												curStrPos,
+											);
 										var stringSkipped = curString.substring(
 											stringBeforeSkip.length + 1,
 											curStrPos + numChars,
 										);
-										var stringAfterSkip = curString.substring(
-											curStrPos + numChars + 1,
-										);
+										var stringAfterSkip =
+											curString.substring(
+												curStrPos +
+													numChars +
+													1,
+											);
 										curString =
 											stringBeforeSkip +
 											stringSkipped +
@@ -467,11 +472,12 @@
 								var humanize = this.humanizer(this.backSpeed);
 
 								this.timeout = setTimeout(function () {
-									curStrPos = _htmlParserJs.htmlParser.backSpaceHtmlChars(
-										curString,
-										curStrPos,
-										_this4,
-									);
+									curStrPos =
+										_htmlParserJs.htmlParser.backSpaceHtmlChars(
+											curString,
+											curStrPos,
+											_this4,
+										);
 									// replace text with base text + typed characters
 									var curStringAtPosition = curString.substr(
 										0,

@@ -1,10 +1,21 @@
 const request = require('node-superfetch');
 const regex = require('url-regex');
+const ip = require('ip-regex');
 const { GOOGLE_KEY } = process.env;
 
 const escapeRegex = (str) => str.replace(/[|\\{}()[}^$+*?.]/g, '\\$&');
 
 const isUrl = (url) => regex({ exact: true, strict: true }).test(url);
+
+/** @param {string} text */
+const replaceIp = (text) => {
+	if (!ip().test(text)) return text;
+
+	const matched = text.match(ip());
+
+	matched.forEach((match) => text.replace(match, '--REDACTED--'));
+	return text;
+};
 
 const toPercent = (int) => `${Math.round(parseInt(int) * 100)}%`;
 
@@ -197,4 +208,5 @@ module.exports = {
 	embedURL,
 	formatNumber,
 	imgToURL,
+	replaceIp,
 };
