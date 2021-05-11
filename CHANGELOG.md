@@ -1,3 +1,15 @@
+# [2.49.0](https://github.com/1chiSensei/Tanaka/compare/2.47.1...2.49.0) (2021-05-11)
+
+
+### Bug Fixes
+
+* **merge:** fix conflicts ([8de915f](https://github.com/1chiSensei/Tanaka/commit/8de915f708c8ba70e71a6a1ef92fae980d61f0be))
+
+
+### Features
+
+* **db:** use postgres ([c89409f](https://github.com/1chiSensei/Tanaka/commit/c89409fa9b81634bac6fd1279ee59fbd88123ffa))
+
 # [2.48.0](https://github.com/1chiSensei/Tanaka/compare/2.47.1...2.48.0) (2021-05-11)
 
 
