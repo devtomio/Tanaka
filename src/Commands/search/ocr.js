@@ -1,3 +1,4 @@
+const { isUrl } = require('../../Structures/Util');
 const { Command } = require('discord.js-commando');
 const { MessageEmbed } = require('discord.js');
 const request = require('node-superfetch');
@@ -16,6 +17,7 @@ module.exports = class OCRCommand extends Command {
 					key: 'image',
 					prompt: 'What image would you like to search?',
 					type: 'image',
+					validate: (m) => (isUrl(m) ? false : true),
 				},
 			],
 			throttling: {
@@ -27,10 +29,11 @@ module.exports = class OCRCommand extends Command {
 
 	async run(msg, { image }) {
 		try {
-			const { body } = await request
-				.post('https://api.ocr.space/parse/image')
-				.set({ apiKey: process.env.OCR_KEY })
-				.attach({ url: image });
+			const { body } = await request.get('https://api.ocr.space/parse/imageurl').query({
+				apikey: process.env.OCR_KEY,
+				url: image,
+				ocrengine: 2,
+			});
 			const data = body.ParsedResults[0].ParsedText;
 
 			if (data.length === 0) return msg.say("Couldn't find any text.");

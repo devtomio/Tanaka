@@ -13,6 +13,7 @@ const client = new Client({
 	redirectURI: 'https://tanaka-bot.me/auth/callback',
 	scopes: ['identify'],
 });
+const port = process.env.PORT;
 
 // eslint-disable-next-line valid-jsdoc
 /**
@@ -108,5 +109,5 @@ module.exports = (c) => {
 		res.redirect(302, '/');
 	});
 
-	app.listen(process.env.PORT || 3000, () => c.logger.info('Website is online!'));
+	app.listen(port, () => c.logger.info(`Listening on localhost:${port}`));
 };

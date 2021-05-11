@@ -89,6 +89,15 @@ const isUrlSafe = async (url) => {
 	return false;
 };
 
+const imgToURL = (data, mediaType) => {
+	mediaType = /\//.test(mediaType) ? mediaType : `image/${mediaType}`;
+
+	const data64 = Buffer.isBuffer(data) ? data.toString('base64') : Buffer.from(data).toString('base64');
+	const img64 = `data:${mediaType};base64,${data64}`;
+
+	return img64;
+};
+
 const permissions = {
 	ADMINISTRATOR: 'Administrator',
 	VIEW_AUDIT_LOG: 'View Audit Log',
@@ -187,4 +196,5 @@ module.exports = {
 	isUrlSafe,
 	embedURL,
 	formatNumber,
+	imgToURL,
 };

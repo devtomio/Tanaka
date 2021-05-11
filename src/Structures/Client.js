@@ -2,27 +2,24 @@ const { CommandoClient } = require('discord.js-commando');
 const { Intents, WebhookClient } = require('discord.js');
 const { FeedEmitter } = require('rss-emitter-ts');
 const TimerManager = require('./TimerManager');
-const { Database } = require('quickmongo');
 const { Manager } = require('erela.js');
 const Turndown = require('turndown');
 const BotList = require('./BotList');
 const consola = require('consola');
 const Redis = require('./Redis');
 const web = require('../Web');
+const Keyv = require('keyv');
 
 module.exports = class Client extends CommandoClient {
 	constructor() {
 		super({
 			commandPrefix: process.env.COMMAND_PREFIX,
 			owner: process.env.OWNER_ID,
-			intents: [Intents.NON_PRIVILEGED, Intents.FLAGS.GUILDS, Intents.FLAGS.GUILD_PRESENCES],
+			intents: [Intents.NON_PRIVILEGED, Intents.FLAGS.GUILDS],
 			partials: ['CHANNEL'],
 		});
 
-		this.db = new Database(process.env.MONGO_URL, 'tanaka', {
-			useNewUrlParser: true,
-			useUnifiedTopology: true,
-		});
+		this.db = new Keyv(process.env.DATABASE_URL);
 
 		this.logger = consola.create({
 			level: 5,

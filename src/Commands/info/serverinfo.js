@@ -58,17 +58,6 @@ module.exports = class ServerInfoCommand extends Command {
 				`**❯ Boost Count:** ${msg.guild.premiumSubscriptionCount ?? '0'}`,
 				'\u200b',
 			])
-			.addField('Presence', [
-				`**❯ Online:** ${members.filter((member) => member.presence.status === 'online').size}`,
-				`**❯ Idle:** ${members.filter((member) => member.presence.status === 'idle').size}`,
-				`**❯ Do Not Disturb:** ${
-					members.filter((member) => member.presence.status === 'dnd').size
-				}`,
-				`**❯ Offline:** ${
-					members.filter((member) => member.presence.status === 'offline').size
-				}`,
-				'\u200b',
-			])
 			.setTimestamp();
 
 		return msg.say(embed);

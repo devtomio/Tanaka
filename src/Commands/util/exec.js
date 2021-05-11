@@ -38,9 +38,9 @@ module.exports = class ExecCommand extends Command {
 		try {
 			const stdout = execSync(command, { timeout: 150000, encoding: 'utf-8' });
 
-			return { err: false, std: stdout.trim() };
+			return { err: false, std: stdout };
 		} catch (err) {
-			return { err: true, std: err.stderr.trim() };
+			return { err: true, std: err.stderr };
 		}
 	}
 };

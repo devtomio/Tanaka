@@ -17,7 +17,11 @@
 						<a href="/github" class="asbestos-text">GitHub</a>
 						<a href="/discord" class="asbestos-text">Support</a>
 						<a href="/legal" class="asbestos-text">Legal</a>
-						<a href="/profile" class="asbestos-text">Profile</a>
+						<% if (data === null) { %>
+							<a href="/auth/login" class="asbestos-text">Login</a>
+						<% } else { %>
+							<a href="/profile" class="asbestos-text">Profile</a>
+						<% } %> 
 						<a href="/auth/logout" class="asbestos-text">Log Out</a>
 					</div>
 				</section>
@@ -31,9 +35,7 @@
 					</div>
 					<div class="unset">
 						<h1 class="title monospace">Tanaka</h1>
-						<p class="undertitle monospace typing"><i class="emoji sharingan"></i>
-							An all
-							fun and games bot.</p>
+						<p class="undertitle monospace" id="typer"></p>
 					</div>
 				</section>
 				<div class="buttons">
@@ -98,19 +100,34 @@
 		<div class="box-container">
 			<h1 class="title turquoise-text"><i class="emoji konoha"></i> Statistics:</h1>
 			<div class="info-container">
-				<p><span class="gold-text">Users:</span> <%= userCount %></p>
-				<p><span class="android-text">Guilds:</span> <%= guildCount %></p>
-				<p><span class="gitlab-text">Channels:</span> <%= channelCount %></p>
-				<p><span class="wisteria-text">Commands:</span> <%= commandCount %></p>
-				<p><span class="pinewood-text">Shards:</span> <%= shardCount %></p>
-				<p><span class="blurple-text">Ping:</span> <code><%= ping %>ms</code></p>
+				<p><span class="gold-text" id="users">Users:</span> <%= userCount %></p>
+				<p><span class="android-text" id="guilds">Guilds:</span> <%= guildCount %></p>
+				<p><span class="gitlab-text" id="channels">Channels:</span> <%= channelCount %></p>
+				<p><span class="wisteria-text" id="commands">Commands:</span> <%= commandCount %></p>
+				<p><span class="pinewood-text" id="shards">Shards:</span> <%= shardCount %></p>
+				<p><span class="blurple-text" id="ping">Ping:</span> <code><%= ping %>ms</code></p>
 			</div>
 		</div>
 	</section>
 
 	<%- include('./partials/_footer') %>
 
-	<script>
+	<script type="text/javascript" charset="utf-8">
+		const typedOptions = {
+			strings: [
+				'<i class="emoji sharingan"></i> An all fun and games bot.',
+				'<i class="emoji sharingan"></i> Built in JavaScript.',
+				'<i class="emoji sharingan"></i> Using discord.js.',
+				'<i class="emoji sharingan"></i> With the Commando framework.',
+			],
+			typeSpeed: 75,
+			shuffle: true,
+			loop: true,
+			loopCount: Infinity,
+			showCursor: false,
+		};
+		const typed = new Typed('#typer', typedOptions);
+
 		setInterval(() => {
 			if (document.body.offsetWidth > 505) {
 				document.getElementById("navbar").style.display = "none";

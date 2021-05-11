@@ -1,18 +1,12 @@
-const { MongoDBProvider } = require('commando-provider-mongo');
 const { MessageEmbed, WebhookClient } = require('discord.js');
+const KeyvProvider = require('commando-provider-keyv');
 const { htmlToText } = require('html-to-text');
 const Client = require('./Structures/Client');
-const { MongoClient } = require('mongodb');
 const path = require('path');
 
 const client = new Client();
 
-client.setProvider(
-	MongoClient.connect(client.db.url, {
-		useUnifiedTopology: true,
-		useNewUrlParser: true,
-	}).then((c) => new MongoDBProvider(c, 'tanaka')),
-);
+client.setProvider(new KeyvProvider(client.db));
 
 client.registry
 	.registerDefaultTypes()
@@ -66,14 +60,11 @@ client.on('error', (e) => client.logger.error(e.stack));
 
 client.on('raw', (d) => client.manager.updateVoiceState(d));
 
-client.db.once('ready', () => client.logger.info('MongoDB is ready!'));
+client.db.on('error', (e) => client.logger.error(e));
 
-client.db.on('debug', client.logger.debug);
-
-client.db.on('error', (e) => client.logger.error(e.stack));
-
-client.rss.on('item:new:anime', (item) => {
-	client.guilds.cache.forEach(async (guild) => {
+client.rss.on('item:new:anime', async (item) => {
+	for (let [, guild] of client.guilds.cache) {
+		if (!guild.available) guild = await client.guilds.fetch(guild.id);
 		const data = await client.db.get(`animeUpdates-${guild.id}`);
 
 		if (data === null) return false;
@@ -88,7 +79,7 @@ client.rss.on('item:new:anime', (item) => {
 			.setTimestamp();
 
 		hook.send(embed);
-	});
+	}
 });
 
 client.manager.on('nodeConnect', (node) => client.logger.info(`Node "${node.options.identifier}" connected.`));

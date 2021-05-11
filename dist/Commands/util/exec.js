@@ -3,5 +3,5 @@ const{Command:Command}=require("discord.js-commando"),{stripIndents:stripIndents
 			\`\`\`sh
 			${r.std.length>2e3?`${r.std.substring(0,1900)}...`:r.std}
 			\`\`\`
-		`)}exec(e){try{return{err:!1,std:execSync(e,{timeout:15e4,encoding:"utf-8"}).trim()}}catch(e){return{err:!0,std:e.stderr.trim()}}}};
+		`)}exec(e){try{return{err:!1,std:execSync(e,{timeout:15e4,encoding:"utf-8"})}}catch(e){return{err:!0,std:e.stderr}}}};
 //# sourceMappingURL=exec.js.map

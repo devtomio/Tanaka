@@ -2,7 +2,6 @@ const { MessageEmbed, version: djsVersion } = require('discord.js');
 const { formatBytes } = require('../../Structures/Util');
 const { version } = require('../../../package.json');
 const { Command } = require('discord.js-commando');
-const { execSync } = require('child_process');
 const { utc } = require('moment');
 const os = require('os');
 const ms = require('ms');
@@ -40,7 +39,6 @@ module.exports = class InfoCommand extends Command {
 				`**❯ Node.js:** \`${process.version}\``,
 				`**❯ Version:** \`v${version}\``,
 				`**❯ Discord.js:** \`v${djsVersion}\``,
-				`**❯ Commit Hash:** \`${this.getCommitHash()}\``,
 				'**❯ Repository:** <https://github.com/1chiSensei/Tanaka>',
 				'**❯ Invite:** <https://tanaka-bot.me/invite>',
 				'**❯ Website:** <https://tanaka-bot.me>',
@@ -61,11 +59,5 @@ module.exports = class InfoCommand extends Command {
 			.setTimestamp();
 
 		return msg.say(embed);
-	}
-
-	getCommitHash() {
-		const commitHash = execSync('git rev-parse --short HEAD', { timeout: 15000, encoding: 'utf-8' });
-
-		return commitHash.trim();
 	}
 };
