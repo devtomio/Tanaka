@@ -33,7 +33,7 @@ module.exports = class EvalCommand extends Command {
 		Object.defineProperty(this, '_sensitivePattern', { value: null, configurable: true });
 	}
 
-	async run(msg, { script }) {
+	run(msg, { script }) {
 		const { channel, guild, author, member } = msg;
 		const message = msg;
 		const { client, lastResult } = this;
@@ -73,13 +73,14 @@ module.exports = class EvalCommand extends Command {
 	}
 
 	async makeResultMessages(result, hrDiff, input = null) {
+		const ip = await this.client.ip();
 		const inspected = util
 			.inspect(result, { depth: 0 })
 			.replace(nlPattern, '\n')
 			.replace(this.sensitivePattern, '--REDACTED--')
 			.replace(process.env.DATABASE_URL, '--REDACTED--')
 			.replace(process.env, '--REDACTED--')
-			.replace(await this.client.ip(), '--REDACTED--');
+			.replace(ip, '--REDACTED--');
 
 		const split = inspected.split('\n');
 		const last = inspected.length - 1;

@@ -23,7 +23,6 @@ module.exports = class PingCommand extends Command {
 			.addField('Bot', [
 				`**❯ WebSocket:** \`${this.client.ws.ping}ms\``,
 				`**❯ Message:** \`${latency}ms\``,
-				'\u200b',
 			])
 			.setColor('RANDOM')
 			.setFooter(
