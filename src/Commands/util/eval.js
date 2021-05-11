@@ -38,16 +38,16 @@ module.exports = class EvalCommand extends Command {
 		const message = msg;
 		const { client, lastResult } = this;
 
-		const doReply = async (val) => {
+		const doReply = (val) => {
 			if (val instanceof Error) {
 				msg.reply(`Callback error: \`${val}\``);
 			} else {
-				const result = await this.makeResultMessages(val, process.hrtime(this.hrStart));
+				const result = this.makeResultMessages(val, process.hrtime(this.hrStart));
 
 				if (Array.isArray(result)) {
-					for (const item of result) msg.reply(item);
+					for (const item of result) msg.reply(replaceIp(item));
 				} else {
-					msg.reply(result);
+					msg.reply(replaceIp(result));
 				}
 			}
 		};

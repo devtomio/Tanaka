@@ -1,9 +1,8 @@
 ## [2.49.3](https://github.com/1chiSensei/Tanaka/compare/2.49.2...2.49.3) (2021-05-11)
 
-
 ### Bug Fixes
 
-* **commands:** dont use async ([ac24ad0](https://github.com/1chiSensei/Tanaka/commit/ac24ad0d0d6a6c1d8ef188ce5b9bb68d82ccb0ad))
+- **commands:** dont use async ([ac24ad0](https://github.com/1chiSensei/Tanaka/commit/ac24ad0d0d6a6c1d8ef188ce5b9bb68d82ccb0ad))
 
 ## [2.49.2](https://github.com/1chiSensei/Tanaka/compare/2.49.1...2.49.2) (2021-05-11)
 

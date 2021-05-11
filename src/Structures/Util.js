@@ -13,7 +13,9 @@ const replaceIp = (text) => {
 
 	const matched = text.match(ip());
 
-	matched.forEach((match) => text.replace(match, '--REDACTED--'));
+	for (const match of matched) {
+		text.replace(match, '--REDACTED--');
+	}
 	return text;
 };
 
