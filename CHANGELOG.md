@@ -1,3 +1,10 @@
+# [2.48.0](https://github.com/1chiSensei/Tanaka/compare/2.47.1...2.48.0) (2021-05-11)
+
+
+### Features
+
+* **db:** use postgres ([c89409f](https://github.com/1chiSensei/Tanaka/commit/c89409fa9b81634bac6fd1279ee59fbd88123ffa))
+
 ## [2.47.1](https://github.com/1chiSensei/Tanaka/compare/2.47.0...2.47.1) (2021-05-07)
 
 ### Bug Fixes
