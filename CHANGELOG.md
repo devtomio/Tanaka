@@ -1,3 +1,10 @@
+## [2.49.4](https://github.com/1chiSensei/Tanaka/compare/2.49.3...2.49.4) (2021-05-11)
+
+
+### Bug Fixes
+
+* **commands:** fix reply? ([25af9b3](https://github.com/1chiSensei/Tanaka/commit/25af9b371197708580d5b4ff9b128cd1e9411a43))
+
 ## [2.49.3](https://github.com/1chiSensei/Tanaka/compare/2.49.2...2.49.3) (2021-05-11)
 
 ### Bug Fixes
