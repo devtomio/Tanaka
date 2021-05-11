@@ -33,16 +33,16 @@ module.exports = class EvalCommand extends Command {
 		Object.defineProperty(this, '_sensitivePattern', { value: null, configurable: true });
 	}
 
-	run(msg, { script }) {
+	async run(msg, { script }) {
 		const { channel, guild, author, member } = msg;
 		const message = msg;
 		const { client, lastResult } = this;
 
-		const doReply = (val) => {
+		const doReply = async (val) => {
 			if (val instanceof Error) {
 				msg.reply(`Callback error: \`${val}\``);
 			} else {
-				const result = this.makeResultMessages(val, process.hrtime(this.hrStart));
+				const result = await this.makeResultMessages(val, process.hrtime(this.hrStart));
 
 				if (Array.isArray(result)) {
 					for (const item of result) msg.reply(item);
@@ -72,13 +72,14 @@ module.exports = class EvalCommand extends Command {
 		return msg.reply(result);
 	}
 
-	makeResultMessages(result, hrDiff, input = null) {
+	async makeResultMessages(result, hrDiff, input = null) {
 		const inspected = util
 			.inspect(result, { depth: 0 })
 			.replace(nlPattern, '\n')
 			.replace(this.sensitivePattern, '--REDACTED--')
 			.replace(process.env.DATABASE_URL, '--REDACTED--')
-			.replace(process.env, '--REDACTED--');
+			.replace(process.env, '--REDACTED--')
+			.replace(await this.client.ip(), '--REDACTED--');
 
 		const split = inspected.split('\n');
 		const last = inspected.length - 1;

@@ -2,6 +2,7 @@ const { CommandoClient } = require('discord.js-commando');
 const { Intents, WebhookClient } = require('discord.js');
 const { FeedEmitter } = require('rss-emitter-ts');
 const TimerManager = require('./TimerManager');
+const request = require('node-superfetch');
 const { Manager } = require('erela.js');
 const Turndown = require('turndown');
 const BotList = require('./BotList');
@@ -46,6 +47,11 @@ module.exports = class Client extends CommandoClient {
 				if (guild) guild.shard.send(payload);
 			},
 		});
+	}
+
+	async ip() {
+		const { text } = await request.get('https://api.ipify.org/');
+		return text;
 	}
 
 	async login(token = process.env.DISCORD_TOKEN) {

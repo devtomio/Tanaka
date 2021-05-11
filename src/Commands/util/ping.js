@@ -18,18 +18,12 @@ module.exports = class PingCommand extends Command {
 		const message = await msg.embed({ description: 'Pinging....' });
 
 		const latency = message.createdTimestamp - msg.createdTimestamp;
-		const db = await this.client.db.fetchLatency();
 
 		const embed = new MessageEmbed()
 			.addField('Bot', [
 				`**❯ WebSocket:** \`${this.client.ws.ping}ms\``,
 				`**❯ Message:** \`${latency}ms\``,
 				'\u200b',
-			])
-			.addField('Database', [
-				`**❯ Read:** \`${db.read}ms\``,
-				`**❯ Write:** \`${db.write}ms\``,
-				`**❯ Average:** \`${db.average}ms\``,
 			])
 			.setColor('RANDOM')
 			.setFooter(

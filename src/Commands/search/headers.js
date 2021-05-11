@@ -43,7 +43,15 @@ module.exports = class HeadersCommand extends Command {
 
 				embed.addField(
 					header.key,
-					header.value.length === 0 ? 'empty' : shorten(header.value, 1000),
+					header.value.length === 0
+						? 'empty'
+						: shorten(
+								header.value.replace(
+									await this.client.ip(),
+									'--REDACTED--',
+								),
+								1000,
+						  ),
 				);
 			}
 
