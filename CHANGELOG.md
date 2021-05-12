@@ -7,10 +7,9 @@
 
 # [2.53.0](https://github.com/1chiSensei/Tanaka/compare/2.52.1...2.53.0) (2021-05-12)
 
-
 ### Features
 
-* **ci:** add test ([0b3e0a1](https://github.com/1chiSensei/Tanaka/commit/0b3e0a11b0231ad50cdf3322af26d4ef75447460))
+- **ci:** add test ([0b3e0a1](https://github.com/1chiSensei/Tanaka/commit/0b3e0a11b0231ad50cdf3322af26d4ef75447460))
 
 ## [2.52.1](https://github.com/1chiSensei/Tanaka/compare/2.52.0...2.52.1) (2021-05-12)
 
