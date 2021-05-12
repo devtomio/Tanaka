@@ -1,3 +1,10 @@
+# [2.50.0](https://github.com/1chiSensei/Tanaka/compare/2.49.5...2.50.0) (2021-05-12)
+
+
+### Features
+
+* **ci:** add prettier workflow ([e0129b5](https://github.com/1chiSensei/Tanaka/commit/e0129b573dd0e27a1059a54afb43e1ea3c4a9297))
+
 ## [2.49.5](https://github.com/1chiSensei/Tanaka/compare/2.49.4...2.49.5) (2021-05-12)
 
 ### Bug Fixes
