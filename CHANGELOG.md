@@ -1,3 +1,10 @@
+# [2.51.0](https://github.com/1chiSensei/Tanaka/compare/2.50.2...2.51.0) (2021-05-12)
+
+
+### Features
+
+* **ci:** add label workflow ([99ad6db](https://github.com/1chiSensei/Tanaka/commit/99ad6db00ef7c6de791f57d6cfdba416c9d4c243))
+
 ## [2.50.2](https://github.com/1chiSensei/Tanaka/compare/2.50.1...2.50.2) (2021-05-12)
 
 ### Bug Fixes
