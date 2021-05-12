@@ -1,4 +1,4 @@
-// Build
+// Build Script
 const gulp = require('gulp');
 const terser = require('gulp-terser');
 const imagemin = require('gulp-imagemin');
