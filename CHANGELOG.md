@@ -1,16 +1,14 @@
 ## [2.51.3](https://github.com/1chiSensei/Tanaka/compare/2.51.2...2.51.3) (2021-05-12)
 
-
 ### Bug Fixes
 
-* **ci:** fix fail ([b6bdfd4](https://github.com/1chiSensei/Tanaka/commit/b6bdfd4806b1ce2729baa9f1dd20a40bc7c4bad9))
+- **ci:** fix fail ([b6bdfd4](https://github.com/1chiSensei/Tanaka/commit/b6bdfd4806b1ce2729baa9f1dd20a40bc7c4bad9))
 
 ## [2.51.2](https://github.com/1chiSensei/Tanaka/compare/2.51.1...2.51.2) (2021-05-12)
 
-
 ### Bug Fixes
 
-* **ci:** fix prettier ([264f0e0](https://github.com/1chiSensei/Tanaka/commit/264f0e0c90b3dd54d943675da4f89348fabbe92a))
+- **ci:** fix prettier ([264f0e0](https://github.com/1chiSensei/Tanaka/commit/264f0e0c90b3dd54d943675da4f89348fabbe92a))
 
 ## [2.51.1](https://github.com/1chiSensei/Tanaka/compare/2.51.0...2.51.1) (2021-05-12)
 
