@@ -62,8 +62,8 @@ client.on('raw', (d) => client.manager.updateVoiceState(d));
 
 client.db.on('error', (e) => client.logger.error(e));
 
-client.rss.on('item:new:anime', async (item) => {
-	for (let [, guild] of client.guilds.cache) {
+client.rss.on('item:new:anime', (item) => {
+	client.guilds.cache.forEach(async (guild) => {
 		if (!guild.available) guild = await client.guilds.fetch(guild.id);
 		const data = await client.db.get(`animeUpdates-${guild.id}`);
 
@@ -79,7 +79,7 @@ client.rss.on('item:new:anime', async (item) => {
 			.setTimestamp();
 
 		hook.send(embed);
-	}
+	});
 });
 
 client.manager.on('nodeConnect', (node) => client.logger.info(`Node "${node.options.identifier}" connected.`));
