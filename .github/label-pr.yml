@@ -1,0 +1,14 @@
+- regExp: '.*\\.md+$'
+  labels: ['documentation']
+
+- regExp: '^(package\\.json|yarn\\.lock)$'
+  labels: ['dependencies']
+
+- regExp: '.*\\.js+$'
+  labels: ['infrastructure']
+
+- regExp: '.*\\.(ejs|css)+$'
+  labels: ['web']
+
+- regExp: '.*\\.(json|yaml|yml|map)+$'
+  labels: ['artifact']
