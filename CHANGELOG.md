@@ -1,3 +1,10 @@
+# [2.52.0](https://github.com/1chiSensei/Tanaka/compare/2.51.4...2.52.0) (2021-05-12)
+
+
+### Features
+
+* **ci:** dont use label ([9c00211](https://github.com/1chiSensei/Tanaka/commit/9c002116022ee9fdfcc265ce4d0c382fbc433e85))
+
 ## [2.51.4](https://github.com/1chiSensei/Tanaka/compare/2.51.3...2.51.4) (2021-05-12)
 
 
