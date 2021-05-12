@@ -1,9 +1,8 @@
 ## [2.51.1](https://github.com/1chiSensei/Tanaka/compare/2.51.0...2.51.1) (2021-05-12)
 
-
 ### Bug Fixes
 
-* **ci:** fix failing ([8403246](https://github.com/1chiSensei/Tanaka/commit/8403246b0c76feb020fb1c93d0ddeb9006e167c4))
+- **ci:** fix failing ([8403246](https://github.com/1chiSensei/Tanaka/commit/8403246b0c76feb020fb1c93d0ddeb9006e167c4))
 
 # [2.51.0](https://github.com/1chiSensei/Tanaka/compare/2.50.2...2.51.0) (2021-05-12)
 
