@@ -1,9 +1,8 @@
 ## [2.51.4](https://github.com/1chiSensei/Tanaka/compare/2.51.3...2.51.4) (2021-05-12)
 
-
 ### Bug Fixes
 
-* **ci:** use other labeling action ([ea0c081](https://github.com/1chiSensei/Tanaka/commit/ea0c08154f1b316b08e08119e6def088ecf74e97))
+- **ci:** use other labeling action ([ea0c081](https://github.com/1chiSensei/Tanaka/commit/ea0c08154f1b316b08e08119e6def088ecf74e97))
 
 ## [2.51.3](https://github.com/1chiSensei/Tanaka/compare/2.51.2...2.51.3) (2021-05-12)
 
