@@ -1,3 +1,10 @@
+## [2.50.1](https://github.com/1chiSensei/Tanaka/compare/2.50.0...2.50.1) (2021-05-12)
+
+
+### Bug Fixes
+
+* **ci:** fix prettier failing ([91fd577](https://github.com/1chiSensei/Tanaka/commit/91fd57778f8bb4a89de2a522b572c0d6a49e8d83))
+
 # [2.50.0](https://github.com/1chiSensei/Tanaka/compare/2.49.5...2.50.0) (2021-05-12)
 
 ### Features
