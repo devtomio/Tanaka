@@ -11,7 +11,6 @@ jobs:
         uses: actions/checkout@v2
         with:
           ref: ${{ github.head_ref }}
-          fetch-depth: 0
 
       - name: Install Node
         uses: actions/setup-node@v2
@@ -26,6 +25,5 @@ jobs:
         with:
           prettier_options: --write .
           commit_message: 'style(global): prettified the files'
-          only_changed: true
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
