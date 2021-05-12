@@ -1,9 +1,8 @@
 ## [2.49.5](https://github.com/1chiSensei/Tanaka/compare/2.49.4...2.49.5) (2021-05-12)
 
-
 ### Bug Fixes
 
-* **discord:** update to latest d.js ([94e8a21](https://github.com/1chiSensei/Tanaka/commit/94e8a21743babdae054c828fa8c2aa7e37147e2d))
+- **discord:** update to latest d.js ([94e8a21](https://github.com/1chiSensei/Tanaka/commit/94e8a21743babdae054c828fa8c2aa7e37147e2d))
 
 ## [2.49.4](https://github.com/1chiSensei/Tanaka/compare/2.49.3...2.49.4) (2021-05-11)
 

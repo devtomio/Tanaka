@@ -1,0 +1,31 @@
+name: Prettier
+
+on: push
+
+jobs:
+  prettier:
+    name: Prettier
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout Repository
+        uses: actions/checkout@v2
+        with:
+          ref: ${{ github.head_ref }}
+          fetch-depth: 0
+
+      - name: Install Node
+        uses: actions/setup-node@v2
+        with:
+          node-version: 15
+
+      - name: Install Dependencies
+        run: yarn
+
+      - name: Run Prettier
+        uses: creyD/prettier_action@v3.3
+        with:
+          prettier_options: --write .
+          commit_message: 'style(global): prettified the files'
+          only_changed: true
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
