@@ -380,10 +380,10 @@
   dependencies:
     debug "^4.3.1"
 
-"@railway/cli@^0.2.17":
-  version "0.2.17"
-  resolved "https://registry.yarnpkg.com/@railway/cli/-/cli-0.2.17.tgz#9a364a8eccb63ae79638933a3339d9d34c5cbc6e"
-  integrity sha512-g4gOvlr1UOeTQkuMQ+Dj8uIIhWdxQ8dTKKl5dw8L/7G0xD2bWNtma73YcSNZAkeHAyG1qNDJkJ6zk4zImITHnQ==
+"@railway/cli@^0.2.18":
+  version "0.2.18"
+  resolved "https://registry.yarnpkg.com/@railway/cli/-/cli-0.2.18.tgz#6893b559e7f597e9e4889b7f45582056c9176355"
+  integrity sha512-OXRz/ExNl58NlAyc5yn9Jkj2ntL+vNJvmmF6F2tlHvC/DtZmLN3r4R9FIW4kX22kDmSrC0P8SE/xYivC9imTig==
   dependencies:
     go-npm "^0.1.9"
 
