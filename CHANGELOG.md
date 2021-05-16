@@ -1,3 +1,10 @@
+# [2.55.0](https://github.com/1chiSensei/Tanaka/compare/2.54.1...2.55.0) (2021-05-16)
+
+
+### Features
+
+* **markdownlint:** add markdown lint ignore ([4de8c92](https://github.com/1chiSensei/Tanaka/commit/4de8c92483cd48f17b105d7e8e48858e21b966a3))
+
 ## [2.54.1](https://github.com/1chiSensei/Tanaka/compare/2.54.0...2.54.1) (2021-05-16)
 
 
