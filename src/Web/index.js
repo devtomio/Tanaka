@@ -37,11 +37,11 @@ module.exports = (c) => {
 	app.get('/', async (req, res) => {
 		const key = req.cookies.get('discordToken');
 
-		const userCount = c.guilds.cache.reduce((a, b) => a + b.memberCount, 0).toLocaleString();
-		const guildCount = c.guilds.cache.size.toLocaleString();
-		const channelCount = c.channels.cache.size.toLocaleString();
+		const userCount = (await c.userCount()).toLocaleString();
+		const guildCount = (await c.guildCount()).toLocaleString();
+		const channelCount = (await c.channelCount()).toLocaleString();
 		const commandCount = c.registry.commands.size.toLocaleString();
-		const shardCount = c.shard ? c.shard.count.toLocaleString() : '1';
+		const shardCount = c.shard ? c.shard.shardCount.toLocaleString() : '1';
 		const ping = Math.round(c.ws.ping);
 
 		const data = key ? await client.getUser(key) : null;

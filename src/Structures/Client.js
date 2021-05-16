@@ -1,30 +1,32 @@
+const { Intents, WebhookClient, Collection } = require('discord.js');
 const { CommandoClient } = require('discord.js-commando');
-const { Intents, WebhookClient } = require('discord.js');
+const KeyvProvider = require('commando-provider-keyv');
 const { FeedEmitter } = require('rss-emitter-ts');
 const TimerManager = require('./TimerManager');
 const { execSync } = require('child_process');
 const { Manager } = require('erela.js');
+const glob = require('glob-promise');
 const Turndown = require('turndown');
 const BotList = require('./BotList');
-const consola = require('consola');
+const logger = require('./Logger');
 const Redis = require('./Redis');
 const web = require('../Web');
 const Keyv = require('keyv');
+const path = require('path');
 
 module.exports = class Client extends CommandoClient {
-	constructor() {
+	constructor(options) {
 		super({
 			commandPrefix: process.env.COMMAND_PREFIX,
 			owner: process.env.OWNER_ID,
 			intents: [Intents.NON_PRIVILEGED, Intents.FLAGS.GUILDS],
 			partials: ['CHANNEL'],
+			...options,
 		});
 
 		this.db = new Keyv(process.env.DATABASE_URL);
 
-		this.logger = consola.create({
-			level: 5,
-		});
+		this.logger = logger;
 
 		this.rss = new FeedEmitter();
 
@@ -47,6 +49,8 @@ module.exports = class Client extends CommandoClient {
 				if (guild) guild.shard.send(payload);
 			},
 		});
+
+		this.events = new Collection();
 	}
 
 	get ip() {
@@ -54,11 +58,65 @@ module.exports = class Client extends CommandoClient {
 		return ip;
 	}
 
+	get directory() {
+		return `${path.dirname(require.main.filename)}${path.sep}`;
+	}
+
+	async userCount() {
+		if (this.shard) {
+			const count = await this.shard.broadcastEval(
+				'this.guilds.cache.reduce((a, b) => a + b.memberCount, 0)',
+			);
+
+			return count.reduce((a, b) => a + b, 0);
+		}
+
+		return this.guilds.cache.reduce((a, b) => a + b.memberCount, 0);
+	}
+
+	async guildCount() {
+		if (this.shard) {
+			const count = await this.shard.fetchClientValues('guilds.cache.size');
+
+			return count.reduce((a, b) => a + b, 0);
+		}
+
+		return this.guilds.cache.size;
+	}
+
+	async channelCount() {
+		if (this.shard) {
+			const count = await this.shard.fetchClientValues('channels.cache.size');
+
+			return count.reduce((a, b) => a + b, 0);
+		}
+
+		return this.channels.cache.size;
+	}
+
 	async login(token = process.env.DISCORD_TOKEN) {
 		this.addRSSListeners();
+		this.registerCommands();
+		this.registerProvider();
 		web(this);
 
+		await this.loadEvents();
+
 		return super.login(token);
+	}
+
+	async loadEvents() {
+		const events = await glob(`${this.directory}Events/**/*.js`);
+
+		for (const eventFile of events) {
+			delete require.cache[eventFile];
+
+			const File = require(eventFile);
+			const event = new File(this.client);
+
+			this.events.set(event.name, event);
+			event.emitter[event.type](event.name, (...args) => event.run(...args));
+		}
 	}
 
 	addRSSListeners() {
@@ -90,5 +148,34 @@ module.exports = class Client extends CommandoClient {
 			.join('\n');
 
 		return list;
+	}
+
+	registerCommands() {
+		this.client.registry
+			.registerDefaultTypes()
+			.registerGroups([
+				{ id: 'util', name: 'Utility', guarded: true },
+				{ id: 'random', name: 'Random Response' },
+				{ id: 'info', name: 'Information' },
+				{ id: 'search', name: 'Search' },
+				{ id: 'remind', name: 'Reminder' },
+				{ id: 'anime-updates', name: 'Anime Updates' },
+				{ id: 'codebin', name: 'Code Bins' },
+				{ id: 'img', name: 'Image Manipulation' },
+				{ id: 'music', name: 'Music' },
+			])
+			.registerDefaultGroups()
+			.registerDefaultCommands({
+				unknownCommand: false,
+				help: false,
+				eval: false,
+				ping: false,
+			})
+			.registerTypesIn(path.join(__dirname, '..', 'Types'))
+			.registerCommandsIn(path.join(__dirname, '..', 'Commands'));
+	}
+
+	registerProvider() {
+		this.setProvider(new KeyvProvider(this.db));
 	}
 };

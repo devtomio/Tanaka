@@ -1,0 +1,1 @@
+{"version":3,"sources":["Structures/Logger.js"],"names":["module","exports","require"],"mappings":"AAAAA,OAAOC,QAAUC,QAAQ","file":"Logger.js","sourcesContent":["module.exports = require('signale');\n"]}

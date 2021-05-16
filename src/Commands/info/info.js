@@ -28,11 +28,9 @@ module.exports = class InfoCommand extends Command {
 			.addField('General', [
 				`**❯ Client:** ${this.client.user.tag} \`(${this.client.user.id})\``,
 				`**❯ Commands:** ${this.client.registry.commands.size}`,
-				`**❯ Guilds:** ${this.client.guilds.cache.size.toLocaleString()}`,
-				`**❯ Users:** ${this.client.guilds.cache
-					.reduce((a, b) => a + b.memberCount, 0)
-					.toLocaleString()}`,
-				`**❯ Channels:** ${this.client.channels.cache.size.toLocaleString()}`,
+				`**❯ Guilds:** ${this.client.guildCount.toLocaleString()}`,
+				`**❯ Users:** ${this.client.userCount.toLocaleString()}`,
+				`**❯ Channels:** ${this.client.channelCount.toLocaleString()}`,
 				`**❯ Creation Date:** \`${utc(this.client.user.createdTimestamp).format(
 					'Do MMMM YYYY HH:mm:ss',
 				)}\``,
