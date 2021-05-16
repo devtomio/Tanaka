@@ -1,3 +1,10 @@
+# [2.54.0](https://github.com/1chiSensei/Tanaka/compare/2.53.2...2.54.0) (2021-05-16)
+
+
+### Features
+
+* **events:** add new event handler ([7f6e3d4](https://github.com/1chiSensei/Tanaka/commit/7f6e3d4f7ce5d039f689b939458e152ac7285719))
+
 ## [2.53.2](https://github.com/1chiSensei/Tanaka/compare/2.53.1...2.53.2) (2021-05-12)
 
 ### Bug Fixes
