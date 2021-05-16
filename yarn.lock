@@ -380,10 +380,10 @@
   dependencies:
     debug "^4.3.1"
 
-"@railway/cli@^0.2.17":
-  version "0.2.17"
-  resolved "https://registry.yarnpkg.com/@railway/cli/-/cli-0.2.17.tgz#9a364a8eccb63ae79638933a3339d9d34c5cbc6e"
-  integrity sha512-g4gOvlr1UOeTQkuMQ+Dj8uIIhWdxQ8dTKKl5dw8L/7G0xD2bWNtma73YcSNZAkeHAyG1qNDJkJ6zk4zImITHnQ==
+"@railway/cli@^0.2.19":
+  version "0.2.19"
+  resolved "https://registry.yarnpkg.com/@railway/cli/-/cli-0.2.19.tgz#77fd552acdd3b481fde78cb747da0ee9f9f6bd1a"
+  integrity sha512-gXXajfaSgVDzO9l10fy6GREFKm1XjduRsqlT1ZYMITt+UpblHdo0/6gwV8vva+/QKA0PQlBpiDX2Xcbx46vHUg==
   dependencies:
     go-npm "^0.1.9"
 
@@ -2597,7 +2597,8 @@ discord.js@^12.5.1:
 
 discord.js@discordjs/discord.js:
   version "12.5.0"
-  resolved "https://codeload.github.com/discordjs/discord.js/tar.gz/f831872125214e39c8866ce1cf7c63159a3dba39"
+  uid c7334363b36c5f7f1c7880fe77a2e9b2eb1a6442
+  resolved "https://codeload.github.com/discordjs/discord.js/tar.gz/c7334363b36c5f7f1c7880fe77a2e9b2eb1a6442"
   dependencies:
     "@discordjs/collection" "^0.1.6"
     "@discordjs/form-data" "^3.0.1"
