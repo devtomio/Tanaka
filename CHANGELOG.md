@@ -1,3 +1,10 @@
+# [2.58.0](https://github.com/1chiSensei/Tanaka/compare/2.57.0...2.58.0) (2021-05-17)
+
+
+### Features
+
+* **web:** add vote page ([4dc3457](https://github.com/1chiSensei/Tanaka/commit/4dc3457ad1e797f22fa0f2360f452f68fa497a56))
+
 # [2.57.0](https://github.com/1chiSensei/Tanaka/compare/2.55.0...2.57.0) (2021-05-17)
 
 ### Features
