@@ -40,6 +40,7 @@ module.exports = class ServerInfoCommand extends Command {
 				`**❯ Time Created:** \`${moment(msg.guild.createdTimestamp).format('LT')} ${moment(
 					msg.guild.createdTimestamp,
 				).format('LL')} ${moment(msg.guild.createdTimestamp).fromNow()}\``,
+				`**❯ NSFW:** ${msg.guild.nsfw ? 'Yes' : 'No'}`,
 				'\u200b',
 			])
 			.addField('Statistics', [
