@@ -1,9 +1,8 @@
 ## [2.60.1](https://github.com/1chiSensei/Tanaka/compare/2.60.0...2.60.1) (2021-05-17)
 
-
 ### Bug Fixes
 
-* **web:** fix darkmode ([f1a28d4](https://github.com/1chiSensei/Tanaka/commit/f1a28d4443707bd2d8ff6b9bf093c62fe7f4b903))
+- **web:** fix darkmode ([f1a28d4](https://github.com/1chiSensei/Tanaka/commit/f1a28d4443707bd2d8ff6b9bf093c62fe7f4b903))
 
 # [2.60.0](https://github.com/1chiSensei/Tanaka/compare/2.59.0...2.60.0) (2021-05-17)
 
