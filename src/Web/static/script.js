@@ -7,6 +7,8 @@ const scroll_To = (getID) => {
 	history.pushState(null, null, `#${id}`);
 };
 
+const darkmode = new Darkmode({ label: '🌓' });
+
 window.addEventListener('scroll', () => {
 	const scrollPosition = window.scrollY;
 	const logoContainer = document.getElementsByClassName('arrow')[0];
@@ -14,4 +16,4 @@ window.addEventListener('scroll', () => {
 	else logoContainer.classList.remove('arrow--scrolled');
 });
 
-window.addEventListener('load', () => new Darkmode().showWidget());
+window.addEventListener('load', () => darkmode.toggle());

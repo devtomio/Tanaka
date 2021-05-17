@@ -1,9 +1,8 @@
 # [2.60.0](https://github.com/1chiSensei/Tanaka/compare/2.59.0...2.60.0) (2021-05-17)
 
-
 ### Features
 
-* **web:** add theme switching ([f610ea6](https://github.com/1chiSensei/Tanaka/commit/f610ea6591125a00ccc25a1d5cd88de301599341))
+- **web:** add theme switching ([f610ea6](https://github.com/1chiSensei/Tanaka/commit/f610ea6591125a00ccc25a1d5cd88de301599341))
 
 # [2.59.0](https://github.com/1chiSensei/Tanaka/compare/2.58.0...2.59.0) (2021-05-17)
 

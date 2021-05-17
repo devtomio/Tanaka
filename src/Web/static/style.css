@@ -161,6 +161,129 @@ a:hover {
 	animation-direction: alternate;
 }
 
+.darkmode--activated .paper-container .ribbon {
+	background-color: #d9d9d9;
+}
+
+.darkmode--activated .paper-container .paper {
+	background: linear-gradient(225deg, transparent 26px, #ececec 0);
+}
+
+.darkmode--activated .paper-container .paper::before {
+	border-color: #f5f5f5 transparent;
+}
+
+.darkmode--activated .markdown-jekyll {
+	color: #000;
+}
+
+.darkmode--activated .markdown-jekyll hr {
+	background-color: #d9d9d9;
+	border-bottom: 1px solid #d9d9d9;
+	border-bottom-color: #d9d9d9;
+}
+
+.darkmode--activated .markdown-jekyll h1,
+.darkmode--activated .markdown-jekyll h2 {
+	border-bottom: 1px solid #d9d9d9;
+}
+
+.darkmode--activated .markdown-jekyll tr {
+	background-color: #ececec;
+}
+
+.darkmode--activated .markdown-jekyll tr:nth-child(2n) {
+	background-color: #d9d9d9;
+}
+
+.darkmode--activated .markdown-jekyll .highlight {
+	background: #d9d9d9 !important;
+}
+
+.darkmode--activated .markdown-jekyll .highlighter-rouge {
+	background: #d9d9d9 !important;
+	border: 1px solid #d9d9d9;
+}
+
+.darkmode--activated .tooltip::after {
+	background-color: #d9d9d9;
+	color: #000;
+}
+
+.darkmode--activated .loader,
+.darkmode--activated .loader::before,
+.darkmode--activated .loader::after {
+	background-color: #000;
+	color: #000;
+}
+
+.darkmode--activated .fullscreen {
+	background-color: #f5f5f5;
+}
+
+.darkmode--activated .label {
+	background-color: #d9d9d9;
+	color: #000;
+}
+
+.darkmode--activated input,
+.darkmode--activated select,
+.darkmode--activated textarea,
+.darkmode--activated button {
+	background-color: #d9d9d9;
+	color: #000;
+}
+
+.darkmode--activated table {
+	color: #000;
+}
+
+.darkmode--activated table th,
+.darkmode--activated table td {
+	border: 1px solid #d9d9d9;
+}
+
+.darkmode--activated table tr {
+	background-color: #ececec;
+	border: 1px solid #d9d9d9;
+}
+
+.darkmode--activated table tr:nth-child(2n) {
+	background-color: #d9d9d9;
+}
+
+.darkmode--activated .highlight-bg {
+	background-color: #f5f5f5;
+}
+.darkmode--activated .primary-bg {
+	background-color: #ececec;
+}
+
+.darkmode--activated .secondary-bg {
+	background-color: #d9d9d9;
+}
+
+.darkmode--activated .highlight-text {
+	color: #f5f5f5;
+}
+
+.darkmode--activated .primary-text {
+	color: #ececec;
+}
+
+.darkmode--activated .secondary-text {
+	color: #d9d9d9;
+}
+
+.darkmode--activated .theme-text {
+	color: #000;
+}
+
+body.darkmode--activated {
+	color: #000;
+	background-color: #f5f5f5;
+}
+
 @media (max-width: 550px) {
 	.info-container {
 		padding-left: 0;
@@ -182,6 +305,12 @@ a:hover {
 		padding: 0;
 		width: 90%;
 		margin: 0 auto;
+	}
+}
+
+@media (max-width: 550px) {
+	.darkmode--activated .paper-container .paper {
+		background: #ececec;
 	}
 }
 
