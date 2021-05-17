@@ -1,3 +1,10 @@
+# [2.59.0](https://github.com/1chiSensei/Tanaka/compare/2.58.0...2.59.0) (2021-05-17)
+
+
+### Features
+
+* **botlist:** add discord.bots.gg stats posting ([c4945ee](https://github.com/1chiSensei/Tanaka/commit/c4945ee13c4d1a4f03bf256d039108c9c587eac6))
+
 # [2.58.0](https://github.com/1chiSensei/Tanaka/compare/2.57.0...2.58.0) (2021-05-17)
 
 ### Features
