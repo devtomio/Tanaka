@@ -7,7 +7,11 @@ const scroll_To = (getID) => {
 	history.pushState(null, null, `#${id}`);
 };
 
-const darkmode = new Darkmode({ label: '🌓' });
+const darkmode = new darken({
+	class: 'light-mode',
+	toggle: '#darkmode-button',
+	default: 'dark',
+});
 
 window.addEventListener('scroll', () => {
 	const scrollPosition = window.scrollY;
@@ -15,5 +19,3 @@ window.addEventListener('scroll', () => {
 	if (scrollPosition >= 100) logoContainer.classList.add('arrow--scrolled');
 	else logoContainer.classList.remove('arrow--scrolled');
 });
-
-window.addEventListener('load', () => darkmode.toggle());
