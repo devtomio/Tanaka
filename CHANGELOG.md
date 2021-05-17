@@ -1,3 +1,10 @@
+## [2.60.2](https://github.com/1chiSensei/Tanaka/compare/2.60.1...2.60.2) (2021-05-17)
+
+
+### Bug Fixes
+
+* **web:** use another dark mode lib ([5db197f](https://github.com/1chiSensei/Tanaka/commit/5db197ffe94444fcaa3dbd9572cb682b2265f541))
+
 ## [2.60.1](https://github.com/1chiSensei/Tanaka/compare/2.60.0...2.60.1) (2021-05-17)
 
 ### Bug Fixes
