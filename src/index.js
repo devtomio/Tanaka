@@ -10,6 +10,7 @@ const manager = new ShardingManager(join(__dirname, 'Structures', 'BaseCluster')
 	ipcSocket: 9454,
 	timeout: 60000,
 });
+
 manager.spawn()
 	.then(() => logger.info(`Spawning shard. Shard count: ${manager.shardCount}`))
 	.catch((reason) => logger.error(`Spawing error: REASON = ${reason}`));

@@ -1,6 +1,6 @@
-const { BaseCluster } = require('kurasuta');
+const { BaseCluster: Cluster } = require('kurasuta');
 
-module.exports = class extends BaseCluster {
+module.exports = class BaseCluster extends Cluster {
 	launch() {
 		this.client.login(process.env.DISCORD_TOKEN);
 	}

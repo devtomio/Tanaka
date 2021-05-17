@@ -1,4 +1,4 @@
-<img src="https://cdn.discordapp.com/avatars/804605929944645672/573a4c5b59caaf0b48c422b40f11d3ed.png?size=4096" width="150" height="150" align="left" style="float: left; margin: 0 10px 0 0;" alt="Tanaka" />
+<img src="https://cdn.discordapp.com/avatars/804605929944645672/768065c543d1ed938858bf6f4ca81e15.png?size=4096" width="150" height="150" align="left" style="float: left; margin: 0 10px 0 0;" alt="Tanaka" />
 
 # Tanaka
 

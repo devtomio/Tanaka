@@ -1,23 +1,20 @@
 # [2.55.0](https://github.com/1chiSensei/Tanaka/compare/2.54.1...2.55.0) (2021-05-16)
 
-
 ### Features
 
-* **markdownlint:** add markdown lint ignore ([4de8c92](https://github.com/1chiSensei/Tanaka/commit/4de8c92483cd48f17b105d7e8e48858e21b966a3))
+- **markdownlint:** add markdown lint ignore ([4de8c92](https://github.com/1chiSensei/Tanaka/commit/4de8c92483cd48f17b105d7e8e48858e21b966a3))
 
 ## [2.54.1](https://github.com/1chiSensei/Tanaka/compare/2.54.0...2.54.1) (2021-05-16)
 
-
 ### Bug Fixes
 
-* **ci:** fix push ([8b50431](https://github.com/1chiSensei/Tanaka/commit/8b504311f836c6f56e7d279db78314b42c0a5934))
+- **ci:** fix push ([8b50431](https://github.com/1chiSensei/Tanaka/commit/8b504311f836c6f56e7d279db78314b42c0a5934))
 
 # [2.54.0](https://github.com/1chiSensei/Tanaka/compare/2.53.2...2.54.0) (2021-05-16)
 
-
 ### Features
 
-* **events:** add new event handler ([7f6e3d4](https://github.com/1chiSensei/Tanaka/commit/7f6e3d4f7ce5d039f689b939458e152ac7285719))
+- **events:** add new event handler ([7f6e3d4](https://github.com/1chiSensei/Tanaka/commit/7f6e3d4f7ce5d039f689b939458e152ac7285719))
 
 ## [2.53.2](https://github.com/1chiSensei/Tanaka/compare/2.53.1...2.53.2) (2021-05-12)
 

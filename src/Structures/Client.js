@@ -5,6 +5,7 @@ const { FeedEmitter } = require('rss-emitter-ts');
 const TimerManager = require('./TimerManager');
 const { execSync } = require('child_process');
 const { Manager } = require('erela.js');
+const OpenEval = require('open-eval');
 const glob = require('glob-promise');
 const Turndown = require('turndown');
 const BotList = require('./BotList');
@@ -21,6 +22,9 @@ module.exports = class Client extends CommandoClient {
 			owner: process.env.OWNER_ID,
 			intents: [Intents.NON_PRIVILEGED, Intents.FLAGS.GUILDS],
 			partials: ['CHANNEL'],
+			allowedMentions: {
+				repliedUser: false,
+			},
 			...options,
 		});
 
@@ -51,6 +55,8 @@ module.exports = class Client extends CommandoClient {
 		});
 
 		this.events = new Collection();
+
+		this.piston = new OpenEval();
 	}
 
 	get ip() {
