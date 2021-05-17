@@ -13,3 +13,5 @@ window.addEventListener('scroll', () => {
 	if (scrollPosition >= 100) logoContainer.classList.add('arrow--scrolled');
 	else logoContainer.classList.remove('arrow--scrolled');
 });
+
+window.addEventListener('load', () => new Darkmode().showWidget());
