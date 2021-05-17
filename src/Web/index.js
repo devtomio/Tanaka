@@ -83,6 +83,8 @@ module.exports = (c) => {
 		res.render('legal', { data: key ? await client.getUser(key) : null });
 	});
 
+	app.get('/vote', (_, res) => res.render('vote'));
+
 	app.get('/profile', async (req, res) => {
 		const key = req.cookies.get('discordToken');
 

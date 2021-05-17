@@ -20,7 +20,7 @@ module.exports = class SourcebinCommand extends Command {
 
 	async run(msg, { code }) {
 		const link = await create([{ content: code.code, language: 'text' }], {
-			title: 'CodeBin',
+			title: 'Code Snippet',
 			description: 'Uploaded by TanakaBot <https://github.com/1chiSensei/Tanaka>',
 		});
 

@@ -1,16 +1,14 @@
 # [2.57.0](https://github.com/1chiSensei/Tanaka/compare/2.55.0...2.57.0) (2021-05-17)
 
-
 ### Features
 
-* **commands:** add run command ([0732707](https://github.com/1chiSensei/Tanaka/commit/07327071444f7bf7a40effac230c7c7f8b133651))
+- **commands:** add run command ([0732707](https://github.com/1chiSensei/Tanaka/commit/07327071444f7bf7a40effac230c7c7f8b133651))
 
 # [2.56.0](https://github.com/1chiSensei/Tanaka/compare/2.55.0...2.56.0) (2021-05-17)
 
-
 ### Features
 
-* **commands:** add run command ([0732707](https://github.com/1chiSensei/Tanaka/commit/07327071444f7bf7a40effac230c7c7f8b133651))
+- **commands:** add run command ([0732707](https://github.com/1chiSensei/Tanaka/commit/07327071444f7bf7a40effac230c7c7f8b133651))
 
 # [2.55.0](https://github.com/1chiSensei/Tanaka/compare/2.54.1...2.55.0) (2021-05-16)
 

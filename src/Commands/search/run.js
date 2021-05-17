@@ -1,4 +1,5 @@
 const languages = require('../../../assets/json/langs.json');
+const { shorten } = require('../../Structures/Util');
 const { Command } = require('discord.js-commando');
 
 module.exports = class RunCommand extends Command {
@@ -23,12 +24,16 @@ module.exports = class RunCommand extends Command {
 					type: 'code',
 				},
 			],
+			throttling: {
+				duration: 10,
+				usages: 2,
+			},
 		});
 	}
 
 	async run(msg, { lang, code }) {
 		const result = await this.client.piston.eval(lang, code.code);
 
-		return msg.code('sh', result);
+		return msg.say(`\`\`\`sh\n${shorten(result.output, 1900)}\n\`\`\``);
 	}
 };
