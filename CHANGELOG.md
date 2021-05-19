@@ -1,3 +1,5 @@
+## [2.61.1](https://github.com/1chiSensei/Tanaka/compare/2.61.0...2.61.1) (2021-05-19)
+
 # [2.61.0](https://github.com/1chiSensei/Tanaka/compare/2.60.2...2.61.0) (2021-05-19)
 
 
