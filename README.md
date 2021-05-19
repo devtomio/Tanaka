@@ -38,36 +38,7 @@ Tanaka is a Discord Bot coded in [JavaScript](https://www.javascript.com/) with 
 
 ## Installing
 
-### Requirements
-
-- [Node.js](https://nodejs.org) you will need version `14.x` or greater.
-- [Git](https://git-scm.com)
-- [Redis](https://redis.io/)
-- [MongoDB](https://www.mongodb.com/)
-- [Python](https://www.python.org/)
-- [Github CLI](https://cli.github.com)
-- [FFmpeg](https://www.ffmpeg.org/)
-- [Yarn](https://yarnpkg.com/)
-- A C/C++ compiler
-
-### Before You Begin
-
-1. Clone this repository with `gh repo clone 1chiSensei/Tanaka`
-2. Run `cd Tanaka` to move into the folder that you just created.
-3. Run `yarn` to install the dependencies.
-4. Create a file named `.env` and fill it out as shown in `.env.example`.
-
-### Filling out your `.env` file
-
-- `REDIS_URL` the connection string to Redis.
-- `MONGO_URL` the connection string to MongoDB.
-- `DISCORD_TOKEN` your discord bot token. This can be obtained in the [Discord Developer Portal](https://discord.com/developers/applications).
-- `OWNER_ID` your own discord user id.
-- `TEST_WEBHOOK_ID` the id for the test webhook.
-- `TEST_WEBHOOK_TOKEN` the token for the test webhook.
-- `GITHUB_TOKEN` your own github personal access token.
-- `CLIENT_ID` the bot's client id.
-- `CLIENT_SECRET` the bot's client secret.
+You can't. You just can't. There are alot of keys needed for this bot and you just can't get them.
 
 ## Commands
 
