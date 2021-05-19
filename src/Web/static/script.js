@@ -7,12 +7,6 @@ const scroll_To = (getID) => {
 	history.pushState(null, null, `#${id}`);
 };
 
-const darkmode = new darken({
-	class: 'light-mode',
-	toggle: '#darkmode-button',
-	default: 'dark',
-});
-
 window.addEventListener('scroll', () => {
 	const scrollPosition = window.scrollY;
 	const logoContainer = document.getElementsByClassName('arrow')[0];

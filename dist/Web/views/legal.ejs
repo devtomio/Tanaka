@@ -1,7 +1,8 @@
 <%- include('./partials/_head') %>
 
 <body class="dark-theme">
-	<button class="darkmode-toggle" role="checkbox" id="darkmode-button">🌓</button>
+	<div class="darkmode-layer darkmode-layer--button"></div>
+	<div class="darkmode-toggle" id="darkmode-button">🌓</div>
 
 	<div class="paper-container">
 		<div class="ribbon disco-ball"></div>
@@ -71,4 +72,13 @@
 		</div>
 	</div>
 	<%- include('./partials/_footer') %>
+
+	<script type="text/javascript" defer>
+		const darkmode = new Darkmode({
+			defaultTheme: 'dark',
+			cookie: true,
+		});
+
+		darkmode.attach();
+	</script>
 </body>

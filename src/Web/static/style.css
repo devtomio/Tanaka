@@ -178,6 +178,23 @@ a:hover {
 	align-items: center;
 }
 
+.darkmode-layer--button {
+	width: 2.9rem;
+	height: 2.9rem;
+	border-radius: 50%;
+	right: 58px;
+	bottom: 12px;
+	left: unset;
+}
+
+.darkmode-layer {
+	position: fixed;
+	pointer-events: none;
+	background: #292d32;
+	transition: all 0.3s ease;
+	mix-blend-mode: difference;
+}
+
 @media (max-width: 550px) {
 	.info-container {
 		padding-left: 0;
