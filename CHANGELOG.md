@@ -1,3 +1,10 @@
+# [2.61.0](https://github.com/1chiSensei/Tanaka/compare/2.60.2...2.61.0) (2021-05-19)
+
+
+### Features
+
+* **web:** add complete theme toggling ([43e39fb](https://github.com/1chiSensei/Tanaka/commit/43e39fb47c45c82bb8092d53217e9e457876df88))
+
 ## [2.60.2](https://github.com/1chiSensei/Tanaka/compare/2.60.1...2.60.2) (2021-05-17)
 
 ### Bug Fixes
