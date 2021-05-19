@@ -1,3 +1,10 @@
+## [2.61.2](https://github.com/1chiSensei/Tanaka/compare/2.61.1...2.61.2) (2021-05-19)
+
+
+### Bug Fixes
+
+* **web:** fix darkmode having weird shadows ([226150a](https://github.com/1chiSensei/Tanaka/commit/226150a4d77219f2e88da7bff56eab243390ea07))
+
 ## [2.61.1](https://github.com/1chiSensei/Tanaka/compare/2.61.0...2.61.1) (2021-05-19)
 
 # [2.61.0](https://github.com/1chiSensei/Tanaka/compare/2.60.2...2.61.0) (2021-05-19)
