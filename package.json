@@ -59,7 +59,7 @@
 		"url-regex": "^5.0.0"
 	},
 	"devDependencies": {
-		"@railway/cli": "^0.2.19",
+		"@railway/cli": "^0.2.20",
 		"@release-it/conventional-changelog": "2.0.1",
 		"@types/signale": "^1.4.1",
 		"discord-api-types": "^0.18.1",
