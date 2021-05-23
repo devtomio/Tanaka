@@ -1,4 +1,3 @@
-const { format, resolveConfigFile, resolveConfig } = require('prettier');
 const { shorten } = require('../../Structures/Util');
 const { Command } = require('discord.js-commando');
 const { stripIndents } = require('common-tags');
@@ -25,7 +24,6 @@ module.exports = class SourceCommand extends Command {
 	}
 
 	async run(msg, { command }) {
-		const prettierConfig = await resolveConfig(await resolveConfigFile());
 		const { body } = await request
 			.get(
 				`https://api.github.com/repos/1chiSensei/Tanaka/contents/src/Commands/${command.groupID}/${command.name}.js`,
@@ -38,7 +36,7 @@ module.exports = class SourceCommand extends Command {
 			.setDescription(
 				stripIndents`
 				\`\`\`js
-				${shorten(format(Buffer.from(body.content, 'base64').toString('utf-8'), prettierConfig), 1950)}
+				${shorten(Buffer.from(body.content, 'base64').toString('utf-8'), 1950)}
 				\`\`\`
 			`,
 			)

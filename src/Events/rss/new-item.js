@@ -1,6 +1,4 @@
-const { WebhookClient, MessageEmbed } = require('discord.js');
 const Event = require('../../Structures/Event');
-const { htmlToText } = require('html-to-text');
 
 module.exports = class RSSNewItemEvent extends Event {
 	constructor(...args) {
@@ -9,23 +7,28 @@ module.exports = class RSSNewItemEvent extends Event {
 
 	/** @param {import('rss-emitter-ts').FeedItem} item */
 	run(item) {
-		this.client.guilds.cache.forEach(async (guild) => {
-			if (!guild.available) guild = await guild.fetch();
-			const data = await this.client.db.get(`animeUpdates-${guild.id}`);
+		this.client.shard.broadcastEval(`
+			const { WebhookClient, MessageEmbed } = require('discord.js');
+			const { htmlToText } = require('html-to-text');
 
-			if (!data) return;
+			this.guilds.cache.forEach(async (guild) => {
+				if (!guild.available) guild = await guild.fetch();
+				const data = await this.db.get(\`animeUpdates-\${guild.id}\`);
 
-			const hook = new WebhookClient(data.id, data.token);
-			const embed = new MessageEmbed()
-				.setTitle(`**${item.title}**`)
-				.setAuthor(item.author)
-				.setDescription(htmlToText(item.description))
-				.setURL(item.link)
-				.setColor('RANDOM')
-				.setImage(item.image || 'https://i.imgur.com/R3JCtNK.jpg')
-				.setTimestamp();
+				if (!data) return;
 
-			hook.send(embed);
-		});
+				const hook = new WebhookClient(data.id, data.token);
+				const embed = new MessageEmbed()
+					.setTitle(\`**${item.title}**\`)
+					.setAuthor(${item.author})
+					.setDescription(htmlToText(${item.description}))
+					.setURL(${item.link})
+					.setColor('RANDOM')
+					.setImage(${item.image} || 'https://i.imgur.com/R3JCtNK.jpg')
+					.setTimestamp();
+
+				hook.send(embed);
+			});
+		`);
 	}
 };
