@@ -1,7 +1,6 @@
 const { Intents, WebhookClient, Collection } = require('discord.js');
 const { MongoDBProvider } = require('commando-provider-mongo');
 const { CommandoClient } = require('discord.js-commando');
-const { FeedEmitter } = require('rss-emitter-ts');
 const TimerManager = require('./TimerManager');
 const { execSync } = require('child_process');
 const { MongoClient } = require('mongodb');
@@ -10,6 +9,7 @@ const { Manager } = require('erela.js');
 const OpenEval = require('open-eval');
 const glob = require('glob-promise');
 const Turndown = require('turndown');
+const snoowrap = require('snoowrap');
 const BotList = require('./BotList');
 const logger = require('./Logger');
 const Redis = require('./Redis');
@@ -25,6 +25,7 @@ module.exports = class Client extends CommandoClient {
 			partials: ['CHANNEL'],
 			allowedMentions: {
 				repliedUser: false,
+				parse: ['roles', 'users'],
 			},
 			...options,
 		});
@@ -35,8 +36,6 @@ module.exports = class Client extends CommandoClient {
 		});
 
 		this.logger = logger;
-
-		this.rss = new FeedEmitter();
 
 		this.testWebhook = new WebhookClient(process.env.TEST_WEBHOOK_ID, process.env.TEST_WEBHOOK_TOKEN);
 
@@ -61,6 +60,14 @@ module.exports = class Client extends CommandoClient {
 		this.events = new Collection();
 
 		this.piston = new OpenEval();
+
+		this.reddit = new snoowrap({
+			userAgent: 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/55.0.2869.0 Safari/537.36',
+			clientId: process.env.REDDIT_CLIENT_ID,
+			clientSecret: process.env.REDDIT_CLIENT_SECRET,
+			username: 'TomioCodes',
+			password: process.env.REDDIT_PASSWORD,
+		});
 	}
 
 	get ip() {
@@ -105,7 +112,6 @@ module.exports = class Client extends CommandoClient {
 	}
 
 	async login(token = process.env.DISCORD_TOKEN) {
-		this.addRSSListeners();
 		this.registerCommands();
 		web(this);
 
@@ -127,19 +133,6 @@ module.exports = class Client extends CommandoClient {
 			this.events.set(event.name, event);
 			event.emitter[event.type](event.name, (...args) => event.run(...args));
 		}
-	}
-
-	addRSSListeners() {
-		const feeds = [
-			{
-				url: 'https://www.animenewsnetwork.com/all/rss.xml?ann-edition=us',
-				refresh: 20000,
-				eventName: 'anime',
-				ignoreFirst: true,
-			},
-		];
-
-		feeds.forEach((feed) => this.rss.add(feed));
 	}
 
 	generateCommandList() {
@@ -173,6 +166,7 @@ module.exports = class Client extends CommandoClient {
 				{ id: 'codebin', name: 'Code Bins' },
 				{ id: 'img', name: 'Image Manipulation' },
 				{ id: 'music', name: 'Music' },
+				{ id: 'nsfw', name: 'NSFW' },
 			])
 			.registerDefaultGroups()
 			.registerDefaultCommands({
