@@ -8,7 +8,7 @@ module.exports = class SadCatCommand extends Command {
 			name: 'sadcat',
 			aliases: ['random-sadcat', 'sad-cat'],
 			group: 'random',
-			memberName: 'cat',
+			memberName: 'sadcat',
 			description: 'Responds with a random sad cat image.',
 			clientPermissions: ['EMBED_LINKS'],
 			throttling: {
