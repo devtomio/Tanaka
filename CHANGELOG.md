@@ -1,3 +1,10 @@
+## [2.64.6](https://github.com/1chiSensei/Tanaka/compare/2.64.5...2.64.6) (2021-05-23)
+
+
+### Bug Fixes
+
+* **ci:** fix ([4629c22](https://github.com/1chiSensei/Tanaka/commit/4629c221492c2c4725ebf7ac785d24d62db522ed))
+
 ## [2.64.5](https://github.com/1chiSensei/Tanaka/compare/2.64.4...2.64.5) (2021-05-23)
 
 
