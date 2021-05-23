@@ -1,3 +1,15 @@
+# [2.63.0](https://github.com/1chiSensei/Tanaka/compare/2.62.0...2.63.0) (2021-05-23)
+
+
+### Bug Fixes
+
+* **commands:** fix no description error ([5e4e73b](https://github.com/1chiSensei/Tanaka/commit/5e4e73b37ced26c9d74d9e89910547d90a1c5006))
+
+
+### Features
+
+* **ci:** add dependabot yarn v2 workflow ([cd44c86](https://github.com/1chiSensei/Tanaka/commit/cd44c869c11e8e3f0a7c729215e4c355d09bf461))
+
 # [2.62.0](https://github.com/1chiSensei/Tanaka/compare/2.61.3...2.62.0) (2021-05-23)
 
 ### Bug Fixes
