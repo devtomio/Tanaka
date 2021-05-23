@@ -26,7 +26,7 @@ module.exports = class SourceCommand extends Command {
 	async run(msg, { command }) {
 		const { body } = await request
 			.get(
-				`https://api.github.com/repos/1chiSensei/Tanaka/contents/src/Commands/${command.group.name}/${command.name}.js`,
+				`https://api.github.com/repos/1chiSensei/Tanaka/contents/src/Commands/${command.groupID}/${command.name}.js`,
 			)
 			.query('ref', 'main')
 			.set('Accept', 'application/vnd.github.v3+json');

@@ -6,3 +6,4 @@ application.yml
 !.yarn/plugins
 !.yarn/sdks
 !.yarn/versions
+.yarnrc.yml
