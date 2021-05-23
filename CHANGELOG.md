@@ -1,9 +1,8 @@
 ## [2.64.3](https://github.com/1chiSensei/Tanaka/compare/2.64.2...2.64.3) (2021-05-23)
 
-
 ### Bug Fixes
 
-* **ci:** fix lockfile ci ([b4e2a8c](https://github.com/1chiSensei/Tanaka/commit/b4e2a8c04864ee5cfc2346dd9043e76e919f07d4))
+- **ci:** fix lockfile ci ([b4e2a8c](https://github.com/1chiSensei/Tanaka/commit/b4e2a8c04864ee5cfc2346dd9043e76e919f07d4))
 
 ## [2.64.2](https://github.com/1chiSensei/Tanaka/compare/2.64.1...2.64.2) (2021-05-23)
 
