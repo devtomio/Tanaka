@@ -1,3 +1,10 @@
+# [2.65.0](https://github.com/1chiSensei/Tanaka/compare/2.64.6...2.65.0) (2021-05-23)
+
+
+### Features
+
+* **commands:** add nsfw ([1db09f6](https://github.com/1chiSensei/Tanaka/commit/1db09f62dc4f4c389e213c845384cb5fc779992e))
+
 ## [2.64.6](https://github.com/1chiSensei/Tanaka/compare/2.64.5...2.64.6) (2021-05-23)
 
 ### Bug Fixes
