@@ -1,3 +1,4 @@
+const { shorten } = require('../../Structures/Util');
 const { Command } = require('discord.js-commando');
 const { stripIndents } = require('common-tags');
 const { MessageEmbed } = require('discord.js');
@@ -35,7 +36,7 @@ module.exports = class SourceCommand extends Command {
 			.setDescription(
 				stripIndents`
 				\`\`\`js
-				${Buffer.from(body.content, 'base64').toString('utf-8')}
+				${shorten(Buffer.from(body.content, 'base64').toString('utf-8'), 1950)}
 				\`\`\`
 			`,
 			)
