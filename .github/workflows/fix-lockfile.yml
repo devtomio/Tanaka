@@ -7,7 +7,6 @@ on:
 jobs:
   fix:
     runs-on: ubuntu-latest
-    if: github.actor == 'dependabot[bot]'
 
     steps:
       - name: Checkout Repository
