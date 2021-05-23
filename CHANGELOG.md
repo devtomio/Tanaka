@@ -1,15 +1,14 @@
 ## [2.64.2](https://github.com/1chiSensei/Tanaka/compare/2.64.1...2.64.2) (2021-05-23)
 
-
 ### Bug Fixes
 
-* **ci:** fix ([83a4626](https://github.com/1chiSensei/Tanaka/commit/83a4626869e452e290dc70066f5b3f5a555313c1))
+- **ci:** fix ([83a4626](https://github.com/1chiSensei/Tanaka/commit/83a4626869e452e290dc70066f5b3f5a555313c1))
 
 ## [2.64.1](https://github.com/1chiSensei/Tanaka/compare/2.64.0...2.64.1) (2021-05-23)
 
 ### Bug Fixes
 
-* **commands:** fix 404 error ([d36c696](https://github.com/1chiSensei/Tanaka/commit/d36c6968e55c317f13d017459f9b331d4dfac4f9))
+- **commands:** fix 404 error ([d36c696](https://github.com/1chiSensei/Tanaka/commit/d36c6968e55c317f13d017459f9b331d4dfac4f9))
 
 # [2.64.0](https://github.com/1chiSensei/Tanaka/compare/2.62.0...2.64.0) (2021-05-23)
 
