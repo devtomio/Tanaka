@@ -31,4 +31,7 @@ const css = () => {
 		.pipe(gulp.dest('./dist'));
 };
 
-exports.default = gulp.series(main, ejs, css);
+const json = () =>
+	gulp.src('./src/**/*.json').pipe(sourcemaps.init()).pipe(sourcemaps.write('./')).pipe(gulp.dest('./dist'));
+
+exports.default = gulp.series(main, ejs, css, json);

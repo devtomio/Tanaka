@@ -1,7 +1,7 @@
 dist/
 .github/
 application.yml
-.yarn/*
+.yarn/
 !.yarn/releases
 !.yarn/plugins
 !.yarn/sdks

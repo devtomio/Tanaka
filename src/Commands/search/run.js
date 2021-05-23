@@ -1,4 +1,4 @@
-const languages = require('../../../assets/json/langs.json');
+const languages = require('../../Assets/json/langs.json');
 const { shorten } = require('../../Structures/Util');
 const { Command } = require('discord.js-commando');
 

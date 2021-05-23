@@ -15,7 +15,7 @@ module.exports = class DeleteUpdateChannelCommand extends Command {
 	}
 
 	async run(msg) {
-		await this.client.db.delete(`animeUpdate-${msg.guild.id}`);
+		await this.client.db.delete(`animeUpdates-${msg.guild.id}`);
 
 		return msg.say(`The anime updates has been deleted.`);
 	}

@@ -10,8 +10,10 @@ module.exports = class ReadyEvent extends Event {
 
 		await this.client.timers.fetchAll();
 
-		const { channelCount, userCount, guildCount } = this.client;
 		const commandCount = this.client.registry.commands.size;
+		const userCount = await this.client.userCount();
+		const guildCount = await this.client.guildCount();
+		const channelCount = await this.client.channelCount();
 
 		const statuses = [
 			`${userCount} users`,

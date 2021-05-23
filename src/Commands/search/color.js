@@ -108,6 +108,7 @@ module.exports = class ColorCommand extends Command {
 			.addField('❯ CSS Keyword', converter.hex.keyword(code), true)
 			.setFooter(`Requested by ${msg.author.tag}`, msg.author.displayAvatarURL({ dynamic: true }))
 			.setColor(converter.rgb.hex(converter.hex.rgb(code)))
+			.setImage(`https://api.alexflipnote.dev/color/image/gradient/${code.replace('#', '')}`)
 			.setTimestamp();
 
 		msg.embed(embed);

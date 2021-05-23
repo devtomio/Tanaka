@@ -1,9 +1,11 @@
 const { Intents, WebhookClient, Collection } = require('discord.js');
+const { MongoDBProvider } = require('commando-provider-mongo');
 const { CommandoClient } = require('discord.js-commando');
-const KeyvProvider = require('commando-provider-keyv');
 const { FeedEmitter } = require('rss-emitter-ts');
 const TimerManager = require('./TimerManager');
 const { execSync } = require('child_process');
+const { MongoClient } = require('mongodb');
+const { Database } = require('quickmongo');
 const { Manager } = require('erela.js');
 const OpenEval = require('open-eval');
 const glob = require('glob-promise');
@@ -12,7 +14,6 @@ const BotList = require('./BotList');
 const logger = require('./Logger');
 const Redis = require('./Redis');
 const web = require('../Web');
-const Keyv = require('keyv');
 const path = require('path');
 
 module.exports = class Client extends CommandoClient {
@@ -28,7 +29,10 @@ module.exports = class Client extends CommandoClient {
 			...options,
 		});
 
-		this.db = new Keyv(process.env.DATABASE_URL);
+		this.db = new Database(process.env.MONGO_URI, 'tanaka', {
+			useNewUrlParser: true,
+			useUnifiedTopology: true,
+		});
 
 		this.logger = logger;
 
@@ -103,10 +107,10 @@ module.exports = class Client extends CommandoClient {
 	async login(token = process.env.DISCORD_TOKEN) {
 		this.addRSSListeners();
 		this.registerCommands();
-		this.registerProvider();
 		web(this);
 
 		await this.loadEvents();
+		await this.registerProvider();
 
 		return super.login(token);
 	}
@@ -176,12 +180,19 @@ module.exports = class Client extends CommandoClient {
 				help: false,
 				eval: false,
 				ping: false,
+				commandState: false,
+				prefix: false,
 			})
 			.registerTypesIn(path.join(__dirname, '..', 'Types'))
 			.registerCommandsIn(path.join(__dirname, '..', 'Commands'));
 	}
 
-	registerProvider() {
-		this.setProvider(new KeyvProvider(this.db));
+	async registerProvider() {
+		const mongo = await MongoClient.connect(process.env.MONGO_URI, {
+			useNewUrlParser: true,
+			useUnifiedTopology: true,
+		});
+
+		this.setProvider(new MongoDBProvider(mongo, 'tanaka'));
 	}
 };

@@ -10,8 +10,7 @@ RUN apt-get update \
 	&& curl -sL https://deb.nodesource.com/setup_15.x | bash - \
 	&& apt-get update \
 	&& apt-get install -y nodejs libcairo2-dev libpango1.0-dev libjpeg-dev libgif-dev librsvg2-dev ffmpeg \
-	&& npm i -g yarn \
-	&& yarn global add pm2 dotenv-cli node-gyp \
+	&& npm i -g yarn pm2 dotenv-cli node-gyp \
 	&& yarn \
 	&& wget https://github.com/freyacodes/Lavalink/releases/download/3.3.2.5/Lavalink.jar
 
