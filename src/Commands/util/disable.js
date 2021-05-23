@@ -6,6 +6,7 @@ module.exports = class DisableCommand extends Command {
 			name: 'disable',
 			aliases: ['disable-command', 'disable-cmd', 'cmd-off', 'command-off'],
 			group: 'util',
+			description: 'Disables a command.',
 			guarded: true,
 			memberName: 'disable',
 			args: [

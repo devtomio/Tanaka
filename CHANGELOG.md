@@ -1,14 +1,12 @@
 # [2.62.0](https://github.com/1chiSensei/Tanaka/compare/2.61.3...2.62.0) (2021-05-23)
 
-
 ### Bug Fixes
 
-* **commands:** shorten github input ([6fe4570](https://github.com/1chiSensei/Tanaka/commit/6fe45709c38f9062096be5bb1d2f335a1ae898d0))
-
+- **commands:** shorten github input ([6fe4570](https://github.com/1chiSensei/Tanaka/commit/6fe45709c38f9062096be5bb1d2f335a1ae898d0))
 
 ### Features
 
-* **yarn:** use yarn v2 ([d64351b](https://github.com/1chiSensei/Tanaka/commit/d64351bf625ca04ab37ff4ae8ff5979cdcfdf715))
+- **yarn:** use yarn v2 ([d64351b](https://github.com/1chiSensei/Tanaka/commit/d64351bf625ca04ab37ff4ae8ff5979cdcfdf715))
 
 ## [2.61.3](https://github.com/1chiSensei/Tanaka/compare/2.61.2...2.61.3) (2021-05-19)
 
