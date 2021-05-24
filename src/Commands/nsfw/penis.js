@@ -34,14 +34,6 @@ module.exports = class PenisCommand extends Command {
 			.setTimestamp(data.created_utc * 1000)
 			.setFooter(`⬆ ${data.ups}`);
 
-		if (
-			data.thumbnail &&
-			data.thumbnail !== 'self' &&
-			data.thumbnail !== 'default' &&
-			data.post_hint === 'image'
-		)
-			embed.setThumbnail(data.thumbnail);
-
 		return msg.embed(embed);
 	}
 };

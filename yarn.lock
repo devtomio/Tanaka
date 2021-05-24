@@ -2781,6 +2781,16 @@ __metadata:
   languageName: node
   linkType: hard
 
+"decimal-to-percent@npm:^1.0.1":
+  version: 1.0.1
+  resolution: "decimal-to-percent@npm:1.0.1"
+  dependencies:
+    precision: ~1.0.1
+    round-precision: ~1.0.0
+  checksum: e4dd7181e983203fad064a4a7041116a03341897ff989aff73f799bdfbd943eb7dd207335e4b43307d197cc6812bbf3cf89b966887cda6bbbba7f372a27849bd
+  languageName: node
+  linkType: hard
+
 "decode-uri-component@npm:^0.2.0":
   version: 0.2.0
   resolution: "decode-uri-component@npm:0.2.0"
@@ -5598,6 +5608,15 @@ fsevents@~2.3.1:
   languageName: node
   linkType: hard
 
+"is-finite@npm:~1.0.1":
+  version: 1.0.2
+  resolution: "is-finite@npm:1.0.2"
+  dependencies:
+    number-is-nan: ^1.0.0
+  checksum: 3cf965ccaaae662a0028085e14192d70b1109fc4f76500e1094b5e647297357bb0830ea08ff32dd695ee4116f464b96bbbbee3738c8b3e0cf05f731b527e7ab3
+  languageName: node
+  linkType: hard
+
 "is-fullwidth-code-point@npm:^1.0.0":
   version: 1.0.0
   resolution: "is-fullwidth-code-point@npm:1.0.0"
@@ -5656,6 +5675,15 @@ fsevents@~2.3.1:
     global-dirs: ^3.0.0
     is-path-inside: ^3.0.2
   checksum: 65b7adc2ee0c3fcceee14fee9c86341756ccaaaf3cbf42552023d52c62f5d8d49a52e93ffaea2608c9cc6d7ac900cb0b4f6efbd04c9481bb802a96ea4898d0f8
+  languageName: node
+  linkType: hard
+
+"is-integer@npm:~1.0.4":
+  version: 1.0.7
+  resolution: "is-integer@npm:1.0.7"
+  dependencies:
+    is-finite: ^1.0.0
+  checksum: cad055325ed3315edc64946a0cf1d91b41604b0e14cad6512884c9401f763d31027f80c21c14742797a391293b9e2e0368c33738417e7ec7b9375780c7b9f4d3
   languageName: node
   linkType: hard
 
@@ -7869,6 +7897,13 @@ fsevents@~2.3.1:
   languageName: node
   linkType: hard
 
+"parse-exponential@npm:~1.0.1":
+  version: 1.0.1
+  resolution: "parse-exponential@npm:1.0.1"
+  checksum: 19b0e5d8df807f04e562d420ca1355940f9b2482f980bcb15d915ef650b1045364d0bffa4cbcb2b708de747695a68cbc8ff42eac84729ec6de6112086c67b278
+  languageName: node
+  linkType: hard
+
 "parse-filepath@npm:^1.0.1":
   version: 1.0.2
   resolution: "parse-filepath@npm:1.0.2"
@@ -8101,6 +8136,13 @@ fsevents@~2.3.1:
   languageName: node
   linkType: hard
 
+"petitio@npm:^1.3.0":
+  version: 1.3.2
+  resolution: "petitio@npm:1.3.2"
+  checksum: e4783fb48d28ffb6c0712112fe71493578b9ef5438aaeed85f6582e9394497ed9322bb56f1437de3b022f5e3e9de5f03c1d6551bf4a5f84754ab1a1c1fbd07af
+  languageName: node
+  linkType: hard
+
 "phin@npm:^3.5.0":
   version: 3.5.1
   resolution: "phin@npm:3.5.1"
@@ -8283,6 +8325,16 @@ fsevents@~2.3.1:
     source-map: ^0.6.1
     supports-color: ^6.1.0
   checksum: 8a979ea9799dd48399337708a395ddb8cf0e328515201ed35c99f5ba5eaa7688eae65764c570bf49b5be0b106226e2f222abc210de068b3d3da9a9a3bbb70567
+  languageName: node
+  linkType: hard
+
+"precision@npm:~1.0.1":
+  version: 1.0.1
+  resolution: "precision@npm:1.0.1"
+  dependencies:
+    is-finite: ~1.0.1
+    parse-exponential: ~1.0.1
+  checksum: 9f9864ad8c942c1e93c2018c13db113ba8385db419cb3a48ec9b71c2a2aab4ab6d37ffef67a5c5e9b5ae0ec64e964c13cca065cf5268c811d32dbb50133e210c
   languageName: node
   linkType: hard
 
@@ -9230,6 +9282,16 @@ fsevents@~2.3.1:
   languageName: node
   linkType: hard
 
+"round-precision@npm:~1.0.0":
+  version: 1.0.0
+  resolution: "round-precision@npm:1.0.0"
+  dependencies:
+    is-finite: ~1.0.1
+    is-integer: ~1.0.4
+  checksum: 4296b5a1089f203a4df2a81ab465d8686a880e96e809fa947489800746f6404f92d40ca9996a61982119f1f562d22220405427f179b4e91b445f63555c2b07a4
+  languageName: node
+  linkType: hard
+
 "run-async@npm:^2.4.0":
   version: 2.4.1
   resolution: "run-async@npm:2.4.1"
@@ -10056,6 +10118,13 @@ fsevents@~2.3.1:
   languageName: node
   linkType: hard
 
+"striptags@npm:^3.1.1":
+  version: 3.1.1
+  resolution: "striptags@npm:3.1.1"
+  checksum: 33632a060bc964f799fd4d7364a69c9bbfcaa3928e5e24901ebffbb1a534c3e361300a92bf2ba0adf014651f23549713f83316f36627d9c9b1bc25da853650dc
+  languageName: node
+  linkType: hard
+
 "supports-color@npm:^5.3.0, supports-color@npm:^5.5.0":
   version: 5.5.0
   resolution: "supports-color@npm:5.5.0"
@@ -10136,6 +10205,7 @@ fsevents@~2.3.1:
     common-tags: 1.8.0
     cookies: ^0.8.0
     cors: ^2.8.5
+    decimal-to-percent: ^1.0.1
     didyoumean2: ^4.2.0
     discord-api-types: ^0.18.1
     discord.js: discordjs/discord.js
@@ -10179,6 +10249,7 @@ fsevents@~2.3.1:
     sourcebin: ^4.2.3
     turndown: ^7.0.0
     url-regex: ^5.0.0
+    velocity-api: ^1.0.7
   languageName: unknown
   linkType: soft
 
@@ -11023,6 +11094,16 @@ typescript@^4.0.5:
   version: 1.1.2
   resolution: "vary@npm:1.1.2"
   checksum: 591f059f727ac1ba0d97cb7767f8583a03fcbb07db7be2b7dce838ede520ec0e958a41cb19077054769077fdc49a9b9a2dc391c83426bfee89c054b8cc7404bf
+  languageName: node
+  linkType: hard
+
+"velocity-api@npm:^1.0.7":
+  version: 1.0.7
+  resolution: "velocity-api@npm:1.0.7"
+  dependencies:
+    petitio: ^1.3.0
+    striptags: ^3.1.1
+  checksum: f39f83b0264b2ffa574e29c1d1c93b35a7500c43e64003fe246aa0ec2cf8e67677286e3a136e44c8cad6ca02a060f8d7e7c6e9c7451db833a825b16b17a18ddd
   languageName: node
   linkType: hard
 

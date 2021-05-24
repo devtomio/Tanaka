@@ -3,6 +3,7 @@ const { MongoDBProvider } = require('commando-provider-mongo');
 const { CommandoClient } = require('discord.js-commando');
 const TimerManager = require('./TimerManager');
 const { execSync } = require('child_process');
+const { Velocity } = require('velocity-api');
 const { MongoClient } = require('mongodb');
 const { Database } = require('quickmongo');
 const { Manager } = require('erela.js');
@@ -65,7 +66,11 @@ module.exports = class Client extends CommandoClient {
 			userAgent: 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/55.0.2869.0 Safari/537.36',
 			username: 'TomioCodes',
 			password: process.env.REDDIT_PASSWORD,
+			clientId: process.env.REDDIT_CLIENT_ID,
+			clientSecret: process.env.REDDIT_CLIENT_SECRET,
 		});
+
+		this.perspective = new Velocity(process.env.PERSPECTIVE_KEY);
 	}
 
 	get ip() {

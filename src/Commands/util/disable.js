@@ -22,7 +22,7 @@ module.exports = class DisableCommand extends Command {
 	}
 
 	run(msg, { cmdOrGrp }) {
-		if (cmdOrGrp.isEnabledIn(msg.guild, true))
+		if (!cmdOrGrp.isEnabledIn(msg.guild, true))
 			return msg.reply(
 				`The \`${cmdOrGrp.name}\` ${cmdOrGrp.group ? 'command' : 'group'} is already disabled.`,
 			);
