@@ -1,3 +1,10 @@
+# [2.67.0](https://github.com/1chiSensei/Tanaka/compare/2.66.0...2.67.0) (2021-05-24)
+
+
+### Features
+
+* **commands:** add predict command ([472b607](https://github.com/1chiSensei/Tanaka/commit/472b607fde5b5a8daae4d3ac1f8d06ebae1f3486))
+
 # [2.66.0](https://github.com/1chiSensei/Tanaka/compare/2.65.1...2.66.0) (2021-05-24)
 
 ### Features
