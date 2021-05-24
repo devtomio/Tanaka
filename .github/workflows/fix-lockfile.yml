@@ -16,8 +16,7 @@ jobs:
       - name: Checkout Repository
         uses: actions/checkout@v2
         with:
-          token: ${{ secrets.BOT_GITHUB_TOKEN }}
-          ref: ${{ github.event.pull_request.head.ref }}
+          persist-credentials: false
           fetch-depth: 2
 
       - name: Setup Node.js
@@ -27,10 +26,14 @@ jobs:
 
       - name: Fix Lockfile
         run: |
+          cd .`git log -1 --pretty=%s | awk '{ print $9 }'`
           git checkout HEAD^ -- yarn.lock
-
+          yarn plugin import https://raw.githubusercontent.com/eps1lon/yarn-plugin-deduplicate/latest/bin/%40yarnpkg/plugin-deduplicate.js
+          git diff --name-only HEAD^ HEAD | grep -q 'package.json' || yarn up `git log -1 --pretty=%s | awk '{ print $3 }'`
+          git checkout HEAD -- package.json
+          
           yarn install --skip-builds
-          yarn dedupe
+          yarn deduplicate
 
       - name: Setup Git
         run: |
@@ -42,6 +45,7 @@ jobs:
 
       - name: Commit Changes
         run: |
+          cd .`git log -1 --pretty=%s | awk '{ print $9 }'` # ditto
           git add yarn.lock
-          git commit -m "[dependabot skip] Fix yarn.lock"
+          git commit -m "Dependabot autofix"
           git push
