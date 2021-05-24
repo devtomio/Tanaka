@@ -1,3 +1,11 @@
+## [2.67.1](https://github.com/1chiSensei/Tanaka/compare/2.67.0...2.67.1) (2021-05-24)
+
+
+### Bug Fixes
+
+* **botlist:** fix authorization header ([8649021](https://github.com/1chiSensei/Tanaka/commit/8649021dba60ef7c1e54b4767dbc5e6c2e5cb8e9))
+* **ci:** fix ([d5b6d41](https://github.com/1chiSensei/Tanaka/commit/d5b6d41e6b59641441906a9b4525fb101668fe8d))
+
 # [2.67.0](https://github.com/1chiSensei/Tanaka/compare/2.66.0...2.67.0) (2021-05-24)
 
 ### Features
