@@ -24,7 +24,7 @@ module.exports = class SourceCommand extends Command {
 	}
 
 	async run(msg, { command }) {
-		if (command.nsfw && !msg.guild && !msg.channel.nsfw)
+		if (command.nsfw && msg.guild && !msg.channel.nsfw)
 			return msg.say(
 				'That command is marked NSFW. You must use this command in an NSFW Channel if you want to see the source',
 			);

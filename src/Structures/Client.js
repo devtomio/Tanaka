@@ -63,8 +63,6 @@ module.exports = class Client extends CommandoClient {
 
 		this.reddit = new snoowrap({
 			userAgent: 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/55.0.2869.0 Safari/537.36',
-			clientId: process.env.REDDIT_CLIENT_ID,
-			clientSecret: process.env.REDDIT_CLIENT_SECRET,
 			username: 'TomioCodes',
 			password: process.env.REDDIT_PASSWORD,
 		});

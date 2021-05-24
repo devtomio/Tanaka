@@ -10,14 +10,16 @@ module.exports = class ReadyEvent extends Event {
 
 		await this.client.timers.fetchAll();
 
-		for (const shard of this.client.shard.shards) {
-			this.client.setInterval(() =>
-				this.client.user.setActivity(`t!help | Shard ${shard}`, {
-					type: 'WATCHING',
-					shardID: Number(shard),
-				}),
+		this.client.shard.shards.forEach((shard) => {
+			this.client.setInterval(
+				() =>
+					this.client.user.setActivity(`t!help | Shard ${shard}`, {
+						type: 'WATCHING',
+						shardID: Number(shard),
+					}),
+				15000,
 			);
-		}
+		});
 
 		this.client.logger.info(`Logged in as ${this.client.user.tag}.`);
 	}

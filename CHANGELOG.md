@@ -1,9 +1,8 @@
 ## [2.65.1](https://github.com/1chiSensei/Tanaka/compare/2.65.0...2.65.1) (2021-05-23)
 
-
 ### Bug Fixes
 
-* **commands:** fix sadcat ([eb1eb5e](https://github.com/1chiSensei/Tanaka/commit/eb1eb5ec96a6010ab975baf3e10dec94ec819bdd))
+- **commands:** fix sadcat ([eb1eb5e](https://github.com/1chiSensei/Tanaka/commit/eb1eb5ec96a6010ab975baf3e10dec94ec819bdd))
 
 # [2.65.0](https://github.com/1chiSensei/Tanaka/compare/2.64.6...2.65.0) (2021-05-23)
 

@@ -1,19 +1,24 @@
 name: Fix Lockfile
 
 on:
-  push:
-    branches: [dependabot/npm_and_yarn/**]
+  - pull_request_target
 
 jobs:
   fix:
     runs-on: ubuntu-latest
+    if: |
+      github.actor == 'dependabot[bot]' &&
+      contains(github.event.pull_request.head.ref, 'dependabot/npm_and_yarn/')
+    env:
+      YARN_ENABLE_SCRIPTS: false
 
     steps:
       - name: Checkout Repository
         uses: actions/checkout@v2
         with:
+          token: ${{ secrets.BOT_GITHUB_TOKEN }}
+          ref: ${{ github.event.pull_request.head.ref }}
           fetch-depth: 2
-          persist-credentials: false
 
       - name: Setup Node.js
         uses: actions/setup-node@v2
@@ -22,27 +27,21 @@ jobs:
 
       - name: Fix Lockfile
         run: |
-          cd .`git log -1 --pretty=%s | awk '{ print $9 }'`
           git checkout HEAD^ -- yarn.lock
-          git diff --name-only HEAD^ HEAD | grep -q 'package.json' || yarn up `git log -1 --pretty=%s | awk '{ print $3 }'`
-          git checkout HEAD -- package.json
 
-          yarn
-          yarn deduplicate
-        env:
-          YARN_ENABLE_SCRIPTS: 0
+          yarn install --skip-builds
+          yarn dedupe
 
       - name: Setup Git
         run: |
-          BASIC_AUTH=$(echo -n "x-access-token:${{ secrets.GH_TOKEN }}" | base64)
+          BASIC_AUTH=$(echo -n "x-access-token:${{ secrets.BOT_GITHUB_TOKEN }}" | base64)
           echo "::add-mask::$BASIC_AUTH"
-          git config --global user.name '${{ github.event.commits[0].author.name }}'
-          git config --global user.email '${{ github.event.commits[0].author.email }}'
+          git config --global user.name 'dependabot[bot]'
+          git config --global user.email '49699333+dependabot[bot]@users.noreply.github.com'
           git config --local http.$GITHUB_SERVER_URL/.extraheader "AUTHORIZATION: basic $BASIC_AUTH"
 
       - name: Commit Changes
         run: |
-          cd .`git log -1 --pretty=%s | awk '{ print $9 }'`
-          git add yarn.lock .yarn/cache .pnp.*
-          git commit -m "fix(yarn): fix lockfile"
+          git add yarn.lock
+          git commit -m "[dependabot skip] Fix yarn.lock"
           git push
