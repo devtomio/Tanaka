@@ -1,12 +1,24 @@
-<img src="https://cdn.discordapp.com/avatars/804605929944645672/768065c543d1ed938858bf6f4ca81e15.png?size=4096" width="150" height="150" align="left" style="float: left; margin: 0 10px 0 0;" alt="Tanaka" />
+<img src="https://cdn.discordapp.com/avatars/804605929944645672/768065c543d1ed938858bf6f4ca81e15.png?size=4096" width="200" height="200" align="left" style="float: left; margin: 0 10px 0 0;" alt="Tanaka" />
 
 # Tanaka
 
 [![Discord](https://discord.com/api/guilds/830047984573480970/embed.png)](https://discord.gg/zGvtAnGhdP)
+[![License](https://img.shields.io/github/license/1chiSensei/Tanaka)](https://github.com/1chiSensei/Tanaka/blob/main/LICENSE)
+![Version](https://img.shields.io/github/release/1chiSensei/Tanaka.svg)
+![Downloads](https://img.shields.io/github/downloads/1chiSensei/Tanaka/total.svg)
+![Issues](https://img.shields.io/github/issues-raw/1chiSensei/Tanaka.svg)
+![Pull Requests](https://img.shields.io/github/issues-pr/1chiSensei/Tanaka.svg)
+![Contributors](https://img.shields.io/github/contributors/1chiSensei/Tanaka.svg)
+![Last Commit](https://img.shields.io/github/last-commit/1chiSensei/Tanaka.svg)
+![Stars](https://img.shields.io/github/stars/1chiSensei/Tanaka.svg?style=social&label=Stars&style=plastic)
+![Website](https://img.shields.io/website-up-down-green-red/https/tanaka-bot.me.svg)
+![](https://img.shields.io/badge/JavaScript-F7DF1E?logo=javascript&logoColor=black)
 
 Tanaka is a Discord Bot coded in [JavaScript](https://www.javascript.com/) with [discord.js](https://discord.js.org) using the [Commando](https://github.com/discordjs/Commando) framework.
 <br />
 <br />
+
+[![Deploy on Railway](https://railway.app/button.svg)](https://railway.app/new/template?template=https%3A%2F%2Fgithub.com%2F1chiSensei%2FTanaka&plugins=redis%2Cmongodb&envs=CLIENT_ID%2CCLIENT_SECRET%2CCOMMAND_PREFIX%2CDISCORD_BOTS_GG_KEY%2CDISCORD_TOKEN%2CGOOGLE_KEY%2CIBL_KEY%2COCR_KEY%2COWNER_ID%2CREDDIT_CLIENT_ID%2CREDDIT_CLIENT_SECRET%2CREDDIT_PASSWORD%2CSTACKOVERFLOW_KEY%2CTEST_WEBHOOK_ID%2CTEST_WEBHOOK_TOKEN&CLIENT_IDDesc=The+application+client+id.&CLIENT_SECRETDesc=The+bot%27s+client+secret.&COMMAND_PREFIXDesc=The+prefix+of+the+bot.&DISCORD_BOTS_GG_KEYDesc=The+api+key+for+discord.bots.gg.&DISCORD_TOKENDesc=The+bot%27s+token.&GOOGLE_KEYDesc=Your+google+api+key.&IBL_KEYDesc=The+api+key+for+infinitybotlist.com.&OCR_KEYDesc=The+api+key+for+https%3A%2F%2Focr.space.&OWNER_IDDesc=Your+own+discord+id.&REDDIT_CLIENT_IDDesc=Your+reddit+client+id.&REDDIT_CLIENT_SECRETDesc=Your+reddit+client+secret.&REDDIT_PASSWORDDesc=Your+reddit+password.&STACKOVERFLOW_KEYDesc=Your+stack+overflow+api+key.&TEST_WEBHOOK_IDDesc=The+test+webhook+id.&TEST_WEBHOOK_TOKENDesc=The+test+webhook+token.&COMMAND_PREFIXDefault=t%21&OWNER_IDDefault=566155739652030465)
 
 ## Copyright
 
@@ -123,3 +135,7 @@ Total: 50
 - **reload:** Reloads a command or command group. (Owner-Only)
 - **load:** Loads a new command. (Owner-Only)
 - **unload:** Unloads a command. (Owner-Only)
+
+## Star Chart
+
+![star chart](https://starchart.cc/1chiSensei/Tanaka.svg)
