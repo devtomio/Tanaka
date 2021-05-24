@@ -1,9 +1,8 @@
 # [2.66.0](https://github.com/1chiSensei/Tanaka/compare/2.65.1...2.66.0) (2021-05-24)
 
-
 ### Features
 
-* **yarn:** add constraints ([84585d7](https://github.com/1chiSensei/Tanaka/commit/84585d74c5e613c26599a45df1b3218c071a83b7))
+- **yarn:** add constraints ([84585d7](https://github.com/1chiSensei/Tanaka/commit/84585d74c5e613c26599a45df1b3218c071a83b7))
 
 ## [2.65.1](https://github.com/1chiSensei/Tanaka/compare/2.65.0...2.65.1) (2021-05-23)
 
