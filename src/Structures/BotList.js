@@ -23,7 +23,7 @@ module.exports = class BotList {
 		await request
 			.post(`https://api.infinitybotlist.com/bot/${this.client.user.id}`)
 			.set({
-				authorization: process.env.IBL_KEY,
+				Authorization: process.env.IBL_KEY,
 				'Content-Type': 'application/json',
 			})
 			.send(JSON.stringify(body));

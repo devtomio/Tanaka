@@ -3,7 +3,8 @@
 		"commitMessage": "chore(release): release v${version}"
 	},
 	"github": {
-		"release": true
+		"release": true,
+		"assets": ["package.tgz", "CHANGELOG.md"]
 	},
 	"npm": {
 		"publish": false

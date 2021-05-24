@@ -17,7 +17,7 @@
 		"test": "dotenv node .",
 		"generate-commands": "dotenv node scripts/generate-commands",
 		"lint:ejs": "ejslint src/**/*",
-		"precommit": "yarn prettier && yarn lint && yarn lint:ejs && yarn build",
+		"precommit": "yarn prettier && yarn lint && yarn lint:ejs && yarn build && yarn pack",
 		"up": "railway up"
 	},
 	"dependencies": {
