@@ -1,3 +1,4 @@
+const { MessageEmbed, WebhookClient } = require('discord.js');
 const { Client } = require('@2pg/oauth');
 const express = require('express');
 const cookies = require('cookies');
@@ -14,6 +15,7 @@ const client = new Client({
 	scopes: ['identify'],
 });
 const port = process.env.PORT;
+const hook = new WebhookClient(process.env.VOTE_ID, process.env.VOTE_TOKEN);
 
 // eslint-disable-next-line valid-jsdoc
 /**
@@ -109,6 +111,27 @@ module.exports = (c) => {
 		res.clearCookie('discordToken', undefined);
 
 		res.redirect(302, '/');
+	});
+
+	app.post('/vote/ibl', async (req, res) => {
+		if (req.header('Authorization') !== process.env.VOTE_AUTH) {
+			if (req.cookies.get('discordToken')) return res.sendStatus(403);
+			return res.sendStatus(401);
+		}
+
+		const { userID } = req.body;
+		const user = await c.users.fetch(userID);
+		const embed = new MessageEmbed()
+			.setTitle('New Vote!')
+			.setURL('https://infinitybotlist.com/bots/804605929944645672')
+			.setDescription(`Thank you, ${user.tag}, for voting for Tanaka in Infinity Bot List!`)
+			.setColor('RANDOM')
+			.setFooter('infinitybotlist.com')
+			.setTimestamp();
+
+		await hook.send(embed);
+
+		res.sendStatus(201);
 	});
 
 	app.listen(port, () => c.logger.info(`Listening on localhost:${port}`));

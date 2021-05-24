@@ -1,9 +1,8 @@
 # [2.68.0](https://github.com/1chiSensei/Tanaka/compare/2.67.2...2.68.0) (2021-05-24)
 
-
 ### Features
 
-* **readme:** add badges ([c4e9e74](https://github.com/1chiSensei/Tanaka/commit/c4e9e74f517811d375952a866773b296b1ff7e49))
+- **readme:** add badges ([c4e9e74](https://github.com/1chiSensei/Tanaka/commit/c4e9e74f517811d375952a866773b296b1ff7e49))
 
 ## [2.67.2](https://github.com/1chiSensei/Tanaka/compare/2.67.0...2.67.2) (2021-05-24)
 
