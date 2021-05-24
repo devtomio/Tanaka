@@ -30,7 +30,7 @@ jobs:
           git checkout HEAD^ -- yarn.lock
 
           yarn install --skip-builds
-          yarn dedupe
+          yarn deduplicate
 
       - name: Setup Git
         run: |
