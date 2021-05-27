@@ -1,3 +1,9 @@
+# [2.74.0](https://github.com/1chiSensei/Tanaka/compare/2.73.0...2.74.0) (2021-05-27)
+
+### Features
+
+- **web:** add analytics ([4482f46](https://github.com/1chiSensei/Tanaka/commit/4482f46aad5fd694344e578c2d954c954c378241))
+
 # [2.73.0](https://github.com/1chiSensei/Tanaka/compare/2.71.0...2.73.0) (2021-05-27)
 
 ### Bug Fixes
