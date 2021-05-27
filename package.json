@@ -18,7 +18,7 @@
 		"release": "dotenv -- release-it --ci",
 		"test": "dotenv node .",
 		"generate-commands": "dotenv node scripts/generate-commands",
-		"lint:ejs": "ejslint src/**/*",
+		"lint:ejs": "ejslint src/**/*.ejs",
 		"precommit": "yarn prettier && yarn lint && yarn lint:ejs && yarn pack --filename package.tgz",
 		"up": "railway up",
 		"prepare": "husky install"

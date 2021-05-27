@@ -14,6 +14,8 @@ const PRECACHE_URLS = [
 	'/static/modesta.css',
 	'/static/navbar.css',
 	'/static/style.css',
+	'/static/avatar.png',
+	'/static/background.jpg',
 ];
 
 self.addEventListener('install', (event) => {
