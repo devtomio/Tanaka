@@ -1,3 +1,14 @@
+# [2.73.0](https://github.com/1chiSensei/Tanaka/compare/2.71.0...2.73.0) (2021-05-27)
+
+### Bug Fixes
+
+- **ci:** fix ([298b5b1](https://github.com/1chiSensei/Tanaka/commit/298b5b1b0099c365948be3f513481fbf10f9079d))
+- **ci:** fix release workflow ([e9c0f74](https://github.com/1chiSensei/Tanaka/commit/e9c0f74d6493aa168be384f9d2eba7b680707c8e))
+
+### Features
+
+- **ci:** add git hooks ([1bda1bc](https://github.com/1chiSensei/Tanaka/commit/1bda1bcd821ff83c688d26b32aff5fdfbb5eab26))
+
 # [2.72.0](https://github.com/1chiSensei/Tanaka/compare/2.71.0...2.72.0) (2021-05-27)
 
 ### Features
