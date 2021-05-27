@@ -1,3 +1,9 @@
+# [2.75.0](https://github.com/1chiSensei/Tanaka/compare/2.74.0...2.75.0) (2021-05-27)
+
+### Features
+
+- **web:** add service worker ([fd8dc2b](https://github.com/1chiSensei/Tanaka/commit/fd8dc2b07f8029fe957f2434b3e41d5d7933827e))
+
 # [2.74.0](https://github.com/1chiSensei/Tanaka/compare/2.73.0...2.74.0) (2021-05-27)
 
 ### Features
