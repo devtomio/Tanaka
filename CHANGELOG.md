@@ -1,3 +1,16 @@
+# [2.71.0](https://github.com/1chiSensei/Tanaka/compare/2.69.0...2.71.0) (2021-05-27)
+
+
+### Bug Fixes
+
+* **ci:** fix ([f2e29d4](https://github.com/1chiSensei/Tanaka/commit/f2e29d473e3428fd8ca71d8449c6300a5d06b518))
+* **ci:** fix ([23fe39a](https://github.com/1chiSensei/Tanaka/commit/23fe39a074a8a8b637062952d044621830f97b35))
+
+
+### Features
+
+* **yarn:** move to yarn 1 ([148cbcf](https://github.com/1chiSensei/Tanaka/commit/148cbcf1c78bab27bfc520eb81a3ebef07a66016))
+
 # [2.70.0](https://github.com/1chiSensei/Tanaka/compare/2.69.0...2.70.0) (2021-05-27)
 
 
