@@ -1,3 +1,9 @@
+## [2.75.1](https://github.com/1chiSensei/Tanaka/compare/2.75.0...2.75.1) (2021-05-27)
+
+### Bug Fixes
+
+- **web:** fix wrong service worker path ([2bcc0ee](https://github.com/1chiSensei/Tanaka/commit/2bcc0ee9d41cd9c98666b9f40019e53eeeeda44d))
+
 # [2.75.0](https://github.com/1chiSensei/Tanaka/compare/2.74.0...2.75.0) (2021-05-27)
 
 ### Features
