@@ -138,5 +138,9 @@ module.exports = (c) => {
 
 	app.get('/manifest.json', (_, res) => res.status(200).json(manifest));
 
+	app.get('/serviceWorker.js', (_, res) =>
+		res.status(200).sendFile(path.join(__dirname, 'static', 'serviceWorker.js')),
+	);
+
 	app.listen(port, () => c.logger.info(`Listening on localhost:${port}`));
 };
