@@ -6,7 +6,6 @@ const { execSync } = require('child_process');
 const { Velocity } = require('velocity-api');
 const { MongoClient } = require('mongodb');
 const { Database } = require('quickmongo');
-const { Manager } = require('erela.js');
 const OpenEval = require('open-eval');
 const glob = require('glob-promise');
 const Turndown = require('turndown');
@@ -23,7 +22,7 @@ module.exports = class Client extends CommandoClient {
 			commandPrefix: process.env.COMMAND_PREFIX,
 			owner: process.env.OWNER_ID,
 			intents: [Intents.NON_PRIVILEGED, Intents.FLAGS.GUILDS],
-			partials: ['CHANNEL'],
+			partials: ['CHANNEL', 'GUILD_MEMBER', 'MESSAGE'],
 			allowedMentions: {
 				repliedUser: false,
 				parse: ['roles', 'users'],
@@ -44,19 +43,14 @@ module.exports = class Client extends CommandoClient {
 
 		this.timers = new TimerManager(this);
 
-		this.converter = new Turndown();
+		this.converter = new Turndown().addRule('hyperlink', {
+			filter: 'a',
+			replacement: (text, node) => `[${text}](https://developer.mozilla.org${node.href})`,
+		});
 
 		this.bl = new BotList(this);
 
 		this.client = this;
-
-		this.manager = new Manager({
-			send: (id, payload) => {
-				const guild = this.guilds.cache.get(id);
-
-				if (guild) guild.shard.send(payload);
-			},
-		});
 
 		this.events = new Collection();
 
@@ -71,6 +65,8 @@ module.exports = class Client extends CommandoClient {
 		});
 
 		this.perspective = new Velocity(process.env.PERSPECTIVE_KEY);
+
+		this.process = process;
 	}
 
 	get ip() {
@@ -160,7 +156,7 @@ module.exports = class Client extends CommandoClient {
 		this.client.registry
 			.registerDefaultTypes()
 			.registerGroups([
-				{ id: 'util', name: 'Utility', guarded: true },
+				{ id: 'util', name: 'Utility' },
 				{ id: 'random', name: 'Random Response' },
 				{ id: 'info', name: 'Information' },
 				{ id: 'search', name: 'Search' },
@@ -168,8 +164,8 @@ module.exports = class Client extends CommandoClient {
 				{ id: 'anime-updates', name: 'Anime Updates' },
 				{ id: 'codebin', name: 'Code Bins' },
 				{ id: 'img', name: 'Image Manipulation' },
-				{ id: 'music', name: 'Music' },
 				{ id: 'nsfw', name: 'NSFW' },
+				{ id: 'other', name: 'Other' },
 			])
 			.registerDefaultGroups()
 			.registerDefaultCommands({

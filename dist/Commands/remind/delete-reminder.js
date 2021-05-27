@@ -1,2 +1,0 @@
-const{Command:Command}=require("discord.js-commando");module.exports=class extends Command{constructor(e){super(e,{name:"delete-reminder",aliases:["delete-reminder","del-reminder","del-remind"],group:"remind",memberName:"delete-reminder",description:"Deletes your reminder."})}async run(e){return await this.client.timers.exists(e.channel.id,e.author.id)?(await this.client.timers.deleteTimer(e.channel.id,e.author.id),e.say("Your timer has been deleted.")):e.reply("You do not have a timer set in this channel.")}};
-//# sourceMappingURL=delete-reminder.js.map

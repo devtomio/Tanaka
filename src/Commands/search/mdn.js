@@ -1,6 +1,6 @@
+const { searchMdn } = require('../../Structures/Util');
 const { Command } = require('discord.js-commando');
 const { MessageEmbed } = require('discord.js');
-const request = require('node-superfetch');
 
 module.exports = class MDNCommand extends Command {
 	constructor(client) {
@@ -15,33 +15,48 @@ module.exports = class MDNCommand extends Command {
 					key: 'query',
 					prompt: 'What article would you like to search for?',
 					type: 'string',
-					parse: (query) => query.replaceAll('#', '.prototype.'),
 				},
 			],
 		});
 	}
 
 	async run(msg, { query }) {
-		try {
-			const { body } = await request.get('https://developer.mozilla.org/api/v1/search').query({
-				q: query,
-				locale: 'en-US',
-				highlight: false,
-			});
+		const docs = await searchMdn(query);
 
-			if (!body.documents.length) return msg.say("Couldn't find any results.");
+		if (!docs) return msg.reply("I couldn't find anything for that.");
 
-			const data = body.documents[0];
+		const match = docs[0].diff === 1;
+
+		if (!match) {
+			let str = '';
+			let idx = 0;
+
+			for (const doc of docs) {
+				const link = this.makeMdnLink(doc.slug);
+
+				str += `\`#${`${++idx}`.padStart(2, '0')}\` **[${doc.title}](${link})**\n`;
+			}
+
 			const embed = new MessageEmbed()
 				.setColor('#0881ba')
 				.setAuthor('MDN', 'https://i.imgur.com/f0uC4b8.png', 'https://developer.mozilla.org')
-				.setURL(`https://developer.mozilla.org${data.mdn_url}`)
-				.setTitle(data.title)
-				.setDescription(data.summary);
+				.setDescription(str);
 
-			return msg.embed(embed);
-		} catch (err) {
-			return msg.reply(`An error occured: \`${err.message}\`.`);
+			return msg.say(embed);
 		}
+
+		const doc = docs[0];
+		const embed = new MessageEmbed()
+			.setColor('#0881ba')
+			.setAuthor('MDN', 'https://i.imgur.com/f0uC4b8.png', 'https://developer.mozilla.org')
+			.setTitle(doc.title)
+			.setURL(this.makeMdnLink(doc.slug))
+			.setDescription(this.client.converter.turndown(doc.summary));
+
+		return msg.say(embed);
+	}
+
+	makeMdnLink(slug) {
+		return `https://developer.mozilla.org/en-US/docs/${slug.replace(/^\//m, '')}`;
 	}
 };

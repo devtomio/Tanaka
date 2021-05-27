@@ -1,6 +1,8 @@
+const { compareTwoStrings } = require('string-similarity');
 const request = require('node-superfetch');
 const regex = require('url-regex');
 const ip = require('ip-regex');
+
 const { GOOGLE_KEY } = process.env;
 
 const escapeRegex = (str) => str.replace(/[|\\{}()[}^$+*?.]/g, '\\$&');
@@ -111,6 +113,25 @@ const imgToURL = (data, mediaType) => {
 	return img64;
 };
 
+/** @param {string} query */
+const searchMdn = async (query) => {
+	query = query.replace(' ', '+').replace(/#/g, '.prototype.');
+
+	const { body } = await request.get(`https://developer.mozilla.org/api/v1/search/en-US`).query({
+		q: encodeURIComponent(query),
+		highlight: false,
+	});
+
+	if (!body.documents.length) return null;
+
+	return body.documents
+		.map((d) => ({
+			...d,
+			diff: compareTwoStrings(query.toLowerCase(), d.title.toLowerCase()),
+		}))
+		.sort((a, b) => b.diff - a.diff);
+};
+
 const permissions = {
 	ADMINISTRATOR: 'Administrator',
 	VIEW_AUDIT_LOG: 'View Audit Log',
@@ -211,4 +232,5 @@ module.exports = {
 	formatNumber,
 	imgToURL,
 	replaceIp,
+	searchMdn,
 };

@@ -1,2 +1,0 @@
-const{ArgumentType:ArgumentType}=require("discord.js-commando"),codeblock=/```(?:(\S+)\n)?\s*([^]+?)\s*```/i;module.exports=class extends ArgumentType{constructor(e){super(e,"code")}validate(e){return!!e}async parse(e,n){if(!e)return null;if(/^[0-9]+$/.test(e))try{e=(await n.channel.messages.fetch(e)).content}catch{return{code:e,lang:null}}if(codeblock.test(e)){const n=codeblock.exec(e);return{code:n[2],lang:n[1]?n[1].toLowerCase():null}}return{code:e,lang:null}}};
-//# sourceMappingURL=code.js.map

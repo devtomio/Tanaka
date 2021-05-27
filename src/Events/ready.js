@@ -6,8 +6,6 @@ module.exports = class ReadyEvent extends Event {
 	}
 
 	async run() {
-		this.client.setTimeout(() => this.client.manager.init(this.client.user.id), 5000);
-
 		await this.client.timers.fetchAll();
 
 		this.client.shard.shards.forEach((shard) => {

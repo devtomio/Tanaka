@@ -8,7 +8,7 @@ module.exports = class RunCommand extends Command {
 			name: 'run',
 			aliases: ['run-code', 'piston'],
 			memberName: 'run',
-			group: 'search',
+			group: 'other',
 			description: 'Runs code in a virtual container.',
 			args: [
 				{

@@ -2,27 +2,30 @@
 	"name": "tanaka",
 	"version": "2.69.0",
 	"description": "An all fun and games discord bot.",
-	"main": "dist/index.js",
-	"repository": "https://github.com/1chiSensei/Tanaka.git",
+	"main": "src/index.js",
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/1chiSensei/Tanaka.git"
+	},
 	"homepage": "https://tanaka-bot.me.",
 	"author": "1chiSensei <mail@1chi.tk>",
 	"license": "Apache-2.0",
 	"private": true,
 	"scripts": {
 		"prettier": "prettier . --write --config .prettierrc.json",
-		"lint": "yarn constraints && eslint . --fix",
+		"lint": "eslint . --fix",
 		"start": "bash start.sh",
 		"release": "dotenv -- release-it --ci",
-		"build": "rimraf dist && gulp",
 		"test": "dotenv node .",
 		"generate-commands": "dotenv node scripts/generate-commands",
 		"lint:ejs": "ejslint src/**/*",
-		"precommit": "yarn prettier && yarn lint && yarn lint:ejs && yarn build && yarn pack",
+		"precommit": "yarn prettier && yarn lint && yarn lint:ejs && yarn pack --filename package.tgz",
 		"up": "railway up"
 	},
 	"dependencies": {
 		"@2pg/oauth": "^1.0.8",
 		"@discordjs/opus": "0.5.0",
+		"bufferutil": "^4.0.3",
 		"canvacord": "^5.2.0",
 		"canvas": "^2.8.0",
 		"color-convert": "^2.0.1",
@@ -33,9 +36,9 @@
 		"decimal-to-percent": "^1.0.1",
 		"didyoumean2": "^4.2.0",
 		"discord.js": "discordjs/discord.js",
-		"discord.js-commando": "github:1chiSensei/Commando#patch-1",
+		"discord.js-commando": "github:discordjs/Commando",
 		"ejs": "^3.1.6",
-		"erela.js": "^2.3.3",
+		"erlpack": "discord/erlpack",
 		"express": "^4.17.1",
 		"gifencoder": "^2.0.1",
 		"glob-promise": "^4.1.0",
@@ -57,12 +60,14 @@
 		"signale": "^1.4.0",
 		"snoowrap": "^1.23.0",
 		"sourcebin": "^4.2.3",
+		"string-similarity": "^4.0.4",
 		"turndown": "^7.0.0",
 		"url-regex": "^5.0.0",
-		"velocity-api": "^1.0.7"
+		"utf-8-validate": "^5.0.5",
+		"velocity-api": "^1.0.7",
+		"zlib-sync": "^0.1.7"
 	},
 	"devDependencies": {
-		"@railway/cli": "^0.2.19",
 		"@release-it/conventional-changelog": "2.0.1",
 		"@types/mongodb": "^3",
 		"@types/signale": "^1.4.1",
@@ -72,14 +77,14 @@
 		"eslint": "7.26.0",
 		"eslint-config-aqua": "9.0.2",
 		"glob": "^7.1.7",
-		"gulp": "4.0.2",
-		"gulp-autoprefixer": "^7.0.1",
-		"gulp-clean-css": "^4.3.0",
-		"gulp-sourcemaps": "3.0.0",
-		"gulp-terser": "2.0.1",
+		"husky": "^6.0.0",
 		"pm2": "^4.5.6",
 		"prettier": "2.3.0",
 		"release-it": "14.6.2",
 		"rimraf": "^3.0.2"
-	}
+	},
+	"bugs": {
+		"url": "https://github.com/1chiSensei/Tanaka/issues"
+	},
+	"keywords": []
 }

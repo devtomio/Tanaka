@@ -1,2 +1,0 @@
-const Event=require("../Structures/Event");module.exports=class extends Event{constructor(...t){super(...t,"ready",{once:!0})}async run(){this.client.setTimeout((()=>this.client.manager.init(this.client.user.id)),5e3),await this.client.timers.fetchAll(),this.client.shard.shards.forEach((t=>{this.client.setInterval((()=>this.client.user.setActivity(`t!help | Shard ${t}`,{type:"WATCHING",shardID:Number(t)})),15e3)})),this.client.logger.info(`Logged in as ${this.client.user.tag}.`)}};
-//# sourceMappingURL=ready.js.map

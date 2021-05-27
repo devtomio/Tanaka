@@ -1,7 +1,7 @@
 module.exports = class Event {
 	/**
 	 * @param {import('./Client')} client
-	 * @param {string} name
+	 * @param {keyof import('discord.js').ClientEvents|keyof import('quickmongo').Events} name
 	 * @param {Object} options
 	 * @param {string} [options.once]
 	 * @param {string} [options.emitter]

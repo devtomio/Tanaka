@@ -62,7 +62,7 @@ module.exports = (c) => {
 	app.get('/invite', (_, res) =>
 		res.redirect(
 			302,
-			'https://discord.com/api/oauth2/authorize?client_id=804605929944645672&permissions=641064257&redirect_uri=https%3A%2F%2Ftanaka.1chi.tk%2Fauth%2Fcallback&response_type=code&scope=identify%20bot',
+			'https://discord.com/api/oauth2/authorize?client_id=804605929944645672&permissions=379968&redirect_uri=https%3A%2F%2Ftanaka.1chi.tk%2Fauth%2Fcallback&response_type=code&scope=identify%20bot',
 		),
 	);
 
@@ -124,6 +124,7 @@ module.exports = (c) => {
 		const embed = new MessageEmbed()
 			.setTitle('New Vote!')
 			.setURL('https://infinitybotlist.com/bots/804605929944645672')
+			.setThumbnail(user.displayAvatarURL({ dynamic: true, size: 4096 }))
 			.setDescription(`Thank you, ${user.tag}, for voting for Tanaka in Infinity Bot List!`)
 			.setColor('RANDOM')
 			.setFooter('infinitybotlist.com')

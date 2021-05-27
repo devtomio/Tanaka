@@ -9,7 +9,6 @@ module.exports = class UnknownCommand extends Command {
 			memberName: 'unknown-command',
 			description: 'The unknown command.',
 			hidden: true,
-			guarded: true,
 			unknown: true,
 		});
 	}

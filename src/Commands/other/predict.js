@@ -7,7 +7,7 @@ module.exports = class PredictCommand extends Command {
 		super(client, {
 			name: 'predict',
 			memberName: 'predict',
-			group: 'search',
+			group: 'other',
 			description: 'Check what the bot thinks about your message.',
 			args: [
 				{

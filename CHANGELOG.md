@@ -1,18 +1,16 @@
 # [2.69.0](https://github.com/1chiSensei/Tanaka/compare/2.68.0...2.69.0) (2021-05-24)
 
-
 ### Bug Fixes
 
-* **ci:** fix lockfile workflow ([2250384](https://github.com/1chiSensei/Tanaka/commit/2250384c1b29882b41a9b67bb1df03d325cd4d1a))
-* **ci:** fix lockfile workflow ([7a4622d](https://github.com/1chiSensei/Tanaka/commit/7a4622db6aae2d84445c3215c6cefc8d04220696))
-* **ci:** fix lockfile workflow ([c64a52b](https://github.com/1chiSensei/Tanaka/commit/c64a52b390806b1e4f2d110537a7d14fe68a659c))
-* **ci:** fix lockfile workflow ([7c072be](https://github.com/1chiSensei/Tanaka/commit/7c072bea37f02cecb284abb5d8dcfc492d9921e7))
-* **ci:** fix lockfile workflow ([409c751](https://github.com/1chiSensei/Tanaka/commit/409c751c79a9eabd8f410e935d73d71fa1eeb242))
-
+- **ci:** fix lockfile workflow ([2250384](https://github.com/1chiSensei/Tanaka/commit/2250384c1b29882b41a9b67bb1df03d325cd4d1a))
+- **ci:** fix lockfile workflow ([7a4622d](https://github.com/1chiSensei/Tanaka/commit/7a4622db6aae2d84445c3215c6cefc8d04220696))
+- **ci:** fix lockfile workflow ([c64a52b](https://github.com/1chiSensei/Tanaka/commit/c64a52b390806b1e4f2d110537a7d14fe68a659c))
+- **ci:** fix lockfile workflow ([7c072be](https://github.com/1chiSensei/Tanaka/commit/7c072bea37f02cecb284abb5d8dcfc492d9921e7))
+- **ci:** fix lockfile workflow ([409c751](https://github.com/1chiSensei/Tanaka/commit/409c751c79a9eabd8f410e935d73d71fa1eeb242))
 
 ### Features
 
-* **web:** add ibl vote webhook ([7e7cc44](https://github.com/1chiSensei/Tanaka/commit/7e7cc441d8e6919487f98cd28966a53152875bf6))
+- **web:** add ibl vote webhook ([7e7cc44](https://github.com/1chiSensei/Tanaka/commit/7e7cc441d8e6919487f98cd28966a53152875bf6))
 
 # [2.68.0](https://github.com/1chiSensei/Tanaka/compare/2.67.2...2.68.0) (2021-05-24)
 
