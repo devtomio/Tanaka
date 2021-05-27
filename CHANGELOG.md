@@ -1,3 +1,9 @@
+## [2.76.1](https://github.com/1chiSensei/Tanaka/compare/2.76.0...2.76.1) (2021-05-27)
+
+### Bug Fixes
+
+- **web:** serve service worker in root ([707f123](https://github.com/1chiSensei/Tanaka/commit/707f123736fd187377e4ed9e2b223b3780fb6d04))
+
 # [2.76.0](https://github.com/1chiSensei/Tanaka/compare/2.75.3...2.76.0) (2021-05-27)
 
 ### Features
