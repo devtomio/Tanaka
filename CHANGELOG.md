@@ -1,3 +1,9 @@
+## [2.76.3](https://github.com/1chiSensei/Tanaka/compare/2.76.2...2.76.3) (2021-05-27)
+
+### Bug Fixes
+
+- **web:** fix manifest ([160d306](https://github.com/1chiSensei/Tanaka/commit/160d30693a075e9a8a580d86814bc3a3e584dfd3))
+
 ## [2.76.2](https://github.com/1chiSensei/Tanaka/compare/2.76.1...2.76.2) (2021-05-27)
 
 ### Bug Fixes
