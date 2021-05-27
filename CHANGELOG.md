@@ -1,3 +1,9 @@
+## [2.75.2](https://github.com/1chiSensei/Tanaka/compare/2.75.1...2.75.2) (2021-05-27)
+
+### Bug Fixes
+
+- **web:** fix wrong size ([dd302e4](https://github.com/1chiSensei/Tanaka/commit/dd302e443889db770d462d4ad5cd5314a078340c))
+
 ## [2.75.1](https://github.com/1chiSensei/Tanaka/compare/2.75.0...2.75.1) (2021-05-27)
 
 ### Bug Fixes
