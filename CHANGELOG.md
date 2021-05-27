@@ -1,3 +1,9 @@
+## [2.75.3](https://github.com/1chiSensei/Tanaka/compare/2.75.2...2.75.3) (2021-05-27)
+
+### Bug Fixes
+
+- **web:** fix service worker ([09d8a38](https://github.com/1chiSensei/Tanaka/commit/09d8a386e2ce6dc74d52233b08bef087fde6d1fd))
+
 ## [2.75.2](https://github.com/1chiSensei/Tanaka/compare/2.75.1...2.75.2) (2021-05-27)
 
 ### Bug Fixes
