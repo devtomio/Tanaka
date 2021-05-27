@@ -1,6 +1,6 @@
 module.exports = {
 	git: {
-		commitMessage: 'chore(release): release v${version}',
+		commitMessage: 'build(release): release v${version}',
 	},
 	github: {
 		release: true,
