@@ -1,4 +1,5 @@
 const { MessageEmbed, WebhookClient } = require('discord.js');
+const manifest = require('./manifest.json');
 const { Client } = require('@2pg/oauth');
 const express = require('express');
 const cookies = require('cookies');
@@ -134,6 +135,8 @@ module.exports = (c) => {
 
 		res.sendStatus(201);
 	});
+
+	app.get('/manifest.json', (_, res) => res.status(200).json(manifest));
 
 	app.listen(port, () => c.logger.info(`Listening on localhost:${port}`));
 };

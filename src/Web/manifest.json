@@ -1,0 +1,18 @@
+{
+	"name": "Tanaka",
+	"short_name": "Tanaka",
+	"description": "An all fun and games bot.",
+	"lang": "en-US",
+	"start_url": "/",
+	"scope": "/",
+	"display": "minimal-ui",
+	"orientation": "landscape",
+	"theme_color": "#7289da",
+	"icons": [
+		{
+			"src": "https://i.imgur.com/Ih18zrt.png",
+			"sizes": "512x512",
+			"type": "image/png"
+		}
+	]
+}
