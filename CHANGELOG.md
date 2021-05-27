@@ -1,3 +1,9 @@
+# [2.76.0](https://github.com/1chiSensei/Tanaka/compare/2.75.3...2.76.0) (2021-05-27)
+
+### Features
+
+- **web:** host files locally ([7abacc7](https://github.com/1chiSensei/Tanaka/commit/7abacc761c88899c4b7d20d5950e0e54c3bd8da9))
+
 ## [2.75.3](https://github.com/1chiSensei/Tanaka/compare/2.75.2...2.75.3) (2021-05-27)
 
 ### Bug Fixes
