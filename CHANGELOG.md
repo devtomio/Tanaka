@@ -1,3 +1,9 @@
+## [2.76.2](https://github.com/1chiSensei/Tanaka/compare/2.76.1...2.76.2) (2021-05-27)
+
+### Bug Fixes
+
+- **web:** register the service worker ([656248e](https://github.com/1chiSensei/Tanaka/commit/656248efb0de7185de5a8da3d506836cf627cec6))
+
 ## [2.76.1](https://github.com/1chiSensei/Tanaka/compare/2.76.0...2.76.1) (2021-05-27)
 
 ### Bug Fixes
