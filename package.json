@@ -35,7 +35,7 @@
 		"cookies": "^0.8.0",
 		"cors": "^2.8.5",
 		"decimal-to-percent": "^1.0.1",
-		"didyoumean2": "^4.2.0",
+		"didyoumean2": "^5.0.0",
 		"discord.js": "discordjs/discord.js",
 		"discord.js-commando": "github:discordjs/Commando",
 		"ejs": "^3.1.6",
