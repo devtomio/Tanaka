@@ -1992,8 +1992,8 @@ discord.js@^12.5.1:
 
 discord.js@discordjs/discord.js:
   version "13.0.0-dev"
-  uid "840ad0a35a344a19c5bb84c421f80802fb186d0b"
-  resolved "https://codeload.github.com/discordjs/discord.js/tar.gz/840ad0a35a344a19c5bb84c421f80802fb186d0b"
+  uid b90b0c3cfa2278caa38d1ff41eef2ccf4428b99e
+  resolved "https://codeload.github.com/discordjs/discord.js/tar.gz/b90b0c3cfa2278caa38d1ff41eef2ccf4428b99e"
   dependencies:
     "@discordjs/collection" "^0.1.6"
     "@discordjs/form-data" "^3.0.1"
