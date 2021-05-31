@@ -1,3 +1,14 @@
+# [2.77.0](https://github.com/1chiSensei/Tanaka/compare/2.76.3...2.77.0) (2021-05-31)
+
+### Bug Fixes
+
+- **ci:** fix dependabot ([4172539](https://github.com/1chiSensei/Tanaka/commit/4172539f7922c64a162261a99b4f325a6d79a831))
+- **ci:** use depfu ([829f3b0](https://github.com/1chiSensei/Tanaka/commit/829f3b05c049317ba144bf2a53d6a8b25050856c))
+
+### Features
+
+- **commands:** add anime category ([a5951f5](https://github.com/1chiSensei/Tanaka/commit/a5951f50e380828644ad52d7747da9f4882c1827))
+
 ## [2.76.3](https://github.com/1chiSensei/Tanaka/compare/2.76.2...2.76.3) (2021-05-27)
 
 ### Bug Fixes
