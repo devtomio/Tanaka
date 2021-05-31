@@ -1,11 +1,11 @@
 version: 2
-# updates:
-#- package-ecosystem: npm
-#  directory: "/"
-#  schedule:
-#    interval: daily
-#  open-pull-requests-limit: 10
-#  ignore:
-#  - dependency-name: ioredis
-#    versions:
-#    - 4.27.1
+updates:
+- package-ecosystem: npm
+  directory: "/"
+  schedule:
+    interval: daily
+  open-pull-requests-limit: 10
+  ignore:
+  - dependency-name: ioredis
+    versions:
+    - 4.27.1
