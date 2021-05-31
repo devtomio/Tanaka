@@ -1179,10 +1179,10 @@ camelcase@^6.2.0:
   resolved "https://registry.yarnpkg.com/camelcase/-/camelcase-6.2.0.tgz#924af881c9d525ac9d87f40d964e5cea982a1809"
   integrity sha512-c7wVvbw3f37nuobQNtgsgG9POC9qMbNuMQmTCqZv23b6MIz0fcYpBiOlv9gEN/hdLdnZTDQhg6e9Dq5M1vKvfg==
 
-canvacord@^5.2.0:
-  version "5.2.0"
-  resolved "https://registry.yarnpkg.com/canvacord/-/canvacord-5.2.0.tgz#580ad6a22cc4e06ee9243acf4128ba77038104dd"
-  integrity sha512-Cr+ZM/N2Dhjbvkhm0Tu0Kg3oCx67J/koBFHoSKIrLzOvsiaiFFPAXIRpaJiTXeRVXk8adZa+g1812dwcjmPq6g==
+canvacord@^5.2.1:
+  version "5.2.1"
+  resolved "https://registry.yarnpkg.com/canvacord/-/canvacord-5.2.1.tgz#dac979488735c98ddc6ffd60af52e4ed9bce74ce"
+  integrity sha512-vauEvj3QEDNyza6laa4C5cKiOSld/O+Uvjr8uzD+ANUxaWtprHE6372J7oXMqrjPEsOd4XAwKuy5zlVPe4a7OQ==
   dependencies:
     "@canvacord/assets" "^1.0.2"
     "@canvacord/emoji-parser" "^1.0.1"

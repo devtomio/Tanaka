@@ -27,7 +27,7 @@
 		"@2pg/oauth": "^1.0.8",
 		"@discordjs/opus": "0.5.0",
 		"bufferutil": "^4.0.3",
-		"canvacord": "^5.2.0",
+		"canvacord": "^5.2.1",
 		"canvas": "^2.8.0",
 		"color-convert": "^2.0.1",
 		"commando-provider-mongo": "^2.1.0",
