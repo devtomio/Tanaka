@@ -1,6 +1,6 @@
-const { shorten } = require('../../Structures/Util');
 const { Command } = require('discord.js-commando');
 const { MessageEmbed } = require('discord.js');
+const { getImage } = require('random-reddit');
 
 module.exports = class PenisCommand extends Command {
 	/** @param {import('../../Structures/Client')} client */
@@ -17,10 +17,11 @@ module.exports = class PenisCommand extends Command {
 	}
 
 	async run(msg) {
+		msg.channel.startTyping();
+
 		const srs = ['cock', 'MassiveCock', 'ratemycock', 'penis', 'tinydick', 'tipofmypenis'];
 		const subreddit = srs[Math.floor(Math.random() * srs.length)];
-		const res = await this.client.reddit.getHot(subreddit);
-		const data = res[Math.floor(Math.random() * res.length)];
+		const data = await getImage(subreddit, Infinity);
 		const embed = new MessageEmbed()
 			.setColor('#FF4500')
 			.setAuthor(
@@ -28,11 +29,11 @@ module.exports = class PenisCommand extends Command {
 				'https://i.imgur.com/DSBOK0P.png',
 				`https://reddit.com/r/${subreddit}`,
 			)
-			.setTitle(shorten(data.title, 256))
-			.setImage(data.post_hint === 'image' ? data.url : null)
-			.setURL(`https://reddit.com${data.permalink}`)
-			.setTimestamp(data.created_utc * 1000)
-			.setFooter(`⬆ ${data.ups}`);
+			.setImage(data)
+			.setTimestamp()
+			.setFooter(`Requested by ${msg.author.tag}`);
+
+		msg.channel.stopTyping();
 
 		return msg.embed(embed);
 	}

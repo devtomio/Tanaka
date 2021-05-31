@@ -1,6 +1,6 @@
+const { Command, version: commandoVersion } = require('discord.js-commando');
 const { MessageEmbed, version: djsVersion } = require('discord.js');
 const { version } = require('../../../package.json');
-const { Command } = require('discord.js-commando');
 const { drive, mem } = require('node-os-utils');
 const { utc } = require('moment');
 const os = require('os');
@@ -39,6 +39,8 @@ module.exports = class InfoCommand extends Command {
 				`**❯ Node.js:** \`${process.version}\``,
 				`**❯ Version:** \`v${version}\``,
 				`**❯ Discord.js:** \`v${djsVersion}\``,
+				`**❯ Commando:** \`v${commandoVersion}\``,
+				`**❯ Uptime:** ${ms(this.client.uptime, { long: true })}`,
 				'**❯ Repository:** <https://github.com/1chiSensei/Tanaka>',
 				'**❯ Invite:** <https://tanaka-bot.me/invite>',
 				'**❯ Website:** <https://tanaka-bot.me>',

@@ -11,6 +11,7 @@ module.exports = class BotList {
 		setInterval(async () => {
 			await this.ibl();
 			await this.discordBotsGG();
+			await this.discordExtremeList();
 		}, 1.8e6);
 	}
 
@@ -39,6 +40,21 @@ module.exports = class BotList {
 			.post(`https://discord.bots.gg/api/v1/bots/${this.client.user.id}/stats`)
 			.set({
 				Authorization: process.env.DISCORD_BOTS_GG_KEY,
+				'Content-Type': 'application/json',
+			})
+			.send(JSON.stringify(body));
+	}
+
+	async discordExtremeList() {
+		const body = {
+			guildCount: await this.client.guildCount(),
+			shardCount: this.client.shard?.shardCount ?? 1,
+		};
+
+		await request
+			.post(`https://api.discordextremelist.xyz/v2/bot/${this.client.user.id}/stats`)
+			.set({
+				Authorization: process.env.DISCORD_EXTREME_LIST_KEY,
 				'Content-Type': 'application/json',
 			})
 			.send(JSON.stringify(body));

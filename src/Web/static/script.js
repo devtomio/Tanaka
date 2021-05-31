@@ -4,7 +4,7 @@ if ('serviceWorker' in navigator) {
 	console.log(`[ServiceWorker]: Registering...`);
 
 	navigator.serviceWorker
-		.register('/serviceWorker.js')
+		.register('/serviceWorker.js', { scope: '/' })
 		.then(() => console.log(`[ServiceWorker]: Registration complete.`))
 		.catch(() => console.log(`[ServiceWorker]: Registration failed.`));
 } else {

@@ -67,6 +67,8 @@ module.exports = class Client extends CommandoClient {
 		this.perspective = new Velocity(process.env.PERSPECTIVE_KEY);
 
 		this.process = process;
+
+		this.bots = new WebhookClient(process.env.BOTS_ID, process.env.BOTS_TOKEN);
 	}
 
 	get ip() {
@@ -166,6 +168,9 @@ module.exports = class Client extends CommandoClient {
 				{ id: 'img', name: 'Image Manipulation' },
 				{ id: 'nsfw', name: 'NSFW' },
 				{ id: 'other', name: 'Other' },
+				{ id: 'bots', name: 'Bots' },
+				{ id: 'anime', name: 'Anime' },
+				{ id: 'tags', name: 'Tags' },
 			])
 			.registerDefaultGroups()
 			.registerDefaultCommands({

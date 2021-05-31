@@ -12,66 +12,72 @@ module.exports = class UserInfoCommand extends Command {
 			memberName: 'userinfo',
 			description: "Responds with the user's general information.",
 			clientPermissions: ['EMBED_LINKS'],
-			guildOnly: true,
 			args: [
 				{
-					key: 'member',
+					key: 'user',
 					prompt: 'Who is the user that you want to get info of?',
-					type: 'member',
-					default: (m) => m.member,
+					type: 'user',
+					default: (m) => m.author,
 				},
 			],
 		});
 	}
 
-	run(msg, { member }) {
-		const roles = member.roles.cache
-			.sort((a, b) => b.position - a.position)
-			.map((role) => role.toString())
-			.slice(0, -1);
-		const flags = member.user.flags.toArray();
+	async run(msg, { user }) {
+		if (!user) user = msg.author;
 
+		const flags = user.flags.toArray();
 		const embed = new MessageEmbed()
-			.setTitle(`**User Information for __${member.user.tag}__**`)
-			.setThumbnail(member.user.displayAvatarURL({ dynamic: true, size: 4096 }))
+			.setTitle(`**User Information for __${user.tag}__**`)
+			.setThumbnail(user.displayAvatarURL({ dynamic: true, size: 4096 }))
 			.setColor('RANDOM')
 			.addField('User', [
-				`**❯ Username**: ${member.user.username}`,
-				`**❯ Discriminator:** ${member.user.discriminator}`,
-				`**❯ ID:** \`${member.id}\``,
-				`**❯ Flags:** ${
+				`**<:user1:848729325980876842> Username**: ${user.username}`,
+				`**<:discrim:848729585122148363> Discriminator:** ${user.discriminator}`,
+				`**<:tag:848730567259193404> ID:** \`${user.id}\``,
+				`**<:flag:848733314956394528> Flags:** ${
 					flags.length ? flags.map((flag) => userFlags[flag]).join(', ') : 'None'
 				}`,
-				`**❯ Avatar:** [Link to Avatar](${member.user.displayAvatarURL({
+				`**<:image:848733689210208267> Avatar:** [Link to Avatar](${user.displayAvatarURL({
 					size: 4096,
 					dynamic: true,
 				})})`,
-				`**❯ Time Created:** \`${moment(member.user.createdTimestamp).format('LT')} ${moment(
-					member.user.createdTimestamp,
-				).format('LL')} ${moment(member.user.createdTimestamp).fromNow()}\``,
-				`**❯ Status:** ${member.user.presence.status}`,
-				`**❯ Game:** ${member.user.presence.game || 'Not playing a game.'}`,
-				`**❯ Bot:** ${member.user.bot ? 'Yes' : 'No'}`,
-				'\u200b',
-			])
-			.addField('Member', [
-				`**❯ Highest Role:** ${
-					member.roles.highest.id === msg.guild.id
-						? 'None'
-						: `<@&${member.roles.highest.id}>`
-				}`,
-				`**❯ Server Join Rate:** \`${moment(member.joinedAt).format('LL LTS')}\``,
-				`**❯ Nickname:** ${member.nickname ?? 'None'}`,
-				`**❯ Hoist Role:** ${member.roles.hoist ? `<@&${member.roles.hoist.id}>` : 'None'}`,
-				`**❯ Roles [${roles.length}]:** ${
-					roles.length < 10
-						? roles.join(', ')
-						: roles.length > 10
-						? trimArray(roles)
-						: 'None'
-				}`,
+				`**<:clock1k:848734465102708766> Time Created:** \`${moment(
+					user.createdTimestamp,
+				).format('LT')} ${moment(user.createdTimestamp).format('LL')} ${moment(
+					user.createdTimestamp,
+				).fromNow()}\``,
+				`**<:robotfill:848737114287636480> Bot:** ${user.bot ? 'Yes' : 'No'}`,
 			])
 			.setTimestamp();
+
+		if (msg.guild) {
+			try {
+				const member = await msg.guild.members.fetch(user.id);
+				const roles = member.roles.cache
+					.sort((a, b) => b.position - a.position)
+					.map((role) => role.toString())
+					.slice(0, -1);
+
+				embed.addField('Member', [
+					`**<:arrowupcircle:848737425752981514> Highest Role:** ${
+						member.roles.highest.id === msg.guild.id
+							? 'None'
+							: `<@&${member.roles.highest.id}>`
+					}`,
+					`**<:calendarrr:848737884894396436> Server Join Date:** \`${moment(
+						member.joinedAt,
+					).format('LL LTS')}\``,
+					`**<:user1:848729325980876842> Nickname:** ${member.nickname ?? 'None'}`,
+					`**<:userplus:848738795964596315> Hoist Role:** ${
+						member.roles.hoist ? `<@&${member.roles.hoist.id}>` : 'None'
+					}`,
+					`**<:pluscircle:848739003729838090> Roles [${roles.length}]:** ${
+						roles.length ? trimArray(roles).join(', ') : 'None'
+					}`,
+				]);
+			} catch {}
+		}
 
 		return msg.say(embed);
 	}

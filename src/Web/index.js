@@ -30,6 +30,10 @@ module.exports = (c) => {
 	app.use(express.text());
 	app.use(cookies.express(['I', 'store', 'login', 'sessions.']));
 	app.use(morgan('combined'));
+	app.use((_, res, next) => {
+		res.header('Service-Worker-Allowed', '/');
+		next();
+	});
 	app.use('/static', express.static(path.join(__dirname, 'static')));
 
 	app.set('view engine', 'ejs');
@@ -63,7 +67,7 @@ module.exports = (c) => {
 	app.get('/invite', (_, res) =>
 		res.redirect(
 			302,
-			'https://discord.com/api/oauth2/authorize?client_id=804605929944645672&permissions=379968&redirect_uri=https%3A%2F%2Ftanaka.1chi.tk%2Fauth%2Fcallback&response_type=code&scope=identify%20bot',
+			'https://discord.com/api/oauth2/authorize?client_id=804605929944645672&permissions=379968&redirect_uri=https%3A%2F%2Ftanaka-bot.me%2Fauth%2Fcallback&response_type=code&scope=identify%20bot',
 		),
 	);
 
