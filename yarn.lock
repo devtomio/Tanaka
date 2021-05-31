@@ -1179,10 +1179,10 @@ camelcase@^6.2.0:
   resolved "https://registry.yarnpkg.com/camelcase/-/camelcase-6.2.0.tgz#924af881c9d525ac9d87f40d964e5cea982a1809"
   integrity sha512-c7wVvbw3f37nuobQNtgsgG9POC9qMbNuMQmTCqZv23b6MIz0fcYpBiOlv9gEN/hdLdnZTDQhg6e9Dq5M1vKvfg==
 
-canvacord@^5.2.0:
-  version "5.2.0"
-  resolved "https://registry.yarnpkg.com/canvacord/-/canvacord-5.2.0.tgz#580ad6a22cc4e06ee9243acf4128ba77038104dd"
-  integrity sha512-Cr+ZM/N2Dhjbvkhm0Tu0Kg3oCx67J/koBFHoSKIrLzOvsiaiFFPAXIRpaJiTXeRVXk8adZa+g1812dwcjmPq6g==
+canvacord@^5.2.1:
+  version "5.2.1"
+  resolved "https://registry.yarnpkg.com/canvacord/-/canvacord-5.2.1.tgz#dac979488735c98ddc6ffd60af52e4ed9bce74ce"
+  integrity sha512-vauEvj3QEDNyza6laa4C5cKiOSld/O+Uvjr8uzD+ANUxaWtprHE6372J7oXMqrjPEsOd4XAwKuy5zlVPe4a7OQ==
   dependencies:
     "@canvacord/assets" "^1.0.2"
     "@canvacord/emoji-parser" "^1.0.1"
@@ -2482,11 +2482,6 @@ fast-levenshtein@^2.0.6, fast-levenshtein@~2.0.6:
   version "2.0.6"
   resolved "https://registry.yarnpkg.com/fast-levenshtein/-/fast-levenshtein-2.0.6.tgz#3d8a5c66883a16a30ca8643e851f19baa7797917"
   integrity sha1-PYpcZog6FqMMqGQ+hR8Zuqd5eRc=
-
-fastest-levenshtein@^1.0.12:
-  version "1.0.12"
-  resolved "https://registry.yarnpkg.com/fastest-levenshtein/-/fastest-levenshtein-1.0.12.tgz#9990f7d3a88cc5a9ffd1f1745745251700d497e2"
-  integrity sha512-On2N+BpYJ15xIC974QNVuYGMOlEVt4s0EOI3wwMqOmK1fdDY+FN/zltPV8vosq4ad4c/gJ1KHScUn/6AWIgiow==
 
 fastq@^1.6.0:
   version "1.11.0"
