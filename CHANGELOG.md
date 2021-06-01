@@ -1,3 +1,9 @@
+## [2.78.6](https://github.com/1chiSensei/Tanaka/compare/2.78.5...2.78.6) (2021-06-01)
+
+### Bug Fixes
+
+- **ci:** use old ([09853f1](https://github.com/1chiSensei/Tanaka/commit/09853f17f7577e86d4ef422dd3309f08cefbea4e))
+
 ## [2.78.5](https://github.com/1chiSensei/Tanaka/compare/2.78.4...2.78.5) (2021-06-01)
 
 ### Bug Fixes
