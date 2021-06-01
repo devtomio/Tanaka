@@ -1,3 +1,9 @@
+## [2.78.4](https://github.com/1chiSensei/Tanaka/compare/2.78.3...2.78.4) (2021-06-01)
+
+### Bug Fixes
+
+- **ci:** docker work for me ([60480c7](https://github.com/1chiSensei/Tanaka/commit/60480c796d390b159f4c2d9e577b8e33fe99d13e))
+
 ## [2.78.3](https://github.com/1chiSensei/Tanaka/compare/2.78.2...2.78.3) (2021-06-01)
 
 ### Bug Fixes
