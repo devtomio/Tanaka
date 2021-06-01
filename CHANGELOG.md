@@ -1,3 +1,9 @@
+# [2.78.0](https://github.com/1chiSensei/Tanaka/compare/2.77.0...2.78.0) (2021-06-01)
+
+### Features
+
+- **ci:** add docker workflow ([a4c3f3b](https://github.com/1chiSensei/Tanaka/commit/a4c3f3b540e876d637f6af36805d47d8eadee0f0))
+
 # [2.77.0](https://github.com/1chiSensei/Tanaka/compare/2.76.3...2.77.0) (2021-05-31)
 
 ### Bug Fixes
