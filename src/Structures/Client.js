@@ -1,3 +1,4 @@
+const InteractiveClient = require('@duxcore/interactive-discord').default;
 const { Intents, WebhookClient, Collection } = require('discord.js');
 const { MongoDBProvider } = require('commando-provider-mongo');
 const { CommandoClient } = require('discord.js-commando');
@@ -69,6 +70,8 @@ module.exports = class Client extends CommandoClient {
 		this.process = process;
 
 		this.bots = new WebhookClient(process.env.BOTS_ID, process.env.BOTS_TOKEN);
+
+		this.interactions = new InteractiveClient(this, process.env.CLIENT_ID);
 	}
 
 	get ip() {
@@ -178,7 +181,6 @@ module.exports = class Client extends CommandoClient {
 				{ id: 'info', name: 'Information' },
 				{ id: 'search', name: 'Search' },
 				{ id: 'remind', name: 'Reminder' },
-				{ id: 'anime-updates', name: 'Anime Updates' },
 				{ id: 'codebin', name: 'Code Bins' },
 				{ id: 'img', name: 'Image Manipulation' },
 				{ id: 'nsfw', name: 'NSFW' },

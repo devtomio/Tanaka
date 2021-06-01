@@ -21,7 +21,7 @@
 							<a href="/auth/login" class="asbestos-text">Login</a>
 						<% } else { %>
 							<a href="/profile" class="asbestos-text">Profile</a>
-						<% } %> 
+						<% } %>
 						<a href="/auth/logout" class="asbestos-text">Log Out</a>
 						<a href="/vote" class="asbestos-text">Vote</a>
 					</div>
@@ -66,13 +66,18 @@
 					<a id="nav4" href="/profile" target="_blank">
 						<img class="center image-circle" src="<%= data.avatarURL({ size: 64, dynamic: true });%>" alt="avatar" />
 					</a>
-				<% } %> 
+				<% } %>
 				<a id="nav5" href="/legal" target="_blank" class="asbestos-text btn"
 					style="padding: 0 .4em;">Legal</a>
 				<a id="nav6" href="/vote" target="_blank" class="asbestos-text btn"
 					style="padding: 0 .4em;">Vote</a>
-				<a id="nav7" href="/auth/logout" target="_blank" class="asbestos-text btn"
-					style="padding: 0 .4em;">Log Out</a>
+				<% if (data === null) { %>
+					<a id="nav7" href="/invite" target="_blank" class="asbestos-text btn"
+						style="padding: 0 .4em;">Invite</a>
+				<% } else { %>
+					<a id="nav7" href="/auth/logout" target="_blank" class="asbestos-text btn"
+						style="padding: 0 .4em;">Log Out</a>
+				<% } %>
 			</div>
 		</div>
 
