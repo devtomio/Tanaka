@@ -113,6 +113,7 @@ module.exports = class Client extends CommandoClient {
 	}
 
 	async login(token = process.env.DISCORD_TOKEN) {
+		this.registerInhibitors();
 		this.registerCommands();
 		web(this);
 
@@ -134,6 +135,20 @@ module.exports = class Client extends CommandoClient {
 			this.events.set(event.name, event);
 			event.emitter[event.type](event.name, (...args) => event.run(...args));
 		}
+	}
+
+	registerInhibitors() {
+		this.dispatcher.addInhibitor((msg) => {
+			this.db.get(`blacklist-${msg.author.id}`).then((blacklist) => {
+				if (blacklist)
+					return {
+						reason: blacklist.reason,
+						response: msg.reply(
+							`You're blacklisted for using this bot!\nReason: ${blacklist.reason}`,
+						),
+					};
+			});
+		});
 	}
 
 	generateCommandList() {

@@ -182,6 +182,7 @@ const userFlags = {
 	BUGHUNTER_LEVEL_2: 'Bug Hunter (Level 2)',
 	VERIFIED_BOT: 'Verified Bot',
 	EARLY_VERIFIED_BOT_DEVELOPER: 'Early Verified Bot Developer',
+	DISCORD_CERTIFIED_MODERATOR: 'Certified Moderator',
 };
 
 const filterLevels = {

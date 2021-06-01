@@ -28,7 +28,7 @@ module.exports = class TagsCommand extends Command {
 		});
 
 		return msg.say(stripIndents`
-			**${msg.guild.name}'s Tags**
+			**__${msg.guild.name}'s__ Tags**
 
 			${content || 'No Tags in this guild.'}
 		`);

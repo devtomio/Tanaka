@@ -36,7 +36,7 @@ module.exports = class SourceCommand extends Command {
 			.query('ref', 'main')
 			.set('Accept', 'application/vnd.github.v3+json');
 		const embed = new MessageEmbed()
-			.setTitle(body.name)
+			.setTitle(`<:githubfill:848892934471286785> ${body.name}`)
 			.setURL(body.html_url)
 			.setDescription(
 				stripIndents`

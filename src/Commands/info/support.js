@@ -12,6 +12,10 @@ module.exports = class SupportCommand extends Command {
 	}
 
 	run(msg) {
-		return msg.embed({ description: 'https://discord.gg/zGvtAnGhdP' });
+		return msg.embed({
+			description: 'https://discord.gg/zGvtAnGhdP',
+			color: 'RANDOM',
+			title: '<:handheartfill:848892406803202068> Join our Support Server!',
+		});
 	}
 };

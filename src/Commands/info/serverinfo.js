@@ -30,34 +30,55 @@ module.exports = class ServerInfoCommand extends Command {
 			.setColor('RANDOM')
 			.setThumbnail(msg.guild.iconURL({ dynamic: true, size: 4096 }))
 			.addField('General', [
-				`**❯ Name:** ${msg.guild.name}`,
-				`**❯ ID:** ${msg.guild.id}`,
-				`**❯ Owner:** ${owner.user.tag} \`(${msg.guild.ownerID})\``,
-				`**❯ Region:** ${regions[msg.guild.region]}`,
-				`**❯ Boost Tier:** ${msg.guild.premiumTier ? `Tier ${msg.guild.premiumTier}` : 'None'}`,
-				`**❯ Explicit Filter:** ${filterLevels[msg.guild.explicitContentFilter]}`,
-				`**❯ Verification Level:** ${verificationLevels[msg.guild.verificationLevel]}`,
-				`**❯ Time Created:** \`${moment(msg.guild.createdTimestamp).format('LT')} ${moment(
+				`**<:user1:848729325980876842> Name:** ${msg.guild.name}`,
+				`**<:tag:848730567259193404> ID:** ${msg.guild.id}`,
+				`**<:shielduserfill:848774692826251304> Owner:** ${owner.user.tag} \`(${msg.guild.ownerID})\``,
+				`**<:flagfill1:848775261842702357> Region:** ${regions[msg.guild.region]}`,
+				`**<:chatuploadfill:848775733094252575> Boost Tier:** ${
+					msg.guild.premiumTier ? `Tier ${msg.guild.premiumTier}` : 'None'
+				}`,
+				`**<:filterfill:848776197922881587> Explicit Filter:** ${
+					filterLevels[msg.guild.explicitContentFilter]
+				}`,
+				`**<:arrowupsline:848776601352011826> Verification Level:** ${
+					verificationLevels[msg.guild.verificationLevel]
+				}`,
+				`**<:clock1k:848734465102708766> Time Created:** \`${moment(
 					msg.guild.createdTimestamp,
-				).format('LL')} ${moment(msg.guild.createdTimestamp).fromNow()}\``,
-				`**❯ NSFW:** ${msg.guild.nsfw ? 'Yes' : 'No'}`,
+				).format('LT')} ${moment(msg.guild.createdTimestamp).format('LL')} ${moment(
+					msg.guild.createdTimestamp,
+				).fromNow()}\``,
+				`**<:errorwarningfill:848776991183994880> NSFW:** ${msg.guild.nsfw ? 'Yes' : 'No'}`,
 				'\u200b',
 			])
 			.addField('Statistics', [
-				`**❯ Role Count:** ${roles.length}`,
-				`**❯ Emoji Count:** ${emojis.size}`,
-				`**❯ Member Count:** ${msg.guild.memberCount}`,
-				`**❯ Humans:** ${members.filter((member) => !member.user.bot).size}`,
-				`**❯ Bots:** ${members.filter((member) => member.user.bot).size}`,
-				`**❯ Text Channels:** ${channels.filter((channel) => channel.type === 'text').size}`,
-				`**❯ Voice Channels:** ${channels.filter((channel) => channel.type === 'voice').size}`,
-				`**❯ Category Channels:** ${
+				`**<:listordered:848777308794126346> Role Count:** ${roles.length}`,
+				`**<:listordered:848777308794126346> Emoji Count:** ${emojis.size}`,
+				`**<:listordered:848777308794126346> Member Count:** ${msg.guild.memberCount}`,
+				`**<:user1:848729325980876842> Humans:** ${
+					members.filter((member) => !member.user.bot).size
+				}`,
+				`**<:robotfill:848737114287636480> Bots:** ${
+					members.filter((member) => member.user.bot).size
+				}`,
+				`**<:text:848777804601491489> Text Channels:** ${
+					channels.filter((channel) => channel.type === 'text').size
+				}`,
+				`**<:micfill:848778033112023071> Voice Channels:** ${
+					channels.filter((channel) => channel.type === 'voice').size
+				}`,
+				`**<:filelist3fill:848778281133146122> Category Channels:** ${
 					channels.filter((channel) => channel.type === 'category').size
 				}`,
-				`**❯ News Channels:** ${channels.filter((channel) => channel.type === 'news').size}`,
-				`**❯ Stage Channels:** ${channels.filter((channel) => channel.type === 'stage').size}`,
-				`**❯ Boost Count:** ${msg.guild.premiumSubscriptionCount ?? '0'}`,
-				'\u200b',
+				`**<:newspaperfill:848778555705393152> News Channels:** ${
+					channels.filter((channel) => channel.type === 'news').size
+				}`,
+				`**<:building3fill:848778788841193493> Stage Channels:** ${
+					channels.filter((channel) => channel.type === 'stage').size
+				}`,
+				`**<:arrowrightupfill:848779032966856704> Boost Count:** ${
+					msg.guild.premiumSubscriptionCount ?? '0'
+				}`,
 			])
 			.setTimestamp();
 
