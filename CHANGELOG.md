@@ -1,3 +1,9 @@
+# [2.79.0](https://github.com/1chiSensei/Tanaka/compare/2.78.6...2.79.0) (2021-06-01)
+
+### Features
+
+- **commands:** add buttons ([db9378e](https://github.com/1chiSensei/Tanaka/commit/db9378e8d17591c1f2a2900d985bd37f4c404456))
+
 ## [2.78.6](https://github.com/1chiSensei/Tanaka/compare/2.78.5...2.78.6) (2021-06-01)
 
 ### Bug Fixes
