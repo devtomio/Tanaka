@@ -1,3 +1,9 @@
+## [2.78.2](https://github.com/1chiSensei/Tanaka/compare/2.78.1...2.78.2) (2021-06-01)
+
+### Bug Fixes
+
+- **ci:** dont publish to docker hub ([b65ff36](https://github.com/1chiSensei/Tanaka/commit/b65ff362059a74f416d8664fb08ce8a26171050a))
+
 ## [2.78.1](https://github.com/1chiSensei/Tanaka/compare/2.78.0...2.78.1) (2021-06-01)
 
 ### Bug Fixes
