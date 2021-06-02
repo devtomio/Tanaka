@@ -15,7 +15,7 @@ const client = new Client({
 	redirectURI: 'https://tanaka-bot.me/auth/callback',
 	scopes: ['identify'],
 });
-const port = process.env.PORT;
+const port = 3001;
 const hook = new WebhookClient(process.env.VOTE_ID, process.env.VOTE_TOKEN);
 
 // eslint-disable-next-line valid-jsdoc

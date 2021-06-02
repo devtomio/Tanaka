@@ -206,7 +206,7 @@ module.exports = class Client extends CommandoClient {
 	}
 
 	async registerProvider() {
-		const mongo = await MongoClient.connect(process.env.MONGO_URI, {
+		const mongo = await MongoClient.connect('mongodb://127.0.0.1:27017', {
 			useNewUrlParser: true,
 			useUnifiedTopology: true,
 		});
