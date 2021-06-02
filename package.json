@@ -36,7 +36,7 @@
 		"cookies": "^0.8.0",
 		"cors": "^2.8.5",
 		"decimal-to-percent": "^1.0.1",
-		"discord.js": "^13.0.0-dev.66a6a1fcedc8c35b75a89dbb26edc01317bdd7e2",
+		"discord.js": "^13.0.0-dev.6567ba821a54d3dc97d07ce8ac55335fef2f346b",
 		"discord.js-commando": "github:discordjs/Commando",
 		"ejs": "^3.1.6",
 		"erlpack": "discord/erlpack",
