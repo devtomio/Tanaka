@@ -246,20 +246,9 @@
     "@discordjs/node-pre-gyp" "^0.3.2"
     node-addon-api "^3.1.0"
 
-"@duxcore/interactive-discord@duxcore/interactive-discord":
-  version "1.0.14"
-  resolved "https://codeload.github.com/duxcore/interactive-discord/tar.gz/fe1fd22c7626cbd2b820259eb778b6d9d1d01e1f"
-  dependencies:
-    axios "^0.21.1"
-    discord.js "12.5.2"
-    patch-package "^6.4.7"
-    postinstall-postinstall "^2.1.0"
-    tiny-typed-emitter "^2.0.3"
-    uuid "^8.3.2"
-
-"@duxcore/interactive-discord@duxcore/interactive-discord#examples":
-  version "1.0.14"
-  resolved "https://codeload.github.com/duxcore/interactive-discord/tar.gz/eca46b981588ade2a15048b7cf8b272334692664"
+"@duxcore/interactive-discord@duxcore/interactive-discord#main":
+  version "1.1.4"
+  resolved "https://codeload.github.com/duxcore/interactive-discord/tar.gz/6f813f53fb5ae8fe4df6c3a6d16f9b1bda50dcc4"
   dependencies:
     axios "^0.21.1"
     discord.js "12.5.2"
@@ -4186,12 +4175,24 @@ mime-db@1.47.0:
   resolved "https://registry.yarnpkg.com/mime-db/-/mime-db-1.47.0.tgz#8cb313e59965d3c05cfbf898915a267af46a335c"
   integrity sha512-QBmA/G2y+IfeS4oktet3qRZ+P5kPhCKRXxXnQEudYqUaEioAU1/Lq2us3D/t1Jfo4hE9REQPrbB7K5sOczJVIw==
 
-mime-types@2.1.30, mime-types@^2.1.12, mime-types@~2.1.19, mime-types@~2.1.24:
+mime-db@1.48.0:
+  version "1.48.0"
+  resolved "https://registry.yarnpkg.com/mime-db/-/mime-db-1.48.0.tgz#e35b31045dd7eada3aaad537ed88a33afbef2d1d"
+  integrity sha512-FM3QwxV+TnZYQ2aRqhlKBMHxk10lTbMt3bBkMAp54ddrNeVSfcQYOOKuGuy3Ddrm38I04If834fOUSq1yzslJQ==
+
+mime-types@2.1.30, mime-types@~2.1.19, mime-types@~2.1.24:
   version "2.1.30"
   resolved "https://registry.yarnpkg.com/mime-types/-/mime-types-2.1.30.tgz#6e7be8b4c479825f85ed6326695db73f9305d62d"
   integrity sha512-crmjA4bLtR8m9qLpHvgxSChT+XoSlZi8J4n/aIdn3z92e/U47Z0V/yl+Wh9W046GgFVAmoNR/fmdbZYcSSIUeg==
   dependencies:
     mime-db "1.47.0"
+
+mime-types@^2.1.12:
+  version "2.1.31"
+  resolved "https://registry.yarnpkg.com/mime-types/-/mime-types-2.1.31.tgz#a00d76b74317c61f9c2db2218b8e9f8e9c5c9e6b"
+  integrity sha512-XGZnNzm3QvgKxa8dpzyhFTHmpP3l5YNusmne07VUOXxou9CqUqYa/HBy124RqtVh/O2pECas/MOcsDgpilPOPg==
+  dependencies:
+    mime-db "1.48.0"
 
 mime@1.6.0:
   version "1.6.0"

@@ -7,6 +7,7 @@ const { execSync } = require('child_process');
 const { Velocity } = require('velocity-api');
 const { MongoClient } = require('mongodb');
 const { Database } = require('quickmongo');
+const APIClient = require('./APIClient');
 const OpenEval = require('open-eval');
 const glob = require('glob-promise');
 const Turndown = require('turndown');
@@ -31,7 +32,7 @@ module.exports = class Client extends CommandoClient {
 			...options,
 		});
 
-		this.db = new Database(process.env.MONGO_URI, 'tanaka', {
+		this.db = new Database('mongodb://127.0.0.1:27017', 'tanaka', {
 			useNewUrlParser: true,
 			useUnifiedTopology: true,
 		});
@@ -72,6 +73,8 @@ module.exports = class Client extends CommandoClient {
 		this.bots = new WebhookClient(process.env.BOTS_ID, process.env.BOTS_TOKEN);
 
 		this.interactions = new InteractiveClient(this, process.env.CLIENT_ID);
+
+		this.request = APIClient;
 	}
 
 	get ip() {
@@ -115,7 +118,7 @@ module.exports = class Client extends CommandoClient {
 		return this.channels.cache.size;
 	}
 
-	async login(token = process.env.DISCORD_TOKEN) {
+	async login(token = process.env.BOT_TOKEN) {
 		this.registerInhibitors();
 		this.registerCommands();
 		web(this);

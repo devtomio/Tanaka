@@ -1,9 +1,8 @@
-const { REDIS_URL } = process.env;
 const Redis = require('ioredis');
 
 module.exports = class RedisClient {
 	constructor(client) {
-		this.db = new Redis(REDIS_URL, {
+		this.db = new Redis({
 			enableReadyCheck: true,
 			db: 0,
 		});

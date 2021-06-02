@@ -12,6 +12,7 @@ module.exports = class BotList {
 			await this.ibl();
 			await this.discordBotsGG();
 			await this.discordExtremeList();
+			await this.pbl();
 		}, 1.8e6);
 	}
 
@@ -24,7 +25,7 @@ module.exports = class BotList {
 		await request
 			.post(`https://api.infinitybotlist.com/bot/${this.client.user.id}`)
 			.set({
-				Authorization: process.env.IBL_KEY,
+				authorization: process.env.IBL_KEY,
 				'Content-Type': 'application/json',
 			})
 			.send(JSON.stringify(body));
@@ -55,6 +56,21 @@ module.exports = class BotList {
 			.post(`https://api.discordextremelist.xyz/v2/bot/${this.client.user.id}/stats`)
 			.set({
 				Authorization: process.env.DISCORD_EXTREME_LIST_KEY,
+				'Content-Type': 'application/json',
+			})
+			.send(JSON.stringify(body));
+	}
+
+	async pbl() {
+		const body = {
+			server_count: await this.client.guildCount(),
+			shard_count: this.client.shard?.shardCount ?? 1,
+		};
+
+		await request
+			.post(`https://paradisebots.net/api/v1/bot/${this.client.user.id}`)
+			.set({
+				Authorization: process.env.PARADISEBOTS_KEY,
 				'Content-Type': 'application/json',
 			})
 			.send(JSON.stringify(body));

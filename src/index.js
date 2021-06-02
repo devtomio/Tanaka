@@ -4,7 +4,7 @@ const logger = require('./Structures/Logger');
 const { join } = require('path');
 
 const manager = new ShardingManager(join(__dirname, 'Structures', 'BaseCluster'), {
-	token: process.env.DISCORD_TOKEN,
+	token: process.env.BOT_TOKEN,
 	client: Client,
 	shardCount: 2,
 	timeout: 60000,
