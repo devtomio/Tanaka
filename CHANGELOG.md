@@ -1,3 +1,9 @@
+# [2.80.0](https://github.com/1chiSensei/Tanaka/compare/2.79.0...2.80.0) (2021-06-02)
+
+### Features
+
+- **global:** switch to a vps ([49646b4](https://github.com/1chiSensei/Tanaka/commit/49646b4e3d1ab01fb1210fe1f912123118a976a8))
+
 # [2.79.0](https://github.com/1chiSensei/Tanaka/compare/2.78.6...2.79.0) (2021-06-01)
 
 ### Features
