@@ -1,3 +1,9 @@
+## [2.80.1](https://github.com/1chiSensei/Tanaka/compare/2.80.0...2.80.1) (2021-06-02)
+
+### Bug Fixes
+
+- **web:** fix port ([f9c5571](https://github.com/1chiSensei/Tanaka/commit/f9c5571e05c7796c903333ce187a02f97d137491))
+
 # [2.80.0](https://github.com/1chiSensei/Tanaka/compare/2.79.0...2.80.0) (2021-06-02)
 
 ### Features
