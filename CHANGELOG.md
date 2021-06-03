@@ -1,3 +1,9 @@
+# [2.83.0](https://github.com/1chiSensei/Tanaka/compare/2.82.0...2.83.0) (2021-06-03)
+
+### Features
+
+- **commands:** use buttons in help ([7faf7c5](https://github.com/1chiSensei/Tanaka/commit/7faf7c5baaf96775fe5ee773b8d8a7f7c6fc60fa))
+
 # [2.82.0](https://github.com/1chiSensei/Tanaka/compare/2.81.2...2.82.0) (2021-06-03)
 
 ### Features
