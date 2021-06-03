@@ -1,3 +1,9 @@
+## [2.84.1](https://github.com/1chiSensei/Tanaka/compare/2.84.0...2.84.1) (2021-06-03)
+
+### Bug Fixes
+
+- **web:** fix caddy ([f35f04e](https://github.com/1chiSensei/Tanaka/commit/f35f04eddc819b52ef4dbca32a796989172a34da))
+
 # [2.84.0](https://github.com/1chiSensei/Tanaka/compare/2.83.1...2.84.0) (2021-06-03)
 
 ### Features
