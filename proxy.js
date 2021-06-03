@@ -1,7 +1,10 @@
 const proxy = require('redbird')({
-	port: 80,
+	port: 8080,
 	ssl: {
 		port: 443,
+	},
+	letsencrypt: {
+		port: 9989,
 	},
 });
 

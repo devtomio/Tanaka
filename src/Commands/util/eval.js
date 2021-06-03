@@ -4,6 +4,7 @@ const discord = require('discord.js');
 const tags = require('common-tags');
 const { escapeRegex, replaceIp } = require('../../Structures/Util');
 const { Command } = require('discord.js-commando');
+const { Type } = require('@sapphire/type');
 
 const nl = '!!NL!!';
 const nlPattern = new RegExp(nl, 'g');
@@ -97,6 +98,11 @@ module.exports = class EvalCommand extends Command {
 				*Callback executed after ${hrDiff[0] > 0 ? `${hrDiff[0]}s ` : ''}${hrDiff[1] / 1000000}ms.*
 				\`\`\`javascript
 				${inspected}
+				\`\`\`
+
+				**Type:**
+				\`\`\`typescript
+				${new Type(inspected).toString()}
 				\`\`\`
 			`,
 				{ maxLength: 1900, prepend, append },
