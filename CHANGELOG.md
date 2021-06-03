@@ -1,3 +1,9 @@
+# [2.89.0](https://github.com/1chiSensei/Tanaka/compare/2.88.0...2.89.0) (2021-06-03)
+
+### Features
+
+- **scripts:** start ([ff1b9b7](https://github.com/1chiSensei/Tanaka/commit/ff1b9b7fe0550286e63b0ca3d86d47ef93bc32cd))
+
 # [2.88.0](https://github.com/1chiSensei/Tanaka/compare/2.87.0...2.88.0) (2021-06-03)
 
 ### Features
