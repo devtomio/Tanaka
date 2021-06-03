@@ -18,7 +18,7 @@ jobs:
           node-version: 15
 
       - name: Install Dependencies
-        run: yarn
+        run: yarn --frozen-lockfile
 
       - name: Run Prettier
         uses: creyD/prettier_action@v3.3

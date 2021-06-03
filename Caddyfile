@@ -1,4 +1,0 @@
-tanaka-bot.me
-
-http_port 3002
-reverse_proxy localhost:3001
