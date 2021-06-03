@@ -1,3 +1,9 @@
+## [2.86.1](https://github.com/1chiSensei/Tanaka/compare/2.86.0...2.86.1) (2021-06-03)
+
+### Bug Fixes
+
+- **commands:** fix string ([f7d1bdf](https://github.com/1chiSensei/Tanaka/commit/f7d1bdf5ff0d7152dd55b4945a7b863cad6afa15))
+
 # [2.86.0](https://github.com/1chiSensei/Tanaka/compare/2.85.2...2.86.0) (2021-06-03)
 
 ### Features
