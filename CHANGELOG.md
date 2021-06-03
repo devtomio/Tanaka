@@ -1,3 +1,9 @@
+# [2.84.0](https://github.com/1chiSensei/Tanaka/compare/2.83.1...2.84.0) (2021-06-03)
+
+### Features
+
+- **web:** add caddyfile ([4806ac8](https://github.com/1chiSensei/Tanaka/commit/4806ac8958f2b8ee678b1ab852c2a5fdc6eb7232))
+
 ## [2.83.1](https://github.com/1chiSensei/Tanaka/compare/2.83.0...2.83.1) (2021-06-03)
 
 # [2.83.0](https://github.com/1chiSensei/Tanaka/compare/2.82.0...2.83.0) (2021-06-03)

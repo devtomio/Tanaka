@@ -1,6 +1,6 @@
 {
 	"name": "tanaka",
-	"version": "2.83.1",
+	"version": "2.84.0",
 	"description": "An all fun and games discord bot.",
 	"main": "src/index.js",
 	"repository": {
