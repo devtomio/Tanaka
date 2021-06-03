@@ -1,3 +1,6 @@
+# LetsEncrypt Certificates
+certs/
+
 # yarn v2
 .yarn/*
 !.yarn/releases

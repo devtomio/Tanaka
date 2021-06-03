@@ -59,6 +59,7 @@
 		"open-eval": "^1.0.0",
 		"quickmongo": "^3.0.2",
 		"random-reddit": "^2.0.1",
+		"redbird": "^0.10.0",
 		"sherlockjs": "^1.4.0",
 		"signale": "^1.4.0",
 		"snoowrap": "^1.23.0",
