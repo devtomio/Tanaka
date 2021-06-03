@@ -140,6 +140,8 @@ module.exports = class Client extends CommandoClient {
 
 			this.events.set(event.name, event);
 			event.emitter[event.type](event.name, (...args) => event.run(...args));
+
+			this.logger.info(`[Client]: Loaded event "${event.name}"`);
 		}
 	}
 

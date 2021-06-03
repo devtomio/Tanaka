@@ -3,8 +3,8 @@ module.exports = class Event {
 	 * @param {import('./Client')} client
 	 * @param {keyof import('discord.js').ClientEvents|keyof import('quickmongo').Events} name
 	 * @param {Object} options
-	 * @param {string} [options.once]
-	 * @param {string} [options.emitter]
+	 * @param {boolean} [options.once]
+	 * @param {'db'|'client'} [options.emitter]
 	 */
 	constructor(client, name, options = {}) {
 		this.name = name;

@@ -6,6 +6,6 @@ module.exports = class DebugEvent extends Event {
 	}
 
 	run(data) {
-		this.client.logger.debug(data);
+		this.client.logger.debug(`[Client]: ${data}`);
 	}
 };

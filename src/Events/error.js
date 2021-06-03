@@ -6,6 +6,6 @@ module.exports = class ErrorEvent extends Event {
 	}
 
 	run(err) {
-		this.client.logger.error(err);
+		throw err;
 	}
 };
