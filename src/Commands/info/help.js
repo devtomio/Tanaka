@@ -1,3 +1,4 @@
+const { ButtonComponent, ComponentActionRow, LinkButtonComponent } = require('@duxcore/interactive-discord');
 const { Command } = require('discord.js-commando');
 const { MessageEmbed } = require('discord.js');
 const { permissions } = require('../../Structures/Util');
@@ -26,56 +27,237 @@ module.exports = class HelpCommand extends Command {
 
 	async run(msg, { command }) {
 		if (!command) {
-			const embeds = [];
-			for (let i = 0; i < Math.ceil(this.client.registry.groups.size / 10); i++) {
-				const embed = new MessageEmbed().setTitle(`Command List (${i + 1})`).setColor('RANDOM');
+			const owner = this.client.isOwner(msg.author);
+			const embed = new MessageEmbed()
+				.setTitle('Help Menu')
+				.setDescription('To get started, press one of the buttons!')
+				.setColor('RANDOM')
+				.setFooter('Do t!help <command> to get information about a command!')
+				.setTimestamp();
+			const utilButton = new ButtonComponent({
+				label: 'Utility',
+				style: 1,
+			});
+			const tagButton = new ButtonComponent({
+				label: 'Tags',
+				style: 1,
+			});
+			const searchButton = new ButtonComponent({
+				label: 'Search',
+				style: 1,
+			});
+			const remindButton = new ButtonComponent({
+				label: 'Reminder',
+				style: 1,
+			});
+			const otherButton = new ButtonComponent({
+				label: 'Other',
+				style: 1,
+			});
+			const infoButton = new ButtonComponent({
+				label: 'Information',
+				style: 1,
+			});
+			const imageButton = new ButtonComponent({
+				label: 'Image Manipulation',
+				style: 1,
+			});
+			const codeBinButton = new ButtonComponent({
+				label: 'Code Bins',
+				style: 1,
+			});
+			const randomButton = new ButtonComponent({
+				label: 'Random Response',
+				style: 1,
+			});
+			const animeButton = new ButtonComponent({
+				label: 'Anime',
+				style: 1,
+			});
+			const backButton = new ButtonComponent({
+				label: 'Go Back',
+				style: 3,
+			});
+			const webButton = new LinkButtonComponent('https://tanaka-bot.me', {
+				label: 'Website',
+				style: 1,
+			});
+			const row1 = new ComponentActionRow(utilButton, searchButton, remindButton);
+			const row2 = new ComponentActionRow(tagButton, otherButton, animeButton);
+			const row3 = new ComponentActionRow(infoButton, imageButton, randomButton);
+			const row4 = new ComponentActionRow(backButton, codeBinButton, webButton);
 
-				embeds.push(embed);
-			}
+			this.client.interactions.sendComponents({
+				channel: msg.channel,
+				content: '\u200b',
+				components: [row1, row2, row3, row4],
+				embed,
+			});
+			this.client.interactions.addButtonListener(utilButton, (interaction) => {
+				if (interaction.member.id !== msg.author.id)
+					return interaction.respond({
+						content: "You aren't part of this interaction...",
+						private: true,
+					});
 
-			let cmdCount = 0;
-			let i = 0;
-			let embedIndex = 0;
-
-			for (const group of this.client.registry.groups.values()) {
-				i++;
-
-				const owner = this.client.isOwner(msg.author);
-				const commands = group.commands.filter((cmd) => {
+				const cmds = this.client.registry.groups.get('util').commands.filter((cmd) => {
 					if (owner) return true;
 					if (cmd.ownerOnly || cmd.hidden) return false;
 					if (cmd.nsfw && !msg.channel.nsfw) return false;
 					return true;
 				});
 
-				if (!commands.size) continue;
-				cmdCount += commands.size;
+				embed.setDescription(cmds.map((cmd) => `\`${cmd.name}\``).join(' '));
+				interaction.respond({ shouldEdit: true, embeds: [embed] });
+			});
+			this.client.interactions.addButtonListener(searchButton, (interaction) => {
+				if (interaction.member.id !== msg.author.id)
+					return interaction.respond({
+						content: "You aren't part of this interaction...",
+						private: true,
+					});
 
-				if (i > embedIndex * 10 + 10) embedIndex++;
+				const cmds = this.client.registry.groups.get('search').commands.filter((cmd) => {
+					if (owner) return true;
+					if (cmd.ownerOnly || cmd.hidden) return false;
+					if (cmd.nsfw && !msg.channel.nsfw) return false;
+					return true;
+				});
 
-				embeds[embedIndex].addField(
-					`${group.name}`,
-					commands.map((cmd) => `\`${cmd.name}\``).join(' '),
-				);
-			}
+				embed.setDescription(cmds.map((cmd) => `\`${cmd.name}\``).join(' '));
+				interaction.respond({ shouldEdit: true, embeds: [embed] });
+			});
+			this.client.interactions.addButtonListener(remindButton, (interaction) => {
+				if (interaction.member.id !== msg.author.id)
+					return interaction.respond({
+						content: "You aren't part of this interaction...",
+						private: true,
+					});
 
-			const allShown = cmdCount === this.client.registry.groups.size;
-			embeds[embeds.length - 1].setFooter(
-				`${this.client.registry.commands.size} Commands ${
-					allShown ? '' : ` (${cmdCount} Shown)`
-				}`,
-			);
+				const cmds = this.client.registry.groups.get('remind').commands.filter((cmd) => {
+					if (owner) return true;
+					if (cmd.ownerOnly || cmd.hidden) return false;
+					if (cmd.nsfw && !msg.channel.nsfw) return false;
+					return true;
+				});
 
-			try {
-				const msgs = [];
-				for (const embed of embeds) msgs.push(await msg.direct({ embed }));
+				embed.setDescription(cmds.map((cmd) => `\`${cmd.name}\``).join(' '));
+				interaction.respond({ shouldEdit: true, embeds: [embed] });
+			});
+			this.client.interactions.addButtonListener(randomButton, (interaction) => {
+				if (interaction.member.id !== msg.author.id)
+					return interaction.respond({
+						content: "You aren't part of this interaction...",
+						private: true,
+					});
 
-				if (msg.channel.type !== 'dm') msgs.push(await msg.say('Check your DMs!'));
+				const cmds = this.client.registry.groups.get('random').commands.filter((cmd) => {
+					if (owner) return true;
+					if (cmd.ownerOnly || cmd.hidden) return false;
+					if (cmd.nsfw && !msg.channel.nsfw) return false;
+					return true;
+				});
 
-				return msgs;
-			} catch {
-				return msg.reply('You have your DMs disabled!');
-			}
+				embed.setDescription(cmds.map((cmd) => `\`${cmd.name}\``).join(' '));
+				interaction.respond({ shouldEdit: true, embeds: [embed] });
+			});
+			this.client.interactions.addButtonListener(otherButton, (interaction) => {
+				if (interaction.member.id !== msg.author.id)
+					return interaction.respond({
+						content: "You aren't part of this interaction...",
+						private: true,
+					});
+
+				const cmds = this.client.registry.groups.get('other').commands.filter((cmd) => {
+					if (owner) return true;
+					if (cmd.ownerOnly || cmd.hidden) return false;
+					if (cmd.nsfw && !msg.channel.nsfw) return false;
+					return true;
+				});
+
+				embed.setDescription(cmds.map((cmd) => `\`${cmd.name}\``).join(' '));
+				interaction.respond({ shouldEdit: true, embeds: [embed] });
+			});
+			this.client.interactions.addButtonListener(infoButton, (interaction) => {
+				if (interaction.member.id !== msg.author.id)
+					return interaction.respond({
+						content: "You aren't part of this interaction...",
+						private: true,
+					});
+
+				const cmds = this.client.registry.groups.get('info').commands.filter((cmd) => {
+					if (owner) return true;
+					if (cmd.ownerOnly || cmd.hidden) return false;
+					if (cmd.nsfw && !msg.channel.nsfw) return false;
+					return true;
+				});
+
+				embed.setDescription(cmds.map((cmd) => `\`${cmd.name}\``).join(' '));
+				interaction.respond({ shouldEdit: true, embeds: [embed] });
+			});
+			this.client.interactions.addButtonListener(imageButton, (interaction) => {
+				if (interaction.member.id !== msg.author.id)
+					return interaction.respond({
+						content: "You aren't part of this interaction...",
+						private: true,
+					});
+
+				const cmds = this.client.registry.groups.get('img').commands.filter((cmd) => {
+					if (owner) return true;
+					if (cmd.ownerOnly || cmd.hidden) return false;
+					if (cmd.nsfw && !msg.channel.nsfw) return false;
+					return true;
+				});
+
+				embed.setDescription(cmds.map((cmd) => `\`${cmd.name}\``).join(' '));
+				interaction.respond({ shouldEdit: true, embeds: [embed] });
+			});
+			this.client.interactions.addButtonListener(codeBinButton, (interaction) => {
+				if (interaction.member.id !== msg.author.id)
+					return interaction.respond({
+						content: "You aren't part of this interaction...",
+						private: true,
+					});
+
+				const cmds = this.client.registry.groups.get('codebin').commands.filter((cmd) => {
+					if (owner) return true;
+					if (cmd.ownerOnly || cmd.hidden) return false;
+					if (cmd.nsfw && !msg.channel.nsfw) return false;
+					return true;
+				});
+
+				embed.setDescription(cmds.map((cmd) => `\`${cmd.name}\``).join(' '));
+				interaction.respond({ shouldEdit: true, embeds: [embed] });
+			});
+			this.client.interactions.addButtonListener(animeButton, (interaction) => {
+				if (interaction.member.id !== msg.author.id)
+					return interaction.respond({
+						content: "You aren't part of this interaction...",
+						private: true,
+					});
+
+				const cmds = this.client.registry.groups.get('anime').commands.filter((cmd) => {
+					if (owner) return true;
+					if (cmd.ownerOnly || cmd.hidden) return false;
+					if (cmd.nsfw && !msg.channel.nsfw) return false;
+					return true;
+				});
+
+				embed.setDescription(cmds.map((cmd) => `\`${cmd.name}\``).join(' '));
+				interaction.respond({ shouldEdit: true, embeds: [embed] });
+			});
+			this.client.interactions.addButtonListener(backButton, (interaction) => {
+				if (interaction.member.id !== msg.author.id)
+					return interaction.respond({
+						content: "You aren't part of this interaction...",
+						private: true,
+					});
+
+				embed.setDescription('To get started, press one of the buttons!');
+				interaction.respond({ shouldEdit: true, embeds: [embed] });
+			});
+
+			return;
 		}
 
 		const userPerms = command.userPermissions
