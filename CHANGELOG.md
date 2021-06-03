@@ -1,3 +1,9 @@
+# [2.82.0](https://github.com/1chiSensei/Tanaka/compare/2.81.2...2.82.0) (2021-06-03)
+
+### Features
+
+- **events:** add interaction ([dc301c9](https://github.com/1chiSensei/Tanaka/commit/dc301c91ded7f7015713cf16e4ce2064cc740dae))
+
 ## [2.81.2](https://github.com/1chiSensei/Tanaka/compare/2.81.1...2.81.2) (2021-06-03)
 
 ### Bug Fixes
