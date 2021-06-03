@@ -1,3 +1,9 @@
+# [2.88.0](https://github.com/1chiSensei/Tanaka/compare/2.87.0...2.88.0) (2021-06-03)
+
+### Features
+
+- **commands:** use emojis ([4e041a2](https://github.com/1chiSensei/Tanaka/commit/4e041a2561f6feace808e9b45f3919395702c273))
+
 # [2.87.0](https://github.com/1chiSensei/Tanaka/compare/2.86.1...2.87.0) (2021-06-03)
 
 ### Features
