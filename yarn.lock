@@ -246,9 +246,10 @@
     "@discordjs/node-pre-gyp" "^0.3.2"
     node-addon-api "^3.1.0"
 
-"@duxcore/interactive-discord@github:duxcore/interactive-discord":
+"@duxcore/interactive-discord@^1.3.1":
   version "1.3.1"
-  resolved "https://codeload.github.com/duxcore/interactive-discord/tar.gz/b7653b19def707fbbe87ed533dde2be87f462a8a"
+  resolved "https://registry.yarnpkg.com/@duxcore/interactive-discord/-/interactive-discord-1.3.1.tgz#9ac17d458abb4ded90ae6b612759c58861d89145"
+  integrity sha512-uOu1RymV2x3LspiQvqXMQB845TFnTDw82F3imliHmT34ddPx+H1GA29HmHQuoeVgO9Kl36S+xeXR0r6xBO6eLg==
   dependencies:
     axios "^0.21.1"
     discord.js "12.5.2"
@@ -2002,15 +2003,6 @@ discord-api-types@^0.18.1:
 discord.js-commando@1chiSensei/Commando#tanaka-modified:
   version "0.12.3"
   resolved "https://codeload.github.com/1chiSensei/Commando/tar.gz/4f0950e4f36d137e5545212bcb83946f9ef989bb"
-  dependencies:
-    common-tags "^1.8.0"
-    emoji-regex "^9.2.0"
-    is-promise "^4.0.0"
-    require-all "^3.0.0"
-
-"discord.js-commando@github:1chiSensei/Commando#tanaka-modified":
-  version "0.12.3"
-  resolved "https://codeload.github.com/1chiSensei/Commando/tar.gz/d8cde7320f677303f2ab56f2a271be8d3a0e67b6"
   dependencies:
     common-tags "^1.8.0"
     emoji-regex "^9.2.0"

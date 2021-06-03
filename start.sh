@@ -1,5 +1,8 @@
 #!/bin/bash
 
+# Install Deps
+yarn install
+
 # See if a process is already there
 pm2 delete tanaka || :
 
