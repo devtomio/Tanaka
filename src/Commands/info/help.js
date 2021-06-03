@@ -37,14 +37,29 @@ module.exports = class HelpCommand extends Command {
 			const utilButton = new ButtonComponent({
 				label: 'Utility',
 				style: 1,
+				emoji: {
+					name: 'toolsfill',
+					id: '849863891940147240',
+					animated: false,
+				},
 			});
 			const tagButton = new ButtonComponent({
 				label: 'Tags',
 				style: 1,
+				emoji: {
+					name: 'tag',
+					id: '848730567259193404',
+					animated: false,
+				},
 			});
 			const searchButton = new ButtonComponent({
 				label: 'Search',
 				style: 1,
+				emoji: {
+					name: 'emoji2fill',
+					id: '850022235426521108',
+					animated: false,
+				},
 			});
 			const remindButton = new ButtonComponent({
 				label: 'Reminder',
@@ -53,34 +68,74 @@ module.exports = class HelpCommand extends Command {
 			const otherButton = new ButtonComponent({
 				label: 'Other',
 				style: 1,
+				emoji: {
+					name: 'clock1k',
+					id: '848734465102708766',
+					animated: false,
+				},
 			});
 			const infoButton = new ButtonComponent({
 				label: 'Information',
 				style: 1,
+				emoji: {
+					name: 'informationfill',
+					id: '850023310149550101',
+					animated: false,
+				},
 			});
 			const imageButton = new ButtonComponent({
 				label: 'Image Manipulation',
 				style: 1,
+				emoji: {
+					name: 'image',
+					id: '848733689210208267',
+					animated: false,
+				},
 			});
 			const codeBinButton = new ButtonComponent({
 				label: 'Code Bins',
 				style: 1,
+				emoji: {
+					name: 'terminalboxfill',
+					id: '848893988400267326',
+					animated: false,
+				},
 			});
 			const randomButton = new ButtonComponent({
 				label: 'Random Response',
 				style: 1,
+				emoji: {
+					name: 'building3fill',
+					id: '848778788841193493',
+					animated: false,
+				},
 			});
 			const animeButton = new ButtonComponent({
 				label: 'Anime',
 				style: 1,
+				emoji: {
+					name: 'flagfill1',
+					id: '848775261842702357',
+					animated: false,
+				},
 			});
 			const backButton = new ButtonComponent({
 				label: 'Go Back',
 				style: 3,
+				emoji: {
+					name: 'arrowgobackline',
+					id: '850024464850223134',
+					animated: false,
+				},
 			});
 			const webButton = new LinkButtonComponent('https://tanaka-bot.me', {
 				label: 'Website',
 				style: 1,
+				emoji: {
+					name: 'window2fill',
+					id: '848897904990355456',
+					animated: false,
+				},
 			});
 			const row1 = new ComponentActionRow(utilButton, searchButton, remindButton, imageButton);
 			const row2 = new ComponentActionRow(tagButton, otherButton, animeButton, randomButton);

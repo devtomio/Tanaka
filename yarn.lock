@@ -1999,18 +1999,18 @@ discord-api-types@^0.18.1:
   resolved "https://registry.yarnpkg.com/discord-api-types/-/discord-api-types-0.18.1.tgz#5d08ed1263236be9c21a22065d0e6b51f790f492"
   integrity sha512-hNC38R9ZF4uaujaZQtQfm5CdQO58uhdkoHQAVvMfIL0LgOSZeW575W8H6upngQOuoxWd8tiRII3LLJm9zuQKYg==
 
-"discord.js-commando@github:1chiSensei/Commando#tanaka-modified":
+discord.js-commando@1chiSensei/Commando#tanaka-modified:
   version "0.12.3"
-  resolved "https://codeload.github.com/1chiSensei/Commando/tar.gz/d8cde7320f677303f2ab56f2a271be8d3a0e67b6"
+  resolved "https://codeload.github.com/1chiSensei/Commando/tar.gz/4f0950e4f36d137e5545212bcb83946f9ef989bb"
   dependencies:
     common-tags "^1.8.0"
     emoji-regex "^9.2.0"
     is-promise "^4.0.0"
     require-all "^3.0.0"
 
-"discord.js-commando@github:discordjs/Commando":
+"discord.js-commando@github:1chiSensei/Commando#tanaka-modified":
   version "0.12.3"
-  resolved "https://codeload.github.com/discordjs/Commando/tar.gz/5f77f10c0bf0a0fc71af40a9ceee4eed5c76c749"
+  resolved "https://codeload.github.com/1chiSensei/Commando/tar.gz/d8cde7320f677303f2ab56f2a271be8d3a0e67b6"
   dependencies:
     common-tags "^1.8.0"
     emoji-regex "^9.2.0"
