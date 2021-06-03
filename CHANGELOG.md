@@ -1,3 +1,9 @@
+## [2.85.1](https://github.com/1chiSensei/Tanaka/compare/2.85.0...2.85.1) (2021-06-03)
+
+### Bug Fixes
+
+- **proxy:** fix port error ([9effff9](https://github.com/1chiSensei/Tanaka/commit/9effff9d2d4ed1480f2aa367c4da544b20663480))
+
 # [2.85.0](https://github.com/1chiSensei/Tanaka/compare/2.84.1...2.85.0) (2021-06-03)
 
 ### Features
