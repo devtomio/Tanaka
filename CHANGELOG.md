@@ -1,3 +1,9 @@
+# [2.86.0](https://github.com/1chiSensei/Tanaka/compare/2.85.2...2.86.0) (2021-06-03)
+
+### Features
+
+- **commands:** make eval show the type ([9d10766](https://github.com/1chiSensei/Tanaka/commit/9d1076650b783cb3387113db0e94cc981bf9d928))
+
 ## [2.85.2](https://github.com/1chiSensei/Tanaka/compare/2.85.1...2.85.2) (2021-06-03)
 
 ### Bug Fixes
