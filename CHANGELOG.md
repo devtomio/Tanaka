@@ -1,3 +1,9 @@
+## [2.85.2](https://github.com/1chiSensei/Tanaka/compare/2.85.1...2.85.2) (2021-06-03)
+
+### Bug Fixes
+
+- **proxy:** remove letsencrypt field ([dd8e830](https://github.com/1chiSensei/Tanaka/commit/dd8e830226abac3041cd732143191f4507f501cc))
+
 ## [2.85.1](https://github.com/1chiSensei/Tanaka/compare/2.85.0...2.85.1) (2021-06-03)
 
 ### Bug Fixes
