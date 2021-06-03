@@ -1,3 +1,9 @@
+## [2.81.1](https://github.com/1chiSensei/Tanaka/compare/2.81.0...2.81.1) (2021-06-03)
+
+### Bug Fixes
+
+- **scripts:** fix start script ([227ad83](https://github.com/1chiSensei/Tanaka/commit/227ad837369d76f8596d50226084652780a76d3e))
+
 # [2.81.0](https://github.com/1chiSensei/Tanaka/compare/2.80.1...2.81.0) (2021-06-03)
 
 ### Features
