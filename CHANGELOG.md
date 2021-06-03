@@ -1,3 +1,9 @@
+# [2.85.0](https://github.com/1chiSensei/Tanaka/compare/2.84.1...2.85.0) (2021-06-03)
+
+### Features
+
+- **web:** use redbird for proxy ([53cb01c](https://github.com/1chiSensei/Tanaka/commit/53cb01c65e481998038abb05af77d58bc016c19d))
+
 ## [2.84.1](https://github.com/1chiSensei/Tanaka/compare/2.84.0...2.84.1) (2021-06-03)
 
 ### Bug Fixes
