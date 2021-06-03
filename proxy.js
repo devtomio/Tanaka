@@ -5,6 +5,7 @@ const proxy = require('redbird')({
 	},
 	letsencrypt: {
 		port: 9989,
+		path: `${__dirname}/paths`,
 	},
 });
 

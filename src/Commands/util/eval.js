@@ -102,7 +102,7 @@ module.exports = class EvalCommand extends Command {
 
 				**Type:**
 				\`\`\`typescript
-				${new Type(inspected).toString()}
+				${new Type(result).toString()}
 				\`\`\`
 			`,
 				{ maxLength: 1900, prepend, append },
