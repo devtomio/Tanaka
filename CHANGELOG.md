@@ -1,3 +1,9 @@
+# [2.81.0](https://github.com/1chiSensei/Tanaka/compare/2.80.1...2.81.0) (2021-06-03)
+
+### Features
+
+- **events:** add db events ([bc0a3b9](https://github.com/1chiSensei/Tanaka/commit/bc0a3b915b4627455c9fd59bcecb22a3e6531d54))
+
 ## [2.80.1](https://github.com/1chiSensei/Tanaka/compare/2.80.0...2.80.1) (2021-06-02)
 
 ### Bug Fixes
