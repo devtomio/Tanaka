@@ -1,3 +1,9 @@
+## [2.81.2](https://github.com/1chiSensei/Tanaka/compare/2.81.1...2.81.2) (2021-06-03)
+
+### Bug Fixes
+
+- **scripts:** delete a pm2 instance ([a865de6](https://github.com/1chiSensei/Tanaka/commit/a865de6cc813d60f7426aef4e60783f1f51aead5))
+
 ## [2.81.1](https://github.com/1chiSensei/Tanaka/compare/2.81.0...2.81.1) (2021-06-03)
 
 ### Bug Fixes
