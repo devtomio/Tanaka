@@ -1,3 +1,9 @@
+# [2.87.0](https://github.com/1chiSensei/Tanaka/compare/2.86.1...2.87.0) (2021-06-03)
+
+### Features
+
+- **commands:** use embeds ([9aebe28](https://github.com/1chiSensei/Tanaka/commit/9aebe28d9bd25868ac7e2078e6a55ba452056885))
+
 ## [2.86.1](https://github.com/1chiSensei/Tanaka/compare/2.86.0...2.86.1) (2021-06-03)
 
 ### Bug Fixes
