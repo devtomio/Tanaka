@@ -82,22 +82,21 @@ module.exports = class HelpCommand extends Command {
 				label: 'Website',
 				style: 1,
 			});
-			const row1 = new ComponentActionRow(utilButton, searchButton, remindButton);
-			const row2 = new ComponentActionRow(tagButton, otherButton, animeButton);
-			const row3 = new ComponentActionRow(infoButton, imageButton, randomButton);
-			const row4 = new ComponentActionRow(backButton, codeBinButton, webButton);
+			const row1 = new ComponentActionRow(utilButton, searchButton, remindButton, imageButton);
+			const row2 = new ComponentActionRow(tagButton, otherButton, animeButton, randomButton);
+			const row3 = new ComponentActionRow(backButton, codeBinButton, infoButton, webButton);
 
 			this.client.interactions.sendComponents({
 				channel: msg.channel,
 				content: '\u200b',
-				components: [row1, row2, row3, row4],
+				components: [row1, row2, row3],
 				embed,
 			});
 			this.client.interactions.addButtonListener(utilButton, (interaction) => {
 				if (interaction.member.id !== msg.author.id)
 					return interaction.respond({
 						content: "You aren't part of this interaction...",
-						private: true,
+						isPrivate: true,
 					});
 
 				const cmds = this.client.registry.groups.get('util').commands.filter((cmd) => {
@@ -114,7 +113,7 @@ module.exports = class HelpCommand extends Command {
 				if (interaction.member.id !== msg.author.id)
 					return interaction.respond({
 						content: "You aren't part of this interaction...",
-						private: true,
+						isPrivate: true,
 					});
 
 				const cmds = this.client.registry.groups.get('search').commands.filter((cmd) => {
@@ -131,7 +130,7 @@ module.exports = class HelpCommand extends Command {
 				if (interaction.member.id !== msg.author.id)
 					return interaction.respond({
 						content: "You aren't part of this interaction...",
-						private: true,
+						isPrivate: true,
 					});
 
 				const cmds = this.client.registry.groups.get('remind').commands.filter((cmd) => {
@@ -148,7 +147,7 @@ module.exports = class HelpCommand extends Command {
 				if (interaction.member.id !== msg.author.id)
 					return interaction.respond({
 						content: "You aren't part of this interaction...",
-						private: true,
+						isPrivate: true,
 					});
 
 				const cmds = this.client.registry.groups.get('random').commands.filter((cmd) => {
@@ -165,7 +164,7 @@ module.exports = class HelpCommand extends Command {
 				if (interaction.member.id !== msg.author.id)
 					return interaction.respond({
 						content: "You aren't part of this interaction...",
-						private: true,
+						isPrivate: true,
 					});
 
 				const cmds = this.client.registry.groups.get('other').commands.filter((cmd) => {
@@ -182,7 +181,7 @@ module.exports = class HelpCommand extends Command {
 				if (interaction.member.id !== msg.author.id)
 					return interaction.respond({
 						content: "You aren't part of this interaction...",
-						private: true,
+						isPrivate: true,
 					});
 
 				const cmds = this.client.registry.groups.get('info').commands.filter((cmd) => {
@@ -199,7 +198,7 @@ module.exports = class HelpCommand extends Command {
 				if (interaction.member.id !== msg.author.id)
 					return interaction.respond({
 						content: "You aren't part of this interaction...",
-						private: true,
+						isPrivate: true,
 					});
 
 				const cmds = this.client.registry.groups.get('img').commands.filter((cmd) => {
@@ -216,7 +215,7 @@ module.exports = class HelpCommand extends Command {
 				if (interaction.member.id !== msg.author.id)
 					return interaction.respond({
 						content: "You aren't part of this interaction...",
-						private: true,
+						isPrivate: true,
 					});
 
 				const cmds = this.client.registry.groups.get('codebin').commands.filter((cmd) => {
@@ -233,7 +232,7 @@ module.exports = class HelpCommand extends Command {
 				if (interaction.member.id !== msg.author.id)
 					return interaction.respond({
 						content: "You aren't part of this interaction...",
-						private: true,
+						isPrivate: true,
 					});
 
 				const cmds = this.client.registry.groups.get('anime').commands.filter((cmd) => {
@@ -250,7 +249,7 @@ module.exports = class HelpCommand extends Command {
 				if (interaction.member.id !== msg.author.id)
 					return interaction.respond({
 						content: "You aren't part of this interaction...",
-						private: true,
+						isPrivate: true,
 					});
 
 				embed.setDescription('To get started, press one of the buttons!');
