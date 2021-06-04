@@ -1,3 +1,9 @@
+# [2.94.0](https://github.com/1chiSensei/Tanaka/compare/2.93.0...2.94.0) (2021-06-04)
+
+### Features
+
+- **commands:** add a base command class ([83e3a08](https://github.com/1chiSensei/Tanaka/commit/83e3a08664320f375a8364505f88accd3f0f8a98))
+
 # [2.93.0](https://github.com/1chiSensei/Tanaka/compare/2.92.0...2.93.0) (2021-06-04)
 
 ### Features
