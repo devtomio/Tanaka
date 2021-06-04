@@ -1,6 +1,7 @@
 #!/bin/bash
 
 # Install Deps
+yarn cache clean
 yarn install --force
 
 # See if a process is already there
