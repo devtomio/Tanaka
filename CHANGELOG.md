@@ -1,3 +1,15 @@
+# [2.91.0](https://github.com/1chiSensei/Tanaka/compare/2.90.0...2.91.0) (2021-06-04)
+
+### Bug Fixes
+
+- **ci:** fix ([5c2d4f4](https://github.com/1chiSensei/Tanaka/commit/5c2d4f4afc139d39018053dc04e3be6a91357185))
+- **ci:** fix ([f295b0e](https://github.com/1chiSensei/Tanaka/commit/f295b0ee6352f4e706d326b0bc0c7f7b0a4ca0dd))
+
+### Features
+
+- **ci:** fix ([aa18e97](https://github.com/1chiSensei/Tanaka/commit/aa18e97a8df186fe0223000c45fe467ac3ef847e))
+- **web:** add more info ([9139ece](https://github.com/1chiSensei/Tanaka/commit/9139ecef20e1396c3c177179a482cdc4a85d061d))
+
 # [2.90.0](https://github.com/1chiSensei/Tanaka/compare/2.89.2...2.90.0) (2021-06-04)
 
 ### Features
