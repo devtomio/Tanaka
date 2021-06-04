@@ -25,6 +25,5 @@ manager.spawn()
 	.then(() => logger.info(`Spawning shard. Shard count: ${manager.shardCount}`))
 	.catch((reason) => {
 		logger.error(`Spawing error: REASON = ${reason}`);
-
 		captureException(reason);
 	});
