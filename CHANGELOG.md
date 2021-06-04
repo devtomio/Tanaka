@@ -1,3 +1,9 @@
+## [2.94.1](https://github.com/1chiSensei/Tanaka/compare/2.94.0...2.94.1) (2021-06-04)
+
+### Bug Fixes
+
+- **web:** fix command run count ([c46f136](https://github.com/1chiSensei/Tanaka/commit/c46f1362f8487a7a98407a92d1eb6bb474b50906))
+
 # [2.94.0](https://github.com/1chiSensei/Tanaka/compare/2.93.0...2.94.0) (2021-06-04)
 
 ### Features
