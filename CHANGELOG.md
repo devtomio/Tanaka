@@ -1,3 +1,9 @@
+## [2.89.1](https://github.com/1chiSensei/Tanaka/compare/2.89.0...2.89.1) (2021-06-04)
+
+### Bug Fixes
+
+- **scripts:** fix ([df906aa](https://github.com/1chiSensei/Tanaka/commit/df906aa519b201250f01097ea7257f771c1364ee))
+
 # [2.89.0](https://github.com/1chiSensei/Tanaka/compare/2.88.0...2.89.0) (2021-06-03)
 
 ### Features
