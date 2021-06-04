@@ -1,4 +1,4 @@
-const { Command } = require('discord.js-commando');
+const Command = require('../../Structures/Command');
 const { MessageEmbed } = require('discord.js');
 const mal = require('mal-scraper');
 

@@ -1,4 +1,4 @@
-const { Command } = require('discord.js-commando');
+const Command = require('../../Structures/Command');
 const { create } = require('sourcebin');
 
 module.exports = class SourcebinCommand extends Command {

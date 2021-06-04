@@ -1,5 +1,5 @@
 const { searchMdn } = require('../../Structures/Util');
-const { Command } = require('discord.js-commando');
+const Command = require('../../Structures/Command');
 const { MessageEmbed } = require('discord.js');
 
 module.exports = class MDNCommand extends Command {

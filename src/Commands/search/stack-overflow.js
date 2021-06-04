@@ -1,5 +1,5 @@
 const { formatNumber, embedURL } = require('../../Structures/Util');
-const { Command } = require('discord.js-commando');
+const Command = require('../../Structures/Command');
 const { MessageEmbed } = require('discord.js');
 const request = require('node-superfetch');
 const moment = require('moment');

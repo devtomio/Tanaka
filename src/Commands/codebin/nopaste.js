@@ -1,4 +1,4 @@
-const { Command } = require('discord.js-commando');
+const Command = require('../../Structures/Command');
 const { execSync } = require('child_process');
 
 module.exports = class NoPasteCommand extends Command {

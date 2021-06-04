@@ -1,7 +1,7 @@
 module.exports = class Event {
 	/**
 	 * @param {import('./Client')} client
-	 * @param {keyof import('discord.js').ClientEvents|keyof import('quickmongo').Events|keyof import('@duxcore/interactive-discord/src/util/types/events').Events} name
+	 * @param {keyof import('discord.js-commando').CommandoClientEvents|keyof import('quickmongo').Events|keyof import('@duxcore/interactive-discord/src/util/types/events').Events} name
 	 * @param {Object} options
 	 * @param {boolean} [options.once]
 	 * @param {'db'|'client'|'interactions'} [options.emitter]

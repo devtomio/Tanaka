@@ -1,5 +1,5 @@
 const { shorten } = require('../../Structures/Util');
-const { Command } = require('discord.js-commando');
+const Command = require('../../Structures/Command');
 const moment = require('moment');
 
 module.exports = class RemindCommand extends Command {

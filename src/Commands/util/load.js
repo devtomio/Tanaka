@@ -1,4 +1,4 @@
-const { Command } = require('discord.js-commando');
+const Command = require('../../Structures/Command');
 const { access, constants } = require('fs');
 
 module.exports = class LoadCommand extends Command {

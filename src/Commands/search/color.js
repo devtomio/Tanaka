@@ -1,4 +1,4 @@
-const { Command } = require('discord.js-commando');
+const Command = require('../../Structures/Command');
 const { MessageEmbed } = require('discord.js');
 const converter = require('color-convert');
 const request = require('node-superfetch');

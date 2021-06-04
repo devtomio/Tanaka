@@ -1,5 +1,5 @@
 const { shorten } = require('../../Structures/Util');
-const { Command } = require('discord.js-commando');
+const Command = require('../../Structures/Command');
 const { stripIndents } = require('common-tags');
 const { MessageEmbed } = require('discord.js');
 const request = require('node-superfetch');

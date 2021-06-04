@@ -1,6 +1,6 @@
 const { distort } = require('../../Structures/Canvas');
 const { createCanvas, loadImage } = require('canvas');
-const { Command } = require('discord.js-commando');
+const Command = require('../../Structures/Command');
 const request = require('node-superfetch');
 
 module.exports = class GlitchCommand extends Command {

@@ -1,5 +1,5 @@
 const { ButtonComponent, ComponentActionRow, LinkButtonComponent } = require('@duxcore/interactive-discord');
-const { Command } = require('discord.js-commando');
+const Command = require('../../Structures/Command');
 const { MessageEmbed } = require('discord.js');
 const { permissions } = require('../../Structures/Util');
 

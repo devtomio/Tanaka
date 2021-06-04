@@ -1,4 +1,4 @@
-const { Command } = require('discord.js-commando');
+const Command = require('../../Structures/Command');
 const { Canvas } = require('canvacord');
 
 module.exports = class TriggeredCommand extends Command {

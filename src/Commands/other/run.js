@@ -1,6 +1,6 @@
 const languages = require('../../Assets/json/langs.json');
 const { shorten } = require('../../Structures/Util');
-const { Command } = require('discord.js-commando');
+const Command = require('../../Structures/Command');
 
 module.exports = class RunCommand extends Command {
 	constructor(client) {

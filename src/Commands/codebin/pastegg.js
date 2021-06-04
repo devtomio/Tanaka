@@ -1,4 +1,4 @@
-const { Command } = require('discord.js-commando');
+const Command = require('../../Structures/Command');
 const request = require('node-superfetch');
 
 module.exports = class PasteGGCommand extends Command {

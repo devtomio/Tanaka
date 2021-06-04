@@ -1,5 +1,5 @@
 const { ButtonComponent, ComponentActionRow } = require('@duxcore/interactive-discord');
-const { Command } = require('discord.js-commando');
+const Command = require('../../Structures/Command');
 const { MessageEmbed } = require('discord.js');
 
 module.exports = class TestCommand extends Command {

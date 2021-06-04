@@ -3,7 +3,7 @@ const util = require('util');
 const discord = require('discord.js');
 const tags = require('common-tags');
 const { escapeRegex, replaceIp } = require('../../Structures/Util');
-const { Command } = require('discord.js-commando');
+const Command = require('../../Structures/Command');
 const { Type } = require('@sapphire/type');
 
 const nl = '!!NL!!';

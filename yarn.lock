@@ -2002,7 +2002,7 @@ discord-api-types@^0.18.1:
 
 discord.js-commando@1chiSensei/Commando#tanaka-modified:
   version "0.12.3"
-  resolved "https://codeload.github.com/1chiSensei/Commando/tar.gz/4f0950e4f36d137e5545212bcb83946f9ef989bb"
+  resolved "https://codeload.github.com/1chiSensei/Commando/tar.gz/22cbf1828ddcb3f0f53eda74c042fe5b156b01ad"
   dependencies:
     common-tags "^1.8.0"
     emoji-regex "^9.2.0"
