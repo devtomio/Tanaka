@@ -1,3 +1,10 @@
+## [2.89.2](https://github.com/1chiSensei/Tanaka/compare/2.89.1...2.89.2) (2021-06-04)
+
+### Bug Fixes
+
+- **commands:** add missing emoji ([1ad6ce9](https://github.com/1chiSensei/Tanaka/commit/1ad6ce9519d575fc3937b1abba3eac8b435c8db8))
+- **yarn:** clean cache ([5261615](https://github.com/1chiSensei/Tanaka/commit/526161528de1b4ad2fe9b7c29a982184f9ad8895))
+
 ## [2.89.1](https://github.com/1chiSensei/Tanaka/compare/2.89.0...2.89.1) (2021-06-04)
 
 ### Bug Fixes
