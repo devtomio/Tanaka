@@ -1,3 +1,9 @@
+# [2.96.0](https://github.com/1chiSensei/Tanaka/compare/2.95.0...2.96.0) (2021-06-04)
+
+### Features
+
+- **sentry:** add sentry ([50057e7](https://github.com/1chiSensei/Tanaka/commit/50057e75ec7f48b15de28e059a0dfe20a15f1115))
+
 # [2.95.0](https://github.com/1chiSensei/Tanaka/compare/2.94.1...2.95.0) (2021-06-04)
 
 ### Features
