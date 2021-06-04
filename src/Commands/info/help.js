@@ -64,6 +64,11 @@ module.exports = class HelpCommand extends Command {
 			const remindButton = new ButtonComponent({
 				label: 'Reminder',
 				style: 1,
+				emoji: {
+					name: 'calendarrr',
+					id: '848737884894396436',
+					animated: false,
+				},
 			});
 			const otherButton = new ButtonComponent({
 				label: 'Other',
