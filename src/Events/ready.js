@@ -7,6 +7,7 @@ module.exports = class ReadyEvent extends Event {
 
 	async run() {
 		await this.client.timers.fetchAll();
+		await this.client.db.add('commandRunCount', 1);
 
 		this.client.shard.shards.forEach((shard) => {
 			this.client.setInterval(

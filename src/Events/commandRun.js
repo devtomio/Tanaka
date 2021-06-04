@@ -9,6 +9,6 @@ module.exports = class CommandRunEvent extends Event {
 	async run(command) {
 		command.uses++;
 
-		await this.client.db.add('commandRuns', 1);
+		await this.client.db.add('commandRunCount', 1);
 	}
 };

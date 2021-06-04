@@ -47,7 +47,7 @@ module.exports = (c) => {
 		const userCount = (await c.userCount()).toLocaleString();
 		const guildCount = (await c.guildCount()).toLocaleString();
 		const channelCount = (await c.channelCount()).toLocaleString();
-		const usesCount = (await c.db.get('commandUses')).toLocaleString();
+		const usesCount = (await c.db.get('commandRunCount')).toLocaleString();
 		const commandCount = c.registry.commands.size.toLocaleString();
 		const shardCount = c.shard ? c.shard.shardCount.toLocaleString() : '1';
 		const ping = Math.round(c.ws.ping);
