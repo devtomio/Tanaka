@@ -1,3 +1,9 @@
+# [2.93.0](https://github.com/1chiSensei/Tanaka/compare/2.92.0...2.93.0) (2021-06-04)
+
+### Features
+
+- **web:** add normalize.css ([421dbf9](https://github.com/1chiSensei/Tanaka/commit/421dbf9b3b9534044bbb82f7c04e19b2a4e67c6d))
+
 # [2.92.0](https://github.com/1chiSensei/Tanaka/compare/2.90.0...2.92.0) (2021-06-04)
 
 ### Bug Fixes
