@@ -1,3 +1,9 @@
+# [2.97.0](https://github.com/1chiSensei/Tanaka/compare/2.96.0...2.97.0) (2021-06-04)
+
+### Features
+
+- **docs:** add example env ([b3add92](https://github.com/1chiSensei/Tanaka/commit/b3add9210b06f0e90c6b40d72fccdb31d6e74f76))
+
 # [2.96.0](https://github.com/1chiSensei/Tanaka/compare/2.95.0...2.96.0) (2021-06-04)
 
 ### Features
