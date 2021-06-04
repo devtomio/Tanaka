@@ -121,6 +121,7 @@ module.exports = class Client extends CommandoClient {
 	async login(token = process.env.BOT_TOKEN) {
 		this.registerInhibitors();
 		this.registerCommands();
+		this.loadSimilarEvents();
 		web(this);
 
 		await this.loadEvents();
@@ -205,6 +206,15 @@ module.exports = class Client extends CommandoClient {
 			})
 			.registerTypesIn(path.join(__dirname, '..', 'Types'))
 			.registerCommandsIn(path.join(__dirname, '..', 'Commands'));
+	}
+
+	loadSimilarEvents() {
+		this.db
+			.on('ready', () => this.logger.info('[MongoDB]: Ready!'))
+			.on('error', (err) => {
+				throw err;
+			})
+			.on('debug', (data) => this.logger.debug(`[MongoDB]: ${data}`));
 	}
 
 	async registerProvider() {
