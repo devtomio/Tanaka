@@ -26,9 +26,7 @@ module.exports = class TimerManager {
 		const timeout = this.client.setTimeout(async () => {
 			try {
 				const channel = await this.client.channels.fetch(channelID);
-				await channel.send(
-					`🕰️ Hey <@${userID}>, you wanted me to remind you of: **"${title}"**.`,
-				);
+				await channel.send(`🕰️ Hey <@${userID}>, i\'m reminding you of: **"${title}"**.`);
 			} finally {
 				await this.client.redis.hdel('timer', `${channelID}-${userID}`);
 			}

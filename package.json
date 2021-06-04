@@ -12,7 +12,7 @@
 	"license": "Apache-2.0",
 	"private": true,
 	"scripts": {
-		"prettier": "prettier . --write --config prettier.config.js",
+		"prettier": "prettier . --write --config prettier.config.js && prettier src/**/*.ejs --write --config prettier.config.js",
 		"lint": "eslint . --fix",
 		"start": "bash start.sh",
 		"release": "dotenv -- release-it --ci",

@@ -28,6 +28,8 @@ module.exports = class GlitchCommand extends Command {
 
 	async run(msg, { image }) {
 		try {
+			msg.channel.startTyping();
+
 			const { body } = await request.get(image);
 			const data = await loadImage(body);
 			const canvas = createCanvas(data.width, data.height);
@@ -39,6 +41,8 @@ module.exports = class GlitchCommand extends Command {
 			const attachment = canvas.toBuffer();
 
 			if (Buffer.byteLength(attachment) > 8e6) return msg.reply('Resulting image was above 8 MB.');
+
+			msg.channel.stopTyping();
 
 			return msg.say({ files: [{ attachment, name: 'glitch.png' }] });
 		} catch (err) {

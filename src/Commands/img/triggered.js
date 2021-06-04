@@ -26,7 +26,11 @@ module.exports = class TriggeredCommand extends Command {
 
 	async run(msg, { image }) {
 		try {
+			msg.channel.startTyping();
+
 			const attachment = await Canvas.trigger(image);
+
+			msg.channel.stopTyping();
 
 			return msg.say({ files: [{ attachment, name: 'triggered.gif' }] });
 		} catch (err) {

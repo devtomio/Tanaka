@@ -8,7 +8,7 @@ module.exports = {
 	tabWidth: 8,
 	overrides: [
 		{
-			files: '.ejs',
+			files: '*.ejs',
 			options: {
 				parser: 'html',
 			},
