@@ -1,3 +1,9 @@
+# [2.95.0](https://github.com/1chiSensei/Tanaka/compare/2.94.1...2.95.0) (2021-06-04)
+
+### Features
+
+- **events:** send info message when a bot joins a guild ([1306497](https://github.com/1chiSensei/Tanaka/commit/1306497619eb5d843c4138dda9797ccacfeaa962))
+
 ## [2.94.1](https://github.com/1chiSensei/Tanaka/compare/2.94.0...2.94.1) (2021-06-04)
 
 ### Bug Fixes
