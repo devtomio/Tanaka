@@ -10,7 +10,7 @@ module.exports = class DiscriminatorCommand extends Command {
 			description: 'Shows the discriminator of the user.',
 			args: [
 				{
-					key: 'string',
+					key: 'user',
 					prompt: 'Who is the user that you want to get the discriminator of?',
 					type: 'user',
 					default: (msg) => msg.author,
