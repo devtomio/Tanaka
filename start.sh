@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # Install Deps
-yarn install
+yarn install --frozen-lockfile
 
 # See if a process is already there
 pm2 delete tanaka || :
