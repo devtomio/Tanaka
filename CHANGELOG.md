@@ -1,3 +1,9 @@
+# [2.90.0](https://github.com/1chiSensei/Tanaka/compare/2.89.2...2.90.0) (2021-06-04)
+
+### Features
+
+- **commands:** add spacebin command ([b82bcbc](https://github.com/1chiSensei/Tanaka/commit/b82bcbcfb5afb0186b7f751c2d7bbb178a8f9942))
+
 ## [2.89.2](https://github.com/1chiSensei/Tanaka/compare/2.89.1...2.89.2) (2021-06-04)
 
 ### Bug Fixes
