@@ -1,3 +1,11 @@
+## [2.97.1](https://github.com/1chiSensei/Tanaka/compare/2.97.0...2.97.1) (2021-06-09)
+
+### Bug Fixes
+
+- **ci:** fix ([c98fdb3](https://github.com/1chiSensei/Tanaka/commit/c98fdb30a983a06b2221adf28462c00930d90df0))
+- **global:** fix bot not responding ([b2941ed](https://github.com/1chiSensei/Tanaka/commit/b2941edcc0cd0b4c0817cb689e5939264c64a077))
+- **global:** fix error ([58ff959](https://github.com/1chiSensei/Tanaka/commit/58ff95920b124c4598d97846c542b1289129fbe6))
+
 # [2.97.0](https://github.com/1chiSensei/Tanaka/compare/2.96.0...2.97.0) (2021-06-04)
 
 ### Features
