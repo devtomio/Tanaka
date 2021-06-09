@@ -2089,7 +2089,7 @@ discord-api-types@^0.18.1:
 
 "discord.js-commando@github:1chiSensei/Commando#tanaka-modified":
   version "0.12.3"
-  resolved "https://codeload.github.com/1chiSensei/Commando/tar.gz/22cbf1828ddcb3f0f53eda74c042fe5b156b01ad"
+  resolved "https://codeload.github.com/1chiSensei/Commando/tar.gz/c93ce177350275de0f34c9437a41cd065154dd06"
   dependencies:
     common-tags "^1.8.0"
     emoji-regex "^9.2.0"
@@ -2131,13 +2131,11 @@ discord.js@^12.5.1:
     "@discordjs/collection" "^0.1.6"
     "@discordjs/form-data" "^3.0.1"
     "@sapphire/async-queue" "^1.1.2"
-    "@types/ws" "^7.4.4"
     abort-controller "^3.0.0"
-    discord-api-types "^0.18.1"
     node-fetch "^2.6.1"
     prism-media "^1.2.9"
     tweetnacl "^1.0.3"
-    ws "^7.4.6"
+    ws "^7.4.5"
 
 doctrine@^3.0.0:
   version "3.0.0"

@@ -142,6 +142,28 @@ module.exports = (c) => {
 		res.sendStatus(201);
 	});
 
+	app.post('/vote/voidbots', async (req, res) => {
+		if (req.header('Authorization') !== process.env.VOTE_AUTH) {
+			if (req.cookies.get('discordToken')) return res.sendStatus(403);
+			return res.sendStatus(401);
+		}
+
+		const { user: userID } = req.body;
+		const user = await c.users.fetch(userID);
+		const embed = new MessageEmbed()
+			.setTitle('New Vote!')
+			.setURL('https://voidbots.net/bot/804605929944645672')
+			.setThumbnail(user.displayAvatarURL({ dynamic: true, size: 4096 }))
+			.setDescription(`Thank you, ${user.taf}, for voting for Tanaka in Void Bots!`)
+			.setColor('RANDOM')
+			.setFooter('voidbots.net')
+			.setTimestamp();
+
+		await hook.send(embed);
+
+		res.sendStatus(201);
+	});
+
 	app.get('/manifest.json', (_, res) => res.status(200).json(manifest));
 
 	app.get('/serviceWorker.js', (_, res) =>
