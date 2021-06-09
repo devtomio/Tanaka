@@ -707,6 +707,13 @@
   dependencies:
     "@types/node" "*"
 
+"@types/ws@^7.4.4":
+  version "7.4.4"
+  resolved "https://registry.yarnpkg.com/@types/ws/-/ws-7.4.4.tgz#93e1e00824c1de2608c30e6de4303ab3b4c0c9bc"
+  integrity sha512-d/7W23JAXPodQNbOZNXvl2K+bqAQrCMwlh/nuQsPSQk6Fq0opHoPrUw43aHsvSbIiQPr8Of2hkFbnz1XBFVyZQ==
+  dependencies:
+    "@types/node" "*"
+
 "@yarnpkg/lockfile@^1.1.0":
   version "1.1.0"
   resolved "https://registry.yarnpkg.com/@yarnpkg/lockfile/-/lockfile-1.1.0.tgz#e77a97fbd345b76d83245edcd17d393b1b41fb31"
@@ -2073,7 +2080,7 @@ discord-api-types@^0.18.1:
   resolved "https://registry.yarnpkg.com/discord-api-types/-/discord-api-types-0.18.1.tgz#5d08ed1263236be9c21a22065d0e6b51f790f492"
   integrity sha512-hNC38R9ZF4uaujaZQtQfm5CdQO58uhdkoHQAVvMfIL0LgOSZeW575W8H6upngQOuoxWd8tiRII3LLJm9zuQKYg==
 
-discord.js-commando@1chiSensei/Commando#tanaka-modified:
+discord.js-commando@1chiSensei/Commando#tanaka-modified, "discord.js-commando@github:1chiSensei/Commando#tanaka-modified":
   version "0.12.3"
   resolved "https://codeload.github.com/1chiSensei/Commando/tar.gz/22cbf1828ddcb3f0f53eda74c042fe5b156b01ad"
   dependencies:
@@ -2110,10 +2117,9 @@ discord.js@^12.5.1:
     tweetnacl "^1.0.3"
     ws "^7.4.4"
 
-discord.js@^13.0.0-dev.6567ba821a54d3dc97d07ce8ac55335fef2f346b:
-  version "13.0.0-dev.6567ba821a54d3dc97d07ce8ac55335fef2f346b"
-  resolved "https://registry.yarnpkg.com/discord.js/-/discord.js-13.0.0-dev.6567ba821a54d3dc97d07ce8ac55335fef2f346b.tgz#56c2b2abfb60ae001de05dadb32c2d3786a67f1b"
-  integrity sha512-7pug6Lh8dwgiiFvqzoili/J/Ab6RmJuwguw+3HuDy5xPMAHw6BmYb0bx8IoRLvlPuj/NEOgokUNMfulAk8SQZA==
+"discord.js@github:discordjs/discord.js":
+  version "13.0.0-dev"
+  resolved "https://codeload.github.com/discordjs/discord.js/tar.gz/c2b3ed09a0ec7f9b7453d0bcf9f2900e408f5001"
   dependencies:
     "@discordjs/collection" "^0.1.6"
     "@discordjs/form-data" "^3.0.1"
@@ -6926,7 +6932,7 @@ ws@^3.3.1:
     safe-buffer "~5.1.0"
     ultron "~1.1.0"
 
-ws@^7.0.0, ws@^7.4.4, ws@^7.4.5:
+ws@^7.0.0, ws@^7.4.4, ws@^7.4.6:
   version "7.4.6"
   resolved "https://registry.yarnpkg.com/ws/-/ws-7.4.6.tgz#5654ca8ecdeee47c33a9a4bf6d28e2be2980377c"
   integrity sha512-YmhHDO4MzaDLB+M9ym/mDA5z0naX8j7SIlT8f8z+I0VtzsRbekxEutHSme7NPS2qE8StCYQNUnfWdXta/Yu85A==
