@@ -46,7 +46,7 @@
 		"gifencoder": "^2.0.1",
 		"glob-promise": "^4.2.0",
 		"helmet": "^4.6.0",
-		"html-to-text": "^7.1.1",
+		"html-to-text": "^8.0.0",
 		"ioredis": "^4.27.5",
 		"ip-regex": "^4.3.0",
 		"kurasuta": "^2.2.3",
