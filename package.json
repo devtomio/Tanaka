@@ -28,7 +28,7 @@
 		"@discordjs/opus": "0.5.0",
 		"@duxcore/interactive-discord": "^1.4.1",
 		"@sapphire/type": "^2.0.9",
-		"@sentry/node": "^6.5.1",
+		"@sentry/node": "^6.12.0",
 		"bufferutil": "^4.0.3",
 		"canvacord": "^5.2.1",
 		"canvas": "^2.8.0",
