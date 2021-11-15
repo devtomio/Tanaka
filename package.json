@@ -25,7 +25,7 @@
 	},
 	"dependencies": {
 		"@2pg/oauth": "^1.0.8",
-		"@discordjs/opus": "0.5.0",
+		"@discordjs/opus": "0.7.0",
 		"@duxcore/interactive-discord": "^1.4.1",
 		"@sapphire/type": "^2.0.9",
 		"@sentry/node": "^6.5.1",
