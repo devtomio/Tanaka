@@ -47,7 +47,7 @@
 		"glob-promise": "^4.2.0",
 		"helmet": "^4.6.0",
 		"html-to-text": "^7.1.1",
-		"ioredis": "^4.27.5",
+		"ioredis": "^4.28.2",
 		"ip-regex": "^4.3.0",
 		"kurasuta": "^2.2.3",
 		"mal-scraper": "^2.11.3",
