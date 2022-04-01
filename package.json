@@ -88,7 +88,7 @@
 		"lint-staged": "^11.0.0",
 		"pm2": "^5.0.4",
 		"prettier": "2.3.1",
-		"release-it": "14.8.0",
+		"release-it": "14.14.0",
 		"rimraf": "^3.0.2"
 	},
 	"bugs": {
