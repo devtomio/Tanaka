@@ -40,7 +40,7 @@
 		"decimal-to-percent": "^1.0.1",
 		"discord.js": "github:discordjs/discord.js#cbd7f2b",
 		"discord.js-commando": "github:1chiSensei/Commando#tanaka-modified",
-		"ejs": "^3.1.6",
+		"ejs": "^3.1.8",
 		"erlpack": "discord/erlpack",
 		"express": "^4.17.1",
 		"gifencoder": "^2.0.1",
