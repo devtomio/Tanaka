@@ -75,7 +75,7 @@
 	"devDependencies": {
 		"@commitlint/cli": "^12.1.4",
 		"@commitlint/config-angular": "^12.1.4",
-		"@release-it/conventional-changelog": "2.0.1",
+		"@release-it/conventional-changelog": "5.0.0",
 		"@types/mongodb": "^3",
 		"@types/signale": "^1.4.1",
 		"discord-api-types": "^0.18.1",
